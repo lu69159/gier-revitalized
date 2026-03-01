@@ -1,0 +1,8 @@
+type: LogicBlock
+buildVisiblity: sandboxOnly
+maxInstructionScale: 4500
+instructionsPerTick: 8000
+maxInstructionsPerTick: 80000
+range: 10000
+category: logic
+name: Heavy Proccessor
