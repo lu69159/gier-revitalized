@@ -1,5 +1,5 @@
 type: LogicBlock
-buildVisiblity: sandboxOnly
+buildVisibility: sandboxOnly
 maxInstructionScale: 4500
 instructionsPerTick: 8000
 maxInstructionsPerTick: 80000
