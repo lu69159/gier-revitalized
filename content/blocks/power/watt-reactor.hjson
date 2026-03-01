@@ -5,8 +5,11 @@ helth: 3450
 itemCapacity: 90
 armor: 5
 baseExplosiveness: 15
-  
+priority: 35
+
 description: "Extremely expensive building, Has insane power output.
+
+[scarlet]Priority: 35
 
 [red]- Expensive
 [red]- Very explosive
@@ -44,15 +47,15 @@ generateEffect:{
 type: RadialEffect
 lengthOffset: 6
 rotationOffset: 45
-layer: 61
+layer: 111
 effect:{
 type: ParticleEffect
 particles: 3
 cone: 35
 sizeFrom: 4
-sizeTo: 12
+sizeTo: 9
 lifetime: 90
-colorFrom: 4f4f4f
+colorFrom: 4f4f4f55
 colorTo: 5f5f5f00
 layer: 6
 interp: sineOut
