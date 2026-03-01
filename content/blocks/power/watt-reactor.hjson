@@ -57,7 +57,7 @@ sizeTo: 9
 lifetime: 90
 colorFrom: 4f4f4f55
 colorTo: 5f5f5f00
-layer: 6
+layer: 111
 interp: sineOut
 length: 28
 }
