@@ -1,5 +1,9 @@
 type: LogicBlock
-buildVisibility: sandboxOnly
+category: logic
+buildVisibility: worldProcessorOnly
+logicConfigurable: true
+privileged: true
+breakable: false
 maxInstructionScale: 4500
 instructionsPerTick: 8000
 maxInstructionsPerTick: 80000
