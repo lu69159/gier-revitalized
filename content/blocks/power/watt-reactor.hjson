@@ -25,9 +25,10 @@ titanium/225
 ]
 
 powerProduction: 24.33334
-explosionRadius: 105
+explosionRadius: 13.125
 explosionDamage: 3750
 category: power
+warmupSpeed: 0.0005
 
 research: {
 parent: photon-panel
