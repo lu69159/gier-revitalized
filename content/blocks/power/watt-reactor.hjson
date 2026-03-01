@@ -1,7 +1,7 @@
 type: ConsumeGenerator
 name: Watt Reactor
 size: 4
-helth: 3045
+helth: 3450
 itemCapacity: 90
 armor: 5
 baseExplosiveness: 15
@@ -28,7 +28,6 @@ powerProduction: 24.33334
 explosionRadius: 13.125
 explosionDamage: 3750
 category: power
-warmupSpeed: 0.0005
 
 research: {
 parent: photon-panel
@@ -38,12 +37,26 @@ planet: sun
 }]
 }
 
+generateEffect:{
+type: RadialEffect
+lengthOffset: 3
+rotationOffset: 45
+effect:{
+type: ParticleEffect
+particles: 3
+cone: 35
+colorFrom: 4f4f4f
+colorTo: 5f5f5f00
+layer: 61
+length: 28
+}
+}
 
 explodeEffect: reactorExplosion
 explodeSound: explosionCore
 
 consumes:{
-items:[graphite/45]
+items:[graphite/65]
 }
 
 drawer:{
@@ -52,6 +65,9 @@ drawers:[
 {
 type: DrawRegion
 suffix: "-bottom"
+}
+{
+type: DrawArcSmelt
 }
 {
 type: DrawCrucibleFlame
