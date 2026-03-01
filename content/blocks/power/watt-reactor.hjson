@@ -45,7 +45,7 @@ generateEffectRange: 0.1
 effectChance: 0.25
 generateEffect:{
 type: RadialEffect
-lengthOffset: 8
+lengthOffset: 10
 rotationOffset: 45
 layer: 111
 effect:{
