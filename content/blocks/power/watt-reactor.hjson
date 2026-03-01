@@ -41,7 +41,7 @@ planet: sun
 }]
 }
 
-generateEffectRange: 0
+generateEffectRange: 0.25
 effectChance: 0.05
 generateEffect:{
 type: RadialEffect
