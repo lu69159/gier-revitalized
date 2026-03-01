@@ -4,7 +4,7 @@ buildVisibility: worldProcessorOnly
 logicConfigurable: true
 privileged: true
 breakable: false
-maxInstructionScale: 4500
+maxInstructionScale: 45
 instructionsPerTick: 8000
 maxInstructionsPerTick: 80000
 range: 10000
