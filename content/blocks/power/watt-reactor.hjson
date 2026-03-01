@@ -43,7 +43,7 @@ planet: sun
 }
 
 generateEffectRange: 0.1
-effectChance: 0.25
+effectChance: 0.225
 generateEffect:{
 type: RadialEffect
 lengthOffset: 11.5
@@ -52,13 +52,14 @@ layer: 111
 effect:{
 type: ParticleEffect
 particles: 3
-cone: 45
+cone: 40
 sizeFrom: 3
 sizeTo: 6
 lifetime: 90
 colorFrom: 5f5f5f55
 colorTo: 9f9f9f00
-layer: 111
+layer: 101
+layerDuration: 10
 interp: sineOut
 length: 28
 }
