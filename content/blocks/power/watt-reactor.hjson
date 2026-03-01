@@ -29,6 +29,7 @@ explosionRadius: 13.125
 explosionDamage: 3750
 category: power
 
+databaseTag: "gier"
 research: {
 parent: photon-panel
 objectives:[{
