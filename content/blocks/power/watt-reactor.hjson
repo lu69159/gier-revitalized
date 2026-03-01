@@ -2,6 +2,10 @@ type: PowerGenerator
 name: Watt Reactor
 size: 4
 helth: 3045
+itemCapacity: 90
+armor: 5
+baseExplosiveness: 15
+  
 description: "Extremely expensive building, Has insane power output.
 
 [red]- Expensive
