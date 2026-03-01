@@ -42,7 +42,7 @@ planet: sun
 }
 
 generateEffectRange: 0
-effectChance: 0.15
+effectChance: 0.05
 generateEffect:{
 type: RadialEffect
 lengthOffset: 6
