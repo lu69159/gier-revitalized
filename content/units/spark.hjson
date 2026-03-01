@@ -12,6 +12,15 @@ engineSize: 2
 circleTarget: true
 range: 300
 
+targetFlags:[
+reactor
+core
+generator
+factory
+storage
+turret
+]
+
 weapons:[
 {
 shootCone: 180
