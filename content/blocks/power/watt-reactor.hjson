@@ -68,6 +68,7 @@ suffix: "-bottom"
 }
 {
 type: DrawArcSmelt
+drawCenter: false
 }
 {
 type: DrawCrucibleFlame
