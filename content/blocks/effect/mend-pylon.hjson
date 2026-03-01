@@ -38,10 +38,16 @@ minStroke: 0
 }
 
 envEnabled: 2
-databaseTag: "gier"
 customShadow: true
 baseColor: 84F5B4FF
 
-#research: cor-facility
+databaseTag: "gier"
+research: {
+parent: copper-fort
+objectives:[{
+type: OnPlanet
+planet: sun
+}]
+}
 researchCostMultiplier: 0.05
   
