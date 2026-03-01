@@ -45,7 +45,7 @@ generateEffectRange: 0.1
 effectChance: 0.25
 generateEffect:{
 type: RadialEffect
-lengthOffset: 10
+lengthOffset: 11.5
 rotationOffset: 45
 layer: 111
 effect:{
@@ -53,10 +53,10 @@ type: ParticleEffect
 particles: 3
 cone: 45
 sizeFrom: 3
-sizeTo: 5
+sizeTo: 6
 lifetime: 90
 colorFrom: 4f4f4f55
-colorTo: 5f5f5f00
+colorTo: 9f9f9f00
 layer: 111
 interp: sineOut
 length: 28
