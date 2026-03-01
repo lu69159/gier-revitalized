@@ -1,8 +1,8 @@
 type: GenericCrafter
 drawer:{
 type: DrawShape
-sides: 6
-radius: 6
+sides: 4
+radius: 6.5
 layer: 125
 color: 7457ce
 }
