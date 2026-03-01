@@ -44,10 +44,14 @@ generateEffect:{
 type: RadialEffect
 lengthOffset: 6
 rotationOffset: 45
+layer: 61
 effect:{
 type: ParticleEffect
 particles: 3
 cone: 35
+sizeFrom: 4
+sizeTo: 12
+lifetime: 90
 colorFrom: 4f4f4f
 colorTo: 5f5f5f00
 layer: 6
