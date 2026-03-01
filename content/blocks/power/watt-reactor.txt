@@ -1,6 +1,7 @@
 type: PowerGenerator
 name: Watt Reactor
 size: 4
+helth: 3045
 description: "Extremely expensive building, Has insane power output.
 
 [red]- Expensive
@@ -8,10 +9,50 @@ description: "Extremely expensive building, Has insane power output.
 [green]- Insane power output (40 photon panels)[]
 "
 
+requirements: [
+lead/2050
+copper/1650
+graphite/875
+silicon/550
+metaglass/330
+beryllium/275
+titanium/225
+]
+
 powerProduction: 24.3334
 explosionRadius: 105
 explosionDamage: 3750
-explodeEffect: {
-type: ExplosionEffect
+category: power
+
+research: {
+parent: photon-panel
+objectives:[{
+type: OnPlanet
+planet: sun
+}]
 }
+
+
+explodeEffect: reactorExplosion
 explodeSound: explosionCore
+
+consumes:{
+items:[graphite/45]
+}
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawCrucibleFlame
+particleInterp: sineOut
+}
+{
+type: DrawDefault
+}
+]
+}
