@@ -6,4 +6,5 @@ radius: 8
 layer: 125
 color: 7457ce
 }
-buildVisiblity: sandboxOnly
+buildVisibility: sandboxOnly
+name: Sporeoplasma
