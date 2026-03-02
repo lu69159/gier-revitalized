@@ -8,5 +8,5 @@ researchCostMultiplier: 0.25
 customShadow: true
 
 databaseTag: "gier"
-envEnabled: 2
+envEnabled: -1
 squareSprite: false
