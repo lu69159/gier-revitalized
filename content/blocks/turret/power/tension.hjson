@@ -5,7 +5,7 @@ range: 320
 name: Tension
 health: 2450
 shownPlanets: [gier]
-envEnabled: 2
+envEnabled: -1
 
 consumes:{
 power: 1
@@ -57,7 +57,7 @@ speed: 1
 trailEffect: missileTrailSmokeSmall
 trailChance: 0.25
 trailWidth: 2
-trailLength: 8
+trailLength: 0
 width: 10
 height: 17
 lifetime: 120
