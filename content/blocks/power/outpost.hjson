@@ -16,6 +16,6 @@ research: photon-panel
 customShadow: true
 
 outputsPower: true
-envEnabled: 2
+envEnabled: -1
 laserColor2: 9f9f9f
 maxNodes: 2
