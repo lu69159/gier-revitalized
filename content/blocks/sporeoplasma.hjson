@@ -1,11 +1,27 @@
 type: GenericCrafter
 drawer:{
-type: DrawRegion
+type: DrawShape
+color: 7457ce	
+sides: 4
+radius: 7.75
 layer: 125
 }
 update: true
 
+destroyBullet:{
+fragBullets: 6
+fragBullet:{
+type: LiquidBulletType
+liquid: water
+liquidAmount: 15
+despawnHit: true
+speed: 0.25
+lifetime: 20
+damage: 0
+}
+}
+
 drawTeamOverlay: false
-drawRubble: false
+createRubble: false
 buildVisibility: sandboxOnly
 name: Sporeoplasma
