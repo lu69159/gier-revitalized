@@ -1,0 +1,10 @@
+type: CellLiquid
+name: Tuntra
+  
+colorFrom 7457ce
+colorTo: 8d5bc2
+spreadTarget: water
+maxSpread: 0.95
+spreadConversion: 1
+spreadDamage: 0.75
+removeScaling: 0.35
