@@ -26,7 +26,7 @@ category: production
 customShadow: true
 databaseTag: "gier"
 shownPlanets: [gier]
-envEnabled: 2
+envEnabled: -1
 
 baseExplosiveness: 2
 explosivenessScale: 6
