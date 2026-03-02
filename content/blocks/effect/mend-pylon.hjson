@@ -37,7 +37,7 @@ minStroke: 0
 ]
 }
 
-envEnabled: 2
+envEnabled: -1
 customShadow: true
 baseColor: 84F5B4FF
 
