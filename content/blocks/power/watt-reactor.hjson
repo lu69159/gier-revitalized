@@ -7,6 +7,10 @@ armor: 5
 baseExplosiveness: 15
 priority: 35
 
+databaseTag: "gier"
+shownPlanets: [gier]
+envEnabled: -1
+
 customShadow: true
 description: "Extremely expensive building, Has insane power output.
 
