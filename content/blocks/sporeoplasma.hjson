@@ -3,7 +3,7 @@ drawer:{
 type: DrawShape
 color: 7457ce	
 sides: 4
-radius: 7.85
+radius: 7.95
 layer: 125
 }
 update: true
