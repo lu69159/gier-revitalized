@@ -3,7 +3,7 @@ size: 4
 name: "Core: [accent]Facility[]"
 
 itemCapacity: 6850
-envEnabled: 2
+envEnabled: -1
 health: 4250
 unitType: gr-restoration
 isFirstTier: false
