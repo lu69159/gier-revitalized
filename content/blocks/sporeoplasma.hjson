@@ -14,7 +14,7 @@ instantDisappear: true
 despawnHit: true
 fragBullet:{
 type: LiquidBulletType
-liquid: water
+liquid: tuntra
 liquidAmount: 15
 despawnHit: true
 speed: 0.5
