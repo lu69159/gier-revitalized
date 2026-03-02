@@ -6,6 +6,7 @@ customShadow: true
 requirements:[copper/135,lead/125,graphite/115]
 research: gier
 researchCostMultiplier: 0.15
+envEnabled: -1
 databaseTag: "gier"
 powerProduction: 0.166667
 category: power
