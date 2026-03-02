@@ -4,6 +4,7 @@ name: Tuntra
 hidden: true
 colorFrom: 7457ce
 colorTo: 8d5bc2
+color: 7947ad
 spreadTarget: water
 maxSpread: 0.95
 spreadConversion: 1
