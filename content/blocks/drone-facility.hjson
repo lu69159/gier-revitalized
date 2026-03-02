@@ -5,7 +5,7 @@ health: 475
 
 customShadow: true
 itemCapacity: 300
-envEnabled: 2
+envEnabled: -1
 unitType: carrier
 
 polyRadius: 5.5
