@@ -16,4 +16,4 @@ researchCostMultiplier: 0.45
 research: gier
 databaseTag: "gier"
 shownPlanets: [gier]
-envEnabled: 2
+envEnabled: -1
