@@ -8,6 +8,6 @@ speed: 20
 databaseTag: "gier"
 research: rail
 researchCostMultiplier: 0.35
-envEnabled: 2
+envEnabled: -1
 squareSprite: false
 customShadow: true
