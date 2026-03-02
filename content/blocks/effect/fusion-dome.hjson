@@ -12,7 +12,7 @@ baseExplosiveness: 105
 radius: 160
 sides: 4
 itemCapacity: 0
-envEnabled: 2
+envEnabled: -1
 health: 4250
 customShadow: true
 squareSprite: false
