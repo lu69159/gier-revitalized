@@ -10,13 +10,15 @@ update: true
 
 destroyBullet:{
 fragBullets: 6
+instantDisappear: true
+despawnHit: true
 fragBullet:{
 type: LiquidBulletType
 liquid: water
 liquidAmount: 15
 despawnHit: true
-speed: 0.25
-lifetime: 20
+speed: 0.5
+lifetime: 10
 damage: 0
 }
 }
