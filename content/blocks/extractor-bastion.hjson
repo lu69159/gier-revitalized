@@ -22,4 +22,4 @@ requirements:[lead/850,copper/675, graphite/475, metaglass/275, silicon/300]
 
 researc: mend-pylon
 researchCostMultiplier: 0.25
-envEnabled: 2
+envEnabled: -1
