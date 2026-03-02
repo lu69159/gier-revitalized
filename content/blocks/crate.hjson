@@ -6,7 +6,7 @@ researchCostMultiplier: 0.45
 research: rail
 databaseTag: "gier"
 shownPlanets: [gier]
-envEnabled: 2
+envEnabled: -1
 solid: true
 customShadow: true
 
