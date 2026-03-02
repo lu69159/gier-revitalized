@@ -1,10 +1,7 @@
 type: GenericCrafter
 drawer:{
-type: DrawShape
-sides: 4
-radius: 8
+type: DrawRegion
 layer: 125
-color: 7457ce
 }
 update: true
 
