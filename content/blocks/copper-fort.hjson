@@ -27,7 +27,7 @@ researchCostMultiplier: 0.35
 requirements:[lead/65,copper/45,graphite/25]
 buildtime: 220
 
-envEnabled: 2
+envEnabled: -1
 databaseTag: "gier"
 shieldBreakEffect: {
 type: WaveEffect
