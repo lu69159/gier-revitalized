@@ -15,7 +15,10 @@ generateEffect: {
 type: ParticleEffect
 region: "gr-button-close"
 length: 0
-lifetime: 25
+lifetime: 15
+sizeFrom: 8
+sizeTo: 8
+layer: 30.05
 }
 
 buildVisiblity: sandboxOnly
