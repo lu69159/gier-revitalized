@@ -2,6 +2,7 @@ type: PowerNode
 sameBlockConnection: true
 laserScale: 0.75
 name: Outpost
+consumesPower: true
 
 size: 2
 requirements:[copper/75,lead/55,graphite/35]
