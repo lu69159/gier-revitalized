@@ -1,0 +1,11 @@
+type: ConsumeGenerator
+size: 2
+name: Button
+
+// PowerButton class
+  
+warmupSpeed: 0
+powerProduction: 0.75
+generateEffect: generate
+
+buildVisiblity: sandboxOnly
