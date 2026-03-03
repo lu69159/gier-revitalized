@@ -19,7 +19,7 @@ Events.on(TapEvent, event => {
 
         const build = tile.build;
 
-            Vars.ui.showInfoToast(build.team + " " + event.player.team(),1);
+        //Vars.ui.showInfoToast(build.team + " " + event.player.team(),1);
         
         if (build.team != event.player.team()) return;
         if (build.power && build.power.graph) {
