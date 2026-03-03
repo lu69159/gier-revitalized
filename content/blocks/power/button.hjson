@@ -8,7 +8,7 @@ acceptsItems: false
 itemCapacity: 0
 
 consumes:{
-items:[copper/1]
+items:[tap/1]
 }
 
 warmupSpeed: 0
