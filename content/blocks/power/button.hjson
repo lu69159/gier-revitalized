@@ -16,5 +16,12 @@ items:[tap/1]
 warmupSpeed: 0
 powerProduction: 0.5
 envEnabled: -1
+databaseTag: "gier"
 
-buildVisibility: sandboxOnly
+research: {
+parent: photon-panel
+objectives:[{
+type: OnPlanet
+planet: sun
+}]
+}
