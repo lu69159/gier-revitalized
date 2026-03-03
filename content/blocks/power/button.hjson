@@ -1,11 +1,11 @@
+# PowerButton class extention of consume generator
 type: ConsumeGenerator
+
 size: 1
 name: Button
 description: "place holder sprite"
 acceptsItems: false
 itemCapacity: 0
-
-// PowerButton class
 
 consumes:{
 items:[copper/1]
