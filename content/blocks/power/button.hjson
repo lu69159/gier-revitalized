@@ -11,6 +11,11 @@ items:[coal/1]
 
 warmupSpeed: 0
 powerProduction: 0.75
-generateEffect: generate
+generateEffect: {
+type: ParticleEffect
+region: "gr-button-close"
+length: 0
+lifetime: 25
+}
 
 buildVisiblity: sandboxOnly
