@@ -1,6 +1,7 @@
 type: ConsumeGenerator
 size: 2
 name: Button
+description: "place holder sprite"
 
 // PowerButton class
   
