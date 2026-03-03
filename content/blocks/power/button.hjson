@@ -2,23 +2,33 @@ type: ConsumeGenerator
 size: 1
 name: Button
 description: "place holder sprite"
+acceptsItems: false
+itemCapacity: 0
 
 // PowerButton class
 
 consumes:{
-items:[coal/1]
+items:[copper/1]
 }
 
 warmupSpeed: 0
 powerProduction: 0.75
 generateEffect: {
+type: MultiEffect
+
+effects:[
+{
 type: ParticleEffect
 region: "gr-button-close"
 length: 0
-lifetime: 15
+lifetime: 5
 sizeFrom: 4
 sizeTo: 4
 layer: 30.05
 }
+placeBlock
+]
 
-buildVisiblity: sandboxOnly
+}
+
+buildVisibility: sandboxOnly
