@@ -12,7 +12,7 @@ items:[copper/1]
 }
 
 warmupSpeed: 0
-powerProduction: 0.75
+powerProduction: 0.25
 generateEffect: {
 type: MultiEffect
 
