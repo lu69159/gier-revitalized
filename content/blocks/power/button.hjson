@@ -6,6 +6,7 @@ name: Button
 description: "Generates power whenever it's pressed."
 acceptsItems: false
 itemCapacity: 0
+consumesTap: true
 
 requirements:[lead/45,copper/30,graphite/25,silicon/15,titanium/10]
 
