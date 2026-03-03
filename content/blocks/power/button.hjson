@@ -3,9 +3,11 @@ type: PowerGenerator
 
 size: 1
 name: Button
-description: "place holder sprite"
+description: "Generates power whenever it's button is pressed."
 acceptsItems: false
 itemCapacity: 0
+
+requirements:[lead/45,copper/30,graphite/25,silicon/15,titanium/10]
 
 consumes:{
 items:[tap/1]
