@@ -16,8 +16,8 @@ type: ParticleEffect
 region: "gr-button-close"
 length: 0
 lifetime: 15
-sizeFrom: 8
-sizeTo: 8
+sizeFrom: 4
+sizeTo: 4
 layer: 30.05
 }
 
