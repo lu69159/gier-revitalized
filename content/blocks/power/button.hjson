@@ -1,5 +1,5 @@
 # PowerButton class extention of consume generator
-type: ConsumeGenerator
+type: PowerGenerator
 
 size: 1
 name: Button
@@ -13,33 +13,5 @@ items:[tap/1]
 
 warmupSpeed: 0
 powerProduction: 0.25
-generateEffect: {
-type: MultiEffect
-
-effects:[
-{
-type: ParticleEffect
-region: "gr-button-close"
-length: 0
-lifetime: 15
-sizeFrom: 4
-sizeTo: 4
-layer: 30.05
-}
-{
-type: WaveEffect
-rotation: 44
-lifetime: 25
-sides: 4
-sizeFrom: 4
-sizeTo: 8
-strokeFrom: 3
-strokeTo: 0
-colorFrom: 9f9f9f
-colorTo: 8f8f8f
-}
-]
-
-}
 
 buildVisibility: sandboxOnly
