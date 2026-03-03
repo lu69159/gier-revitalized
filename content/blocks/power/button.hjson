@@ -4,7 +4,11 @@ name: Button
 description: "place holder sprite"
 
 // PowerButton class
-  
+
+consumes:{
+items:[coal/1]
+}
+
 warmupSpeed: 0
 powerProduction: 0.75
 generateEffect: generate
