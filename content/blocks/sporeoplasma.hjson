@@ -13,7 +13,7 @@ layer: 125
 type: DrawShape
 color: f803fc55
 sides: 8
-radius: 9
+radius: 10
 layer: 125
 }
 ]
