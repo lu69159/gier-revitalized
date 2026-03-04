@@ -1,10 +1,22 @@
 type: GenericCrafter
 drawer:{
+type: DrawMulti
+drawers:[
+{
 type: DrawShape
-color: 7457ce	
+color: 7457ce55
 sides: 8
 radius: 8
 layer: 125
+}
+{
+type: DrawShape
+color: f803fc55
+sides: 8
+radius: 9.5
+layer: 125
+}
+]
 }
 update: true
 
