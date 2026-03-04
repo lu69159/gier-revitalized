@@ -14,6 +14,9 @@ lifetime: 15
 sizeFrom: 4
 sizeTo: 4
 layer: 30.05
+offset: 180
+colorFrom: 8f8f8f
+colorTo: 8f8f8f
 }
 {
 type: WaveEffect
