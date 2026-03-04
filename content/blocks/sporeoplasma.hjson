@@ -30,7 +30,6 @@ envRequired: -1
 drawCracks: false
 
 flammabilityScale: 3.5
-baseExplosiveness: 6.5
 health: 65
 enableDrawStatus: false
 solid: true
