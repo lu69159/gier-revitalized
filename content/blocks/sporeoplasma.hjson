@@ -51,5 +51,6 @@ damage: 0
 
 drawTeamOverlay: false
 createRubble: false
+requirements:[]
 buildVisibility: sandboxOnly
 name: Sporeoplasma
