@@ -20,6 +20,21 @@ layer: 125
 }
 update: true
 
+destroyEffect: {
+type: WrapEffect
+effect: mineBig
+color: f803fc
+}
+destroySound: stepWater
+envRequired: -1
+drawCracks: false
+
+flammabilityScale: 3.5
+baseExplosiveness: 6.5
+health: 65
+enableDrawStatus: false
+solid: true
+
 destroyBullet:{
 fragBullets: 6
 instantDisappear: true
