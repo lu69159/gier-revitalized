@@ -4,16 +4,16 @@ type: DrawMulti
 drawers:[
 {
 type: DrawShape
-color: 7457ce66
+color: 7457ce55
 sides: 8
 radius: 8
 layer: 125
 }
 {
 type: DrawShape
-color: f803fc44
+color: f803fc55
 sides: 8
-radius: 9.5
+radius: 9
 layer: 125
 }
 ]
