@@ -10,13 +10,13 @@ effects:[
 type: ParticleEffect
 region: "gr-button-close"
 length: 0
-lifetime: 15
+lifetime: 35
 sizeFrom: 4
 sizeTo: 4
 layer: 30.05
 offset: 180
-colorFrom: 8f8f8f
-colorTo: 8f8f8f
+colorFrom: 9f9f9f
+colorTo: ffffff
 }
 {
 type: WaveEffect
