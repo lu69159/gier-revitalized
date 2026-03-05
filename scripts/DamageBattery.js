@@ -21,7 +21,8 @@ const length = damage * 0.75;
     
 build.power.graph.transferPower(minus);
 Fx.generate.at(build.x,build.y);
-
+block.configureSound.at(build.x,build.y);
+    
 Lightning.create(
     build.team,
     build.team.color,
