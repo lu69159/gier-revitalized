@@ -21,8 +21,6 @@ const length = damage * 0.75;
     
 build.power.graph.transferPower(minus);
 Fx.generate.at(build.x,build.y);
-    
-Vars.ui.showInfoToast(minus,1.5);
 
 Lightning.create(
     build.team,
