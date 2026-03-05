@@ -1,4 +1,4 @@
-type: PowerCell
+type: Battery
 // damageBattery
 health: 175
 name: Power Cell
