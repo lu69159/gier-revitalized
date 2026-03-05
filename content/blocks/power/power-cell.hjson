@@ -23,6 +23,7 @@ envEnabled: -1
   
 research: button
 customShadow: true
+configureSound: shootArc
 
 consumes:{
 powerBuffered: 450
