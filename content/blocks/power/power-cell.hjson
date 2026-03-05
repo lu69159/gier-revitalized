@@ -16,7 +16,8 @@ category: power
 envEnabled: -1
   
 research: button
-  
+customShadow: true
+
 consumes:{
 powerBuffered: 450
 }
