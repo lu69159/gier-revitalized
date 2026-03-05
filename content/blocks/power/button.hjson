@@ -1,4 +1,5 @@
-# PowerButton class extention of consume generator
+# PowerButton class extention of consume generator sadly the effect is constant
+
 type: PowerGenerator
 
 size: 1
