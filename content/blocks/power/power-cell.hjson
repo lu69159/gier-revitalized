@@ -1,6 +1,6 @@
 type: Battery
 // damageBattery
-health: 425
+health: 450
 name: Power Cell
 
 databaseTag: "gier"
