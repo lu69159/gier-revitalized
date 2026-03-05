@@ -1,0 +1,28 @@
+type: PowerCell
+// damageBattery
+health: 175
+name: Power Cell
+
+databaseTag: "gier"
+requirements:[lead/45,copper/30,metaglass/15,silicon/10]
+category: power
+envEnabled: -1
+  
+
+  
+consumes:{
+powerBuffered: 450
+}
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawDefault
+}
+{
+type: DrawPower
+suffix: "-top"
+}
+]
+}
