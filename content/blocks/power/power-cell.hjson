@@ -1,6 +1,6 @@
 type: Battery
 // damageBattery
-health: 175
+health: 425
 name: Power Cell
 
 databaseTag: "gier"
@@ -23,6 +23,7 @@ type: DrawDefault
 {
 type: DrawPower
 suffix: "-top"
+emptyLightColor: ffffff
 }
 ]
 }
