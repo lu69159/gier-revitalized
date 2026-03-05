@@ -8,7 +8,7 @@ requirements:[lead/45,copper/30,metaglass/15,silicon/10]
 category: power
 envEnabled: -1
   
-
+research: button
   
 consumes:{
 powerBuffered: 450
