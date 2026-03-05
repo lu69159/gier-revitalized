@@ -21,6 +21,7 @@ warmupSpeed: 0
 powerProduction: 0.5
 envEnabled: -1
 databaseTag: "gier"
+category: power
 
 research: {
 parent: photon-panel
