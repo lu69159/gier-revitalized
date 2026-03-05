@@ -3,11 +3,14 @@ type: Battery
 health: 450
 name: Power Cell
 
-description: "Behaves as a battery.
+description: "Behaves as a battery. [grey]what you expect?[]
 
 [green]- Durable
 - Releases lightning arcs upon damage
 [salmon]- Consumes power to produce a lightning arc
+[grey]- Damage is proportional to damage taken
+- battery drain ratio damage to drain [1 : 1.75]
+[accent]- Ligtning is team colored
 "
 
 databaseTag: "gier"
@@ -31,7 +34,7 @@ type: DrawDefault
 {
 type: DrawPower
 suffix: "-top"
-emptyLightColor: ffffff
+emptyLightColor: ffffff00
 }
 ]
 }
