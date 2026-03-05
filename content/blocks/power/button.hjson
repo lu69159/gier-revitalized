@@ -11,6 +11,7 @@ enableDrawStatus: false
 
 requirements:[lead/45,copper/30,graphite/25,silicon/15,titanium/10]
 
+customShadow: true
 consumes:{
 items:[tap/1]
 }
