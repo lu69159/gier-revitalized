@@ -3,6 +3,13 @@ type: Battery
 health: 450
 name: Power Cell
 
+description: "Behaves as a battery.
+
+[green]- Durable
+- Releases lightning arcs upon damage
+[salmon]- Consumes power to produce a lightning arc
+"
+
 databaseTag: "gier"
 requirements:[lead/45,copper/30,metaglass/15,silicon/10]
 category: power
