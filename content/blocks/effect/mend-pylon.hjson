@@ -2,9 +2,16 @@ type: RegenProjector
 size: 2
 health: 875
 name: Mend Pylon
-range: 12
+range: 20
 healPercent: 0.15
-  
+
+description: "A mending dome.
+
+[accent]- Mending range is square
+[green]- Reliable
+[salmon]- Requires power
+"
+
 requirements:[
 lead/225
 copper/175
