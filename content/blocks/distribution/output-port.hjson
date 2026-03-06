@@ -1,6 +1,13 @@
 type: Unloader
 name: Output Port
+description: "Outputs from buildings
 
+[grey]- Omni-directional
+[green]- Filterable
+[salmon]- Explosive
+"
+
+baseExplosiveness: 0.95
 requirements:[lead/15,copper/10]
 research: crate
 researchCostMultiplier: 0.45
