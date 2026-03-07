@@ -3,6 +3,8 @@ size: 2
 name: Drone Facility
 health: 475
 
+description: "Builds a drone which delivers items."
+
 customShadow: true
 itemCapacity: 300
 envEnabled: -1
