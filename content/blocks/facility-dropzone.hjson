@@ -2,7 +2,7 @@ type: UnitCargoUnloadPoint
 size: 2
 health: 235
 name: Facility Dropzone
-
+description: "Accepts items from facility dropzone."
 requirements:[
 lead/125
 copper/85
