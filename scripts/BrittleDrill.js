@@ -35,7 +35,6 @@ if (block == target){
 const enabled = build.enabled;
 build.enabled = !enabled;
 Sounds.click.at(build.x,build.y);
-
 }
 
 } catch(e) {
