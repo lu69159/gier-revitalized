@@ -21,4 +21,7 @@ flammabilityScale: 1.5
 
 description: "Stores item and can increase core capacity.
 Contents can be unloaded from using an output port.
+
+[green]- Expands core capacity
+[salmon]- Explosive
 "
