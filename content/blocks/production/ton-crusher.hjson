@@ -7,7 +7,9 @@ description: "
 A more advanced mineral drill, Can now be used to bore up beryllium and titanium.
 
 [green]- Drills  Harder Resources
-[salmon]- Requires power
+[grey]- Could be disabled by being tapped on
+[salmon]- Receives more damage when [green]active[]
+- Requires power
 - Highly Explosive
 "
 
@@ -16,7 +18,7 @@ power: 0.75
 }
 
 health: 1350
-drillTime: 220
+drillTime: 190
 tier: 3
 drawMineItem: true
 rotateSpeed: 5
