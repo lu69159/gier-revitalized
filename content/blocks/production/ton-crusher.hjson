@@ -1,7 +1,6 @@
 type: Drill
 size: 3
 name: Ton Crusher
-buildVisibility: sandboxOnly
 description: "
 Far more advanced mineral drill, Can now be used to bore up beryllium and titanium.
 
