@@ -25,7 +25,15 @@ category: production
 
 customShadow: true
 databaseTag: "gier"
-shownPlanets: [gier]
+databaseTag: "gier"
+research: {
+parent: hydro-drill
+objectives:[{
+type: OnPlanet
+planet: sun
+}]
+}
+
 envEnabled: -1
 
 baseExplosiveness: 2
