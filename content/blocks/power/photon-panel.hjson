@@ -2,6 +2,9 @@ type: SolarGenerator
 name: Photon Panel
 size: 2
 customShadow: true
+description: "
+Generates power from solar radiation.
+"
 
 requirements:[copper/135,lead/125,graphite/115]
 research: gier
