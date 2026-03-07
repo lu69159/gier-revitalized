@@ -33,11 +33,8 @@ createScorch: false
 deathExplosionEffect: none
 deathSound: healWave
 defaultCommand: rebuild
-controller: {
-type: BuilderAI
-alwaysFlee: true
-fleeRange: 500
-}
+controller: BuilderAI
+
 
 commands: [rebuild]
 
