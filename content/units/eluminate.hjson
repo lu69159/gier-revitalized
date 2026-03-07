@@ -17,7 +17,7 @@ engineSize: 2.5
 trailScl: 1
 trailLength: 14
 
-playerControllable: false
+playerControllable: true
 logicControllable: false
 priority: 0.25
 
