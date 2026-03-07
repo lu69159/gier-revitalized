@@ -9,6 +9,7 @@ shownPlanets: [gier]
 envEnabled: -1
 solid: true
 customShadow: true
+category: effect
 
 capacity: 50
 itemCapacity: 50
