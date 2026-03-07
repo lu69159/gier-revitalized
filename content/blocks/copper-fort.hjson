@@ -13,6 +13,7 @@ shieldHealth: 45
 consumeCoolant: false
 hasLiquids: false
 customShadow: true
+category: defense
 
 description: "
 [sky]Priority[]: 2.5
