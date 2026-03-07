@@ -6,3 +6,4 @@ require("Startup");
 
 require("PowerButton");
 require("DamageBattery");
+require("BrittleDrill");
