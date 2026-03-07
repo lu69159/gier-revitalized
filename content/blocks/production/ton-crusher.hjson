@@ -5,8 +5,8 @@ description: "
 A more advanced mineral drill, Can now be used to bore up beryllium and titanium.
 
 [green]- Drills  Harder Resources
-[salmon]- Requires power[]
-[salmon]- Highly Explosive
+[salmon]- Requires power
+- Highly Explosive
 "
 
 consumes:{
@@ -32,9 +32,9 @@ planet: sun
 }]
 }
 
-baseExplosiveness: 2
+baseExplosiveness: 14.5
 explosivenessScale: 6
 flammabilityScale: 0.35
 
 
-requirements:[lead/565,copper/425,graphite/275,silicon/125]
+requirements:[lead/550,copper/450,graphite/225,silicon/125]
