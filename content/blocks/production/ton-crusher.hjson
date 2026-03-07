@@ -25,7 +25,6 @@ category: production
 
 customShadow: true
 databaseTag: "gier"
-databaseTag: "gier"
 research: {
 parent: hydro-drill
 objectives:[{
