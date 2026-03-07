@@ -6,7 +6,7 @@ name: Ton Crusher
 description: "
 A more advanced mineral drill, Can now be used to bore up beryllium and titanium.
 
-[green]- Drills  Harder Resources
+[green]- Can drill titanium and beryllium
 [grey]- Could be disabled by being tapped on
 [salmon]- Receives more damage when [green]active[]
 - Requires power
