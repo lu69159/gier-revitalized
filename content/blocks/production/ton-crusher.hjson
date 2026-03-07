@@ -33,8 +33,6 @@ planet: sun
 }]
 }
 
-envEnabled: -1
-
 baseExplosiveness: 2
 explosivenessScale: 6
 flammabilityScale: 0.35
