@@ -30,7 +30,6 @@ const display = Core.bundle.get("mod.gr.display");
 const title = Core.bundle.get("mod.gr.mail");
   
 Vars.ui.showText(title,display,Align.center);
-Vars.ui.showText("e",Vars.content.items().forEach(),Align.center);  
 } catch(e) {
 Vars.ui.showText("Not work",e,Align.center);
 }})
