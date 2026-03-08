@@ -59,9 +59,9 @@ length: 1
 sizeFrom: 8
 particles: 1
 sizeTo: 8
-cone: 360
-colorFrom: 1f1f1f
-colorTo: 1f1f1f
+cone: 180
+colorFrom: 0f0f0f
+colorTo: 0f0f0f
 lifetime: 600
 region: "gr-drive"
 layer: 25
