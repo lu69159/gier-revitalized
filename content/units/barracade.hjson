@@ -4,11 +4,11 @@ name: Barracade
 flying: true
 outlineColor: 2f2f3f
 accel: 0.116667
-drag: 0.03
+drag: 0.075
 faceTarget: true
 drawSoftShadow: false
 isEnemy: false
-health: 150
+health: 650
 priority: 1
 
 weapons:[
@@ -17,53 +17,18 @@ noAttack: true
 }
 ]
 
-abilities:[
-{
-type: ShieldArcAbility
-radius: 4.24
-regen: 0.3334
-angle: 360
-drawArc: false
-
-deflectSound: shieldBreakSmall
-chanceDeflect: 9999
-whenShooting: false
-reflectVel: 1.05
-
-#region: "-shield-ball"
-
-reflectBuildingDamage: 0.6
-}
-]
-
 range: 5
 engineSize: 0
 hitSize: 10.5
 health: 65
 armor: -5
-engines:[
+engineSize: 0
+
+parts:[
 {
-x: 3.5
-y: 3.5
-rotation: 45
-radius: 3
-}
-{
-x: -3.5
-y: 3.5
-rotation: 135
-radius: 3
-}
-{
-x: 3.5
-y: -3.5
-rotation: -135
-radius: 3
-}
-{
-x: -3.5
-y: -3.5
-rotation: -45
-radius: 3
+type: HoverPart
+color: FFD37F
+radius: 12
+layerOffset: -0.1
 }
 ]
