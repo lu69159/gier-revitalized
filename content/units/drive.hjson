@@ -7,6 +7,18 @@ drag: 0.015
 hitSize: 12
 flying: true
 
+description: "
+[grey]
+Directive
+Research
+Informer
+Vehicle
+(model:)Epsilon
+[]
+
+Primary research and combat vehicle usable in low-medium depth regions of there planet.
+"
+
 omniMovement: true
 circleTarget: true
 outlineColor: 2f2f3f
