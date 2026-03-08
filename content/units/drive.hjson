@@ -5,6 +5,7 @@ accel: 0.025
 health: 475
 drag: 0.015
 hitSize: 12
+flying: true
 
 omniMovement: true
 circleTarget: true
