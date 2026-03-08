@@ -3,7 +3,6 @@
 require("Startup");
 
 //    ### Class Overrides ###
-
 // Subclass: Block
 require("PowerButton"); // Requires to atleast have powerProduction
 require("DamageBattery"); // Requires to atleast be able to have comsumeBuffered
