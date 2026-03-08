@@ -56,8 +56,8 @@ bullet:{
 type: ArtilleryBulletType
 spin: 12
 lifetime: 90
-shrinkY: 0.75
-shrinkX: 0.75
+shrinkY: 0.25
+shrinkX: 0.25
 hitShake: 1.75
 width: 7.5
 height: 7.5
