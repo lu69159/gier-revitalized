@@ -54,7 +54,7 @@ lifetime: 160
 {
 type: ParticleEffect
 length: 0
-baseLength: -8
+baseLength: 8
 sizeFrom: 8
 particles: 1
 sizeTo: 8
