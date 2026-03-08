@@ -24,17 +24,6 @@ layerOffset: -1
 deathExplosionEffect:{
 type: MultiEffect
 effects:[
-// Explosion flash
-{
-type: ParticleEffect
-length: 0
-particles: 1
-sizeFrom: 80
-sizeTo: 80
-colorFrom: ffffff55
-colorTo: ffffff00
-lifetime: 15
-}
 // Smoke
 {
 type: ParticleEffect
