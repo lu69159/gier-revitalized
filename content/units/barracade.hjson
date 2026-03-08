@@ -2,7 +2,14 @@ type: flying
 # IframeUnit
 
 description: "
-Whenever this unit takes damage it becomes invincible for a short bit.
+Whenever this unit takes damage it becomes invincible for a short duration(0.415 sec).
+
+[salmon]- Trigger damage threshold: 10-65
+- Cannot be retriggered whiel invincible
+- Cant be triggered by explosions
+
+[red]Hard counter: Since this unit is high priority using [lightgrey][Tensions][red] can knock it away.
+- Avoid letting it tank damage for other units.
 "
 
 speed: 2
@@ -15,7 +22,7 @@ faceTarget: true
 drawSoftShadow: false
 isEnemy: false
 health: 650
-priority: 1
+priority: 4.5
 
 weapons:[
 {
