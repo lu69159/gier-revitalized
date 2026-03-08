@@ -51,7 +51,8 @@ damage: 10
 trailEffect: none
 hitEffect: explosion
 despawnHit: true
-
+trailWidth: 1
+trailLength: 8
 }
 
 }
