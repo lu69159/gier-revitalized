@@ -44,7 +44,7 @@ hitSize: 12
 armor: 2.5
 
 research: {
-parent: gier
+parent: drive
 objectives:[barracade]
 }
 
