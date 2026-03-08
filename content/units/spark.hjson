@@ -37,10 +37,9 @@ bullet:{
 type: MissileBulletType
 homingPower: 0.125
 speed: 2
-trailColor: ffffff
+trailColor: 44d2f0
 backColor: 44d2f0
 frontColor: 66d4f2
-frontColor: 44d2f0
 
 lifetime: 120
 layer: 65
