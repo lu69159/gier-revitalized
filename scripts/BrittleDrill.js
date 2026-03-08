@@ -11,6 +11,7 @@ if (build.block != target || build.enabled == false || build.status() != BlockSt
 const damageExtra = source.damage * 2.75;
 build.damage(damageExtra);
 Fx.flakExplosion.at(source.x, source.y);
+Sounds.shootScepter.at(source.x,source.y);
 
 } catch(e) {
 Vars.ui.showInfoToast(e,5);
