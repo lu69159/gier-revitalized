@@ -6,6 +6,7 @@ health: 475
 drag: 0.015
 hitSize: 12
 flying: true
+createWreck: true
 
 databaseCategory: "threats"
 research:{
@@ -40,40 +41,7 @@ layerOffset: -1
 }
 ]
 
-deathExplosionEffect:{
-type: MultiEffect
-effects:[
-// Smoke
-{
-type: ParticleEffect
-particles: 64
-length: 20
-sizeFrom: 16
-sizeTo: 5
-layer: 75
-length: 80
-interp: sineOut
 
-colorFrom: 6f6f6f55
-colorTo: 8f8f8f00
-lifetime: 160
-}
-// wreck
-{
-type: ParticleEffect
-length: 4
-sizeFrom: 8
-particles: 1
-sizeTo: 8
-colorFrom: 0f0f0f
-colorTo: 0f0f0f
-lifetime: 600
-region: "gr-drive-full"
-layer: 25
-useRotation: false
-}
-]
-}
 
 weapons:[
 {
