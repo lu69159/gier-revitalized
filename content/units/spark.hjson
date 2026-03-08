@@ -40,10 +40,10 @@ speed: 2
 trailColor: ffffff
 backColor: 44d2f0
 frontColor: 66d4f2
-frontColor: 92c5d4
+frontColor: 44d2f0
 
 lifetime: 120
-
+layer: 65
 scaledSplashDamage: true
 splashDamage: 15
 splashDamageRadius: 20
@@ -51,8 +51,9 @@ damage: 10
 trailEffect: none
 hitEffect: explosion
 despawnHit: true
-trailWidth: 1
-trailLength: 8
+trailWidth: 2
+trailLength: 16
+accel: 0.075
 }
 
 }
