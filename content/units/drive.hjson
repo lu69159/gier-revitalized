@@ -53,7 +53,7 @@ lifetime: 160
 // wreck
 {
 type: ParticleEffect
-length: 0
+length: 0.1
 baseLength: 8
 sizeFrom: 8
 particles: 1
