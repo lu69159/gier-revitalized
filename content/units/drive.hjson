@@ -65,6 +65,7 @@ colorTo: 0f0f0f
 lifetime: 600
 region: "gr-drive"
 layer: 25
+useRotation: false
 }
 ]
 }
