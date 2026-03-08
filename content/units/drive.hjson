@@ -38,7 +38,7 @@ lifetime: 15
 // Smoke
 {
 type: ParticleEffect
-particles: 37
+particles: 145
 length: 40
 sizeFrom: 16
 sizeTo: 5
@@ -54,13 +54,12 @@ lifetime: 160
 {
 type: ParticleEffect
 length: 0.1
-baseLength: 8
 sizeFrom: 8
 particles: 1
 sizeTo: 8
 cone: 360
-colorFrom: 6f6f6f
-colorTo: 6f6f6f
+colorFrom: 1f1f1f
+colorTo: 1f1f1f
 lifetime: 600
 region: "gr-drive"
 layer: 25
