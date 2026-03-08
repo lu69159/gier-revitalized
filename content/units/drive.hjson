@@ -22,6 +22,7 @@ Primary research and combat vehicle usable in low-medium depth regions of there 
 omniMovement: true
 circleTarget: true
 outlineColor: 2f2f3f
+drawSoftShadow: false
 
 parts:[
 {
