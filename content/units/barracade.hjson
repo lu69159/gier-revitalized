@@ -2,10 +2,12 @@ type: flying
 # IframeUnit
 
 description: "
-Whenever this unit takes damage it becomes invincible for a short duration(0.415 sec).
+Whenever this unit takes damage it becomes invincible for a short duration[grey](0.415 sec)[].
+Priority: 5
 
+[green]- Big hitbox
 [salmon]- Trigger damage threshold: 10-65
-- Cannot be retriggered whiel invincible
+- Cannot be retriggered while invincible
 - Cant be triggered by explosions
 
 [red]Hard counter: Since this unit is high priority using [lightgrey][Tensions][red] can knock it away.
@@ -22,7 +24,7 @@ faceTarget: true
 drawSoftShadow: false
 isEnemy: false
 health: 650
-priority: 4.5
+priority: 5
 
 weapons:[
 {
@@ -36,7 +38,7 @@ aiControllable: false
 
 range: 5
 engineSize: 0
-hitSize: 10.5
+hitSize: 12
 armor: 2.5
 engineSize: 0
 
