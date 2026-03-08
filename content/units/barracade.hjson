@@ -3,7 +3,8 @@ type: flying
 
 description: "
 Whenever this unit takes damage it becomes invincible for a short duration[grey](0.415 sec)[].
-Priority: 5
+
+[sky]Priority[]: 5
 
 [green]- Big hitbox
 [salmon]- Trigger damage threshold: 10-65
