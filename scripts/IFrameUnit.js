@@ -6,7 +6,7 @@ const target = Vars.content.getByName(ContentType.unit, "gr-barracade");
 const maxThres = (unit.maxHealth / 10) * 2.5;
 const valid = unit.getDuration(StatusEffects.invincible);
 
-if (damage <= 15 || damage >= maxThres || unit.type != target || valid != 0) return;
+if (damage < 10 || damage >= maxThres || unit.type != target || valid != 0) return;
 unit.apply(StatusEffects.invincible,7.5);
 Fx.select.at(unit.x,unit.y);
 Sounds.unitCreateBig.at(unit.x,unit.y);
