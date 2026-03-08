@@ -41,7 +41,11 @@ range: 5
 engineSize: 0
 hitSize: 12
 armor: 2.5
-engineSize: 0
+
+research: {
+parent: gier
+objectives:[barracade]
+}
 
 parts:[
 {
