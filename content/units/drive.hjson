@@ -38,11 +38,13 @@ lifetime: 10
 // Smoke
 {
 type: ParticleEffect
-particles: 15
+particles: 25
 length: 28
 sizeFrom: 16
 sizeTo: 5
 layer: 75
+length: 80
+interp: sineOut
 
 colorFrom: 6f6f6f55
 colorTo: 8f8f8f00
