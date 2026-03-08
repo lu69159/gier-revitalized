@@ -55,15 +55,14 @@ lifetime: 160
 // wreck
 {
 type: ParticleEffect
-length: 1
+length: 4
 sizeFrom: 8
 particles: 1
 sizeTo: 8
-cone: 180
 colorFrom: 0f0f0f
 colorTo: 0f0f0f
 lifetime: 600
-region: "gr-drive"
+region: "gr-drive-full"
 layer: 25
 useRotation: false
 }
