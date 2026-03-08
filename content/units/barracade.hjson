@@ -52,7 +52,7 @@ parts:[
 {
 type: HoverPart
 color: FFD37F
-radius: 12
+radius: 8
 layerOffset: -0.1
 y: -2
 }
