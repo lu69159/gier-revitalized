@@ -70,7 +70,7 @@ y: 0
 rotate: true
 cone: 15
 reload: 5
-inaccuracy: 7.5
+inaccuracy: 25
 
 bullet:{
 type: ArtilleryBulletType
