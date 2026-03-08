@@ -20,8 +20,7 @@ noAttack: true
 range: 5
 engineSize: 0
 hitSize: 10.5
-health: 65
-armor: -5
+armor: 2.5
 engineSize: 0
 
 parts:[
@@ -30,5 +29,6 @@ type: HoverPart
 color: FFD37F
 radius: 12
 layerOffset: -0.1
+y: -2
 }
 ]
