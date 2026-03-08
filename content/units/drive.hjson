@@ -21,7 +21,7 @@ layerOffset: -1
 }
 ]
 
-deathExplosion:{
+deathExplosionEffect:{
 type: MultiEffect
 effects:[
 // Explosion flash
