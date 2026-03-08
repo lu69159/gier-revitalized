@@ -31,9 +31,9 @@ length: 0
 particles: 1
 sizeFrom: 80
 sizeTo: 80
-colorFrom: ffffff
+colorFrom: ffffff55
 colorTo: ffffff00
-lifetime: 10
+lifetime: 15
 }
 // Smoke
 {
@@ -55,12 +55,15 @@ lifetime: 160
 type: ParticleEffect
 length: 0
 baseLength: -8
-sizeFrom: 16
-sizeTo: 16
+sizeFrom: 8
+particles: 1
+sizeTo: 8
+cone: 360
 colorFrom: 6f6f6f
 colorTo: 6f6f6f
 lifetime: 600
 region: "gr-drive"
+layer: 25
 }
 ]
 }
