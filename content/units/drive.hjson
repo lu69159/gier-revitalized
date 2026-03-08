@@ -5,7 +5,7 @@ accel: 0.025
 health: 475
 drag: 0.015
 hitSize: 12
-  
+
 omniMovement: true
 circleTarget: true
 outlineColor: 2f2f3f
@@ -15,8 +15,52 @@ parts:[
 type: HoverPart
 color: FFD280FF
 radius: 12
+layerOffset: -1
+
 }
 ]
+
+deathExplosion:{
+type: MultiEffect
+effects:[
+// Explosion flash
+{
+type: ParticleEffect
+length: 0
+particles: 1
+sizeFrom: 80
+sizeTo: 80
+colorFrom: ffffff
+colorTo: ffffff00
+lifetime: 10
+}
+// Smoke
+{
+type: ParticleEffect
+particles: 15
+length: 28
+sizeFrom: 16
+sizeTo: 5
+layer: 75
+
+colorFrom: 6f6f6f55
+colorTo: 8f8f8f00
+lifetime: 160
+}
+// wreck
+{
+type: ParticleEffect
+length: 0
+baseLength: -8
+sizeFrom: 16
+sizeTo: 16
+colorFrom: 6f6f6f
+colorTo: 6f6f6f
+lifetime: 600
+region: "gr-drive"
+}
+]
+}
 
 weapons:[
 {
@@ -25,7 +69,8 @@ y: 0
 rotate: true
 cone: 15
 reload: 5
-  
+inaccuracy: 7.5
+
 bullet:{
 type: ArtilleryBulletType
 spin: 12
@@ -33,6 +78,10 @@ lifetime: 90
 shrinkY: 0.75
 shrinkX: 0.75
 hitShake: 1.75
+width: 15
+height: 15
+layer: 65
+speed: 1.5
 
 // overrides
 trailEffect: none
