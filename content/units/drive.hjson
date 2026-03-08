@@ -28,7 +28,7 @@ parts:[
 {
 type: HoverPart
 color: FFD280FF
-radius: 12
+radius: 8
 layerOffset: -1
 
 }
@@ -40,8 +40,8 @@ effects:[
 // Smoke
 {
 type: ParticleEffect
-particles: 145
-length: 40
+particles: 64
+length: 20
 sizeFrom: 16
 sizeTo: 5
 layer: 75
@@ -55,7 +55,7 @@ lifetime: 160
 // wreck
 {
 type: ParticleEffect
-length: 0.1
+length: 1
 sizeFrom: 8
 particles: 1
 sizeTo: 8
