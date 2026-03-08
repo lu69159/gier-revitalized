@@ -1,12 +1,16 @@
 type: flying
 # IframeUnit
 
+description: "
+Whenever this unit takes damage it becomes invincible for a short bit.
+"
+
 speed: 2
 name: Barracade
 flying: true
 outlineColor: 2f2f3f
-accel: 0.116667
-drag: 0.075
+accel: 0.071667
+drag: 0.05
 faceTarget: true
 drawSoftShadow: false
 isEnemy: false
