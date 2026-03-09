@@ -30,6 +30,7 @@ omniMovement: true
 circleTarget: true
 outlineColor: 2f2f3f
 drawSoftShadow: false
+engineSize: 0
 
 parts:[
 {
@@ -50,7 +51,7 @@ y: 0
 rotate: true
 cone: 15
 reload: 5
-inaccuracy: 25
+inaccuracy: 20
 
 bullet:{
 type: ArtilleryBulletType
