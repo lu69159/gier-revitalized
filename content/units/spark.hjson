@@ -39,12 +39,13 @@ type: MissileBulletType
 homingPower: 0.125
 speed: 2
 trailColor: 44d2f0
-weaveScale: 2
+weaveScale: 1
 weaveMag: 1.5
+keepVelocity: false
 
-backColor: 44d2f0
-frontColor: 66d4f2
-trailChance: 0.065
+backColor: ffd37fff
+frontColor: ffd37fff
+trailChance: 0.15
 trailEffect: {
 type: ParticleEffect
 baseLength: -2
@@ -52,7 +53,7 @@ particles: 3
 length: 0
 sizeFrom: 2.5
 sizeTo: 4
-colorFrom: 6f6f6f22
+colorFrom: 6f6f6f88
 colorTo: 6f6f6f00
 layer: 68
 }
