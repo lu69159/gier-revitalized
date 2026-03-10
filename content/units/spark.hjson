@@ -50,8 +50,8 @@ type: MissileBulletType
 homingPower: 0.125
 speed: 2
 trailColor: 44d2f0
-weaveScale: 1
-weaveMag: 1.5
+weaveScale: 2
+weaveMag: 1
 keepVelocity: false
 
 backColor: ffd37fff
@@ -64,7 +64,7 @@ particles: 3
 length: 0
 sizeFrom: 2.5
 sizeTo: 4
-colorFrom: 6f6f6f88
+colorFrom: 6f6f6f55
 colorTo: 6f6f6f00
 layer: 68
 }
@@ -104,7 +104,7 @@ despawnHit: true
       trailLength: 20
       trailWidth: 0.5
       trailColor: ffd37fff
-      layer: 125
+      layer: 123
       lightOpacity: 0
     }
   }
