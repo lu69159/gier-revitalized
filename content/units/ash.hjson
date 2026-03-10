@@ -87,6 +87,8 @@ despawnHit: true
 instantDisappear: true
 fragBullets: 1
 fragRandomSpread: 0
+speed: 1
+lifetime: 200
 
 fragBullet:{
 type: LaserBulletType
