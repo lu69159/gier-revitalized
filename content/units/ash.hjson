@@ -46,7 +46,7 @@ x: -4
 abilities:[
 {
 type: MoveLightningAbility
-heatRegion: "ash-full"
+heatRegion: "gr-ash-full"
 chance: 0
 }
 ]
