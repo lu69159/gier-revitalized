@@ -2,13 +2,13 @@ Events.on(UnitDamageEvent, e => {
 try{
 const unit = e.unit;
 const damage = e.bullet.damage;
-const target = Vars.content.getByName(ContentType.unit, "gr-barracade");
-const target2 = Vars.content.getByName(ContentType.unit, "gr-ash");
+const targetBarracade = Vars.content.getByName(ContentType.unit, "gr-barracade");
+const targetAsh = Vars.content.getByName(ContentType.unit, "gr-ash");
 const maxThres = (unit.maxHealth / 100) * 10;
 const valid = unit.getDuration(StatusEffects.invincible);
 
 if (damage < 10 || damage >= maxThres || valid != 0) return;
-if (unit.type != target && unit.type != target2) return;
+if (unit.type != targetBarracade && unit.type != targetAsh) return;
   
 const dur = unit.type.crushDamage;
 
