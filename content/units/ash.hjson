@@ -58,8 +58,10 @@ reload: 180
 chargeSound: chargeLancer
 shoptSound: shootLancer
 shoot:{
-firstShotDelay: 90
+firstShotDelay: 150
 }
+shootStatus: slow
+shootStatusDuration: 210
 
 bullet:{
 
@@ -73,17 +75,26 @@ layer: 126
 baseLength: -40
 length: 40
 lifetime: 75
+line: true
+lenFrom: 4
+lenTo: 0
 }
 
+despawnHit: true
+instantDisappear: true
+fragBullets: 1
+fragRandomSpread: 0
+
+fragBullet:{
 type: LaserBulletType
 width: 4
 length: 200
-damage: 55
+damage: 125
 colors: [ffffff66,ffffff88,ffffffff]
 recoil: 2.5
+pierceCap: 1
+}
 
-shootStatus: slow
-shootStatusDuration: 30
 }
 
 }
