@@ -2,7 +2,10 @@ type: flying
 flying: true
 outlineColor: 2f2f3f
 name: Spark
-speed: 1.45
+speed: 2
+accel: 0.04
+drag: 0.02
+
 hitSize: 7
 omniMovement: false
 rotateSpeed: 3.5
@@ -48,19 +51,21 @@ inaccuracy: 15
 bullet:{
 type: MissileBulletType
 homingPower: 0.125
-speed: 2
+speed: 0
 trailColor: 44d2f0
 weaveScale: 2
 weaveMag: 1
 keepVelocity: false
+accel: 0.03334
+layer: 69
 
 backColor: ffd37fff
 frontColor: ffd37fff
-trailChance: 0.15
+trailChance: 0.25
 trailEffect: {
 type: ParticleEffect
 baseLength: -2
-particles: 3
+particles: 2
 length: 0
 sizeFrom: 2.5
 sizeTo: 4
@@ -76,6 +81,7 @@ splashDamage: 15
 splashDamageRadius: 20
 damage: 10
 hitEffect: explosion
+hitSound: dullExplosion
 despawnHit: true
 }
 
