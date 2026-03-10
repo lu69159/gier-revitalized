@@ -26,6 +26,7 @@ Events.on(TapEvent, event => {
             const pow = target.powerProduction * 60;
 
             build.power.graph.transferPower(pow);
+            build.power.graph.update();
         }
 
         if (effect) {
