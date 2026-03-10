@@ -26,10 +26,10 @@ weapons:[
 shootCone: 180
 x: 3.15
 y: 0.5
-reload: 90
+reload: 60
 shoot:{
 shots: 3
-shotDelay: 15
+shotDelay: 0
 }
 inaccuracy: 15
 
@@ -40,6 +40,17 @@ speed: 2
 trailColor: 44d2f0
 backColor: 44d2f0
 frontColor: 66d4f2
+trailChance: 0.065
+trailEffect: {
+type: ParticleEffect
+baseLength: -2
+particles: 3
+length: 0
+sizeFrom: 2.5
+sizeTo: 4
+colorFrom: 6f6f6f22
+colorTo: 6f6f6f00
+}
 
 lifetime: 120
 layer: 65
@@ -51,7 +62,7 @@ trailEffect: none
 hitEffect: explosion
 despawnHit: true
 trailWidth: 2
-trailLength: 16
+trailLength: 0
 accel: 0.075
 }
 
