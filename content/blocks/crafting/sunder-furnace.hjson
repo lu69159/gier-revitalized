@@ -62,7 +62,7 @@ colorTo: 7f7f7f00
 sizeFrom: 1
 sizeTo: 4
 particles: 25
-cone: 10
+cone: 15
 lifetime: 85
 length: 48
 interp: sineOut
