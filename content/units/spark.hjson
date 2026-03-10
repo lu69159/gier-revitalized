@@ -11,6 +11,7 @@ engineOffset: 6
 engineSize: 2
 circleTarget: true
 range: 300
+drawSoftShadow: false
 
 targetFlags:[
 reactor
@@ -38,6 +39,9 @@ type: MissileBulletType
 homingPower: 0.125
 speed: 2
 trailColor: 44d2f0
+weaveScale: 2
+weaveMag: 1.5
+
 backColor: 44d2f0
 frontColor: 66d4f2
 trailChance: 0.065
@@ -50,6 +54,7 @@ sizeFrom: 2.5
 sizeTo: 4
 colorFrom: 6f6f6f22
 colorTo: 6f6f6f00
+layer: 68
 }
 
 lifetime: 120
@@ -58,12 +63,8 @@ scaledSplashDamage: true
 splashDamage: 15
 splashDamageRadius: 20
 damage: 10
-trailEffect: none
 hitEffect: explosion
 despawnHit: true
-trailWidth: 2
-trailLength: 0
-accel: 0.075
 }
 
 }
@@ -90,7 +91,7 @@ accel: 0.075
       despawnEffect: none
       trailLength: 20
       trailWidth: 0.5
-      trailColor: 66d4f2
+      trailColor: ffd37fff
       lightOpacity: 0
     }
   }
