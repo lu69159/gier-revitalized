@@ -43,7 +43,15 @@ x: -4
 }
 ]
 
-  
+abilities:[
+{
+type: MoveLightningAbility
+heatRegion: "ash-full"
+chance: 0
+}
+]
+
+/*
 weapons:[
 {
 shootCone: 180
@@ -61,3 +69,4 @@ damage: 20
 
 }
 ]
+*/
