@@ -3,8 +3,8 @@ flying: true
 outlineColor: 2f2f3f
 name: Ash
 speed: 2.5
-accel: 0.25
-drag: 0.05
+accel: 0.015
+drag: 0.005
 armor: 5
   
 hitSize: 12.5
@@ -13,7 +13,6 @@ rotateSpeed: 3.5
 health: 750
 engineOffset: 6
 engineSize: 0
-circleTarget: true
 drawSoftShadow: false
 
 parts:[
@@ -48,25 +47,41 @@ abilities:[
 type: MoveLightningAbility
 heatRegion: "gr-ash-full"
 chance: 0
+color: ffffff77
 }
 ]
 
-/*
+
 weapons:[
 {
-shootCone: 180
-x: 3.15
-y: 0.5
-reload: 2.5
-inaccuracy: 20
+reload: 180
+chargeSound: chargeLancer
+shoot:{
+firstShotDelay: 90
+}
 
 bullet:{
-type: LightningBulletType
-lightningLength: 16
-recoil: -0.1
-damage: 20
+
+chargeEffect:{
+type: ParticleEffect
+sizeFrom: 0
+sizeTo: 4
+interp: sineOut
+sizeInterp: elastic
+layer: 126
+}
+
+type: LaserBulletType
+width: 4
+length: 200
+damage: 55
+colors: [ffffff66,ffffff88,ffffffff]
+recoil: -7.5
+
+shootStatus: slow
+shootStatusDuration: 30
 }
 
 }
 ]
-*/
+
