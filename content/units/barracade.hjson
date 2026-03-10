@@ -6,12 +6,13 @@ databaseCategory: "threats"
 crushDamage: 25
 
 description: "
-Whenever this unit takes damage it becomes invincible for a short duration[grey](0.415 sec)[].
+Whenever this unit takes damage it becomes invincible for a short duration.
 
 [sky]Priority[]: 5
+[blue]IFrame Duration[]: 0.416 [grey]sec[]
+[salmon]Damage Threshold[]: (10-65)
 
 [green]- Big hitbox
-[salmon]- Trigger damage threshold: 10-65
 - Cannot be retriggered while invincible
 - Cant be triggered by explosions
 
