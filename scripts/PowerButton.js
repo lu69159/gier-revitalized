@@ -27,6 +27,7 @@ Events.on(TapEvent, event => {
 
             build.power.graph.transferPower(pow);
             build.power.status = 1;
+            build.power.graph.update();
             
         }
 
