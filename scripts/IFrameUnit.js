@@ -3,10 +3,13 @@ try{
 const unit = e.unit;
 const damage = e.bullet.damage;
 const target = Vars.content.getByName(ContentType.unit, "gr-barracade");
+const target2 = Vars.content.getByName(ContentType.unit, "gr-ash");
 const maxThres = (unit.maxHealth / 100) * 10;
 const valid = unit.getDuration(StatusEffects.invincible);
 
-if (damage < 10 || damage >= maxThres || unit.type != target || valid != 0) return;
+if (damage < 10 || damage >= maxThres || valid != 0) return;
+if (unit.type != target && unit.type != target2) return;
+  
 const dur = unit.type.crushDamage;
 
 unit.apply(StatusEffects.invincible,dur);
