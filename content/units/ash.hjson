@@ -14,6 +14,7 @@ health: 750
 engineOffset: 6
 engineSize: 0
 drawSoftShadow: false
+faceTarget: true
 
 parts:[
 {
