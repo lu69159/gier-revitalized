@@ -2,6 +2,18 @@ type: flying
 // IFrameUnit
 databaseCategory: "threats"
 
+description: "
+A fast durable and very dangerous unit.
+
+[sky]Priority[]: 3.5
+[blue]IFrame Duration[]: 0.2 [grey]sec[]
+
+[red]Counter: A very dangerous assault unit push back or fatally damage it.
+
+[sky]Affiliation[]: BGCB
+"
+
+priority: 3.5
 flying: true
 outlineColor: 2f2f3f
 name: Ash
