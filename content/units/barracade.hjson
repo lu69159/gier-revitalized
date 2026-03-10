@@ -2,6 +2,9 @@ type: flying
 # IframeUnit
 databaseCategory: "threats"
 
+// IFrame Duration (frames)
+crushDamage: 25
+
 description: "
 Whenever this unit takes damage it becomes invincible for a short duration[grey](0.415 sec)[].
 
