@@ -51,7 +51,7 @@ inaccuracy: 15
 bullet:{
 type: MissileBulletType
 homingPower: 0.125
-speed: 0
+speed: 0.1
 trailColor: 44d2f0
 weaveScale: 2
 weaveMag: 1
@@ -110,7 +110,7 @@ despawnHit: true
       trailLength: 20
       trailWidth: 0.5
       trailColor: ffd37fff
-      layer: 123
+      layer: 92
       lightOpacity: 0
     }
   }
