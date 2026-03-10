@@ -1,5 +1,6 @@
 type: flying
 // IFrameUnit
+databaseCategory: "threats"
 
 flying: true
 outlineColor: 2f2f3f
