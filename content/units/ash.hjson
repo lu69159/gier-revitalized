@@ -15,6 +15,7 @@ engineOffset: 6
 engineSize: 0
 drawSoftShadow: false
 faceTarget: true
+circleTarget: true
 
 parts:[
 {
@@ -55,14 +56,12 @@ color: ffffff77
 
 weapons:[
 {
-reload: 45
+reload: 30
 chargeSound: chargeLancer
 shootSound: shootLancer
 shoot:{
-firstShotDelay: 60
+firstShotDelay: 30
 }
-shootStatus: slow
-shootStatusDuration: 150
 
 bullet:{
 
@@ -71,14 +70,16 @@ type: ParticleEffect
 sizeFrom: 0
 sizeTo: 4
 interp: sineOut
-sizeInterp: elastic
+sizeInterp: sineOut
 layer: 126
 baseLength: -40
 length: 40
 lifetime: 50
 line: true
 lenFrom: 4
-lenTo: 0
+lenTo: 4
+strokeFrom: 1
+strokeTo: 0
 }
 
 despawnHit: true
