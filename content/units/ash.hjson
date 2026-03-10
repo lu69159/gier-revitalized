@@ -1,4 +1,6 @@
 type: flying
+// IFrameUnit
+
 flying: true
 outlineColor: 2f2f3f
 name: Ash
@@ -7,7 +9,10 @@ accel: 0.015
 drag: 0.005
 armor: 5
 range: 200
-  
+
+// Uses crush damage for invinciblity frames
+crushDamage: 12
+
 hitSize: 12.5
 omniMovement: false
 rotateSpeed: 3.5
