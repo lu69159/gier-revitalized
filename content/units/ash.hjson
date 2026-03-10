@@ -4,7 +4,7 @@ outlineColor: 2f2f3f
 name: Ash
 speed: 2.5
 accel: 0.25
-drag: 0.2
+drag: 0.05
 armor: 5
   
 hitSize: 12.5
@@ -49,49 +49,13 @@ weapons:[
 shootCone: 180
 x: 3.15
 y: 0.5
-reload: 45
-shoot:{
-shots: 5
-shotDelay: 0
-}
+reload: 5
 inaccuracy: 20
 
 bullet:{
-type: MissileBulletType
-homingPower: 0.075
-speed: 1
-accel: 0.025
-trailColor: 44d2f0
-weaveScale: 2
-weaveMag: 1
-keepVelocity: false
-layer: 69
-  
-backColor: ffd37fff
-frontColor: ffd37fff
-trailChance: 0.15
-trailEffect: {
-type: ParticleEffect
-baseLength: -2
-particles: 3
-length: 0
-sizeFrom: 2.5
-sizeTo: 4
-colorFrom: 6f6f6f55
-colorTo: 6f6f6f00
-layer: 68
-}
-
-lifetime: 120
-layer: 65
-scaledSplashDamage: true
-splashDamage: 15
-splashDamageRadius: 20
-damage: 10
-
-hitEffect: explosion
-hitShake: 2.5
-despawnHit: true
+type: LightningBulletType
+lightningLength: 4
+damage: 20
 }
 
 }
