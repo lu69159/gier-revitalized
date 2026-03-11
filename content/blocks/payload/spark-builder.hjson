@@ -44,6 +44,6 @@ outline: false
 shootType:{
 type: EmptyBulletType
 instantDisappear: true
-spawnUnit: spark
+spawnUnit: drive
 killShooter: true
 }
