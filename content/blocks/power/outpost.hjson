@@ -17,5 +17,5 @@ customShadow: true
 
 outputsPower: true
 envEnabled: -1
-laserColor2: 9f9f9f
+laserColor2: ffffff44
 maxNodes: 2
