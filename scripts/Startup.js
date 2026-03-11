@@ -13,8 +13,12 @@ Planets.gier.accessible = true;
 Planets.gier.alwaysUnlocked = true;
 Planets.gier.clearSectorOnLose = true;
 
+Planets.serpulo.generator.indirectPaths = true;
+Planets.serpulo.generator.genLakes = true;
+
 Vars.maxSchematicSize = 3064;
 MapResizeDialog.maxSize = 2500;
+
   
 Planets.gier.ruleSetter = r => {
 r.waveTeam = Team.blue;
