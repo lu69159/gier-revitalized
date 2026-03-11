@@ -1,4 +1,7 @@
 type: PowerTurret
+name: Drive Builder
+
+
 consumes:{
 power: 2
 }
@@ -16,15 +19,27 @@ shootCone: 180
 linearWarmup: true
 controllable: false
 
-drawer:{
-type: DrawTurret
-parts:[
+fullOverride: gr-drive-full
+drawer: [
 {
-type: RegionPart
-suffix: "spark"
+type: DrawRegion
+suffix: -construct
+buildingRotate: true
+}
+{
+type: DrawTurret
+basePrefix: drive-
+parts: [
+{
+type: RegionPart 
+name: gr-drive-full
+y: 0
+layer: 60
+outline: false
 }
 ]
 }
+]
 
 shootType:{
 type: EmptyBulletType
