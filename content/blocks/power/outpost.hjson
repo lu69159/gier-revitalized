@@ -2,7 +2,18 @@ type: PowerNode
 sameBlockConnection: true
 laserScale: 0.65
 name: Outpost
+configurable: false
 
+description: "
+Transfer power from one outpost to another.
+
+[green]- Large radius
+[salmon]- Cant be reconfigured
+- Same type connection only
+- Explosive[]
+"
+
+explosiveness: 1.5
 size: 2
 requirements:[lead/50,copper/65,graphite/35]
 laserRange: 60
