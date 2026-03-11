@@ -5,21 +5,23 @@ size: 2
 consumes:{
 power: 2
 }
-category: units
 
+createRubble: false
+destroySound: none
+destroyEffect: none
+
+category: units
 databaseTag: "exogen"
 databaseCategory: "unit-spawn"
 
 requirements:[lead/65,copper/35,graphite/20]
-
 reload: 340
-
 alwaysShooting: true
 shootCone: 180
 playerControllable: false
 rotateSpeed: 0
-
 fullOverride: gr-drive-full
+
 drawer: [
 {
 type: DrawRegion
