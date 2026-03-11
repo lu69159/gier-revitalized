@@ -1,6 +1,6 @@
 type: PowerTurret
 name: Drive Builder
-
+size: 2
 
 consumes:{
 power: 2
@@ -11,13 +11,13 @@ databaseTag: "exogen"
 databaseCategory: "unit-spawn"
 
 requirements:[lead/65,copper/35,graphite/20]
-  
-warmupSpeed: 1
-minWarmup: 340
+
+reload: 340
+
 alwaysShooting: true
 shootCone: 180
-linearWarmup: true
-controllable: false
+playerControllable: false
+rotateSpeed: 0
 
 fullOverride: gr-drive-full
 drawer: [
