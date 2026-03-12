@@ -1,5 +1,6 @@
 type: flying
 speed: 2.45
+flying: true
 
 accel: 0.025
 drag: 0.02
