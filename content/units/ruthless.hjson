@@ -2,6 +2,9 @@ type: flying
 speed: 2.45
 flying: true
 
+buildSpeed: 0.05
+buildRange: 28
+
 accel: 0.025
 drag: 0.02
 hitSize: 14
