@@ -1,0 +1,71 @@
+type: Flying
+speed: 2.45
+
+accel: 0.025
+drag: 0.02
+hitSize: 14
+
+health: 250
+outlineColor: 2f2f3f
+
+rotateSpeed: 2.5
+
+parts:[
+{
+type: HoverPart
+x: 0
+y: -5
+color: 8ca9e8
+}
+]
+
+weapons:[
+{
+shootCone: 10
+reload: 120
+shoot:{
+firstShotDelay: 40
+}
+
+chargeSound: chargeLancer
+shootSound: shootLancer
+
+bullet:{
+width: 10
+height: 14
+speed: 4.5
+drag: 0.45
+
+frontColor: 8ca9e8
+backColor: 8ca9e8
+
+lifetime: 100
+
+fragBullet:{
+lifeScaleRandMin: 0.45
+lifetime: 45
+frontColor: 8ca9e8
+backColor: 8ca9e8
+spin: 4.5
+
+speed: 3.5
+damage: 4.5
+}
+
+parts:[
+{
+type: FlarePart
+progress: life
+rotateSpeed: 6.5
+
+width: 5
+widthTo: 0
+
+radius: 24
+radiusTo: 0
+}
+]
+
+}
+}
+]
