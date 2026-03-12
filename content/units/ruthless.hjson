@@ -58,16 +58,16 @@ lifetime: 60
 damage: 4.5
 
 despawnHit: true
+hitSound: shieldHit
 hitEffect:{
 type: WrapEffect
-effect: colorSpark
+effect: hitBulletColor
 color: 8ca9e8
 }}
 fragBullets: 8
 
 hitShake: 6.5
 despawnHit: true
-hitSound: shieldHit
 hitSound: shootRipple
 hitEffect:{
 type: MultiEffect
