@@ -1,4 +1,4 @@
-type: Flying
+type: flying
 speed: 2.45
 
 accel: 0.025
