@@ -15,8 +15,10 @@ parts:[
 {
 type: HoverPart
 x: 0
-y: -5
+y: -6.5
 color: 8ca9e8
+radius: 6
+layerOffset: -9,1
 }
 ]
 
@@ -25,7 +27,7 @@ weapons:[
 shootCone: 10
 reload: 120
 shoot:{
-firstShotDelay: 40
+firstShotDelay: 80
 }
 
 chargeSound: chargeLancer
@@ -35,7 +37,7 @@ bullet:{
 width: 10
 height: 14
 speed: 4.5
-drag: 0.45
+drag: 0.045
 
 frontColor: 8ca9e8
 backColor: 8ca9e8
@@ -49,15 +51,32 @@ frontColor: 8ca9e8
 backColor: 8ca9e8
 spin: 4.5
 
-speed: 3.5
+speed: 2.5
+drag: 0.035
+lifetime: 60
+
 damage: 4.5
+
+despawnHit: true
+hitEffect:{
+type: WrapEffect
+effect: colorSpark
+color: 8ca9e8
+}}
+fragBullets: 8
+
+despawnHit: true
+hitEffect:{
+type: WrapEffect
+effect: colorSpark
+color: 8ca9e8
 }
 
 parts:[
 {
 type: FlarePart
 progress: life
-rotateSpeed: 6.5
+spinSpeed: 6.5
 
 width: 5
 widthTo: 0
