@@ -35,15 +35,15 @@ height: 21
 hitEffect: plasticExplosion
 despawnHit: true
 
-speed: 2.5
-lifetime: 160
+speed: 10
+lifetime: 40
 
-trailLength: 12
+trailLength: 0
 trailWidth: 3
 
 damage: 105
 
-knockback: 8.5
+knockback: 12.5
 impact: true
 homingPower: 0.005
 }
