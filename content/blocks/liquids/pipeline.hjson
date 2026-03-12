@@ -1,0 +1,13 @@
+type: Conduit
+localizedName: Pipeline
+
+rotateDraw: false
+requirements:[lead/2,metaglass/1]
+envEnabled: true
+
+research: sunder-furnace
+rotateDraw: false
+
+liquidCapacity: 2.5
+
+category: liquid
