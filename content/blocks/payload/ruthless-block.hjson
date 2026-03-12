@@ -37,11 +37,11 @@ buildingRotate: true
 }
 {
 type: DrawTurret
-basePrefix: drive-
+basePrefix: ruthless-
 parts: [
 {
 type: RegionPart 
-name: gr-drive-full
+name: gr-ruthless-full
 y: 0
 layer: 60
 outline: false
