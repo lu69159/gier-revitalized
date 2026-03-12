@@ -32,8 +32,10 @@ weapons:[
 shootCone: 10
 reload: 120
 shoot:{
-firstShotDelay: 80
+firstShotDelay: 60
 }
+mirror: false
+x: 0
 
 chargeSound: chargeLancer
 shootSound: shootLancer
