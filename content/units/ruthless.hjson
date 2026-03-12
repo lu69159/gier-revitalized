@@ -62,7 +62,7 @@ speed: 2.5
 drag: 0.035
 lifetime: 60
 
-damage: 4.5
+damage: 7.5
 
 despawnHit: true
 despawnEffect: none
@@ -74,6 +74,7 @@ color: 8ca9e8
 }}
 fragBullets: 8
 
+recoil: -1.5
 hitShake: 6.5
 despawnHit: true
 despawnEffect: none
