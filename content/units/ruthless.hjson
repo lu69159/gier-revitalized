@@ -3,7 +3,7 @@ speed: 2.45
 flying: true
 
 buildSpeed: 0.05
-buildRange: 28
+buildRange: 40
 
 accel: 0.025
 drag: 0.02
