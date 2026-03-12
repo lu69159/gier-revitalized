@@ -8,7 +8,7 @@ const status = e.bullet.type.status.name;
 const maxThres = (unit.maxHealth / 100) * 10;
 const valid = unit.getDuration(StatusEffects.invincible);
 
-if (damage < 10 || damage >= maxThres || valid != 0 || status != "gr-iframe-kill") return;
+if (damage < 10 || damage >= maxThres || valid != 0 || status == "gr-iframe-kill") return;
 if (unit.type != targetBarracade && unit.type != targetAsh) return;
   
 const dur = unit.type.crushDamage;
