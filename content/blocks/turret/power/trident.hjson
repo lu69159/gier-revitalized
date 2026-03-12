@@ -32,10 +32,13 @@ copper:{
 width: 15
 height: 21
 
-speed: 5
-lifetime: 80
+hitEffect: plasticExplosion
+despawnHit: true
 
-trailLength: 28
+speed: 2.5
+lifetime: 160
+
+trailLength: 12
 trailWidth: 3
 
 damage: 105
