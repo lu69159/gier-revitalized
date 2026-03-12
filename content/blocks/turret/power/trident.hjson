@@ -3,7 +3,10 @@ size: 4
 localizedName: Trident
 category: turret
 outlineColor: 2f2f3f
-
+description: "
+Costly turret, Able fire high velocity rounds.
+Does enough base damage to ignore basic [IFrame] and could use multiple ammoTypes.
+"
 requirements:[lead/2450,copper/1250,graphite/750,silicon/450,metaglass/335]
 reload: 120
 range: 400
@@ -47,6 +50,30 @@ knockback: 15
 impact: true
 homingPower: 0.005
 status: iframe-kill
+}
+
+lead:{
+width: 15
+height: 21
+
+hitEffect: plasticExplosion
+despawnHit: true
+
+speed: 10
+lifetime: 40
+
+trailLength: 0
+trailWidth: 3
+
+frontColor: 8c7fa9
+backColor: 8c7fa9
+damage: 85
+
+knockback: 15
+impact: true
+homingPower: 0.005
+status: melting
+statusDuration: 600
 }
 }
 
