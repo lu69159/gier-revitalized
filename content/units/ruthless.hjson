@@ -5,6 +5,10 @@ flying: true
 accel: 0.025
 drag: 0.02
 hitSize: 14
+armor: 2.5
+
+drawSoftShadow: false
+moveSound: loopThruster
 
 health: 250
 outlineColor: 2f2f3f
