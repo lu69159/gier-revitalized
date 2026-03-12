@@ -2,6 +2,7 @@ type: Conduit
 localizedName: Pipeline
 
 rotateDraw: false
+rotate: false
 requirements:[lead/2,metaglass/1]
 envEnabled: -1
 research: sunder-furnace
