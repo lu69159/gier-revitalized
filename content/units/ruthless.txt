@@ -1,0 +1,10 @@
+type: Flying
+speed: 2.45
+
+accel: 0.025
+drag: 0.02
+hitSize: 14
+
+health: 250
+outlineColor: 2f2f3f
+
