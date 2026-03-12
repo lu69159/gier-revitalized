@@ -5,7 +5,14 @@ category: turret
 outlineColor: 2f2f3f
 description: "
 Costly turret, Able fire high velocity rounds.
-Does enough base damage to ignore basic [IFrame] and could use multiple ammoTypes.
+Does enough base damage to ignore basic [white][IFrame][] and could use multiple ammoTypes.
+
+[green]- Fast bullet speed
+[salmon]- Quite inaccuracte
+- Explosive
+
+[accent]- Could ignore IFrame
+- Inflict melting[]
 "
 requirements:[lead/2450,copper/1250,graphite/750,silicon/450,metaglass/335]
 reload: 120
