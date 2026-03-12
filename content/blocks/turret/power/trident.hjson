@@ -41,11 +41,12 @@ lifetime: 40
 trailLength: 0
 trailWidth: 3
 
-damage: 135
+damage: 125
 
 knockback: 15
 impact: true
 homingPower: 0.005
+status: iframe-kill
 }
 }
 
