@@ -2,9 +2,12 @@ type: ItemTurret
 size: 4
 localizedName: Trident
 category: turret
+outlineColor: 2f2f3f
 
 requirements:[lead/1750,copper/650,graphite/400,silicon/225,metaglass/115]
 reload: 120
+range: 400
+rotateSpeed: 4.5
 
 databaseTag: "gier"
 envEnabled: -1
@@ -20,19 +23,26 @@ under: true
 }
 ]
 }
-  
+
+
+
+ejectEffect: casing4
 ammoTypes:{
 copper:{
 width: 15
 height: 21
 
-trailLength: 20
+speed: 5
+lifetime: 80
+
+trailLength: 28
 trailWidth: 3
 
 damage: 105
 
 knockback: 8.5
 impact: true
+homingPower: 0.005
 }
 }
 
