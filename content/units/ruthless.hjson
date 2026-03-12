@@ -65,11 +65,18 @@ color: 8ca9e8
 }}
 fragBullets: 8
 
+hitShake: 6.5
 despawnHit: true
+hitSound: shieldHit
+hitSound: shootRipple
 hitEffect:{
-type: WrapEffect
-effect: colorSpark
-color: 8ca9e8
+type: MultiEffect
+effects:[
+smokeCloud
+unitDrop
+instBomb
+shieldWave
+]
 }
 
 parts:[
