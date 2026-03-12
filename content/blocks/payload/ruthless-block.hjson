@@ -14,7 +14,7 @@ category: units
 databaseTag: "exogen"
 databaseCategory: "unit-spawn"
 
-buildtime: 2000
+buildTime: 2000
 requirements:[lead/65,copper/35,graphite/20]
 reload: 30
 alwaysShooting: true
@@ -58,7 +58,7 @@ objectives:[ruthless-block]
 shootType:{
 type: EmptyBulletType
 instantDisappear: true
-spawnUnit: drive
+spawnUnit: ruthless
 speed: 0.25
 killShooter: true
 }
