@@ -4,7 +4,7 @@ localizedName: Trident
 category: turret
 outlineColor: 2f2f3f
 
-requirements:[lead/1750,copper/650,graphite/400,silicon/225,metaglass/115]
+requirements:[lead/2450,copper/1250,graphite/750,silicon/450,metaglass/335]
 reload: 120
 range: 400
 rotateSpeed: 4.5
@@ -41,9 +41,9 @@ lifetime: 40
 trailLength: 0
 trailWidth: 3
 
-damage: 105
+damage: 135
 
-knockback: 12.5
+knockback: 15
 impact: true
 homingPower: 0.005
 }
