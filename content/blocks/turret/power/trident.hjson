@@ -1,0 +1,39 @@
+type: ItemTurret
+size: 4
+localizedName: Trident
+category: turret
+
+requirements:[lead/1750,copper/650,graphite/400,silicon/225,metaglass/115]
+reload: 120
+
+databaseTag: "gier"
+envEnabled: -1
+
+drawer:{
+type: DrawTurret
+parts:[
+{
+suffix: "-barrel"
+moveY: -4
+progress: recoil
+under: true
+}
+]
+}
+  
+ammoTypes:{
+copper:{
+width: 15
+height: 21
+
+trailLength: 20
+trailWidth: 3
+
+damage: 105
+
+knockback: 8.5
+impact: true
+}
+}
+
+
