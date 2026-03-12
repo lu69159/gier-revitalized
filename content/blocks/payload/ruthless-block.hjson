@@ -1,5 +1,5 @@
 type: PowerTurret
-name: Drive
+name: Ruthless
 size: 2
 
 consumes:{
@@ -14,14 +14,14 @@ category: units
 databaseTag: "exogen"
 databaseCategory: "unit-spawn"
 
-buildtime: 800 
+buildtime: 2000
 requirements:[lead/65,copper/35,graphite/20]
 reload: 30
 alwaysShooting: true
 shootCone: 180
 playerControllable: false
 rotateSpeed: 0
-fullOverride: gr-drive-full
+fullOverride: gr-ruthless-full
 shootSound: none
 shootY: 0
 outlineIcon: false
@@ -50,9 +50,15 @@ outline: false
 }
 ]
 
+research:{
+parent: gier
+objectives:[ruthless-block]
+}
+
 shootType:{
 type: EmptyBulletType
 instantDisappear: true
 spawnUnit: drive
+speed: 0.25
 killShooter: true
 }
