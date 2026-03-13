@@ -9,7 +9,7 @@ attribute: "carbon"
 outputLiquid: water/0.16667
 liquidCapacity: 100
 
-updateEffectChance: 0.25
+updateEffectChance: 1
 updateEffectSpread: 0
 updateEffect: {
 type: ParticleEffect
@@ -18,7 +18,9 @@ particles: 1
 baseLength: 6.5
 sizeTo: 5
 length: 14.5
-colorFrom: 596ab8ff
+layer: 61
+lifetime: 40
+colorFrom: 596ab866
 colorTo: ffffff00
 }
 
