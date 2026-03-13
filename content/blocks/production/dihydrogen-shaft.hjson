@@ -30,6 +30,11 @@ rotateSpeed: 5
 suffix: "-rotator"
 }
 {
+type: DrawLiquidTile
+drawLiquid: water
+padding: 0.5
+}
+{
 type: DrawRegion
 suffix: "-bottom"
 }
