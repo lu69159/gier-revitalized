@@ -15,10 +15,10 @@ updateEffect: {
 type: ParticleEffect
 sizeFrom: 5
 particles: 1
-sizeTo: 0
+sizeTo: 8
 length: 8
 colorFrom: 596ab8ff
-colorTo: ffffff55
+colorTo: ffffff00
 }
 
 requirements:[
