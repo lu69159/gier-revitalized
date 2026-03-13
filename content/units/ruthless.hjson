@@ -1,6 +1,7 @@
 type: flying
 speed: 2.45
 flying: true
+localizedName: Ruthless
 
 accel: 0.025
 drag: 0.02
@@ -48,6 +49,11 @@ drag: 0.045
 
 frontColor: 8ca9e8
 backColor: 8ca9e8
+
+damage: 25
+splashDamage: 45
+splashDamageRadius: 30
+scaledSplashDamage: true
 
 lifetime: 100
 
