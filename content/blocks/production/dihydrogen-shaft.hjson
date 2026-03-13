@@ -24,6 +24,7 @@ type: DrawDefault
 type: DrawBlurSpin
 blurThresh: 0
 rotateSpeed: 5
+suffix: "-rotator"
 }
 {
 type: DrawLiquidTile
