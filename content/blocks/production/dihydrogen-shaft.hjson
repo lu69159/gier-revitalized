@@ -9,6 +9,18 @@ attribute: "carbon"
 outputLiquid: water/0.16667
 liquidCapacity: 100
 
+updateEffectChance: 0.25
+updateEffectSpread: 6.5
+updateEffect: {
+type: ParticleEffect
+sizeFrom: 5
+particles: 1
+sizeTo: 0
+length: 8
+colorFrom: 596ab8ff
+colorTo: ffffff55
+}
+
 requirements:[
 lead/450
 copper/250
