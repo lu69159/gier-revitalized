@@ -58,6 +58,7 @@ objectives:[ruthless-block]
 shootType:{
 type: EmptyBulletType
 instantDisappear: true
+ammoMultiplier: 1
 showStats: false
 spawnUnit: ruthless
 speed: 0.25
