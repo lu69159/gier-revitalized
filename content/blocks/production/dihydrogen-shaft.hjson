@@ -8,6 +8,7 @@ attribute: "carbon"
 
 outputLiquid: water/0.16667
 liquidCapacity: 100
+customShadow: true
 
 updateEffectChance: 1
 updateEffectSpread: 0
