@@ -32,7 +32,7 @@ suffix: "-bottom"
 {
 type: DrawLiquidTile
 drawLiquid: water
-padding: 8
+padding: 2
 }
 {
 type: DrawBlurSpin
