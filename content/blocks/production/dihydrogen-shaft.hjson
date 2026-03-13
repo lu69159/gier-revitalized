@@ -1,0 +1,38 @@
+type: SolidPump
+size: 3
+squareSprite: false
+  
+localizedName: Dihydrogen Shaft
+category: production
+attribute: "carbon"
+
+requirements:[
+lead/450
+copper/250
+metaglass/150
+graphite/125
+silicon/75
+]
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawDefault
+}
+{
+type: DrawBlurSpin
+blurThresh: 0
+rotateSpeed: 5
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+padding: 1.25
+}
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+]
+}
