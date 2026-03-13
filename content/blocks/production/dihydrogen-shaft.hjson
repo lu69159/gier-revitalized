@@ -28,7 +28,7 @@ rotateSpeed: 5
 {
 type: DrawLiquidTile
 drawLiquid: water
-padding: 1.25
+padding: 0.75
 }
 {
 type: DrawRegion
