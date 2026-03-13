@@ -5,7 +5,7 @@ squareSprite: false
 localizedName: Dihydrogen Shaft
 category: production
 attribute: "carbon"
-
+outputLiquid: water/0.16667
 requirements:[
 lead/450
 copper/250
