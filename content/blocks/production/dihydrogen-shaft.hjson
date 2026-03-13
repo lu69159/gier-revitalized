@@ -15,13 +15,14 @@ updateEffect: {
 type: ParticleEffect
 sizeFrom: 3
 particles: 1
-baseLength: 6.5
+baseLength: -6.5
 sizeTo: 5
 length: 14.5
 layer: 61
 lifetime: 40
 colorFrom: 596ab866
 colorTo: ffffff00
+interp: sineOut
 }
 
 requirements:[
