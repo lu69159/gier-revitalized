@@ -14,6 +14,10 @@ graphite/125
 silicon/75
 ]
 
+consumes:{
+items:[graphite/3]
+}
+
 drawer:{
 type: DrawMulti
 drawers:[
@@ -22,7 +26,6 @@ type: DrawDefault
 }
 {
 type: DrawBlurSpin
-blurThresh: 0
 rotateSpeed: 5
 suffix: "-rotator"
 }
