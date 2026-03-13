@@ -5,7 +5,10 @@ squareSprite: false
 localizedName: Dihydrogen Shaft
 category: production
 attribute: "carbon"
+
 outputLiquid: water/0.16667
+liquidCapacity: 100
+
 requirements:[
 lead/450
 copper/250
@@ -14,6 +17,7 @@ graphite/125
 silicon/75
 ]
 
+craftTime: 45
 consumes:{
 items:[graphite/3]
 }
@@ -28,7 +32,7 @@ suffix: "-bottom"
 {
 type: DrawLiquidTile
 drawLiquid: water
-padding: 0.5
+padding: 8
 }
 {
 type: DrawBlurSpin
