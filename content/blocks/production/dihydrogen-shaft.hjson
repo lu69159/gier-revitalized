@@ -10,13 +10,14 @@ outputLiquid: water/0.16667
 liquidCapacity: 100
 
 updateEffectChance: 0.25
-updateEffectSpread: 6.5
+updateEffectSpread: 0
 updateEffect: {
 type: ParticleEffect
-sizeFrom: 5
+sizeFrom: 3
 particles: 1
-sizeTo: 8
-length: 8
+baseLength: 6.5
+sizeTo: 5
+length: 14.5
 colorFrom: 596ab8ff
 colorTo: ffffff00
 }
