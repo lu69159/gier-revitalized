@@ -22,12 +22,8 @@ drawer:{
 type: DrawMulti
 drawers:[
 {
-type: DrawDefault
-}
-{
-type: DrawBlurSpin
-rotateSpeed: 5
-suffix: "-rotator"
+type: DrawRegion
+suffix: "-bottom"
 }
 {
 type: DrawLiquidTile
@@ -35,8 +31,12 @@ drawLiquid: water
 padding: 0.5
 }
 {
-type: DrawRegion
-suffix: "-bottom"
+type: DrawBlurSpin
+rotateSpeed: 5
+suffix: "-rotator"
+}
+{
+type: DrawDefault
 }
 ]
 }
