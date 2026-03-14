@@ -10,13 +10,16 @@ outputLiquid: water/0.16667
 liquidCapacity: 100
 customShadow: true
 
+ambientSound: dihydrogen-shaft
+ambientSoundVolume: 0.85
+
 updateEffectChance: 1
-updateEffectSpread: 0
+updateEffectSpread: 1
 updateEffect: {
 type: ParticleEffect
 sizeFrom: 3
 particles: 1
-baseLength: 8
+baseLength: 10
 sizeTo: 5
 length: 14.5
 layer: 61
@@ -36,7 +39,8 @@ silicon/75
 
 craftTime: 45
 consumes:{
-items:[graphite/3]
+items:[graphite/1]
+power: 0.65
 }
 
 research: {
