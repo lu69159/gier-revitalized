@@ -7,6 +7,8 @@ health: 2450
 shownPlanets: [gier]
 envEnabled: -1
 
+description: "Fires multiple homing missiles the the target."
+
 consumes:{
 power: 1
 }
@@ -44,6 +46,8 @@ shootType:{
 type: BulletType
 speed: 30
 lifetime: 10
+damage: 0
+collides: false
 instantDisappear: true
 despawnHit: true
 fragBullets: 4
