@@ -1,6 +1,7 @@
 type: flying
 // IFrameUnit
 databaseCategory: "threats"
+flowfieldPathType: 3
 
 description: "
 A fast durable and very dangerous unit.
