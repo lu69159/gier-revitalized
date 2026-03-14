@@ -1,11 +1,20 @@
-alwaysUnlock: true
+alwaysUnlocked: true
 radius: 1
 statParent: gier
 localizedName: Kela
+
+generator: SerpuloPlanetGenerator
+orbitRadius: 50
+sectorSize: 2
+
+prebuildBase: true
+defaultCore: core-shard
+parent: sun
 
 mesh: [
 {
 type: HexMesh
 planet: kela
+division: 4
 }
 ]
