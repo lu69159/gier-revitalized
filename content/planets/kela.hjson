@@ -1,0 +1,11 @@
+alwaysUnlock: true
+radius: 1
+statParent: gier
+localizedName: Kela
+
+mesh: [
+{
+type: HexMesh
+planet: kela
+}
+]
