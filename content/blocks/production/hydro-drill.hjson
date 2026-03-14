@@ -16,9 +16,6 @@ drawSpinSprite: true
 drawMineItem: true
 squareSprite: false
 
-ambientSound: hydro-drill
-ambientSoundVolume: 0.025
-
 baseExplosiveness: 2.5
 
 databaseTag: "gier"
