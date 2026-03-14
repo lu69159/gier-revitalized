@@ -6,6 +6,7 @@ envEnabled: -1
 research: sunder-furnace
 liquidCapacity: 2.5
 
+customShadow: true
 leaks: false
 category: liquid
 envEnabled: -1
