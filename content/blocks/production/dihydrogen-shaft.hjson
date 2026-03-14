@@ -39,6 +39,11 @@ consumes:{
 items:[graphite/3]
 }
 
+research: {
+parent: gier
+objectives:[dihydrogen-shaft]
+}
+
 drawer:{
 type: DrawMulti
 drawers:[
