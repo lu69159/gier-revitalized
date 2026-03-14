@@ -2,10 +2,17 @@ alwaysUnlocked: true
 radius: 1
 statParent: gier
 localizedName: Kela
+iconColor: 596ab8ff
 
 generator: SerpuloPlanetGenerator
 orbitRadius: 50
 sectorSize: 2
+
+campaignRuleDefaults: {
+	showSpawns: true
+	sectorInvasion: false
+	fog: false
+}
 
 prebuildBase: true
 defaultCore: core-shard
