@@ -9,7 +9,8 @@
 ### Such as:</div>
 - Being Endless
 - Randomly Generated
-- And also including more modded blocks
+- And also including many modded blocks
+- Also has IOS support for some reason
 <div align = center>
 
 ## Though expect: </div>
