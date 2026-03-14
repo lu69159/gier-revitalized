@@ -1,4 +1,6 @@
-alwaysUnlocked: true
+research: gier
+
+
 radius: 1
 statParent: gier
 localizedName: Kela
