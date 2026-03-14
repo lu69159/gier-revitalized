@@ -10,7 +10,5 @@ customShadow: true
 leaks: false
 category: liquid
 envEnabled: -1
-research: {
-parent: gier
-objectives:[dihydrogen-shaft]
-}
+
+research: dihydrogen-shaft
