@@ -12,7 +12,7 @@ shownPlanets: [gier]
 envEnabled: -1
 
 customShadow: true
-description: "Extremely expensive building, Has insane power output.
+description: "Extremely expensive building, Has insane power output, uses water as coolant.
 
 [scarlet]Priority: 35
 
@@ -73,6 +73,7 @@ explodeSound: explosionCore
 
 consumes:{
 items:[graphite/65]
+liquids:[water/0.16667]
 }
 
 drawer:{
