@@ -17,7 +17,7 @@ drawMineItem: true
 squareSprite: false
 
 ambientSound: hydro-drill
-ambientSoundVolume: 0.15
+ambientSoundVolume: 0.025
 
 baseExplosiveness: 2.5
 
