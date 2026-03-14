@@ -11,7 +11,7 @@ liquidCapacity: 100
 customShadow: true
 
 ambientSound: dihydrogen-shaft
-ambientSoundVolume: 0.85
+ambientSoundVolume: 0.2
 
 updateEffectChance: 1
 updateEffectSpread: 1
