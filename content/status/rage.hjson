@@ -26,6 +26,13 @@ layer: 123
 colorFrom: D15E60FF
 colorTo: D15E6000
 }
+{
+type: SoundEffect
+sound: rage
+effect: none
+minPitch: 0.95
+maxPitch: 1.05
+}
 ]
 }
 
