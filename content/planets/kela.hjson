@@ -3,7 +3,6 @@ statParent: gier
 localizedName: Kela
 iconColor: 596ab8ff
 alwaysUnlocked: true
-accessible: true
 
 generator: TantrosPlanetGenerator
 orbitRadius: 50
