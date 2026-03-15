@@ -34,7 +34,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: besualia
    speed: 1.21
-   radius: 0.4
+   radius: 0.15
    divisions: 5
    color: bbc7fcff
    octaves: 3
@@ -46,7 +46,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: besualia
    speed: 1.01
-   radius: 0.6
+   radius: 0.2
    divisions: 5
    color: b4bad68f
    octaves: 2
@@ -59,7 +59,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: besualia
    speed: 0.891
-   radius: 0.8
+   radius: 0.25
    divisions: 5
    color: d5d7de6f
    octaves: 2
