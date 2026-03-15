@@ -34,7 +34,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: kela
    speed: 1.21
-   radius: 0.7
+   radius: 0.07
    divisions: 5
    color: bbc7fcff
    octaves: 3
