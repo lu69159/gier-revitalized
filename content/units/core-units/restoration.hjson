@@ -124,6 +124,7 @@ color: cc002c
 effectRadius: 0
 shootSound: none
 hitEffect: none
+status: none
 healEffect: healBlockFull
 layer: 122
 }
