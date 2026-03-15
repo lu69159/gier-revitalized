@@ -13,9 +13,6 @@ Planets.gier.accessible = true;
 Planets.gier.alwaysUnlocked = true;
 Planets.gier.clearSectorOnLose = true;
 
-Planets.serpulo.generator.indirectPaths = true;
-Planets.serpulo.generator.genLakes = true;
-
 Vars.maxSchematicSize = 3064;
 MapResizeDialog.maxSize = 2500;
 
@@ -23,8 +20,7 @@ const kela = Vars.content.getByName(ContentType.planet, "gr-kela");
 kela.techTree = Planets.gier.techTree;
 kela.techTree.addPlanet(kela);
 kela.defaultEnv = Planets.tantros.defaultEnv;
-kela.mesh = Planets.tantros.mesh;
-  
+
 Planets.gier.ruleSetter = r => {
 r.waveTeam = Team.blue;
 }
