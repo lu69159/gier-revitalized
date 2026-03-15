@@ -32,9 +32,9 @@ division: 4
 cloudMesh: [
  {
    type: HexSkyMesh
-   planet: besualia
+   planet: kela
    speed: 1.21
-   radius: 0.15
+   radius: 0.7
    divisions: 5
    color: bbc7fcff
    octaves: 3
@@ -44,9 +44,9 @@ cloudMesh: [
   }
   {
    type: HexSkyMesh
-   planet: besualia
+   planet: kela
    speed: 1.01
-   radius: 0.2
+   radius: 0.15
    divisions: 5
    color: b4bad68f
    octaves: 2
