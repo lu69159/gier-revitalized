@@ -35,7 +35,7 @@ cloudMesh: [
    planet: besualia
    speed: 1.21
    radius: 0.1
-   divisions: 4
+   divisions: 5
    color: bbc7fcff
    octaves: 3
    persistence: 0.3
@@ -47,7 +47,7 @@ cloudMesh: [
    planet: besualia
    speed: 1.01
    radius: 0.2
-   divisions: 4
+   divisions: 5
    color: b4bad66f
    octaves: 2
    persistence: 0.6
