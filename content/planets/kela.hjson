@@ -55,17 +55,4 @@ cloudMesh: [
    thresh: 0.4
 	seed: 2
   }
-  {
-   type: HexSkyMesh
-   planet: besualia
-   speed: 0.891
-   radius: 0.25
-   divisions: 5
-   color: d5d7de6f
-   octaves: 2
-	seed: 4
-   persistence: 0.5
-   scl: 1.1
-   thresh: 0.6
-  }
 ]
