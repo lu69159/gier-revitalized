@@ -9,4 +9,4 @@ require("BrittleDrill"); // Could actually be anything lol
 
 // Subclass: Units
 require("IFrameUnit");
-
+require("EnrageUnit");
