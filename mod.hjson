@@ -15,8 +15,8 @@ Makes gier a playable planet.
 "
 
 iosCompatible: true
-version: "v1.55-Gier"
-subtitle: "v1.55-Gier"
+version: "v1.6-Gier"
+subtitle: "v1.6-Gier"
 minGameVersion: "155"
 dependencies: []
 hidden: false
