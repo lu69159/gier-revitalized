@@ -2,12 +2,13 @@ radius: 1
 statParent: gier
 localizedName: Kela
 iconColor: 596ab8ff
-alwaysUnlocked: true
+alwaysUnlocked: false
 accessible: true
 
 generator: SerpuloPlanetGenerator
 orbitRadius: 50
 sectorSize: 2
+allowSectorInvasion: true
 
 campaignRuleDefaults: {
 	showSpawns: true
