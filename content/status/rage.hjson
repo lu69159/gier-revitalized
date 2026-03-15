@@ -14,7 +14,7 @@ colorTo: ffffff00
 effectChance: 0.25
 effect: {
 type: WrapEffect
-effect: overClocked
+effect: overclocked
 color: D15E60FF
 }
 
