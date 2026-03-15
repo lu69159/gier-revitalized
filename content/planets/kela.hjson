@@ -5,7 +5,7 @@ iconColor: 596ab8ff
 alwaysUnlocked: true
 accessible: true
 
-
+generator: SerpuloPlanetGenerator
 orbitRadius: 50
 sectorSize: 2
 
