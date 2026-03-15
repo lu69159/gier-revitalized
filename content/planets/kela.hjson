@@ -2,7 +2,7 @@ radius: 1
 statParent: gier
 localizedName: Kela
 iconColor: 596ab8ff
-alwaysUnlock: true
+alwaysUnlocked: true
 accessible: true
 
 generator: TantrosPlanetGenerator
@@ -45,7 +45,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: besualia
    speed: 1.01
-   radius: 0.11
+   radius: 0.14
    divisions: 4
    color: b4bad66f
    octaves: 2
@@ -57,7 +57,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: besualia
    speed: 0.891
-   radius: 0.12
+   radius: 0.17
    divisions: 5
    color: d5d7de3f
    octaves: 2
