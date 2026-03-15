@@ -9,7 +9,8 @@ generator: SerpuloPlanetGenerator
 orbitRadius: 50
 sectorSize: 2
 allowSectorInvasion: true
-allowSelfSectorLaunch: true
+allowLaunchToNumbered: false
+allowSelfSectorLaunch: false
 
 campaignRuleDefaults: {
 	showSpawns: true
