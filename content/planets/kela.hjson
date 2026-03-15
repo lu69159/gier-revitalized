@@ -1,10 +1,9 @@
-
 radius: 1
 statParent: gier
 localizedName: Kela
 iconColor: 596ab8ff
 
-generator: SerpuloPlanetGenerator
+generator: TantrosPlanetGenerator
 orbitRadius: 50
 sectorSize: 2
 
