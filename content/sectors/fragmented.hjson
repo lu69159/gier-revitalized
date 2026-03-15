@@ -7,4 +7,15 @@ planet: kela
 
 research: {
 parent: gier
+objectives:[
+rail
+rail-router
+rail-overflow
+hydro-drill
+photon-panel
+tension
+copper-fort
+core-facility
+
+]
 }
