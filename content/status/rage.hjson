@@ -1,0 +1,24 @@
+applyEffect:{
+type: ParticleEffect
+region: "gr-rage"
+length: 0
+cone: 0
+sizeFrom: 8
+sizeTo: 40
+layer: 111
+sizeInterp: sineOut
+colorFrom: ffffffff
+colorTo: ffffff00
+}
+
+effectChance: 0.25
+effect: {
+type: WrapEffect
+effect: overClocked
+color: D15E60FF
+}
+
+damageMultiplier: 1.25
+speedMultiplier: 1.15
+permanent: true
+localizedName: Rage
