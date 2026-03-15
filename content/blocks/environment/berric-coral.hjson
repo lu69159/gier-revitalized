@@ -1,0 +1,11 @@
+type: SeaBush
+name: Berric Bush
+
+lobesMin: 2
+lobesMax: 3
+magMax: 8
+magMin: 2
+origin: 0.3
+sprea: 25
+sclMin: 60
+sclMax: 100
