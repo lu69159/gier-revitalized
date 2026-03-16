@@ -8,6 +8,7 @@ accessible: true
 generator: SerpuloPlanetGenerator
 orbitRadius: 50
 sectorSize: 2
+startSector: 24
 allowSectorInvasion: true
 allowLaunchToNumbered: false
 allowSelfSectorLaunch: false
