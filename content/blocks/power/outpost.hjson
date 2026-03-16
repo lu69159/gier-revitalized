@@ -13,7 +13,7 @@ Transfer power from one outpost to another.
 - Explosive[]
 "
 
-explosiveness: 1.5
+explosiveness: 4.5
 size: 2
 requirements:[lead/50,copper/65,graphite/35]
 laserRange: 60
