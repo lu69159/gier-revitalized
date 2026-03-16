@@ -22,6 +22,25 @@ researchCostMultiplier: 0.06
 
 #buildVisibility: sandboxOnly
 
+placeEffect:{
+type: MultiEffect
+effects:[
+placeBlock
+{
+type: ParticleEffect
+length: 0
+particles: 1
+sizeFrom: 3600
+sizeTo: 3600
+layer: 122
+colorFrom: FFD37F66
+colorTo: FFD37F00
+lifetime: 60
+interp: sineOut
+}
+]
+}
+
 databaseTag: "gier"
 research: photon-panel
 customShadow: true
