@@ -30,10 +30,10 @@ placeBlock
 type: ParticleEffect
 length: 0
 particles: 1
-sizeFrom: 1800
-sizeTo: 1800
+sizeFrom: 240
+sizeTo: 240
 layer: 122
-colorFrom: FFD37F99
+colorFrom: FFD37FFF
 colorTo: FFD37F00
 lifetime: 120
 interp: sineOut
