@@ -30,8 +30,8 @@ placeBlock
 type: ParticleEffect
 length: 0
 particles: 1
-sizeFrom: 240
-sizeTo: 240
+sizeFrom: 480
+sizeTo: 480
 layer: 122
 colorFrom: FFD37FFF
 colorTo: FFD37F00
