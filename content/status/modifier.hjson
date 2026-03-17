@@ -1,3 +1,5 @@
 name: Modifiers
 show: false
 research: techtree-kela
+
+description: "Modifiers for gier, To enabled research them on gier (Wave 1 required)."
