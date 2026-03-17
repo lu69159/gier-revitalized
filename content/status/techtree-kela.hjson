@@ -2,8 +2,8 @@ name: Kela
 show: false
 
 research:{
-planet: gier
+planet: kela
 root: true
-name: "[lightgrey]Gier[]"
+name: "[sky]Kela[]"
 requiresUnlock: false
 }
