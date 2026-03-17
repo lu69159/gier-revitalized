@@ -1,2 +1,9 @@
 name: Kela
 show: false
+
+research:{
+planet: gier
+root: true
+name: "[lightgrey]Gier[]"
+requiresUnlock: false
+}
