@@ -3,6 +3,7 @@ name: Dedroned
 
 research: {
 parent: modifier
+
 objectives:[
 {
 type: SectorComplete
