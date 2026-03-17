@@ -5,5 +5,11 @@ research:{
 planet: kela
 root: true
 name: "[sky]Kela[]"
-requiresUnlock: false
+
+objectives:[
+{
+type: SectorComplete
+preset: fragmented
+}
+]
 }
