@@ -1,8 +1,14 @@
 type: block
-name: Dedroned
+name: Dedrone
 placeable: false
 buildVisibility: shown
 
+description: "Drone facility and Facility dropzone will no longer be usable
+
+[salmon]Requirements:
+- No condition buildings on the map
+- Activated only on wave 1
+"
 research: {
 parent: modifier
 
