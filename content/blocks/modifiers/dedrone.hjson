@@ -1,6 +1,7 @@
 type: block
 name: Dedroned
 placeable: false
+buildVisibility: shown
 
 research: {
 parent: modifier
