@@ -7,7 +7,7 @@ flying: true
 outlineColor: 2f2f3f
 accel: 0.12
 drag: 0.04
-flyingLayer: 123
+flyingLayer: 123.1
 targetable: false
 #outlineRadius: 0
 faceTarget: false
@@ -152,5 +152,6 @@ type: HoverPart
 color: ffd37fff
 radius: 16
 layerOffset: -0.1
+phase: 80
 }
 ]
