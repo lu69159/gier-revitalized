@@ -1,8 +1,13 @@
-type: ConsumeGenerator
+type: VariableReactor
+
+// overrides
+effect: none
+unstableSpeed: 1.5
+
 name: Watt Reactor
 size: 4
 helth: 3450
-itemCapacity: 90
+itemCapacity: 100
 armor: 5
 baseExplosiveness: 15
 priority: 35
@@ -16,8 +21,8 @@ description: "Extremely expensive building, Has insane power output, uses water 
 
 [scarlet]Priority: 35
 
-[red]- Expensive
-[red]- Very explosive
+[salmon]- Expensive
+- Very explosive
 [green]- Insane power output (40 photon panels)[]
 "
 
