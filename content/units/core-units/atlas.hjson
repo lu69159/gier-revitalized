@@ -1,7 +1,7 @@
 type: payload
 payloadCapacity: 256
 
-speed: 2.75
+speed: 4.5
 name: Atlas
 flying: true
 outlineColor: 2f2f3f
@@ -147,27 +147,27 @@ research: core-stronghold
 
 engines:[
 {
-x: 5.25
+x: 7
 y: 0
 rotation: 180
-radius: 2.5
+radius: 5
 }
 {
-x: -5.25
+x: -7
 y: 0
 rotation: 0
-radius: 2.5
+radius: 5
 }
 {
 x: 0
-y: 5.25
+y: 7
 rotation: -90
-radius: 2.5
+radius: 5
 }
 {
 x: 0
-y: -5.25
+y: -7
 rotation: 90
-radius: 2.5
+radius: 5
 }
 ]
