@@ -146,7 +146,7 @@ health: 350
 description: "Much better drone for general purpose. Can repair nearby blocks, Has bigger damage detection range and can carry payloads (up to 2x2)."
 research: core-stronghold
 
-engines:[
+parts:[
 {
 type: HoverPart
 color: ffd37fff
