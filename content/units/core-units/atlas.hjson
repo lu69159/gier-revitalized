@@ -147,27 +147,27 @@ research: core-stronghold
 
 engines:[
 {
-x: 7
+x: 6
 y: 0
 rotation: 180
-radius: 5
+radius: 4.5
 }
 {
-x: -7
+x: -6
 y: 0
 rotation: 0
-radius: 5
+radius: 4.5
 }
 {
 x: 0
-y: 7
+y: 6
 rotation: -90
-radius: 5
+radius: 4.5
 }
 {
 x: 0
-y: -7
+y: -6
 rotation: 90
-radius: 5
+radius: 4.5
 }
 ]
