@@ -134,9 +134,10 @@ layer: 122
 ]
 
 mineTier: 2
-mineSpeed: 10
+mineSpeed: 15
 mineBeamOffset: 0
 buildSpeed: 2
+itemOffsetY: 0
 
 engineSize: 0
 hitSize: 14
@@ -147,27 +148,8 @@ research: core-stronghold
 
 engines:[
 {
-x: 4.5
-y: 0
-rotation: 180
-radius: 5
-}
-{
-x: -4.5
-y: 0
-rotation: 0
-radius: 5
-}
-{
-x: 0
-y: 4.5
-rotation: -90
-radius: 5
-}
-{
-x: 0
-y: -4.5
-rotation: 90
-radius: 5
+type: HoverPart
+color: ffd37fff
+radius: 16
 }
 ]
