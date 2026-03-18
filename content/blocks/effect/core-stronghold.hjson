@@ -1,0 +1,38 @@
+type: CoreBlock
+size: 6
+name: "Core: [accent]Stronghold[]"
+description: "A more durable core foundation
+
+[accent]- Drone: Restoration
+
+[green]- Durable
+- More storage
+[grey]- 6x6
+"
+
+itemCapacity: 25000
+envEnabled: -1
+health: 25000
+unitType: gr-restoration
+isFirstTier: false
+incinerateNonBuildable: false
+customShadow: false
+squareSprite: false
+
+research: gier
+researchCostMultiplier: 0.15
+databaseTag: "gier"
+
+requirements: [
+lead/10000
+copper/7500
+graphite/7500
+titanium/6500
+beryllium/6500
+metaglass/4500
+silicon/3500
+thorium/2500
+phase-fabric/1000
+plastanium/1500
+]
+category: effect
