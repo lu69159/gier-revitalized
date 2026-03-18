@@ -1,8 +1,8 @@
-type: VariableReactor
+type: NuclearReactor
 
 // overrides
-effect: none
-unstableSpeed: 1.5
+fuelItem: graphite
+heating: 0.05
 
 name: Watt Reactor
 size: 4
