@@ -2,7 +2,7 @@ type: NuclearReactor
 
 // overrides
 fuelItem: graphite
-heating: 0.05
+heating: 0.065
 
 name: Watt Reactor
 size: 4
