@@ -1,6 +1,9 @@
 type: payload
 payloadCapacity: 256
 
+// IFrameUnit
+crushDamage: 15
+
 speed: 4.5
 name: Atlas
 flying: true
