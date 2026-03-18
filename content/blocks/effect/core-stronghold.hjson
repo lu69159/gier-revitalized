@@ -3,17 +3,17 @@ size: 8
 name: "Core: [accent]Stronghold[]"
 description: "A more durable core foundation
 
-[accent]- Drone: Restoration
+[accent]- Drone: Atlas
 
-[green]- Durable
-- More storage
+[green]- Much more durable
+- Has much more storage space
 [grey]- 6x6
 "
 
 itemCapacity: 25000
 envEnabled: -1
 health: 25000
-unitType: gr-restoration
+unitType: gr-atlas
 isFirstTier: false
 incinerateNonBuildable: false
 customShadow: true
