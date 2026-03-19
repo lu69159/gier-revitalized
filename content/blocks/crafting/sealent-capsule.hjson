@@ -36,7 +36,7 @@ suffix: "-bottom"
 {
 type: DrawLiquidTile
 drawLiquid: water
-padding: 1.5
+padding: 1.75
 }
 {
 type: DrawDefault
@@ -45,7 +45,7 @@ type: DrawDefault
 type: DrawBlurSpin
 suffix: "-capsule"
 blurThresh: 1
-rotateSpeed: 6.5
+rotateSpeed: 3.5
 }
 ]
 }
