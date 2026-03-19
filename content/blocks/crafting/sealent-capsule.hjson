@@ -27,7 +27,7 @@ outputItem: water-capsule/1
 
 drawer:{
 type: DrawMulti
-drawrrs:[
+drawers:[
 {
 type: DrawRegion
 suffix: "-bottom"
