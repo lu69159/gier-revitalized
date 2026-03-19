@@ -1,0 +1,49 @@
+type: GenericCrafter
+size: 2
+localizedName: Sealent Capsule
+
+category: crafting
+requirements:[
+lead/150
+copper/100
+graphite/100
+silicon/75
+titanium/50
+]
+
+description: "Seals liquids into capsules."
+envEnabled: 1
+research:{
+parent: gier
+objectives:[sealent-capsule]
+}
+
+consumes:{
+power: 0.5
+liquids:[water/0.016667]
+}
+
+outputItem: water-capsule/1
+
+drawer:{
+type: DrawMulti
+drawrrs:[
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+padding: 1.25
+}
+{
+type: DrawDefault
+}
+{
+type: DrawBlurSpin
+suffix: "-capsule"
+blurThresh: 1
+}
+]
+}
