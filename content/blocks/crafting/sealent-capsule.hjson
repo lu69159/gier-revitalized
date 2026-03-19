@@ -1,6 +1,7 @@
 type: GenericCrafter
 size: 2
 localizedName: Sealent Capsule
+squareSprite: false
 
 category: crafting
 requirements:[
@@ -35,7 +36,7 @@ suffix: "-bottom"
 {
 type: DrawLiquidTile
 drawLiquid: water
-padding: 1.25
+padding: 1.5
 }
 {
 type: DrawDefault
@@ -44,6 +45,7 @@ type: DrawDefault
 type: DrawBlurSpin
 suffix: "-capsule"
 blurThresh: 1
+rotateSpeed: 6.5
 }
 ]
 }
