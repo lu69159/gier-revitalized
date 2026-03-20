@@ -6,7 +6,7 @@ captureWave: 15
 planet: kela
 
 research: {
-parent: gier
+parent: techtree-kela
 objectives:[
 rail
 rail-router
@@ -16,6 +16,5 @@ photon-panel
 tension
 copper-fort
 core-facility
-
 ]
 }
