@@ -10,8 +10,13 @@ createWreck: true
 
 databaseCategory: "threats"
 research:{
-parent: gier
-objectives:[drive]
+parent: kela
+objectives:[
+{
+type: SectorComplete
+preset: fragmented
+}
+]
 }
 
 description: "
