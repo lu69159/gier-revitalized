@@ -49,9 +49,14 @@ engineSize: 0
 hitSize: 12
 armor: 2.5
 
-research: {
-parent: drive
-objectives:[barracade]
+research:{
+parent: kela
+objectives:[
+{
+type: SectorComplete
+preset: fragmented
+}
+]
 }
 
 parts:[
