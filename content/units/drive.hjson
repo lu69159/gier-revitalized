@@ -10,7 +10,7 @@ createWreck: true
 
 databaseCategory: "threats"
 research:{
-parent: kela
+parent: techtree-kela
 objectives:[
 {
 type: SectorComplete
