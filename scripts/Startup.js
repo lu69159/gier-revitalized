@@ -28,6 +28,8 @@ Planets.gier.ruleSetter = r => {
 r.waveTeam = Team.blue;
 }
 
+kela.ruleSetter = Planets.gier.ruleSetter;
+
 });
 
 
