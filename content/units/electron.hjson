@@ -24,10 +24,12 @@ range: 200
 reload: 30
 
 damage: 10
+statusDuration: 60
+maxTargets: 6
 
 sectors: 25
 effectRadius: 2.5
 color: bccae0ff
-sectorRad: 0.02
+sectorRad: 0.0225
 }
 ]
