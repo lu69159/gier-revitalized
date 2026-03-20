@@ -10,6 +10,7 @@ speed: 3.5
 accel: 0.035
 drag: 0.015
 engineSize: 0
+hitSize: 20.25
 
 outlineColor: 2f2f3f
 drawSoftShadow: false
