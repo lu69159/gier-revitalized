@@ -21,13 +21,13 @@ abilities:[
 {
 type: EnergyFieldAbility
 range: 200
-reload: 60
+reload: 30
 
-damage: 5
+damage: 10
 
-sectors: 40
-effectRadius: 3
+sectors: 25
+effectRadius: 2.5
 color: bccae0ff
-sectorRad: 0.025
+sectorRad: 0.02
 }
 ]
