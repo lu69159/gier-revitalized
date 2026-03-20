@@ -50,7 +50,7 @@ hitSize: 12
 armor: 2.5
 
 research:{
-parent: kela
+parent: techtree-kela
 objectives:[
 {
 type: SectorComplete
