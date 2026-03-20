@@ -1,0 +1,31 @@
+type: flying
+localizedName: Electron
+research: {
+parent: spark
+objectives:[electron]
+}
+flying: true
+
+speed: 3.5
+accel: 0.035
+drag: 0.015
+
+outlineColor: 2f2f3f
+drawSoftShadow: true
+
+health: 1250
+armor: -2.5
+
+abilities:[
+{
+type: EnergyFieldAbility
+range: 200
+reload: 60
+
+damage: 5
+
+sectors: 40
+color: bccae0
+sectorRad: 0.015
+}
+]
