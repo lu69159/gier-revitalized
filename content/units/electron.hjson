@@ -19,6 +19,10 @@ armor: -2.5
 
 abilities:[
 {
+type: MoveEffectAbility
+color: bccae0ff
+}
+{
 type: EnergyFieldAbility
 range: 200
 reload: 30
