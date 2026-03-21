@@ -9,6 +9,9 @@ envEnabled: -1
 
 description: "Fires multiple homing missiles the the target."
 
+shootWarmupSpeed: 0.05
+minWarmup: 0.9
+
 consumes:{
 power: 1
 }
@@ -92,7 +95,16 @@ hitShake: 6.5
 
 }
 
+elevation: 0
 drawer: {
-  type: DrawRegion
-  suffix: "-preview"
+  type: DrawTurret
+parts:[
+{
+growX: -0.25
+growY: -0.25
+suffix: "-lid"
+color: ffffffff
+colorTo: 8f8f8f7f
+}
+]
 }
