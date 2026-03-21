@@ -43,8 +43,8 @@ graphite/265
 ]
 buildTime: 300
 
-rotatable: false
-rotateSpeed: 5
+rotate: false
+shootCone: 180
 inaccuracy: 0
 
 shootType:{
