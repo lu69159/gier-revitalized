@@ -8,6 +8,8 @@ shownPlanets: [gier]
 envEnabled: -1
 
 description: "Fires multiple homing missiles the the target."
+minWarmup: 6
+shootWarmupSpeed: 0.1
 
 consumes:{
 power: 1
@@ -15,6 +17,9 @@ power: 1
 
 databaseTag: "gier"
 research: photon-panel
+rotates: false
+rotsteSpeed: 0
+outlineRadius: 0
 
 researchCostMultiplier: 0.05
 shootSound: shootScathe
@@ -91,5 +96,15 @@ hitShake: 6.5
 }
 
 drawer: {
-  type: DrawRegion
+  type: DrawTurret
+  basePrefix: "tension"
+
+parts:[
+{
+suffix: "-lid"
+color: ffffffff
+colorTo: ffffff00
+progress: warmup
+}
+]
 }
