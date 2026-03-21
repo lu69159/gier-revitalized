@@ -95,7 +95,7 @@ hitShake: 6.5
 
 }
 
-elevation: 0
+elevation: -1
 drawer: {
   type: DrawTurret
   basePrefix: "-lid"
