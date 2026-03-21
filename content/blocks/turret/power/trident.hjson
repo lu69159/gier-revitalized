@@ -55,7 +55,7 @@ hitEffect: {
 type: MultiEffect
 effects:[
 instBomb
-
+shieldWave
 ]
 }
 
@@ -84,8 +84,7 @@ hitEffect: {
 type: MultiEffect
 effects:[
 instBomb
-
-
+shieldWave
 ]
 }
 
