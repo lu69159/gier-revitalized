@@ -27,7 +27,7 @@ shootSound: shootScathe
 
 shootY: 0
 hasShadow: false
-customShadow: true
+customShadow: false
 category: turret
 reload: 65
 shake: 0.65
