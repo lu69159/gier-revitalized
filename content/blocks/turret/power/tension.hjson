@@ -110,7 +110,7 @@ colorTo: 8f8f8f7f
 }
 {
 suffix: "-shadow"
-layerOffset: -0.1
+layerOffset: -1
 }
 ]
 }
