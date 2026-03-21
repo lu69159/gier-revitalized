@@ -8,7 +8,7 @@ shownPlanets: [gier]
 envEnabled: -1
 
 description: "Fires multiple homing missiles the the target."
-minWarmup: 6
+minWarmup: 9
 shootWarmupSpeed: 0.1
 
 consumes:{
@@ -35,7 +35,6 @@ shots: 2
 shotDelay: 0
 }
 
-shootCone: 20
 requirements:[
 lead/445
 copper/365
@@ -106,7 +105,7 @@ color: ffffffff
 growX: -0.25
 growY: -0.25
 
-colorTo: ffffff00
+colorTo: 6f6f6f44
 progress: warmup
 }
 ]
