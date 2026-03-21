@@ -27,7 +27,7 @@ shootSound: shootScathe
 
 shootY: 0
 hasShadow: false
-customShadow: false
+customShadow: true
 category: turret
 reload: 65
 shake: 0.65
@@ -107,12 +107,6 @@ growY: -0.25
 suffix: "-lid"
 color: ffffffff
 colorTo: 8f8f8f7f
-}
-{
-suffix: "-shadow"
-layerOffset: -2
-color: ffffff44
-colorTo: ffffff44
 }
 ]
 }
