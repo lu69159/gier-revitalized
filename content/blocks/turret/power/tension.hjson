@@ -98,18 +98,6 @@ hitShake: 6.5
 }
 
 drawer: {
-  type: DrawTurret
-  basePrefix: "tension"
-
-parts:[
-{
-suffix: "-lid"
-color: ffffffff
-growX: -0.25
-growY: -0.25
-
-colorTo: 6f6f6f44
-progress: warmup
-}
-]
+  type: DrawRegion
+  suffix: "-preview"
 }
