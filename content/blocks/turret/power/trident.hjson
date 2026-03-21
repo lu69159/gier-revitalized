@@ -3,6 +3,9 @@ size: 4
 localizedName: Trident
 category: turret
 outlineColor: 2f2f3f
+
+maxAmmo: 20
+ammoPerShot: 4
 description: "
 Costly turret, Able fire high velocity rounds.
 Does enough base damage to ignore basic [white][IFrame][] and could use multiple ammoTypes.
@@ -18,9 +21,14 @@ requirements:[lead/2450,copper/1250,graphite/750,silicon/450,metaglass/335]
 reload: 120
 range: 400
 rotateSpeed: 4.5
+shootSound: unitCreateBig
 
 databaseTag: "gier"
 envEnabled: -1
+shoot:{
+shots: 3
+shotDelay: 6
+}
 
 drawer:{
 type: DrawTurret
@@ -42,7 +50,15 @@ copper:{
 width: 15
 height: 21
 
-hitEffect: plasticExplosion
+hitSound: blockExplodeExplosiveAlt
+hitEffect: {
+type: MultiEffect
+effects:[
+instBomb
+spawnShockWave
+]
+}
+
 despawnHit: true
 
 speed: 10
@@ -51,7 +67,7 @@ lifetime: 40
 trailLength: 0
 trailWidth: 3
 
-damage: 125
+damage: 42
 
 knockback: 15
 impact: true
@@ -63,7 +79,15 @@ lead:{
 width: 15
 height: 21
 
-hitEffect: plasticExplosion
+hitSound: blockExplodeExplosiveAlt
+hitEffect: {
+type: MultiEffect
+effects:[
+instBomb
+spawnShockWave
+]
+}
+
 despawnHit: true
 
 speed: 10
@@ -74,7 +98,7 @@ trailWidth: 3
 
 frontColor: 8c7fa9
 backColor: 8c7fa9
-damage: 85
+damage: 29
 
 knockback: 15
 impact: true
