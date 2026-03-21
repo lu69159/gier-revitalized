@@ -98,6 +98,7 @@ hitShake: 6.5
 elevation: 0
 drawer: {
   type: DrawTurret
+  basePrefix: "-lid"
 parts:[
 {
 growX: -0.25
