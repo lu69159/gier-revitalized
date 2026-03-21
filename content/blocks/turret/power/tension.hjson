@@ -26,6 +26,7 @@ researchCostMultiplier: 0.05
 shootSound: shootScathe
 
 shootY: 0
+hasShadow: false
 customShadow: true
 category: turret
 reload: 65
