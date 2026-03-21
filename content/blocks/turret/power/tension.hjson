@@ -108,5 +108,8 @@ suffix: "-lid"
 color: ffffffff
 colorTo: 8f8f8f7f
 }
+{
+suffix: "-shadow"
+}
 ]
 }
