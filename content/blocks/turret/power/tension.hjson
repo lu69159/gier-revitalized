@@ -29,7 +29,7 @@ shootY: 0
 hasShadow: false
 customShadow: true
 category: turret
-reload: 85
+reload: 95
 shake: 0.65
 
 shoot:{
