@@ -29,7 +29,7 @@ shootY: 0
 hasShadow: false
 customShadow: true
 category: turret
-reload: 65
+reload: 85
 shake: 0.65
 
 shoot:{
@@ -78,8 +78,8 @@ homingRange: 200
 impact: true
 knockback: 15
 
-damage: 10
-splashDamage: 15
+damage: 25
+splashDamage: 20
 splashDamageRadius: 40
 scaledSplashDamage: true
 frontColor: 7d4c27
