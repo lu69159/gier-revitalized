@@ -19,7 +19,7 @@ power: 1
 databaseTag: "gier"
 research: photon-panel
 rotateSpeed: 0
-recoilPow: 0
+recoil: 0
 outlineRadius: 0
 
 researchCostMultiplier: 0.05
