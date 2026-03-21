@@ -55,7 +55,7 @@ hitEffect: {
 type: MultiEffect
 effects:[
 instBomb
-spawnShockWave
+
 ]
 }
 
@@ -84,7 +84,8 @@ hitEffect: {
 type: MultiEffect
 effects:[
 instBomb
-spawnShockWave
+
+
 ]
 }
 
