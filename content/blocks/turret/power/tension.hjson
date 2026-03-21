@@ -8,11 +8,6 @@ shownPlanets: [gier]
 envEnabled: -1
 
 description: "Fires multiple homing missiles the the target."
-/*
-minWarmup: 1
-shootWarmupSpeed: 0.01112
-linearWarmup: false
-/*
 
 consumes:{
 power: 1
