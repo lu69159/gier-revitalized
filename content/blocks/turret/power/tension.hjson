@@ -66,7 +66,7 @@ width: 10
 height: 17
 lifetime: 120
 homingPower: 0.1
-homingDelay: 30
+homingDelay: 20
 homingRange: 80
 homingRange: 200
 impact: true
