@@ -8,8 +8,8 @@ shownPlanets: [gier]
 envEnabled: -1
 
 description: "Fires multiple homing missiles the the target."
-minWarmup: 9
-shootWarmupSpeed: 0.1
+minWarmup: 1
+shootWarmupSpeed: 0.0111111
 
 consumes:{
 power: 1
@@ -17,7 +17,6 @@ power: 1
 
 databaseTag: "gier"
 research: photon-panel
-rotates: false
 rotateSpeed: 0
 outlineRadius: 0
 
