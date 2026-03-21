@@ -103,8 +103,8 @@ parts:[
 {
 suffix: "-lid"
 color: ffffffff
-growX: 0.75
-growY: 0.75
+growX: -0.25
+growY: -0.25
 
 colorTo: ffffff00
 progress: warmup
