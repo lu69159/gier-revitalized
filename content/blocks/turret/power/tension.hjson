@@ -18,7 +18,7 @@ power: 1
 databaseTag: "gier"
 research: photon-panel
 rotates: false
-rotsteSpeed: 0
+rotateSpeed: 0
 outlineRadius: 0
 
 researchCostMultiplier: 0.05
@@ -103,6 +103,9 @@ parts:[
 {
 suffix: "-lid"
 color: ffffffff
+growX: 0.75
+growY: 0.75
+
 colorTo: ffffff00
 progress: warmup
 }
