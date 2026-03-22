@@ -1,6 +1,7 @@
 type: ItemTurret
 LocalizedName: Launch Silo
 size: 2
+range: 150
 
 drawer:{
 type: DrawRegion
@@ -22,7 +23,7 @@ effect: shootSmokeSquare
 }
 
 shootSound: shootScatter
-reload: 10
+reload: 4.5
 shoot:{
 type: ShootSpread
 shots: 71
