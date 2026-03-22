@@ -108,6 +108,7 @@ lifeScaleRandMax: 1.05
 
 width: 8.5
 height: 15
+layer: 77
 
 despawnHit: true
 hitSound: shootDuo
