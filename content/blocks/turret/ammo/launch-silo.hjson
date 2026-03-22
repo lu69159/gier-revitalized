@@ -14,7 +14,13 @@ graphite/150
 beryllium/100
 silicon/200
 ]
-  
+
+shootEffect:{
+type: RadiusEffect
+amount: 71
+effect: shootSmokeSquare
+}
+
 shootSound: shootScatter
 reload: 10
 shoot:{
@@ -29,6 +35,7 @@ shootCone: 180
 rotateSpeed: 0
 outlineRadius: 0
 customShadow: true
+shootY: 0
 ammoTypes:{
 lead:{
 type: BasicBulletType
