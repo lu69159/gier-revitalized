@@ -1,0 +1,38 @@
+type: ItemTurret
+LocalizedName: Launch Silo
+size: 2
+
+drawer:{
+type: DrawRegion
+}
+
+category: turret
+requirements:[
+lead/225
+copper/150
+graphite/150
+beryllium/100
+silicon/200
+]
+  
+shootSound: shootScatter
+reload: 10
+shoot:{
+type: ShootSpread
+shots: 35
+spread: 5
+}
+
+ammoPerShot: 15
+maxAmmo: 45
+ammoTypes:{
+lead:{
+type: BasicBulletType
+speed: 5
+lifetime: 60
+
+damage: 5
+knockback: 1.5
+impact: true
+}
+}
