@@ -45,6 +45,7 @@ lead:{
 type: BasicBulletType
 speed: 5
 lifetime: 60
+smokeEffect: shootPayloadDriver
 
 width: 8.5
 height: 15
