@@ -40,6 +40,7 @@ shotDelay: 0
 shootEffect:{
 type: RadialEffect
 effect: shootSmokeMissile
+rotationOffset: 45
 }
 
 requirements:[
@@ -72,7 +73,7 @@ speed: 1
 trailEffect: none
 trailChance: 0.25
 trailWidth: 2
-trailLength: 12
+trailLength: 24
 width: 10
 height: 17
 lifetime: 120
