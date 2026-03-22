@@ -1,5 +1,14 @@
 type: ItemTurret
 localizedName: Launch Silo
+description: "Launches flaks of bullet in all direction, Could be also be made to shoot by being clicked.
+
+[green]- Directional
+- Anti IFrame
+- Manually Operated
+[salmon]- Shorter Range
+- Consumes alot of ammo
+"
+
 size: 2
 range: 150
 
@@ -46,6 +55,7 @@ width: 8.5
 height: 15
 
 damage: 5
+status: iframe-kill
 knockback: 1.5
 impact: true
 }
