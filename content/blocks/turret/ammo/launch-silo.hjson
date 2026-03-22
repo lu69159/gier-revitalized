@@ -15,6 +15,7 @@ description: "Launches flaks of bullets in all direction, Could also shoot manua
 
 size: 2
 range: 150
+playerControllable: false
 
 envEnabled: -1
 databaseTag: "gier"
