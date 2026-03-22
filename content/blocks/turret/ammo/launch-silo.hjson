@@ -83,4 +83,39 @@ status: iframe-kill
 knockback: 1.5
 impact: true
 }
+// Sili
+
+silicon:{
+type: BasicBulletType
+speed: 5
+lifetime: 60
+smokeEffect: none
+
+frontColor: 53565c
+backColor: 53565c
+trailColor: 53565c55
+trailWidth: 1.5
+trailLength: 16
+
+homingPower: 0.1
+homingDelay: 30
+
+velocityScaleRandMin: 0.95
+velocityScaleRandMax: 1.05
+
+lifeScaleRandMin: 0.95
+lifeScaleRandMax: 1.05  
+
+width: 8.5
+height: 15
+
+despawnHit: true
+hitSound: shootDuo
+hitEffect: hitBulletBig
+
+damage: 7.5
+status: iframe-kill
+knockback: 1.5
+impact: true
+}
 }
