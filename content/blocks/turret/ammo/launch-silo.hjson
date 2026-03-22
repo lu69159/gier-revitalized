@@ -23,6 +23,7 @@ drawer:{
 type: DrawRegion
 }
 
+shootEffect: blastSmome
 category: turret
 requirements:[
 lead/225
@@ -59,11 +60,25 @@ lead:{
 type: BasicBulletType
 speed: 5
 lifetime: 60
-smokeEffect: shootSmokeSquareSparse
+smokeEffect: none
 
+velocityScaleRandMin: 0.95
+velocityScaleRandMax: 1.05
+
+lifeScaleRandMin: 0.95
+lifeScaleRandMax: 1.05  
 
 width: 8.5
 height: 15
+
+despawnHit: true
+hitSound: shootDuo
+hitEffect:{
+type: WrapEffect
+effect: mineImpact
+layer: 77
+color: 8c7fa9
+}
 
 damage: 5
 status: iframe-kill
