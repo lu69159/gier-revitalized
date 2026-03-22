@@ -19,12 +19,16 @@ shootSound: shootScatter
 reload: 10
 shoot:{
 type: ShootSpread
-shots: 35
+shots: 71
 spread: 5
 }
 
 ammoPerShot: 15
 maxAmmo: 45
+shootCone: 180
+rotateSpeed: 0
+outlineRadius: 0
+customShadow: true
 ammoTypes:{
 lead:{
 type: BasicBulletType
