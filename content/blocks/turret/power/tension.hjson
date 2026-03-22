@@ -64,10 +64,10 @@ fragVelocityMax: 1
 fragBullet:{
 type: MissileBulletType
 speed: 1
-trailEffect: missileTrailSmokeSmall
+trailEffect: none
 trailChance: 0.25
 trailWidth: 2
-trailLength: 0
+trailLength: 12
 width: 10
 height: 17
 lifetime: 120
