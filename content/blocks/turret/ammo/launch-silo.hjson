@@ -26,7 +26,7 @@ shootSound: shootScatter
 reload: 4.5
 shoot:{
 type: ShootSpread
-shots: 71
+shots: 72
 spread: 5
 }
 
