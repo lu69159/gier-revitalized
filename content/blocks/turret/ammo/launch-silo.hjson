@@ -92,8 +92,8 @@ lifetime: 60
 smokeEffect: none
 
 frontColor: 53565c
-backColor: 53565c
-trailColor: 53565c88
+backColor: 707594
+trailColor: 707594
 trailWidth: 1.5
 trailLength: 16
 
