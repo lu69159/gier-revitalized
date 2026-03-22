@@ -37,6 +37,11 @@ shots: 2
 shotDelay: 0
 }
 
+shootEffect:{
+type: RadialEffect
+effect: shootSmokeMissile
+}
+
 requirements:[
 lead/445
 copper/365
