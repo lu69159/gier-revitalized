@@ -95,7 +95,7 @@ frontColor: 53565c
 backColor: 707594
 trailColor: 707594
 trailWidth: 1.5
-trailLength: 16
+trailLength: 4
 
 homingPower: 0.1
 homingDelay: 30
