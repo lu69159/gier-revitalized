@@ -58,11 +58,8 @@ lead:{
 type: BasicBulletType
 speed: 5
 lifetime: 60
-smokeEffect: {
-type: WrapEffect
-color: FFD37F
-effect: colorSpark
-}
+smokeEffect: shootSmokeDisperse
+
 
 width: 8.5
 height: 15
