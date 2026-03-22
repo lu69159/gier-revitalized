@@ -31,7 +31,7 @@ shots: 72
 spread: 5
 }
 
-ammoPerShot: 15
+ammoPerShot: 5
 maxAmmo: 45
 shootCone: 180
 rotateSpeed: 0
