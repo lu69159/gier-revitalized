@@ -28,7 +28,7 @@ silicon/60
 ]
 craftTime: 300
 consumes:{
-power: 2
+power: 5
 items:[
 sand/120
 lead/60
