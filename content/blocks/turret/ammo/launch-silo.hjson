@@ -18,7 +18,7 @@ silicon/200
 
 shootEffect:{
 type: RadiusEffect
-amount: 71
+amount: 72
 effect: shootSmokeSquare
 }
 
@@ -42,6 +42,9 @@ lead:{
 type: BasicBulletType
 speed: 5
 lifetime: 60
+
+width: 14
+height: 20
 
 damage: 5
 knockback: 1.5
