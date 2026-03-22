@@ -1,0 +1,24 @@
+Events.on(UnitDamageEvent, e => {
+try {
+
+const unit = e.unit;
+if (unit == null) return;
+
+const type = unit.type
+const target = Vars.content.getByName(ContentType.unit, "gr-electron");
+if (type != target) return;
+
+Sounds.shootArc.at(unit.x,unit.y);
+Lightning.create(
+    unit.team,
+    Color.valueOf("bccae0ff"),
+    35,
+    unit.x,
+    unit.y,
+    Mathf.random(360),
+    24 + Mathf.random(24)
+);
+    
+} catch(e){
+Vars.ui.showInfoToast(e,5);
+}});
