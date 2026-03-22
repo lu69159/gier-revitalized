@@ -58,7 +58,7 @@ lead:{
 type: BasicBulletType
 speed: 5
 lifetime: 60
-smokeEffect: shootSmokeDisperse
+smokeEffect: shootSmokeSquareSparse
 
 
 width: 8.5
