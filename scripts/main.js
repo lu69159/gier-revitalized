@@ -11,3 +11,4 @@ require("LaunchSilo"); // Required to shootConne on 180 and needs to be a turret
 // Subclass: Units
 require("IFrameUnit");
 require("EnrageUnit");
+require("ZapUnit");
