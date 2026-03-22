@@ -62,6 +62,9 @@ speed: 5
 lifetime: 60
 smokeEffect: none
 
+homingPower: 0.05
+homingDelay: 30
+
 velocityScaleRandMin: 0.95
 velocityScaleRandMax: 1.05
 
