@@ -9,6 +9,8 @@ description: "Launches flaks of bullets in all direction, Could also shoot manua
 - Manually Operated
 [salmon]- Range is smaller than bullet travel distance
 - Consumes alot of ammo
+- Explosive
+- Consumes Power
 "
 
 size: 2
@@ -28,6 +30,11 @@ graphite/150
 beryllium/100
 silicon/200
 ]
+
+baseExplosiveness: 25
+consumes:{
+power: 0.35
+}
 
 shootEffect: none
 
@@ -51,7 +58,11 @@ lead:{
 type: BasicBulletType
 speed: 5
 lifetime: 60
-smokeEffect: colorSpark
+smokeEffect: {
+type: WrapEffect
+color: FFD37F
+effect: colorSpark
+}
 
 width: 8.5
 height: 15
