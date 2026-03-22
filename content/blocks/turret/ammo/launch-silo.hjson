@@ -1,5 +1,5 @@
 type: ItemTurret
-LocalizedName: Launch Silo
+localizedName: Launch Silo
 size: 2
 range: 150
 
