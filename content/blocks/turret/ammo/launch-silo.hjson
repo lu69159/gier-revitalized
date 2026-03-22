@@ -6,7 +6,7 @@ description: "Launches flaks of bullets in all direction, Could also shoot manua
 
 [green]- Directional
 - Anti IFrame
-- Manually Operated
+- Could be manually operated
 [salmon]- Range is smaller than bullet travel distance
 - Consumes alot of ammo
 - Explosive
