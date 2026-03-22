@@ -103,6 +103,7 @@ trailWidth: 3
 frontColor: 8c7fa9
 backColor: 8c7fa9
 damage: 29
+layer: 77
 
 knockback: 15
 impact: true
