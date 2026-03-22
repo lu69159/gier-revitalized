@@ -18,12 +18,7 @@ beryllium/100
 silicon/200
 ]
 
-shootEffect:{
-type: RadiusEffect
-amount: 8
-rotationSpacing: 22.5
-effect: shootPayloadDriver
-}
+shootEffect: none
 
 shootSound: shootScatter
 reload: 4.5
@@ -45,7 +40,7 @@ lead:{
 type: BasicBulletType
 speed: 5
 lifetime: 60
-smokeEffect: shootPayloadDriver
+smokeEffect: colorSpark
 
 width: 8.5
 height: 15
