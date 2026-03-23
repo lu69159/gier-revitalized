@@ -34,6 +34,15 @@ sand/120
 lead/60
 graphite/60
 ]
+
+
+  liquid: {
+    liquid: water
+    amount: 0.33334
+    optional: true
+    booster: true
+  }
+
 }
 
 craftEffect:{
