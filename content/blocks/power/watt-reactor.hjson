@@ -72,8 +72,8 @@ explodeEffect: reactorExplosion
 explodeSound: explosionCore
 
 consumes:{
-items:[graphite/65]
-liquids:[water/0.16667]
+items:[graphite/45]
+liquids:[water/1.66667]
 }
 
 drawer:{
