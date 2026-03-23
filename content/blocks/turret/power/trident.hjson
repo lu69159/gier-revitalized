@@ -4,6 +4,12 @@ localizedName: Trident
 category: turret
 outlineColor: 2f2f3f
 
+coolant:{
+type: ConsumeCoolant
+allowGas: false
+amount: 0.33334
+}
+
 maxAmmo: 20
 ammoPerShot: 4
 description: "
