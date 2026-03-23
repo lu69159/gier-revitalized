@@ -4,7 +4,7 @@ squareSprite: false
   
 localizedName: Dihydrogen Shaft
 category: production
-attribute: "carbon"
+attribute: carbon
 
 outputLiquid: water/0.16667
 liquidCapacity: 100
@@ -12,6 +12,8 @@ customShadow: true
 
 ambientSound: dihydrogen-shaft
 ambientSoundVolume: 0.2
+baseEfficiency: 0
+minEfficiency: 0.25
 
 updateEffectChance: 1
 updateEffectSpread: 1
@@ -43,6 +45,7 @@ items:[graphite/1]
 power: 0.65
 }
 
+envEnabled: -1
 research: {
 parent: gier
 objectives:[dihydrogen-shaft]
