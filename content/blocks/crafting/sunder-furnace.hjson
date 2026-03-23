@@ -18,7 +18,7 @@ objectives:[core-facility]
 }
 envEnabled: -1
 databaseTag: "gier"
-researchCostMultiplier: 0.15
+researchCostMultiplier: 0.05
 squareSprite: false
 
 itemCapacity: 120
