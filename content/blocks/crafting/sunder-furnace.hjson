@@ -36,13 +36,7 @@ graphite/60
 ]
 
 
-  liquid: {
-    liquid: water
-    amount: 0.33334
-    optional: true
-    multiplier: 1.5
-    booster: true
-  }
+
 
 }
 
