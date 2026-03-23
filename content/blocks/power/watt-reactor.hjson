@@ -43,13 +43,8 @@ explosionDamage: 3750
 category: power
 
 databaseTag: "gier"
-research: {
-parent: photon-panel
-objectives:[{
-type: OnPlanet
-planet: sun
-}]
-}
+research: photon-panel
+researchCostMultiplier: 0.15
 
 generateEffectRange: 0.1
 effectChance: 0.225
