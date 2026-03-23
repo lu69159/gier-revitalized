@@ -3,6 +3,7 @@ size: 2
 localizedName: Sealent Capsule
 squareSprite: false
 
+databaseTag: "gier"
 category: crafting
 requirements:[
 lead/150
