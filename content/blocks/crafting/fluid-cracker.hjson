@@ -7,6 +7,12 @@ research: sealent-capsule
 researchCostMultiplier: 0.45
 
 requirements:[lead/175,copper/100,graphite/75,metaglass/50,silicon/25]
+outputLiquid: water/0.1667
+
+productionTime: 60
+consumes:{
+items:[water-capsule/1]
+}
 
 databaseTag: "gier"
 envEnabled: -1
