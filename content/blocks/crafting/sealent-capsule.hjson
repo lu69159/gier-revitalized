@@ -16,6 +16,7 @@ titanium/50
 description: "Seals liquids into capsules."
 envEnabled: -1
 research: dihydrogen-shaft
+researchCostMultiplier: 0.25
 
 consumes:{
 power: 0.5
