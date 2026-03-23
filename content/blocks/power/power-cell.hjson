@@ -20,7 +20,10 @@ databaseTag: "gier"
 requirements:[lead/45,copper/30,metaglass/15,silicon/10]
 category: power
 envEnabled: -1
-  
+
+research: button
+researchCostMultiplier: 0.15
+
 research: button
 customShadow: true
 configureSound: shootArc
