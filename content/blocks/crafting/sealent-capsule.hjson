@@ -19,7 +19,7 @@ research: dihydrogen-shaft
 
 consumes:{
 power: 0.5
-liquids:[water/0.016667]
+liquids:[water/0.166667]
 }
 
 outputItem: water-capsule/1
