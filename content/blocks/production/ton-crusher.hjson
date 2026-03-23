@@ -14,7 +14,8 @@ A more advanced mineral drill, Can now be used to bore up beryllium and titanium
 "
 
 consumes:{
-power: 0.75
+power: 1.5
+liquids:[water/0.016667]
 }
 
 health: 1350
