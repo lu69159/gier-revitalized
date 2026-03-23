@@ -124,7 +124,7 @@ hitEffect: hitBulletBig
 damage: 7.5
 armorMultiplier: -2
 status: iframe-kill
-knockback: 1.5
+knockback: 3
 impact: true
 }
 }
