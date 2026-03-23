@@ -49,9 +49,6 @@ customShadow: true
 baseColor: 84F5B4FF
 
 databaseTag: "gier"
-research: {
-parent: copper-fort
-objectives:[mend-pylon]
-}
-researchCostMultiplier: 0.05
+research: copper-fort
+researchCostMultiplier: 0.25
   
