@@ -6,7 +6,7 @@ description: "
 Generates power from solar radiation.
 "
 
-requirements:[lead/75,copper/100,graphite/65]
+requirements:[lead/105,copper/85,graphite/75]
 research: gier
 researchCostMultiplier: 0.15
 envEnabled: -1
