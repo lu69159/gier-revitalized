@@ -39,7 +39,7 @@ silicon/200
 
 baseExplosiveness: 25
 consumes:{
-power: 0.35
+power: 1.5
 }
 
 shootEffect: none
