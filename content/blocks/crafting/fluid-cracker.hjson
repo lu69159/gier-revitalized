@@ -1,0 +1,30 @@
+type: GenericCrafter
+size: 2
+localizedName: Fluid Cracker
+
+category: crafting
+research: sealent-capsule
+researchCostMultiplier: 0.45
+
+requirements:[lead/175,copper/100,graphite/75,metaglass/50,silicon/25]
+
+databaseTag: "gier"
+envEnabled: -1
+  
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+suffix: "-bottom'
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+padding: 2.5
+}
+{
+type: DrawDefault
+}
+]
+}
