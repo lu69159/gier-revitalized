@@ -18,20 +18,3 @@ items:[water-capsule/1]
 databaseTag: "gier"
 envEnabled: -1
   
-drawer:{
-type: DrawMulti
-drawers:[
-{
-type: DrawRegion
-suffix: "-bottom'
-}
-{
-type: DrawLiquidTile
-drawLiquid: water
-padding: 2.5
-}
-{
-type: DrawDefault
-}
-]
-}
