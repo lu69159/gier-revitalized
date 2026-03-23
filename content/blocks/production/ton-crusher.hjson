@@ -28,13 +28,8 @@ category: production
 
 customShadow: true
 databaseTag: "gier"
-research: {
-parent: hydro-drill
-objectives:[{
-type: OnPlanet
-planet: sun
-}]
-}
+research: hydro-drill
+researchCostMultiplier: 0.25
 
 baseExplosiveness: 14.5
 explosivenessScale: 6
