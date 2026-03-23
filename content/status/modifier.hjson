@@ -2,4 +2,6 @@ name: Modifiers
 show: false
 research: techtree-kela
 
-description: "Modifiers to change how gier plays. May only be activated on wave one."
+description: "Modifiers to change how gier plays. May only be activated on wave one.
+[grey]Research on gier to active.[]
+"
