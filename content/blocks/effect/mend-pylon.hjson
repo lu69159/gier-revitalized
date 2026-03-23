@@ -51,10 +51,7 @@ baseColor: 84F5B4FF
 databaseTag: "gier"
 research: {
 parent: copper-fort
-objectives:[{
-type: OnPlanet
-planet: sun
-}]
+objectives:[mend-pylon]
 }
 researchCostMultiplier: 0.05
   
