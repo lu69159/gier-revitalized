@@ -9,6 +9,12 @@ envEnabled: -1
 
 description: "Fires multiple homing missiles the the target."
 
+coolant:{
+type: ConsumeCoolant
+allowGas: false
+amount: 0.33334
+}
+
 shootWarmupSpeed: 0.05
 minWarmup: 0.9
 
