@@ -44,9 +44,9 @@ Events.on(ResearchEvent, e => {
 });
 
 
-Events.on(SectorLaunchEvent, event => {
+Events.on(WorldLoadEvent, event => {
 try {
-Vars.ui.showInfoToast("planet: " + Vars.state.getPlanet(), 3);
+//Vars.ui.showInfoToast("planet: " + Vars.state.getPlanet(), 3);
     
 const dedrone = Vars.content.getByName(ContentType.status,"gr-dedrone");
 dedrone.clearUnlock();
