@@ -13,8 +13,8 @@ unitType: carrier
 polyRadius: 5.5
 
 requirements:[
-copper/135
-lead/125
+copper/115
+lead/105
 graphite/30
 ]
 
