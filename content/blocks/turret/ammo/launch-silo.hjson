@@ -14,6 +14,13 @@ description: "Launches flaks of bullets in all direction, Could also shoot manua
 - Consumes Power
 "
 
+researchCostMultiplier: 0.45
+research: {
+parent: tension
+objectives:[launch-silo]
+}
+
+
 size: 2
 range: 150
 playerControllable: false
