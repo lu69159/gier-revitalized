@@ -46,10 +46,8 @@ power: 0.65
 }
 
 envEnabled: -1
-research: {
-parent: gier
-objectives:[dihydrogen-shaft]
-}
+research: gier
+researchCostMultiplier: 0.34
 
 drawer:{
 type: DrawMulti

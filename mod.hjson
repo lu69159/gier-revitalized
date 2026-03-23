@@ -1,7 +1,7 @@
 // file name very used in logic like template-block.
 name: "gr"
 
-displayName: "Gier: [salmon[]]Revitalized[[]]"
+displayName: "[sky[]]Gier: [salmon[]]Revitalized[[]]"
 repo: "Fat-Bird-Owner/gier-revitalized"
 
 author: "Fat Bird's Owner - Main Developer"
@@ -15,8 +15,8 @@ Makes gier a playable planet.
 "
 
 iosCompatible: true
-version: "v1.61-Gier"
-subtitle: "v1.61-Gier"
+version: "v2-Gier"
+subtitle: "v2-Gier"
 minGameVersion: "155"
 dependencies: []
 hidden: false

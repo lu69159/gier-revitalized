@@ -17,10 +17,9 @@ health: 4250
 customShadow: true
 squareSprite: false
 
-research: {
-parent: copper-fort
-objectives:[fusion-dome]
-}
+research: copper-fort
+researchCostMultiplier: 0.15
+
 researchCostMultiplier: 0.35
 databaseTag: "gier"
 shieldHealth: 4500
@@ -29,7 +28,7 @@ cooldownNormal: 25
 shieldRotation: 45
 
 consumes:{
-power: 2.5
+power: 4.5
 }
 
 requirements: [

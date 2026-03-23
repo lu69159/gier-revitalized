@@ -12,3 +12,6 @@ require("LaunchSilo"); // Required to shootConne on 180 and needs to be a turret
 require("IFrameUnit");
 require("EnrageUnit");
 require("ZapUnit");
+
+// Mods
+require("Modifiers");

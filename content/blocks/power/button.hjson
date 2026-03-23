@@ -23,7 +23,5 @@ envEnabled: -1
 databaseTag: "gier"
 category: power
 
-research: {
-parent: photon-panel
-objectives:[button]
-}
+research: photon-panel
+researchCostMultiplier: 0.5
