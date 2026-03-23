@@ -25,8 +25,5 @@ category: power
 
 research: {
 parent: photon-panel
-objectives:[{
-type: OnPlanet
-planet: sun
-}]
+objectives:[button]
 }
