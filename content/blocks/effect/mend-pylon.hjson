@@ -20,7 +20,7 @@ silicon/50
 ]
 
 consumes:{
-power: 0.5
+power: 1.5
 }
 
 category: effect
