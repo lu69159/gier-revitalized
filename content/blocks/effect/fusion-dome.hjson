@@ -24,7 +24,7 @@ objectives:[fusion-dome]
 researchCostMultiplier: 0.35
 databaseTag: "gier"
 shieldHealth: 4500
-cooldownNormal: 0.65
+cooldownNormal: 25
 
 shieldRotation: 45
 
