@@ -14,6 +14,16 @@ drag: 0.015
 engineSize: 0
 hitSize: 20.25
 
+weapons:[
+{
+noAttack: true
+display: false
+shootCone: 0
+controllable: false
+aiControllable: false
+}
+]
+
 outlineColor: 2f2f3f
 drawSoftShadow: false
 
