@@ -42,7 +42,7 @@ consumes:{
 power: 1.5
 }
 
-shootEffect: plasticExplosionFlak
+shootEffect: none
 shootSound: shootScatter
 reload: 4.5
 shoot:{
