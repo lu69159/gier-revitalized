@@ -13,6 +13,7 @@ accel: 0.035
 drag: 0.015
 engineSize: 0
 hitSize: 20.25
+range: 5
 
 weapons:[
 {
