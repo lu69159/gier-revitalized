@@ -16,7 +16,7 @@ A more advanced mineral drill, Can now be used to bore up beryllium and titanium
 consumes:{
 power: 1.5
 liquid: {
-liquid: cryofluid
+liquid: water
 amount: 1
 optional: true
 booster: true
