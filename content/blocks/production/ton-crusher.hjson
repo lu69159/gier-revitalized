@@ -13,6 +13,7 @@ A more advanced mineral drill, Can now be used to bore up beryllium and titanium
 - Highly Explosive
 "
 
+liquidBoostIntensity: 1.5
 consumes:{
 power: 1.5
 liquid: {
