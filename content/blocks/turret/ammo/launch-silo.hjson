@@ -42,8 +42,7 @@ consumes:{
 power: 1.5
 }
 
-shootEffect: none
-
+shootEffect: plasticExplosionFlak
 shootSound: shootScatter
 reload: 4.5
 shoot:{
@@ -65,6 +64,9 @@ type: BasicBulletType
 speed: 5
 lifetime: 60
 smokeEffect: none
+
+trailEffect: fallSmoke
+trailChance: 1.25
 
 homingPower: 0.05
 homingDelay: 30
@@ -95,11 +97,14 @@ speed: 5
 lifetime: 60
 smokeEffect: none
 
+trailEffect: fallSmoke
+trailChance: 1.25
+
 frontColor: 53565c
 backColor: 707594
 trailColor: 707594
 trailWidth: 1.5
-trailLength: 4
+trailLength: 0
 
 homingPower: 0.1
 homingDelay: 15
