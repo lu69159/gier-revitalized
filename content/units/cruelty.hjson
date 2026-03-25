@@ -7,6 +7,8 @@ speed: 1.5
 accel: 0.015
 drag: 0.005
 flying: true
+range: 200
+rotateSpeed: 1
 
 engineSize: 0
 parts:[
@@ -15,6 +17,7 @@ type: HoverPart
 radius: 10
 layerOffset: -0.1
 color: FFD37F 
+y: -10
 }]
   
 name: Cruelty
@@ -31,17 +34,22 @@ rotateSpeed: 2.5
 
 bullet:{
 type: BasicBulletType
-speed: 4
-lifetime: 30
+speed: 2
+lifetime: 100
+homingPower: 0.05
 
 width: 7.5
-height: 10.5
-trailLength: 10
-trailWidth: 1.5
+height: 18
   
 damage: 25
 hitShake: 10
+despawnHit: true
 hitSound: unitExplode1
+hitEffect: shootSmokeSmite
+
+hitColor: FFD37F
+frontColor: FFD37F
+backColor: D4816B
 }
 
 }
