@@ -1,0 +1,22 @@
+type: UnitFactory
+localizedName: Imprinter
+size: 3
+
+customShadow: true
+category: units
+requirements:[
+lead/350
+copper/275
+graphite/200
+silicon/150
+titanium/100
+metaglass/50
+]
+
+plans:[
+{
+unit: ruthless
+requirements:[silicon/100,metaglass/25,lead/50]
+time: 2100
+}
+]
