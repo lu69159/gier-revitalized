@@ -9,6 +9,7 @@ drag: 0.01
 flying: true
 range: 400
 rotateSpeed: 1
+drawSoftShadow: false
 
 engineSize: 0
 parts:[
