@@ -35,6 +35,7 @@ reload: 15
 rotate: true
 rotateSpeed: 2.5
 shake: 5
+shootSound: massdriver
 
 parts:[
 {
