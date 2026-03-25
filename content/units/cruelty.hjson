@@ -9,7 +9,9 @@ drag: 0.01
 flying: true
 range: 400
 rotateSpeed: 1
+
 drawSoftShadow: false
+lowAltitude: true
 
 engineSize: 0
 parts:[
@@ -29,7 +31,7 @@ name: cr-weapon
 x: 5
 y: -5
 
-reload: 30
+reload: 15
 rotate: true
 rotateSpeed: 2.5
 shake: 5
@@ -55,10 +57,11 @@ lifetime: 50
 homingPower: 0.05
 keepVelocity: false
 
+smokeEffect: shootBigSmoke2
 width: 7.5
 height: 22.5
 
-damage: 25
+damage: 15
 hitShake: 10
 despawnHit: true
 hitSound: unitExplode1
