@@ -18,7 +18,7 @@ color: FFD37F
 }]
   
 name: Cruelty
-outlineClor: 1f1f2f
+outlineColor: 1f1f2f
 weapons:[
 {
 name: cr-weapon
