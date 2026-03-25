@@ -18,7 +18,7 @@ type: HoverPart
 radius: 10
 layerOffset: -0.1
 color: FFD37F 
-y: -10
+y: -12.5
 }]
   
 name: Cruelty
@@ -35,8 +35,8 @@ rotateSpeed: 2.5
 
 bullet:{
 type: BasicBulletType
-speed: 4
-lifetime: 100
+speed: 8
+lifetime: 50
 homingPower: 0.05
 keepVelocity: false
 
