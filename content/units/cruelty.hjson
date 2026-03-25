@@ -75,3 +75,21 @@ backColor: D4816B
 
 }
 ]
+
+
+// Researches
+
+description: "
+A long-range snowballer tank.
+Able quickly shred through basic barriers and poccesses very high durability.
+
+[red]Counter: 
+- Destroy them quickly
+- Pushing them back is there delight[]
+"
+research: {
+parent: drive
+objectives:[cruelty]
+}
+
+
