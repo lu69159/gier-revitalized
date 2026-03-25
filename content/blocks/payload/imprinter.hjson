@@ -15,6 +15,14 @@ metaglass/50
 
 consumes:{
 liquids:[water/0.16667]
+coolant:{
+amount: 0
+maxTemp: 10
+maxFlammability: 10
+allowGas: true
+optional: true
+booster: true
+}
 }
 
 plans:[
