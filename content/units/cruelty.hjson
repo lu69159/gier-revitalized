@@ -5,9 +5,9 @@ armor: 15
 
 speed: 1.5
 accel: 0.015
-drag: 0.005
+drag: 0.01
 flying: true
-range: 200
+range: 400
 rotateSpeed: 1
 
 engineSize: 0
@@ -34,13 +34,14 @@ rotateSpeed: 2.5
 
 bullet:{
 type: BasicBulletType
-speed: 2
+speed: 4
 lifetime: 100
 homingPower: 0.05
+keepVelocity: false
 
 width: 7.5
-height: 18
-  
+height: 22.5
+
 damage: 25
 hitShake: 10
 despawnHit: true
