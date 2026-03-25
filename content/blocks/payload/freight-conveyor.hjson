@@ -2,13 +2,14 @@ type: PayloadConveyor
 size: 3
 localizedName: Freight Conveyor
 
-moveTime: 60
+moveTime: 40
 interp: sineOut
 
 envEnabled: -1
 research: imprinter
 researchCostMultiplier: 0.25
   
+customShadow: true
 category: units
 requirements:[
 lead/25
