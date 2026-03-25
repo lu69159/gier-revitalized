@@ -1,0 +1,18 @@
+type: PayloadConveyor
+size: 3
+localizedName: Freight Conveyor
+
+moveTime: 60
+interp: sineOut
+
+envEnabled: -1
+research: imprinter
+researchCostMultiplier: 0.25
+  
+category: units
+requirements:[
+lead/25
+copper/20
+graphite/15
+silicon/10
+]
