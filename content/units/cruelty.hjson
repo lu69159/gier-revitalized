@@ -21,7 +21,7 @@ name: Cruelty
 outlineClor: 1f1f2f
 weapons:[
 {
-name: cruelty-weapon
+name: cr-weapon
 x: 5
 y: -5
 
