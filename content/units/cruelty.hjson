@@ -76,6 +76,12 @@ backColor: D4816B
 }
 ]
 
+abilities:[
+{
+type: ArmorPlateAbility
+healthMultiplier: -0.25
+}
+]
 
 // Researches
 
@@ -85,7 +91,8 @@ Able quickly shred through basic barriers and poccesses very high durability.
 
 [red]Counter: 
 - Destroy them quickly
-- Pushing them back is there delight[]
+- Avoid pushing them back
+- They take are weaker than firing
 "
 research: {
 parent: drive
