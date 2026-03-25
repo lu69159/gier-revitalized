@@ -1,0 +1,48 @@
+type: flying
+hitSize: 22
+health: 1650
+armor: 15
+
+speed: 1.5
+accel: 0.015
+drag: 0.005
+flying: true
+
+engineSize: 0
+parts:[
+{
+type: HoverPart
+radius: 10
+layerOffset: -0.1
+color: FFD37F 
+}]
+  
+name: Cruelty
+outlineClor: 1f1f2f
+weapons:[
+{
+name: cruelty-weapon
+x: 5
+y: -5
+
+reload: 30
+rotate: true
+rotateSpeed: 2.5
+
+bullet:{
+type: BasicBulletType
+speed: 4
+lifetime: 30
+
+width: 7.5
+height: 10.5
+trailLength: 10
+trailWidth: 1.5
+  
+damage: 25
+hitShake: 10
+hitSound: unitExplode1
+}
+
+}
+]
