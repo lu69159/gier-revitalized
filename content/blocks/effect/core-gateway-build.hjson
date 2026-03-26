@@ -1,0 +1,31 @@
+type: PowerTurret
+localizedName: "Core: [accent]Gateway[]"
+fullOverride: "gr-core-gateway"
+
+drawer:{
+type: DrawRegion
+name: "gr-core-gateway"
+layer: 60
+outline: false
+}
+  
+category: effect
+requirements:[
+lead/750
+copper/450
+graphite/200
+silicon/150
+titanium/100
+beryllium/100
+]
+
+warmupSpeed: 0.05
+minWarmup: 1
+consumes:{
+power: 5
+}
+  
+shootType:{
+type: EmptyBulletType
+killShooter: true
+}
