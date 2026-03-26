@@ -1,0 +1,6 @@
+type: CoreBlock
+localizedName: "Core: [accent]Gateway[]"
+
+itemCapacity: 0
+buildVisibility: sandboxOnly
+allowSpawn: false
