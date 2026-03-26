@@ -1,7 +1,7 @@
 type: ItemTurret
 localizedName: Scar
 size: 3
-clipSize: 1000
+clipSize: 9999
 
 category: turret
 requirements:[
