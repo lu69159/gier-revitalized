@@ -7,6 +7,7 @@ variants: 4
 // absorb laser a d eletric
 absorbLasers: true
 insulated: true
+customShadow: true
 
 research: copper-fort
 researchCostMultiplier: 0.25
