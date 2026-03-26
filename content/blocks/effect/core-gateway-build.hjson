@@ -8,7 +8,8 @@ name: "gr-core-gateway"
 layer: 60
 outline: false
 }
-  
+
+reload: 10
 category: effect
 requirements:[
 lead/750
