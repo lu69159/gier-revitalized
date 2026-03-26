@@ -5,6 +5,7 @@ description: "The classic. Protects from enemy projectiles and can also stop las
 variants: 4
 
 // absorb laser a d eletric
+health: 3600
 absorbLasers: true
 insulated: true
 customShadow: true
