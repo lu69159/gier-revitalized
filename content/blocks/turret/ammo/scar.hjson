@@ -1,6 +1,7 @@
 type: ItemTurret
 localizedName: Scar
 size: 2
+clipSize: 1000
 
 category: turret
 requirements:[
@@ -17,6 +18,7 @@ inaccuracy: 15
 shoot:{
 shots: 3
 shotDelay: 15
+firstShotDelay: 30
 }
 
 ammoTypes:{
@@ -49,7 +51,7 @@ under: true
 
 moves:[
 {
-y: 2.5
+y: 3.5
 progress: {
 type: warmup
 ops:[
@@ -69,7 +71,7 @@ type: recoil
 ops:[
 {
 op: compress
-end: 0.5
+end: 0.25
 start: 0
 }
 ]
