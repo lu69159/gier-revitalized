@@ -1,0 +1,19 @@
+type: Wall
+size: 2
+localizedName: Insulated Wall
+description: "The classic. Protects from enemy projectiles and can also stop lasers and eletric bullets."
+variants: 4
+
+// absorb laser a d eletric
+absorbLasers: true
+insulated: true
+
+research: copper-fort
+researchCostMultiplier: 0.25
+  
+category: defense
+requirements:[
+lead/45
+titaniym/30
+silicon/25
+]
