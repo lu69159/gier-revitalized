@@ -57,7 +57,7 @@ progress: {
 type: recoil
 ops:[
 {
-op: sineIn
+op: compress
 end: 1
 start: 0
 }
