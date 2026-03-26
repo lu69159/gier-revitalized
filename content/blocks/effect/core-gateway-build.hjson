@@ -19,12 +19,15 @@ titanium/100
 beryllium/100
 ]
 
-warmupSpeed: 0.05
+shootWarmupSpeed: 0.05
 minWarmup: 1
 consumes:{
 power: 5
 }
-  
+
+alwaysShooting: true
+shootCone: 180
+range: 0
 shootType:{
 type: EmptyBulletType
 killShooter: true
