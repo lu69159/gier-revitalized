@@ -11,11 +11,23 @@ This core is very destructive and doesnt increase Item Capacity.
 - There may only be a limit of [#D3DEE4FF]2[] on the map at all times
 "
 
+hasShadow: true
 drawer:{
+type: DrawMulti
+drawers:[
+{
 type: DrawRegion
 name: "gr-core-gateway"
 layer: 60
 outline: false
+}
+{
+type: DrawRegion
+name: "gr-core-gateway-shadow"
+layer: 30
+outline: false
+}
+]
 }
 
 reload: 10
