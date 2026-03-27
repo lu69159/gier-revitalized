@@ -21,12 +21,7 @@ name: "gr-core-gateway"
 layer: 60
 outline: false
 }
-{
-type: DrawRegion
-name: "gr-core-gateway-shadow"
-layer: 30
-outline: false
-}
+
 ]
 }
 
