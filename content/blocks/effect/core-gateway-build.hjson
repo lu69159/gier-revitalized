@@ -13,7 +13,9 @@ This core is very destructive and doesnt increase Item Capacity.
 - There may only be a limit of [#D3DEE4FF]2[] on the map at all times
 "
 
-researchCostMultiplier: 0
+researchCostMultiplier: 0.25
+envEnabled: -1
+
 research: core-facility
 
 hasShadow: true
