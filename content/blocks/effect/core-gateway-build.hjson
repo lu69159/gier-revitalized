@@ -40,13 +40,25 @@ strokeTo: 0
 colorFrom: D3DEE4FF
 cokorTo: D3DEE4FF
 }
+{
+type: ParticleEffect
+length: 0
+region: "gr-core-gateway"
+sizeFrom: 8
+sizeTo: 8
+colorFrom: D3DEE4FF
+colorTo: D3DEE400
+}
 ]
 }
 
 alwaysShooting: true
 shootCone: 180
+baseShake: 1.5
 range: 0
 shootType:{
 type: EmptyBulletType
+instantDisappear: true
+despawnEffect: none
 killShooter: true
 }
