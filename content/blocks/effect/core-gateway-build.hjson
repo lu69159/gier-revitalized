@@ -1,6 +1,15 @@
 type: PowerTurret
 localizedName: "Core: [accent]Gateway[]"
 fullOverride: "gr-core-gateway"
+description: "Build a compacted core.
+This core is very destructive and doesnt increase Item Capacity.
+
+[green]- Small
+- Placable Anywhere
+[red]- [scarlet]Very[red] Explosive
+- Requires power to set up
+- There may only be a limit of [#D3DEE4FF]2[] on the map at all times
+"
 
 drawer:{
 type: DrawRegion
@@ -44,10 +53,11 @@ cokorTo: D3DEE4FF
 type: ParticleEffect
 length: 0
 region: "gr-core-gateway"
-sizeFrom: 8
-sizeTo: 8
+sizeFrom: 4
+sizeTo: 4
 colorFrom: D3DEE4FF
 colorTo: D3DEE400
+layer: 61
 }
 ]
 }
