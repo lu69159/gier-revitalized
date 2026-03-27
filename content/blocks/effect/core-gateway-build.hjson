@@ -20,8 +20,15 @@ type: DrawRegion
 name: "gr-core-gateway"
 layer: 60
 outline: false
+color: 8f8f8f
 }
-
+{
+type: DrawRegion
+name: "gr-core-gateway-calibrate"
+layer: 122
+outline: false
+color: D3DEE4ff
+}
 ]
 }
 
