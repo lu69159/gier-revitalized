@@ -21,7 +21,7 @@ beryllium/100
 ]
 
 shootWarmupSpeed: 0.05
-minWarmup: 1
+minWarmup: 0.9
 consumes:{
 power: 5
 }
