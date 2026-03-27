@@ -7,7 +7,7 @@ allowSpawn: false
 buildTime: 2500
 
 breakable: true
-customShadow: false
+customShadow: true
 
 destroyBullet:{
 type: ExplosionBulletType
