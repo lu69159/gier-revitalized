@@ -4,3 +4,6 @@ localizedName: "Core: [accent]Gateway[]"
 itemCapacity: 0
 buildVisibility: sandboxOnly
 allowSpawn: false
+buildTime: 2500
+
+breakable: true
