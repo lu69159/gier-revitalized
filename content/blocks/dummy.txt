@@ -1,0 +1,6 @@
+type: dummy
+localizedName: Dummy
+category: defense
+
+health: 25000
+buildVisibility: sandboxOnly
