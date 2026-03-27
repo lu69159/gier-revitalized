@@ -26,6 +26,23 @@ consumes:{
 power: 5
 }
 
+destroyEffect:{
+type: MultiEffect
+effects:[
+{
+type: WaveEffect
+rotation: 24
+radiusFrom: 8
+radiusTo: 8
+sides: 4
+strokFrom: 4
+strokeTo: 0
+colorFrom: D3DEE4FF
+cokorTo: D3DEE4FF
+}
+]
+}
+
 alwaysShooting: true
 shootCone: 180
 range: 0
