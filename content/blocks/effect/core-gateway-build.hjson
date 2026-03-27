@@ -31,9 +31,9 @@ type: MultiEffect
 effects:[
 {
 type: WaveEffect
-rotation: 24
-radiusFrom: 8
-radiusTo: 8
+rotation: 44
+sizeFrom: 8
+sizeTo: 8
 sides: 4
 strokFrom: 4
 strokeTo: 0
