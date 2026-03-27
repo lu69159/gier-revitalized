@@ -7,3 +7,4 @@ allowSpawn: false
 buildTime: 2500
 
 breakable: true
+customShadow: true
