@@ -1,0 +1,7 @@
+type: PayloadRouter
+localizedName: Fabricator
+acceptsPayload: false
+buildVisibility: sandboxOnly
+
+description: "Fabricates a chosen unit and destroys itself."
+category: units
