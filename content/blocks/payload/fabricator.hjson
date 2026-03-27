@@ -5,3 +5,5 @@ buildVisibility: sandboxOnly
 
 description: "Fabricates a chosen unit and destroys itself."
 category: units
+size: 1
+rotateDraw: false
