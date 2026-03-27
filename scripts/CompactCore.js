@@ -1,3 +1,5 @@
+Vars.content.getByName(ContentType.block,"gr-core-gateway-build").customShadowRegion = Vars.content.getByName(ContentType.block,"gr-core-gateway").customShadowRegion;
+
 let lastBuild = null;
 
 Events.on(TapEvent, e => {
