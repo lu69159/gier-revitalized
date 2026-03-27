@@ -48,7 +48,7 @@ effects:[
 {
 type: WaveEffect
 rotation: 44
-sizeFrom: 8
+sizeFrom: 6
 sizeTo: 8
 sides: 4
 strokFrom: 4
