@@ -207,9 +207,9 @@ bullet:{
 type: RailBulletType
 hitEffect: none
 lineEffect: none
-pointEffect: none
+pointEffect: shootPayloadDriver
 pierceEffect: shootPayloadDriver
-pointEffectSpace: 44
+pointEffectSpace: 20
 length: 1000
 inaccuracy: 15
 
