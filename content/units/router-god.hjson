@@ -227,16 +227,16 @@ shootCone: 180
 
 shoot:{
 type: ShootSpread
-spread: 4.5
+spread: 45
 shots: 8
 }
 
-intervalBullet:{
+bullet:{
 type: BasicBulletType
 hitSize: 20
 
 speed: 5
-lifetime: 180
+lifetime: 300
 
 trailChance: 0.33
 trailEffect:{
