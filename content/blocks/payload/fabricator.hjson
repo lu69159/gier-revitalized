@@ -4,6 +4,7 @@ acceptsPayload: false
 buildVisibility: sandboxOnly
 
 description: "Fabricates a chosen unit and destroys itself."
+customShadow: true
 category: units
 size: 1
 rotateDraw: false
