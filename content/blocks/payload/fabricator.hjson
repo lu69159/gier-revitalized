@@ -22,7 +22,7 @@ rebuildable: false
 unitCapModifier: 1
 
 destroyEffect:{
-type: SeqEffect
+type: MultiEffect
 effects:[
 {
 type: WaveEffect
