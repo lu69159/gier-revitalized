@@ -74,7 +74,8 @@ sides: 125
 circles: 1
 layer: 110
 color: 53B56AFF
-radius: 80
+radius: 140
+phase: 100
 x: 0
 y: 0
 }
