@@ -74,6 +74,7 @@ sides: 125
 circles: 1
 layer: 110
 color: 53B56AFF
+radius: 80
 x: 0
 y: 0
 }
@@ -168,4 +169,5 @@ lifetime: 150
 }
 
 }
+// W1
 ]
