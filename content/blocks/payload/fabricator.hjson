@@ -5,9 +5,7 @@ buildVisibility: sandboxOnly
 size: 1
 
 description: "
-Fabricates a chosen unit and destroys itself.
-
-[green]
+Fabricates a chosen unit or a 1x1 block and destroys itself.
 "
 
 customShadow: true
