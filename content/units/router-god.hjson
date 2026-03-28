@@ -222,14 +222,31 @@ splashDamageRadius: 40
 
 }
 {
-reload: 300
+reload: 450
 shootCone: 180
 
 shoot:{
 type: ShootSpread
 spread: 45
 shots: 8
+shotDelay: 0
+firstShotDelay: 140
 }
+
+parts:[
+{
+type: FlarePart
+sides: 4
+radius: 0
+radiusTo: 25
+rotation: 45
+progress: charge
+color1: ff795e
+color2: ff795e
+layer: 111.05
+}
+]
+
 
 bullet:{
 type: BasicBulletType
