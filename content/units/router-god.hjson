@@ -173,10 +173,15 @@ lifetime: 150
 // W1
 {
 rotate: true
-reload: 450
+reload: 600
 x: 0
 y: 0
 shootSound: shootForeshadow
+shootEffect:{
+type: WrapEffect
+color: 53B56AFF
+effect: randLifeSpark
+}
 
 parts:[
 {
@@ -203,7 +208,7 @@ type: RailBulletType
 hitEffect: none
 lineEffect: none
 pointEffect: none
-pierceEffect: none
+pierceEffect: shootPayloadDriver
 pointEffectSpace: 44
 length: 1000
 inaccuracy: 15
