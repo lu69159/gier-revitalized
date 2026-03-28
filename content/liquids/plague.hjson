@@ -12,3 +12,8 @@ spreadDamage: 0.75
 removeScaling: 0.35
 
 viscosity: 3.5
+flammability: 3
+temperature: 1
+explosiveness: 5
+
+coolant: false
