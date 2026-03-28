@@ -173,19 +173,41 @@ lifetime: 150
 // W1
 {
 rotate: true
-reload: 12.5
+reload: 450
 x: 0
 y: 0
 shootSound: shootForeshadow
 
+parts:[
+{
+type: FlarePart
+sides: 4
+radius: 0
+radiusTo: 25
+progress: charge
+color: 53B56AFF
+layerOffset: 0.05
+}
+]
+
+shake: 105
+shoot:{
+shots: 45
+shotDelay: 0
+firstShotDelay: 180
+}
+
 bullet:{
 type: RailBulletType
-hitEffect: instHit
-lineEffect: railHit
-pointEffect: railTrail
+hitEffect: none
+lineEffect: none
+pointEffect: none
+pierceEffect: none
 pointEffectSpace: 44
 length: 1000
+inaccuracy: 15
 
+maxDamageFraction: 0.25
 damage: 250
 splashDamage: 250
 splashDamageRadius: 40
