@@ -1,0 +1,14 @@
+type: CellLiquid
+name: Plague
+
+hidden: true
+colorFrom: 3a8f64
+colorTo: 3a8f64
+color: 3a8f64
+spreadTarget: water
+maxSpread: 1.25
+spreadConversion: 1
+spreadDamage: 0.75
+removeScaling: 0.35
+
+viscosity: 3.5
