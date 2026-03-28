@@ -264,14 +264,15 @@ homingPower: 0.025
 homingRange: 800
 
 hitSound: shootToxopidShotgun
-splashDamage: 200
+splashDamage: 1650
+scaledSplashDamage: true
 splashDamageRadius: 200
-makeFire: true
+hitEffect: greenBomb
 
-puddleLiquid: tuntra
+puddleLiquid: plague
 puddles: 165
 puddleAmount: 2350
-puddleRange: 200
+puddleRange: 80
 }
 
 }
