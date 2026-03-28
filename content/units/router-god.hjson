@@ -16,25 +16,23 @@ parts:[
 {
 name: "gr-gren-router"
 radius: 48
-layer: 123.9
+layer: 111
 }
 {
 type: FlarePart
-layer: 123
-xScl: 8
-yScl: 8
+layer: 110
 color1: 53B56AFF
 color2: 53B56AFF
 sides: 4
-spinSpeed: 7.5
+spinSpeed: 3.75
 }
 {
 type: ShapePart
-layer: 122
+layer: 110
 hollow: true
 circle: true
 color: 53B56AFF
-radius: 80
+radius: 40
 layer: 122
 stroke: 12
 }
@@ -47,6 +45,10 @@ reload: 600
 chargeSound: chargeCorvus
 shootSound: shootOmura
 rotate: true
+
+mirror: false
+x: 0
+y: 0
 
 shoot:{
 firstShotDelay: 180
@@ -113,10 +115,11 @@ chargeEffect:{
 type: WaveEffect
 colorFrom: 53B56AFF
 colorTo: 53B56AFF
-layer: 123.95
+layer: 110
 sizeFrom: 160
 sizeTo: 0
 sizeInterp: sineIn
+lifetime: 150
 }
   
 }
