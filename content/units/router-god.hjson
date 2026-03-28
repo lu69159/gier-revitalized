@@ -1,0 +1,86 @@
+type: flying
+flying: true
+
+fullOverride: "gr-gren-router"
+hidden: true
+
+speed: 5
+rotateSpeed: 0
+
+drawBody: false
+drawCell: false
+
+health: 1500000
+armor: 1500
+parts:[
+{
+name: "gr-gren-router"
+radius: 48
+layer: 123.9
+}
+{
+type: FlarePart
+layer: 123
+radius: 80
+color1: 53B56AFF
+color2: 53B56AFF
+sides: 4
+}
+{
+type: ShapePart
+layer: 122
+hollow: true
+circle: true
+color: 53B56AFF
+radius: 80
+layer: 122
+}
+]
+
+weapons:[
+{
+name: "Anahilative Collider" 
+reload: 600
+chargeSound: chargeCorvus
+shootSound: shootOmura
+
+shoot:{
+firstShotDelay: 180
+}
+
+bullet:{
+type: BasicBulletType
+hitSize: 30
+damage: 4500
+pierce: true
+
+width: 30
+height: 30
+sprite: "gr-gren-router"
+spin: 6.5
+layer: 123
+
+speed: 5
+lifetime: 300
+hitShake: 15
+
+despawnHit: true
+hitEffect: reactorExplosion
+splashDamage: 25000
+splashDamageRadius: 160
+hitShake: 25
+
+chargeEffect:{
+type: WaveEffect
+colorFrom: 53B56AFF
+colorTo: 53B56AFF
+layer: 123.95
+sizeFrom: 160
+sizeTo: 0
+sizeInterp: sineIn
+}
+  
+}
+
+}
+]
