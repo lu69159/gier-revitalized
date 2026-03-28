@@ -18,8 +18,8 @@ parts:[
 name: "gr-gren-router"
 radius: 48
 layer: 111
-xScl: 8
-yScl: 8
+xScl: 6
+yScl: 6
 }
 {
 type: FlarePart
@@ -27,7 +27,19 @@ layer: 110
 color1: 53B56AFF
 color2: 53B56AFF
 sides: 4
-spinSpeed: 3.75
+stroke: 12
+spinSpeed: 1.5
+}
+{
+type: FlarePart
+layer: 110
+color1: 53B56AFF
+color2: 53B56AFF
+sides: 4
+stroke: 12
+radius: 150
+spinSpeed: 1.5
+rotation: 45
 }
 {
 type: ShapePart
