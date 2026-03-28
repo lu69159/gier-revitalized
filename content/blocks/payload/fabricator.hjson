@@ -34,6 +34,9 @@ sizeTo: 6
 strokeFrom: 4
 strokeTo: 0
 
+sides: 4
+rotation: 44
+
 sizeInterp: sineOut
 }
 {
@@ -43,8 +46,8 @@ length: 0
 cone: 1
 particles: 1
 
-sizeFrom: 8
-sizeTo: 8
+sizeFrom: 4
+sizeTo: 4
 colorFrom: FFD37F
 colorTo: FFD37F00
 interp: sineIn
