@@ -170,4 +170,24 @@ lifetime: 150
 
 }
 // W1
+{
+rotate: true
+reload: 25
+x: 0
+y: 0
+
+bullet:{
+type: RailBulletType
+hitEffect: instHit
+lineEffect: railHit
+pointEffect: railTrail
+pointEffectSpace: 44
+length: 250
+
+damage: 250
+splashDamage: 250
+splashDamageRadius: 40
+}
+
+}
 ]
