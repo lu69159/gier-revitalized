@@ -2,9 +2,54 @@ type: PayloadRouter
 localizedName: Fabricator
 acceptsPayload: false
 buildVisibility: sandboxOnly
+size: 1
 
-description: "Fabricates a chosen unit and destroys itself."
+description: "
+Fabricates a chosen unit and destroys itself.
+
+[green]
+"
+
 customShadow: true
 category: units
-size: 1
 rotateDraw: false
+createRubble: false
+
+selectionRows: 6
+selectionColumns: 6
+logicConfigurable: false
+consumesTap: true
+envEnabled: -1
+rebuildable: false
+
+destroyEffect:{
+type: SeqEffect
+effects:[
+{
+type: WaveEffect
+colorFrom:  FFD37F
+colorTo: FFD37F
+sizeFrom: 4
+sizeTo: 6
+strokeFrom: 4
+strokeTo: 0
+
+sizeInterp: sineOut
+}
+{
+type: ParticleEffect
+region: "gr-fabricator"
+length: 0
+cone: 1
+particles: 1
+
+sizeFrom: 8
+sizeTo: 8
+colorFrom: FFD37F
+colorTo: FFD37F00
+interp: sineIn
+layer: 122
+
+}
+]
+}
