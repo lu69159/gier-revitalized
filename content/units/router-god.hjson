@@ -185,8 +185,9 @@ sides: 4
 radius: 0
 radiusTo: 25
 progress: charge
-color: 53B56AFF
-layerOffset: 0.05
+color1: 53B56AFF
+color2: 53B56AFF
+layer: 111.1
 }
 ]
 
