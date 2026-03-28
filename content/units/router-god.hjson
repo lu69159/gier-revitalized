@@ -221,4 +221,58 @@ splashDamageRadius: 40
 }
 
 }
+{
+reload: 300
+shootCone: 180
+
+shoot:{
+type: ShootSpread
+spread: 4.5
+shots: 8
+}
+
+intervalBullet:{
+type: BasicBulletType
+hitSize: 20
+
+speed: 5
+lifetime: 180
+
+trailChance: 0.33
+trailEffect:{
+type: ParticleEffect
+followParent: true
+particles: 3
+baseLength: -20
+length: 20
+sizeFrom: 6
+sizeTo: 0
+colorTo: 53B56A00
+colorFrom: 53B56AFF
+interp: sine
+}
+
+shrinkY: 0
+shrinkX: 0
+width: 20
+height: 20
+sprite: "gr-gren-router"
+spin: 6.5
+layer: 123.1
+
+homingPower: 0.025
+homingRange: 800
+
+hitSound: shootToxopidShotgun
+splashDamage: 200
+splashDamageRadius: 200
+makeFire: true
+
+puddleLiquid: tuntra
+puddles: 165
+puddleAmount: 2350
+puddleRange: 200
+}
+
+}
 ]
