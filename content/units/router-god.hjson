@@ -21,10 +21,12 @@ layer: 123.9
 {
 type: FlarePart
 layer: 123
-radius: 80
+xScl: 8
+yScl: 8
 color1: 53B56AFF
 color2: 53B56AFF
 sides: 4
+spinSpeed: 7.5
 }
 {
 type: ShapePart
@@ -34,6 +36,7 @@ circle: true
 color: 53B56AFF
 radius: 80
 layer: 122
+stroke: 12
 }
 ]
 
@@ -43,6 +46,7 @@ name: "Anahilative Collider"
 reload: 600
 chargeSound: chargeCorvus
 shootSound: shootOmura
+rotate: true
 
 shoot:{
 firstShotDelay: 180
@@ -54,21 +58,56 @@ hitSize: 30
 damage: 4500
 pierce: true
 
+shrinkY: 0
+shrinkX: 0
 width: 30
 height: 30
 sprite: "gr-gren-router"
 spin: 6.5
-layer: 123
+layer: 123.1
 
 speed: 5
 lifetime: 300
 hitShake: 15
 
+bulletInterval: 10
+intervalBullet:{
+type: BasicBulletType
+hitSize: 15
+
+lifeScaleRandMin: 0.5
+lifeScaleRandMax: 1
+
+speed: 5
+lifetime: 180
+
+shrinkY: 0
+shrinkX: 0
+width: 15
+height: 15
+sprite: "gr-gren-router"
+spin: 6.5
+layer: 123.1
+
+hitSound: shootToxopidShotgun
+splashDamage: 250
+splashDamageRadius: 80
+
+hitShake: 25
+despawnHit: true
+hitEffect: {
+type: MultiEffect
+effects:[launch,launchPod]
+}
+
+}
+
 despawnHit: true
 hitEffect: reactorExplosion
+hitSound: shootConquer
 splashDamage: 25000
 splashDamageRadius: 160
-hitShake: 25
+hitShake: 65
 
 chargeEffect:{
 type: WaveEffect
