@@ -1,0 +1,54 @@
+type: PowerTurret
+size: 4
+localizedName: Deviate
+
+rotateSpeed: 3.5
+range: 400
+health: 3500
+
+buildVisibility: sandboxOnly
+category: turret
+  
+shootType:{
+type: RailBulletType
+pierceEffect: instHit
+lineEffect: railHit
+pointEffect: railTrail
+pointEffectSpace: 44
+length: 400
+
+damage: 150
+
+knockback: 15
+impact: true
+  
+fragBullets: 3
+fragBullet:{
+circleShooter: true
+circleShooterRadius: 80
+speed: 5
+lifetime: 600
+
+frontColor: ffffff00
+backColor: ffffff00
+trailColor: FFD37F
+hitSize: 40
+damage: 50
+  
+parts:[
+{
+type: FlarePart
+sides: 8
+followRotation: true
+color1: FFD37F
+color2: FFD37F
+radius: 40
+spinSpeed: 5
+}
+]
+
+trailWidth: 3.5
+trailLength: 80
+}
+  
+}
