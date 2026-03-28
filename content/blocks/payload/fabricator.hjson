@@ -19,6 +19,7 @@ logicConfigurable: false
 consumesTap: true
 envEnabled: -1
 rebuildable: false
+unitCapModifier: 1
 
 destroyEffect:{
 type: SeqEffect
