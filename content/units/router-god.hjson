@@ -173,7 +173,7 @@ lifetime: 150
 // W1
 {
 rotate: true
-reload: 720
+reload: 1200
 x: 0
 y: 0
 shootSound: shootForeshadow
