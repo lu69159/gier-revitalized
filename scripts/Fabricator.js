@@ -16,11 +16,13 @@ const build = tile.build;
 
 Sounds.click.at(build.x,build.y);
     
-if (sorted == null || build == null || build != lastBuild){
+if (sorted == null || build == null) return;
+
+if (build != lastBuild){
 lastBuild = build;
 return;
 }
-
+    
 if(sorted instanceof UnitType) {
 sorted.spawn(tile.team(),build.x,build.y, build.rotation * 90);
 Fx.spawn.at(build.x,build.y);
