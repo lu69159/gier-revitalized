@@ -62,7 +62,7 @@ ops:[
 {
 type: curve
 start: 0
-endm 0.25
+end: 0.25
 }
 ]
 }
