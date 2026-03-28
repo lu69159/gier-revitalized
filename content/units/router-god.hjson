@@ -50,6 +50,33 @@ color: 53B56AFF
 radius: 40
 stroke: 12
 }
+{
+type: EffectSpawnerPart
+x: 0
+y: 14.75
+effectInterval: 5
+effect:{
+type: ParticleEffect
+followParent: true
+particles: 3
+baseLength: -20
+length: 20
+sizeFrom: 8
+sizeTo: 0
+colorTo: 53B56A00
+colorFrom: 53B56AFF
+interp: sine
+}
+{
+type: HoverPart
+stroke: 8
+sides: 125
+circles: 1
+layer: 110
+color: 53B56AFF
+x: 0
+y: 0
+}
 ]
 
 weapons:[
@@ -72,7 +99,9 @@ bullet:{
 type: BasicBulletType
 hitSize: 30
 damage: 4500
+
 pierce: true
+pierceBuilding: true
 
 shrinkY: 0
 shrinkX: 0
