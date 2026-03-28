@@ -213,7 +213,6 @@ pointEffect: shootPayloadDriver
 pierceEffect: shootPayloadDriver
 pointEffectSpace: 20
 length: 1000
-inaccuracy: 15
 
 maxDamageFraction: 0.25
 damage: 250
