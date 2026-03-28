@@ -2,5 +2,5 @@ type: Wall
 localizedName: Dummy
 category: defense
 
-health: 25000
+health: 10000
 buildVisibility: sandboxOnly
