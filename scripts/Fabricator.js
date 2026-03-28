@@ -30,7 +30,7 @@ build.kill();
 
 } else if(sorted instanceof Block) {
 tile.setBlock(sorted,tile.team(),build.rotation);
-Fx.dooropenlarge.at(build.x,build.y);
+target.destroyEffect.at(build.x,build.y);
 }
 
 lastBuild = null;
