@@ -22,7 +22,7 @@ pointEffect: railTrail
 pointEffectSpace: 44
 length: 400
 
-fragOnDespawn: false
+fragOnDespawn: true
 
 damage: 150
 
@@ -49,8 +49,42 @@ sides: 8
 followRotation: true
 color1: FFD37F
 color2: FFD37F
-radius: 20
+radius: 0
 spinSpeed: 5
+
+  moves:[
+  {
+  radiusTo: 20
+
+progress:{
+type: life
+ops:[
+{
+type: curve
+start: 0
+endm 0.25
+}
+]
+}
+
+  }
+  {
+  radiusTo: 0
+
+progress:{
+type: life
+ops:[
+{
+op: curve
+start: 0.75
+end: 1
+}
+]
+}
+
+  }
+  ]
+
 }
 ]
 
