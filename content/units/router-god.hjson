@@ -9,6 +9,7 @@ rotateSpeed: 0
 
 drawBody: false
 drawCell: false
+engineSize: 0
 
 health: 1500000
 armor: 1500
@@ -17,6 +18,8 @@ parts:[
 name: "gr-gren-router"
 radius: 48
 layer: 111
+xScl: 8
+yScl: 8
 }
 {
 type: FlarePart
@@ -33,7 +36,6 @@ hollow: true
 circle: true
 color: 53B56AFF
 radius: 40
-layer: 122
 stroke: 12
 }
 ]
@@ -72,7 +74,7 @@ speed: 5
 lifetime: 300
 hitShake: 15
 
-bulletInterval: 10
+bulletInterval: 5
 intervalBullet:{
 type: BasicBulletType
 hitSize: 15
