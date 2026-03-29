@@ -17,6 +17,29 @@ mineSpeed: 100
 hitSize: 40
 physics: false
 
+abilities:[
+{
+type: SuppressionFieldAbility
+reload: 180
+range: 800
+maxDelay: 60
+
+orbRadius: 0
+color: 53B56AFF
+particleColor: 53B56AFF
+effectColor: 53B56AFF
+}
+{
+type: ShieldArcAbility
+radius: 360
+reflectVel: 10
+reflectTime: 3
+drawArc: false
+whenShooting: false
+chanceDeflect: 1000
+}
+]
+
 health: 1500000
 armor: 1500
 parts:[
