@@ -16,6 +16,7 @@ buildSpeed: 100
 mineSpeed: 100
 hitSize: 40
 physics: false
+bounded: false
 
 abilities:[
 {
