@@ -1,6 +1,6 @@
 type: GenericCrafter
 fullOverride: "gr-gren-router"
-localizedName: The Stem
+localizedName: "[#3a8f64]The Stem[]"
 
 drawer:{
 type: DrawRegion
@@ -20,6 +20,24 @@ hitShake: 225
 despawnHit: true
 despawnUnit: router-god
 collides: false
+
+splashDamage: 1250
+splashDamageRadius: 800
+scaledSplashDamage: true
+hitSound: explosionReactor2
+hitEffect:{
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 800
+strokeFrom: 0
+strokeTo: 24
+colorFrom: 3a8f64ff
+colorTo: 3a8f6400
+interp: sineIn
+lifetime: 260
+layer: 113
+}
+
 }
 
 destroyBulletSameTeam: true
