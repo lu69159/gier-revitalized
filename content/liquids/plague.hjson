@@ -12,7 +12,7 @@ spreadConversion: 1
 spreadDamage: 15
 removeScaling: 0.35
 
-viscosity: 2.5
+viscosity: 15
 flammability: 0
 temperature: 1
 explosiveness: 5
