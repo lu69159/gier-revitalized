@@ -8,6 +8,7 @@ drag: 0.025
 
 armor: 15
 health: 650
+outlineColor: 2f2f3f
 
 flyingLayer: 110.1
 range: 50
