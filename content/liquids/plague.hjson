@@ -15,7 +15,7 @@ removeScaling: 0.35
 vaporEffect: none
 #canStayOn: [water]
 
-viscosity: 15
+viscosity: 5
 flammability: 0
 temperature: 1
 explosiveness: 5
