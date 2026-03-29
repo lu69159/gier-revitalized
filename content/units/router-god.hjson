@@ -12,12 +12,16 @@ drawBody: false
 drawCell: false
 engineSize: 0
 
+buildSpeed: 100
+mineSpeed: 100
+hitSize: 40
+physics: false
+
 health: 1500000
 armor: 1500
 parts:[
 {
 name: "gr-gren-router"
-radius: 48
 layer: 111
 xScl: 6
 yScl: 6
