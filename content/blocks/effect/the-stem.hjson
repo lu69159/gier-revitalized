@@ -9,6 +9,7 @@ name: "gr-gren-router"
 
 buildVisibility: sandboxOnly
 category: effect
+drawTeamOverlay: false
 
 destroyBullet:{
 type: EmptyBulletType
