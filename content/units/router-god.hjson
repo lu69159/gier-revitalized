@@ -105,6 +105,20 @@ damage: 4500
 pierce: true
 pierceBuilding: true
 
+parts:[
+{
+type: FlarePart
+sides: 4
+radius: 0
+radiusTo: 20
+progress: charge
+color1: 53B56AFF
+color2: 53B56AFF
+layer: 123.2
+progress: life
+}
+]
+
 shrinkY: 0
 shrinkX: 0
 width: 30
@@ -117,7 +131,7 @@ speed: 5
 lifetime: 300
 hitShake: 15
 
-bulletInterval: 5
+bulletInterval: 1
 intervalBullet:{
 type: BasicBulletType
 hitSize: 15
@@ -289,7 +303,7 @@ hitEffect: greenBomb
 puddleLiquid: plague
 puddles: 165
 puddleAmount: 2350
-puddleRange: 80
+puddleRange: 60
 }
 
 }
