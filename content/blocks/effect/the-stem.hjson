@@ -42,6 +42,7 @@ layer: 113
 
 destroyEffect:{
 type: SeqEffect
+layer: 111
 effects:[
 {
 type: WaveEffect
