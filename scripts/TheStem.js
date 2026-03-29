@@ -25,7 +25,7 @@ Events.on(EventType.TapEvent, e => {
                 }
 
                 //unit.spawn(Team.get(6), build.x, build.y,90);
-                Vars.ui.announce("[red]It know it's wrong and still commit.",4.5);
+                Vars.ui.announce("[red]It know it's wrong and do it.",4.5);
                 build.kill();
             },
 
