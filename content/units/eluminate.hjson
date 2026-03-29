@@ -35,7 +35,6 @@ deathSound: healWave
 defaultCommand: rebuild
 controller: BuilderAI
 
-
 commands: [rebuild]
 
 weapons:[
