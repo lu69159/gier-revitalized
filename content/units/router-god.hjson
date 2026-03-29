@@ -31,7 +31,8 @@ effectColor: 53B56AFF
 }
 {
 type: ShieldArcAbility
-radius: 360
+radius: 60
+angle: 360
 reflectVel: 10
 reflectTime: 3
 drawArc: false
