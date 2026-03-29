@@ -238,6 +238,8 @@ splashDamageRadius: 40
 {
 reload: 450
 shootCone: 180
+x: 0
+y: 0
 
 shoot:{
 type: ShootSpread
@@ -252,7 +254,7 @@ parts:[
 type: FlarePart
 sides: 4
 radius: 0
-radiusTo: 25
+radiusTo: 20
 rotation: 45
 progress: charge
 color1: ff795e
