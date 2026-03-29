@@ -40,6 +40,67 @@ layer: 113
 
 }
 
+destroyEffect:{
+type: SeqEffect
+effects:[
+{
+type: WaveEffect
+colorFrom: 3a8f64
+colorTo: 3a8f64
+strokeFrom: 5
+strokeTo: 5
+sizeFrom: 400
+sizeTo: 400
+lifetime: 30
+interp: sineIn
+}
+{
+type: WaveEffect
+colorFrom: 3a8f64
+colorTo: 3a8f64
+strokeFrom: 5
+strokeTo: 5
+sizeFrom: 300
+sizeTo: 300
+lifetime: 30
+}
+{
+type: WaveEffect
+colorFrom: 3a8f64
+colorTo: 3a8f64
+strokeFrom: 5
+strokeTo: 5
+sizeFrom: 200
+sizeTo: 200
+lifetime: 30
+}
+{
+type: WaveEffect
+colorFrom: 3a8f64
+colorTo: 3a8f64
+strokeFrom: 5
+strokeTo: 5
+sizeFrom: 100
+sizeTo: 100
+lifetime: 30
+interp: sineOut
+}
+{
+type: ParticleEffect
+cone: 0
+particles: 0
+region: "gr-gren-router"
+length: 0
+sizeFrom: 48
+sizeTo: 48
+colorFrom: ffffffff
+colorTo: ffffff00
+lifetime: 90
+interp: sineOut
+}
+]
+}
+
 destroyBulletSameTeam: true
 forceTeam: 6
 
