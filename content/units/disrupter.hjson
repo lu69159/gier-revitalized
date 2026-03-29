@@ -17,7 +17,7 @@ parts:[
 type: HoverPart
 radius: 18
 color: FFD37F
-layerOffset: -2
+layer: 105
 }
 ]
 
@@ -29,5 +29,6 @@ type: SuppressionFieldAbility
 orbRadius: 3
 range: 350
 particles: 0
+layer: 110
 }
 ]
