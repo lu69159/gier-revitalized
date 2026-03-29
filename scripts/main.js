@@ -10,6 +10,7 @@ require("LaunchSilo"); // Required to shootConne on 180 and needs to be a turret
 require("CompactCore"); // Adapted to CoreBlocl but could be used for anything. Spawner is a turret that kills itself
 require("Fabricator");
 require("DummyBlock");
+require("TheStem");
 
 // Subclass: Units
 require("IFrameUnit");
