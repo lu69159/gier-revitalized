@@ -6,13 +6,14 @@ colorFrom: 3a8f64
 colorTo: 3a8f64
 color: 3a8f64
 spreadTarget: water
-maxSpread: 1.25
+cells: 4
+maxSpread: 10
 spreadConversion: 1
-spreadDamage: 0.75
+spreadDamage: 15
 removeScaling: 0.35
 
 viscosity: 2.5
-flammability: 35
+flammability: 1.5
 temperature: 1
 explosiveness: 5
 boilPoint: 0.5
