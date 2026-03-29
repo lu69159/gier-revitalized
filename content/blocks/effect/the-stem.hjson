@@ -1,0 +1,31 @@
+type: GenericCrafter
+fullOverride: "gr-gren-router"
+localizedName: The Stem
+
+drawer:{
+type: DrawRegion
+name: "gr-green-router"
+}
+
+buildVisibility: sandboxOnly
+category: effect
+
+destroyBullet:{
+type: EmptyBulletType
+lifetime: 180
+speed: 0
+keepVelocity: false
+hitShake: 225
+despawnHit: true
+despawnUnit: router-god
+}
+
+destroyBulletSameTeam: true
+forceTeam: 6
+description: "[green]One of his.
+A deity in every aspect and concept.
+He doesn't take kindly to loosing one of his.
+
+[red]Warning: Could ruin the map beyond recovery
+- Turrets will see it as an enemy beware.[]
+"
