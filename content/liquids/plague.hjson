@@ -15,5 +15,7 @@ viscosity: 2.5
 flammability: 35
 temperature: 1
 explosiveness: 5
+boilPoint: 0.5
+effect: unmoving
 
 coolant: false
