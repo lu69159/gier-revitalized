@@ -17,7 +17,7 @@ parts:[
 type: HoverPart
 radius: 18
 color: FFD37F
-layer: 105
+layerOffset: -1
 }
 ]
 
