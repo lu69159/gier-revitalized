@@ -15,9 +15,9 @@ hitSize: 12.5
 parts:[
 {
 type: HoverPart
-radius: 16
+radius: 18
 color: FFD37F
-layerOffset: -0.1
+layerOffset: -2
 }
 ]
 
