@@ -19,6 +19,7 @@ keepVelocity: false
 hitShake: 225
 despawnHit: true
 despawnUnit: router-god
+collides: false
 }
 
 destroyBulletSameTeam: true
