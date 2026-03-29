@@ -1,0 +1,5 @@
+type: Wall
+localizedName: "Command Block"
+
+category: logic
+buildVisibility: hidden
