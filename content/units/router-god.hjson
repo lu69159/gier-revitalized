@@ -37,6 +37,8 @@ reflectVel: 10
 reflectTime: 3
 drawArc: false
 whenShooting: false
+max: 100000
+regen: 100000
 chanceDeflect: 1000
 }
 ]
