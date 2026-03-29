@@ -278,7 +278,7 @@ type: ShootSpread
 spread: 45
 shots: 8
 shotDelay: 0
-firstShotDelay: 140
+firstShotDelay: 180
 }
 
 parts:[
@@ -295,7 +295,7 @@ layer: 111.05
 }
 ]
 
-
+chargeSound: chargeVela
 bullet:{
 type: BasicBulletType
 hitSize: 20
@@ -327,6 +327,23 @@ layer: 123.1
 
 homingPower: 0.025
 homingRange: 800
+
+chargeEffect:{
+type: ParticleEffect
+line: true
+lenFrom: 4
+lenTo: 12
+strokeFrom: 2
+strokeTo: 6
+colorFrom: 53B56A00
+colorTo: 53B56AFF
+interp: sineIn
+lifetime: 160
+length: 320
+baseLength: -320
+particles: 160
+layer: 110.99
+}
 
 hitSound: shootToxopidShotgun
 splashDamage: 1650
