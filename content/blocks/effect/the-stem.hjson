@@ -34,7 +34,7 @@ strokeTo: 24
 colorFrom: 3a8f64ff
 colorTo: 3a8f6400
 interp: sineIn
-lifetime: 260
+lifetime: 140
 layer: 113
 }
 
@@ -92,10 +92,10 @@ cone: 0
 particles: 1
 region: "gr-gren-router"
 length: 0
-sizeFrom: 48
-sizeTo: 48
-colorFrom: ffffffff
-colorTo: ffffff00
+sizeFrom: 24
+sizeTo: 24
+colorFrom: ffffff00
+colorTo: ffffffff
 lifetime: 90
 interp: sineOut
 }
