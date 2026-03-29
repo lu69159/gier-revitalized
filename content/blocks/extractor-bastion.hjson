@@ -17,7 +17,7 @@ customShadow: true
 consumes:{
 power: 1
 }
-buildVisibility: sandboxOnly
+//buildVisibility: sandboxOnly
 
 requirements:[lead/450,copper/375, graphite/350, metaglass/250, silicon/125, titanium/75]
 
