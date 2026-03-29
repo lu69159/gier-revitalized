@@ -9,7 +9,7 @@ omniMovement: false
 
 flying: true
 accel: 0.0225
-drag: 0.02
+drag: 0.0205
 
 engineOffset: 6
 engineSize: 2.5
