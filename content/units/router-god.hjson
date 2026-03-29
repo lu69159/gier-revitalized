@@ -34,7 +34,7 @@ effectColor: 53B56AFF
 type: ShieldArcAbility
 radius: 60
 angle: 360
-reflectVel: 10
+reflectVel: 0
 reflectTime: 3
 drawArc: false
 whenShooting: false
