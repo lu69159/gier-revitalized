@@ -12,6 +12,9 @@ spreadConversion: 1
 spreadDamage: 15
 removeScaling: 0.35
 
+vaporEffect: none
+canStayOn: [water]
+
 viscosity: 15
 flammability: 0
 temperature: 1
