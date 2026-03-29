@@ -10,6 +10,17 @@ armor: 15
 health: 650
 outlineColor: 2f2f3f
 
+engineSize: 0
+hitSize: 12.5
+parts:[
+{
+type: HoverPart
+radius: 16
+color: FFD37F
+layerOffset: -0.1
+}
+]
+
 flyingLayer: 110.1
 range: 50
 abilities:[
@@ -17,5 +28,6 @@ abilities:[
 type: SuppressionFieldAbility
 orbRadius: 3
 range: 350
+particles: 0
 }
 ]
