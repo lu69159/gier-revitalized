@@ -14,12 +14,12 @@ droneType: eluminate
 configurable: false
 
 consumes:{
-power: 0.75
+power: 1
 }
 buildVisibility: sandboxOnly
 
-requirements:[lead/850,copper/675, graphite/475, metaglass/275, silicon/300]
+requirements:[lead/450,copper/375, graphite/350, metaglass/250, silicon/125, titanium/75]
 
-researc: mend-pylon
+research: mend-pylon
 researchCostMultiplier: 0.25
 envEnabled: -1
