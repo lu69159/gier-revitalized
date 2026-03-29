@@ -24,10 +24,14 @@ collides: false
 
 destroyBulletSameTeam: true
 forceTeam: 6
-description: "[green]One of his.
-A deity in every aspect and concept.
-He doesn't take kindly to loosing one of his.
 
-[red]Warning: Could ruin the map beyond recovery
-- Turrets will see it as an enemy beware.[]
+# Thanks smolkeys for grammar fix
+description: "
+[#3a8f64]One of his.
+A deity in sense of the word.
+To kill one of his kind is a great treachery.
+
+[red]Warning:
+- Could ruin the map beyond recovery.
+- Turrets perceive it as an enemy. Be wary of placing your defenses.[]
 "
