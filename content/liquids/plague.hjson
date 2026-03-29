@@ -13,7 +13,7 @@ spreadDamage: 15
 removeScaling: 0.35
 
 viscosity: 2.5
-flammability: 1.5
+flammability: 0
 temperature: 1
 explosiveness: 5
 boilPoint: 0.5
