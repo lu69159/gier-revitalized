@@ -12,6 +12,7 @@ Constructs [accent]eluminates[] to rebuild and assist the player.
 unitsSpawned: 2
 droneType: eluminate
 configurable: false
+customShadow: true
 
 consumes:{
 power: 1
