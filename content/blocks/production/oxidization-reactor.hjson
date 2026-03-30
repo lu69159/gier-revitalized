@@ -27,7 +27,7 @@ objectives:[oxidization-reactor]
 }
 
 drawer:{
-type: MultiEffect
+type: DrawMulti
 drawers:[
 {
 type: DrawRegion
