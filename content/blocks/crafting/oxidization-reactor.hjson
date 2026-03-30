@@ -19,7 +19,7 @@ customShadow: true
 health: 1250
 armor: 5
 
-category: production
+category: crafting
 baseExplosiveness: 105
 
 outputItem: oxide/15
