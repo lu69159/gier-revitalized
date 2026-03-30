@@ -39,10 +39,24 @@ type: DrawRegion
 suffix: "-bottom"
 }
 {
+type: DrawLiquidTile
+padding: 1.25
+drawLiquid: water
+}
+{
+type: DrawBubbles
+color: 596ab8ff
+}
+{
 type: DrawCrucibleFlame
 }
 {
 type: DrawDefault
+}
+{
+type: DrawHeatRegion
+suffix: "-heat"
+color: ff795e
 }
 ]
 }
