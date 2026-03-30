@@ -2,6 +2,7 @@ type: UnitFactory
 localizedName: Imprinter
 size: 3
 
+databaseTag: "gier"
 customShadow: true
 category: units
 requirements:[
