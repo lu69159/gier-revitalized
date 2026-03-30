@@ -7,10 +7,14 @@ customShadow: true
 health: 1250
 armor: 5
 
+category: production
+baseExplosiveness: 105
+
 outputItem: oxide/15
 outputLiquid: hydrogen/0.08334
+ignoreLiquidFullness: true
 
-itemCapacity: 35
+itemCapacity: 70
 liquidCapacity: 10
   
 consumes:{
@@ -19,6 +23,7 @@ items:[beryllium/35]
 liquids:[water/0.16667]
 }
 
+craftTime: 300
 requirements:[lead/450,copper/365,graphite/150,silicon/250,metaglass/75,titanium/75]
 buildVisibility: sandboxOnly
 research: {
