@@ -10,6 +10,7 @@ absorbLasers: true
 insulated: true
 customShadow: true
 
+databaseTag: "gier"
 research: copper-fort
 researchCostMultiplier: 0.25
   
