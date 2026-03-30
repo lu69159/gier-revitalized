@@ -54,7 +54,7 @@ type: DrawCrucibleFlame
 type: DrawDefault
 }
 {
-type: DrawHeatRegion
+type: DrawGlowRegion
 suffix: "-heat"
 color: ff795e
 }
