@@ -13,6 +13,7 @@ unitsSpawned: 2
 droneType: eluminate
 configurable: false
 customShadow: true
+databaseTag: "gier"
 
 consumes:{
 power: 1
