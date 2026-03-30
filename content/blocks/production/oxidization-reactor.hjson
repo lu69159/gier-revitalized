@@ -57,7 +57,7 @@ type: DrawDefault
 type: DrawGlowRegion
 suffix: "-heat"
 color: ff795e
-glowScale: 1
+glowScale: 12.5
 }
 ]
 }
