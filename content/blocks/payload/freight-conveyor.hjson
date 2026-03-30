@@ -2,7 +2,7 @@ type: PayloadConveyor
 size: 3
 localizedName: Freight Conveyor
 
-fullOverride: "gr-freight-conveyor"
+fullOverride: "gr-freight-conveyor-preview"
 databaseTag: "gier"
 moveTime: 40
 interp: sineOut
