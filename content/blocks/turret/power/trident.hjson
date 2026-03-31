@@ -59,6 +59,7 @@ shotDelay: 6
 
 drawer:{
 type: DrawTurret
+basePrefix: "reinforced-"
 parts:[
 {
 suffix: "-barrel"
