@@ -14,7 +14,7 @@ lifetime: 35
 sizeFrom: 4
 sizeTo: 4
 layer: 30.05
-offset: 180
+offset: 0
 colorFrom: 9f9f9f
 colorTo: ffffff
 }
