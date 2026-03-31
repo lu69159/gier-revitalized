@@ -119,6 +119,8 @@ fragRandomSpread: 0
 fragSpread: 30
 fragBullet:{
 accel: 0.05
+velocityScaleRandMin: 1
+velocityScaleRandMax: 1
 speed: 5
 lifetime: 180
 
@@ -180,7 +182,7 @@ end: 1
 
 trailWidth: 2
 trailLength: 10
-homingPower: 0.1
+homingPower: 0.075
 }
   
 }
