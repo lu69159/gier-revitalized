@@ -11,6 +11,7 @@ require("CompactCore"); // Adapted to CoreBlocl but could be used for anything. 
 require("Fabricator");
 require("DummyBlock");
 require("TheStem");
+require("CommandBlock"); // Command Block from minecraft or something
 
 // Subclass: Units
 require("IFrameUnit");
