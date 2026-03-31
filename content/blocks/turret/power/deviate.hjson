@@ -17,6 +17,8 @@ category: turret
 shootWarmup: 0.05
 minWarmup: 0.9
 
+drawer:{
+type: DrawTurret
 parts:[
 {
 type: HaloPart
@@ -26,7 +28,7 @@ color: FFD37F
 x: 0
 y: -12
 }
-]
+]}
 
 shootType:{
 type: RailBulletType
