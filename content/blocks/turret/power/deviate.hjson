@@ -20,6 +20,7 @@ minWarmup: 0.9
 
 drawer:{
 type: DrawTurret
+basePrefix: "anchor-"
 parts:[
 {
 type: HaloPart
@@ -89,6 +90,9 @@ color1: FFD37F
 color2: FFD37F
 radius: 0
 spinSpeed: 5
+lightning: 7
+lightningDamage: 4.5
+lightningColor: FFD37F
 
   moves:[
   {
@@ -127,7 +131,8 @@ end: 1
 ]
 
 trailWidth: 2
-trailLength: 20
+trailLength: 10
+homingPower: 0.1
 }
   
 }
