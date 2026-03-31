@@ -32,6 +32,16 @@ triLength: 0
 triLengthTo: 1
 haloRadiusTo: 8.5
 haloRadius: 0
+radius: 0
+rsdiusTo: 3
+}
+{
+type: ShapePart
+hollow: true
+stroke: 0
+strokeTo: 4
+radius: 0
+radiusTo: 9
 }
 ]}
 
