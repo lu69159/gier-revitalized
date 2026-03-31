@@ -13,7 +13,21 @@ shootSound: shootForeshadow
 outlineRadius: 0
 buildVisibility: sandboxOnly
 category: turret
-  
+
+shootWarmup: 0.05
+minWarmup: 0.9
+
+parts:[
+{
+type: HaloPart
+stroke: 0
+strokeTo: 4
+color: FFD37F
+x: 0
+y: -12
+}
+]
+
 shootType:{
 type: RailBulletType
 pierceEffect: instHit
@@ -29,7 +43,9 @@ damage: 150
 knockback: 15
 impact: true
   
-fragBullets: 3
+fragBullets: 4
+fragRandomSpread: 0
+fragSpread: 90
 fragBullet:{
 circleShooter: true
 circleShooterRadius: 80
