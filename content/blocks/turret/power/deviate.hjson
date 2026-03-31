@@ -33,15 +33,17 @@ triLengthTo: 1
 haloRadiusTo: 8.5
 haloRadius: 0
 radius: 0
-rsdiusTo: 3
+radiusTo: 3
 }
 {
 type: ShapePart
 hollow: true
 stroke: 0
-strokeTo: 4
+strokeTo: 2
 radius: 0
-radiusTo: 9
+radiusTo: 5.5
+circle: true
+color: FFD37F
 }
 ]}
 
