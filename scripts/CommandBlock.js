@@ -1,3 +1,5 @@
+var lastUnit = "";
+
 Events.on(EventType.TapEvent, e => {
     try {
         if (!e || !e.tile || !e.player) return;
@@ -29,16 +31,22 @@ Events.on(EventType.TapEvent, e => {
                 ["Toggle canGameover"],
                 ["Toggle Editor"],
                 ["Toggle disableUnitCap"],
+                ["Spawn Unit"],
+                ["Get Current Unit"],
                 ["Close"]
             ],
             i => {
 
                 if (i == 0) {
+
+                    Sounds.uiButton.play();
                     Groups.unit.clear();
-                    Vars.ui.showInfoToast("[green]All units cleared", 5);
+                    Vars.ui.hudfrag.showToast(Icon.tree, "[green]All units cleared");
 
                 } else if (i == 1) {
                     try {
+
+                        Sounds.uiButton.play();
                         const p = Vars.player;
                         if (!p) {
                             Vars.ui.showInfoToast("no player", 3);
@@ -52,7 +60,7 @@ Events.on(EventType.TapEvent, e => {
                         }
 
                         unit.apply(StatusEffects.unmoving, 9999 * 60);
-                        Vars.ui.showInfoToast("[grey]Stopped player unit", 5);
+                        Vars.ui.hudfrag.showToast(Icon.tree, "[grey]Stopped player unit");
 
                     } catch (err) {
                         Vars.ui.showInfoToast("err: " + err, 5);
@@ -60,6 +68,8 @@ Events.on(EventType.TapEvent, e => {
 
                 } else if (i == 2) {
                     try {
+
+                        Sounds.uiButton.play();
                         const p = Vars.player;
                         if (!p || !p.unit()) {
                             Vars.ui.showInfoToast("no unit to change team", 3);
@@ -70,17 +80,18 @@ Events.on(EventType.TapEvent, e => {
                         const newTeam = (currentTeam == buildTeam ? Team.get(6) : buildTeam);
 
                         p.unit().setProp(LAccess.team, newTeam);
-                        Vars.ui.showInfoToast("[accent]Team changed", 5);
+                        Vars.ui.hudfrag.showToast(Icon.tree, "[accent]Team changed");
 
                     } catch (err) {
                         Vars.ui.showInfoToast(String(err), 15);
                     }} else if (i == 3){
                         try{
-                        
+
+                    Sounds.uiButton.play();
                     const gameOver = Vars.state.rules.canGameOver;
                     Vars.state.rules.canGameOver = !gameOver;
 
-                    Vars.ui.showInfoToast("[accent]Toggled canGameOver: [lightgrey]" + !gameOver, 5);
+                    Vars.ui.hudfrag.showToast(Icon.tree, "[accent]Toggled canGameOver: [lightgrey]" + !gameOver);
                         
                     } catch(e){
                     Vars.ui.showInfoToast(e,5);    
@@ -90,20 +101,61 @@ Events.on(EventType.TapEvent, e => {
                     const editor = Vars.state.rules.editor;
                     Vars.state.rules.editor = !editor;
 
-                    Vars.ui.showInfoToast("[accent]Toggled editor: [lightgrey]" + !editor, 5);
+                    Vars.ui.hudfrag.showToast(Icon.tree, "[accent]Toggled editor: [lightgrey]" + !editor);
                              
                     } catch(e){
                     Vars.ui.showInfoToast(e,5);  
                     }} else if (i == 5){
                         try{
 
+                    Sounds.uiButton.play();
                     const disableUnitCap = Vars.state.rules.disableUnitCap;
                     Vars.state.rules.disableUnitCap = !disableUnitCap;
 
-                    Vars.ui.showInfoToast("[accent]Toggled disableUnitCap: [lightgrey]" + !disableUnitCap, 5);
+                    Vars.ui.hudfrag.showToast(Icon.tree, "[accent]Toggled disableUnitCap: [lightgrey]" + !disableUnitCap);
                             
                     } catch(e){
                     Vars.ui.showInfoToast(e,10);
+                    }} else if (i == 6){
+                        try{
+
+                    Sounds.uiButton.play();
+                    Vars.ui.showTextInput("SpawnUnit", "Enter Unit's Name", 100, lastUnit, false, text => {
+                        try{
+                    lastUnit = text;
+                    const unit = Vars.content.getByName(ContentType.unit, text);
+
+                    if (unit == null){
+                    Vars.ui.hudfrag.showToast(Icon.search,"[red]Unit Invalid[]");
+                    return;
+                    }
+                        
+                    unit.spawn(buildTeam,build.x,build.y,90);
+                    Sounds.waveSpawn.at(build.x,build.y);
+                    Fx.spawn.at(build.x,build.y);
+                            
+                    Vars.ui.hudfrag.showToast(Icon.chat, "[accent]Spawned in a(n) []" + unit.localizedName);
+
+                    } catch(e){
+                    Vars.ui.showInfoToast(e,5);
+                    }});
+
+                            
+
+                    } catch(e){
+                    Vars.ui.showInfoToast(e,5);
+                    }} else if (i == 7){
+                        try{
+
+                    Sounds.uiButton.play();
+                    const unit = Vars.player.unit();
+                    if (!unit) return;
+                    const type = unit.type.name;
+                    lastUnit = type;
+                    Vars.ui.hudfrag.showToast(Icon.eye,"[lightgrey]Copied to spawn unit");
+                            
+                    } catch(e){
+                    Vars.ui.showInfoToast(e,5);
                     }}
             }
         );
