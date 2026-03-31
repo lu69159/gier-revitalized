@@ -27,6 +27,11 @@ strokeTo: 4
 color: FFD37F
 x: 0
 y: -12
+rotateSpeed: 5
+triLength: 0
+triLengthTo: 1
+radiusTo: 3
+radius: 0
 }
 ]}
 
