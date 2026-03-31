@@ -2,12 +2,44 @@ type: PowerTurret
 size: 4
 localizedName: Deviate
 
+research:{
+parent: trident
+objectives:[deviate]
+}
+
+description: "Shoots focused beams of power.
+
+[green]- Anti-IFrame
+- High damage output
+[salmon]- Requires power to operate
+- Water is required to operate
+"
+
+
+requirements:[lead/450,copper/275,silicon/250,surge-alloy/125,oxide/50]
+
+consumes:{
+power: 1.5
+liquids:[water/0.16667]
+}
+
 rotateSpeed: 3.5
 range: 400
 health: 3500
 
 reload: 200
-
+baseExplosiveness: 105
+destroyBullet:{
+fragBullet: 12
+despawnHit: true
+instantDisappear: true
+fragBullet:{
+type: LightningBulletType
+lightningColor: FFD37F
+lightningLength: 12
+damage: 15
+}
+}
 shake: 5
 shootSound: shootForeshadow
 outlineRadius: 0
@@ -82,21 +114,24 @@ damage: 150
 knockback: 15
 impact: true
   
-fragBullets: 4
+fragBullets: 3
 fragRandomSpread: 0
-fragSpread: 90
+fragSpread: 30
 fragBullet:{
-circleShooter: true
-circleShooterRadius: 80
+accel: 0.05
 speed: 5
-lifetime: 600
+lifetime: 180
 
 frontColor: ffffff00
 backColor: ffffff00
 trailColor: FFD37F
 hitSize: 20
 damage: 25
-  
+lightning: 7
+lightningDamage: 4.5
+lightningColor: FFD37F
+despawnHit: true
+
 parts:[
 {
 type: FlarePart
@@ -106,9 +141,6 @@ color1: FFD37F
 color2: FFD37F
 radius: 0
 spinSpeed: 5
-lightning: 7
-lightningDamage: 4.5
-lightningColor: FFD37F
 
   moves:[
   {
