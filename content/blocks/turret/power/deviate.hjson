@@ -20,7 +20,7 @@ minWarmup: 0.9
 
 drawer:{
 type: DrawTurret
-basePrefix: "trident -"
+basePrefix: "reinforced-"
 parts:[
 {
 type: HaloPart
