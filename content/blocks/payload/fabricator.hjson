@@ -4,6 +4,8 @@ acceptsPayload: false
 buildVisibility: sandboxOnly
 size: 1
 
+targetable: false
+underBullets: true
 description: "
 Fabricates a chosen unit or a 1x1 block and destroys itself.
 "
