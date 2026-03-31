@@ -108,15 +108,17 @@ pointEffectSpace: 44
 length: 400
 
 fragOnDespawn: true
+fragVelocityMin: 1
+fragVelocityMax: 1
 
 damage: 150
 
 knockback: 15
 impact: true
   
-fragBullets: 3
+fragBullets: 6
 fragRandomSpread: 0
-fragSpread: 30
+fragSpread: 15
 fragBullet:{
 accel: 0.05
 velocityScaleRandMin: 1
