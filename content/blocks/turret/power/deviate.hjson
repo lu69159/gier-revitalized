@@ -57,7 +57,7 @@ hollow: true
 stroke: 0
 strokeTo: 2
 radius: 0
-radiusTo: 5.5
+radiusTo: 2.5
 sides: 4
 color: FFD37F
 x: 0
