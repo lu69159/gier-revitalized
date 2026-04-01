@@ -125,16 +125,19 @@ accel: 0.05
 velocityScaleRandMin: 1
 velocityScaleRandMax: 1
 speed: 5
-lifetime: 180
+lifetime: 300
+pierce: true
 
 frontColor: ffffff00
 backColor: ffffff00
 trailColor: FFD37F
 hitSize: 20
-damage: 25
-lightning: 7
+damage: 2
+
+lightning: 3
 lightningDamage: 4.5
 lightningColor: FFD37F
+
 despawnHit: true
 
 parts:[
