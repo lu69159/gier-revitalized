@@ -22,7 +22,28 @@ research:{
 parent: watt-reactor
 objectives:[sporeoplasmic-cultivator]
 }
-  
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+padding: 5
+drawLiquid: water
+}
+{
+type: DrawBubbles
+}
+{
+type: DrawDefault
+}
+]
+}
+
 consumes:{
 power: 2.5
 liquids:[water/0.16667]
