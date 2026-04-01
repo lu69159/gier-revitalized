@@ -6,6 +6,7 @@ customShadow: true
 envEnabled: -1
 category: effect
 databaseTag: "gier"
+itemCapacity: 30
 
 requirements:[
 lead/350
@@ -47,7 +48,7 @@ type: DrawDefault
 consumes:{
 power: 2.5
 liquids:[water/0.16667]
-items:[graphite/45]
+items:[graphite/15]
 }
 
 outputLiquid: tuntra/0.166667
