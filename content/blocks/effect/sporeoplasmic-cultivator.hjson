@@ -26,7 +26,7 @@ objectives:[sporeoplasmic-cultivator]
 consumes:{
 power: 2.5
 liquids:[water/0.16667]
-consumes:[graphite/45]
+items:[graphite/45]
 }
 
 outputLiquid: tuntra/0.166667
