@@ -46,11 +46,11 @@ type: DrawDefault
 }
 
 consumes:{
-power: 2.5
 liquids:[water/0.16667]
 items:[graphite/15]
 }
 
+powerProduction: 6
 outputLiquid: tuntra/0.166667
 liquidCapacity: 100
 explodeOnFull: true
