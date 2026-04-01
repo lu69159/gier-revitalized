@@ -189,6 +189,7 @@ end: 1
 trailWidth: 2
 trailLength: 10
 homingPower: 0.075
+homingRange: 800
 }
   
 }
