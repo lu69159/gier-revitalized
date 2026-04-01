@@ -19,6 +19,14 @@ keepVelocity: false
 hitShake: 225
 despawnHit: true
 despawnUnit: router-god
+fragBullets: 1
+fragBullet:{
+type: ExplosionBulletType
+splashDamage: 2500
+splashDamageRadius: 800
+scaledSplashDamage: true
+}
+
 collides: false
 
 splashDamage: 1250
@@ -34,7 +42,7 @@ strokeTo: 24
 colorFrom: 3a8f64ff
 colorTo: 3a8f6400
 interp: sineIn
-lifetime: 140
+lifetime: 90
 layer: 113
 }
 
