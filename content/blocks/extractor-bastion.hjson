@@ -23,5 +23,5 @@ power: 1
 requirements:[lead/450,copper/375, graphite/350, metaglass/250, silicon/125, titanium/75]
 
 research: mend-pylon
-researchCostMultiplier: 0.25
+researchCostMultiplier: 0.15
 envEnabled: -1
