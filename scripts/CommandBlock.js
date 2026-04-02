@@ -71,15 +71,15 @@ Events.on(EventType.TapEvent, e => {
 
                         Sounds.uiButton.play();
                         const p = Vars.player;
-                        if (!p || !p.unit()) {
-                            Vars.ui.showInfoToast("no unit to change team", 3);
+                        if (!p) {
+                            Vars.ui.showInfoToast("Wheres the player vro.", 3);
                             return;
                         }
 
                         const currentTeam = p.team();
                         const newTeam = (currentTeam == buildTeam ? Team.get(6) : buildTeam);
 
-                        p.unit().setProp(LAccess.team, newTeam);
+                        p.team(newTeam);
                         Vars.ui.hudfrag.showToast(Icon.tree, "[accent]Team changed");
 
                     } catch (err) {
