@@ -17,6 +17,6 @@ researchCostMultiplier: 0.25
 category: defense
 requirements:[
 lead/45
-titanium/30
+titanium/10
 silicon/25
 ]
