@@ -82,7 +82,7 @@ Events.on(EventType.TapEvent, e => {
                             return;
                         }
 
-                        lastTeam = Vars.player.team().id;
+                        lastTeam = p.team().id;
                             
                         const currentTeam = p.team();
                         const newTeam = Team.get(text);
