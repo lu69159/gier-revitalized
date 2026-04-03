@@ -1,5 +1,5 @@
 var lastUnit = "";
-var lastTeam = 0;
+var lastTeam = 1;
     
 Events.on(EventType.TapEvent, e => {
     try {
@@ -82,7 +82,7 @@ Events.on(EventType.TapEvent, e => {
                             return;
                         }
 
-                        lastTeam = Vars.player.team();
+                        lastTeam = Vars.player.team().id;
                             
                         const currentTeam = p.team();
                         const newTeam = Team.get(text);
