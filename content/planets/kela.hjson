@@ -4,6 +4,7 @@ localizedName: Kela
 iconColor: 596ab8ff
 alwaysUnlocked: true
 accessible: true
+bloom: true
 
 generator: SerpuloPlanetGenerator
 orbitRadius: 50
