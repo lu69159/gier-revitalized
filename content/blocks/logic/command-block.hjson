@@ -5,6 +5,18 @@ customShadow: true
 
 description: "
 Simple panel allowing the use of [accent]Command[] presets.
+
+[accent]<Commands>[]
+- Clear all units
+- Stop player unit
+- Change team
+- Toggle canGameOver
+- Toggle editor (saving while enabled crashes)
+- Toggle disableUnitCap 
+- Spawn unit
+- Get current unit (saves to spawn unit)
+- Unit library (access vanilla units but cant access modded ones)
+- Fill core
 "
 
 category: logic
