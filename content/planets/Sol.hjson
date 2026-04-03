@@ -1,0 +1,27 @@
+radius: 7.5
+localizedName: Sol
+iconColor: 596ab8ff
+alwaysUnlocked: false
+accessible: false
+
+solarSystem: sol
+  
+mesh:[
+{
+type: SunMesh
+Planet: sol
+divisions: 5
+octaves: 1.5
+persistence: 1
+scl: 1.25
+mag: 0.75 
+colorScale: 1.25
+colors:[
+b2c6d2
+8da1e3
+596ab8
+6ecdec
+]
+
+}
+]
