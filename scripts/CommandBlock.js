@@ -181,7 +181,7 @@ Events.on(EventType.TapEvent, e => {
                     Vars.ui.showInfoToast(e,10);
                     }});
 
-                    Vars.ui.showText("<Vanilla Units>", units.join("[grey],[] ");
+                    Vars.ui.showText("<Vanilla Units>", units.join("[grey],[] "));
                     
                     } catch(e){
                     Vars.ui.showInfoToast(e,10);
