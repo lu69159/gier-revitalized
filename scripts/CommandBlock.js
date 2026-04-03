@@ -7,7 +7,7 @@ Events.on(EventType.TapEvent, e => {
         const tile = e.tile;
         const player = e.player;
 
-        if (!tile.block()) return;
+        if (!tile.block() || player.selectedBlock != null) return;
 
         const block = tile.block();
         const build = tile.build;
@@ -15,14 +15,14 @@ Events.on(EventType.TapEvent, e => {
         if (!build) return;
         const buildTeam = build.team;
 
-        const target = Vars.content.getByName(ContentType.block, "gr-command-block");
+        const target = Vars.content.block("copper-wall");
 
         if (block != target) return;
 
         Sounds.click.at(build.x, build.y);
 
         Vars.ui.showMenu(
-            "Commands List",
+            "<Commands List>",
             "[lightgrey]Select one of your choosing",
             [
                 ["Clear Units"],
@@ -33,6 +33,8 @@ Events.on(EventType.TapEvent, e => {
                 ["Toggle disableUnitCap"],
                 ["Spawn Unit"],
                 ["Get Current Unit"],
+                ["Unit Library [grey]<Vanilla Only>[]"],
+                ["Fill Core"],
                 ["Close"]
             ],
             i => {
@@ -49,13 +51,13 @@ Events.on(EventType.TapEvent, e => {
                         Sounds.uiButton.play();
                         const p = Vars.player;
                         if (!p) {
-                            Vars.ui.showInfoToast("no player", 3);
+                            Vars.ui.hudfrag.showToast(Icon.tree, "[grey]Player does not exist.");
                             return;
                         }
                         const unit = p.unit();
 
                         if (!unit) {
-                            Vars.ui.showInfoToast("no unit", 3);
+                            Vars.ui.hudfrag.showToast(Icon.tree, "[grey]No unit found");
                             return;
                         }
 
@@ -69,6 +71,9 @@ Events.on(EventType.TapEvent, e => {
                 } else if (i == 2) {
                     try {
 
+                        Vars.ui.showTextInput("Change Team", "Enter team id", 100, lastUnit, true, text => {
+                        try{
+
                         Sounds.uiButton.play();
                         const p = Vars.player;
                         if (!p) {
@@ -77,10 +82,14 @@ Events.on(EventType.TapEvent, e => {
                         }
 
                         const currentTeam = p.team();
-                        const newTeam = (currentTeam == buildTeam ? Team.get(6) : buildTeam);
+                        const newTeam = Team.get(text);
 
                         p.team(newTeam);
                         Vars.ui.hudfrag.showToast(Icon.tree, "[accent]Team changed");
+
+                        } catch(e){
+                        Vars.ui.showInfoToast(e,10);
+                        }});
 
                     } catch (err) {
                         Vars.ui.showInfoToast(String(err), 15);
@@ -126,7 +135,7 @@ Events.on(EventType.TapEvent, e => {
                     const unit = Vars.content.getByName(ContentType.unit, text);
 
                     if (unit == null){
-                    Vars.ui.hudfrag.showToast(Icon.search,"[red]Unit Invalid[]");
+                    Vars.ui.hudfrag.showToast(Icon.chat,"[red]Unit Invalid[]");
                     return;
                     }
                         
@@ -156,7 +165,40 @@ Events.on(EventType.TapEvent, e => {
                             
                     } catch(e){
                     Vars.ui.showInfoToast(e,5);
-                    }}
+                    }} else if(i == 8){
+                    try{
+
+                    var units = [];
+                        
+                   Object.keys(UnitTypes).forEach(unit => {
+                    try{
+                    if (unit != null || unit != "load"){
+                    units.push(unit);
+                    }} catch(e){
+                    Vars.ui.showInfoToast(e,10);
+                    }});
+
+                    Vars.ui.showStartupInfo(units.join(" "));
+                    
+                    } catch(e){
+                    Vars.ui.showInfoToast(e,10);
+                    }} else if(i == 9){
+
+                    let core = Vars.player.core();
+                    let amount = 0;
+                    
+                    Vars.content.items().each(item => {
+                    try{
+                        
+                    core.items.set(item, core.storageCapacity);
+                    amount++;
+                    } catch(e){
+                    Vars.ui.showInfoToast(e,15);
+                    }});
+
+                    Vars.ui.hudfrag.showToast(Icon.effect,"[accent]Filled core with []" + amount + "[accent] different items");
+                    
+                    }
             }
         );
 
