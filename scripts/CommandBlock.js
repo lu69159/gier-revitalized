@@ -175,7 +175,7 @@ Events.on(EventType.TapEvent, e => {
                         
                    Object.keys(UnitTypes).forEach(unit => {
                     try{
-                    if (unit != null || unit != "load"){
+                    if (unit != null && Vars.content.unit(unit) != null){
                     units.push(unit);
                     }} catch(e){
                     Vars.ui.showInfoToast(e,10);
