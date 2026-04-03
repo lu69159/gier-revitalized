@@ -1,5 +1,6 @@
 var lastUnit = "";
-
+var lastTeam = 0;
+    
 Events.on(EventType.TapEvent, e => {
     try {
         if (!e || !e.tile || !e.player) return;
@@ -71,7 +72,7 @@ Events.on(EventType.TapEvent, e => {
                 } else if (i == 2) {
                     try {
 
-                        Vars.ui.showTextInput("Change Team", "Enter team id", 100, lastUnit, true, text => {
+                        Vars.ui.showTextInput("Change Team", "Enter team id", 100, lastTeam, true, text => {
                         try{
 
                         Sounds.uiButton.play();
@@ -81,6 +82,8 @@ Events.on(EventType.TapEvent, e => {
                             return;
                         }
 
+                        lastTeam = Vars.player.team();
+                            
                         const currentTeam = p.team();
                         const newTeam = Team.get(text);
 
