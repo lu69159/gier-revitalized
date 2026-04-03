@@ -12,6 +12,7 @@ startSector: 24
 allowSectorInvasion: true
 allowLaunchToNumbered: false
 allowSelfSectorLaunch: false
+orbitSpacing: 30
 
 campaignRuleDefaults: {
 	showSpawns: true
