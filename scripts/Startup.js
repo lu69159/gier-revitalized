@@ -12,6 +12,7 @@ Planets.gier.visible = true;
 Planets.gier.accessible = true;
 Planets.gier.alwaysUnlocked = true;
 Planets.gier.clearSectorOnLose = true;
+Planets.gier.parent = Vars.content.planet("gr-kela");
 
 Vars.maxSchematicSize = 3064;
 MapResizeDialog.maxSize = 2500;
