@@ -21,8 +21,8 @@ campaignRuleDefaults: {
 
 prebuildBase: true
 defaultCore: core-shard
-#parent: sol
-solarSystem: sun
+parent: sol
+#solarSystem: sun
 
 mesh: [
 {
