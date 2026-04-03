@@ -11,11 +11,11 @@ Simple panel allowing the use of [accent]Command[] presets.
 - Stop player unit
 - Change team
 - Toggle canGameOver
-- Toggle editor (saving while enabled crashes)
+- Toggle editor [grey](saving while enabled crashes)[]
 - Toggle disableUnitCap 
 - Spawn unit
-- Get current unit (saves to spawn unit)
-- Unit library (access vanilla units but cant access modded ones)
+- Get current unit [grey](saves to spawn unit)[]
+- Unit library [grey](Only accesses vanilla units)[]
 - Fill core
 "
 
