@@ -181,7 +181,7 @@ Events.on(EventType.TapEvent, e => {
                     Vars.ui.showInfoToast(e,10);
                     }});
 
-                    Vars.ui.showStartupInfo(units.join(" "));
+                    Vars.ui.showStartupInfo(units.join("[grey],[] "));
                     
                     } catch(e){
                     Vars.ui.showInfoToast(e,10);
