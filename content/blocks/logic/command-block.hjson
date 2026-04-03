@@ -12,3 +12,6 @@ solid: false
 buildVisibility: worldProcessorOnly
 targetable: false
 underBullets: true
+
+health: 100000
+armor: 1000
