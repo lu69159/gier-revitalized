@@ -53,6 +53,10 @@ progress:{
 type: charge
 ops:[
 {
+op: loop
+time: 600
+}
+{
 op: compress
 start: 0
 end: 1
