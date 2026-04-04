@@ -5,7 +5,10 @@ description: "Receives liquids."
 buildVisibility: sandboxOnly
 envEnabled: -1
 requirements:[lead/5,copper/3]
-  
+
+rotate: true
+enableDrawStatus: false
+
 drawer:{
 type: DrawMulti
 drawers:[
