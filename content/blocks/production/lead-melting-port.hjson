@@ -19,7 +19,7 @@ type: DrawMulti
 drawers:[
 {
 type: DrawRegion
-name: "gr-lead-melting-port"
+name: "gr-melting-port"
 }
 {
 type: DrawCrucibleFlame
