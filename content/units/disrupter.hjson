@@ -48,6 +48,18 @@ color2: a393feff
 radius: 20
 layerOffset: 0.1
 radiusTo: 0
+
+moves:[
+{
+gx: -1
+gy: -1
+}
+{
+gy: 1
+gx: 1
+}
+]
+
 }
 ]
 
