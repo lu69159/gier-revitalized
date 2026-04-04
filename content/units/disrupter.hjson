@@ -50,7 +50,7 @@ layer: 111
 radiusTo: 20
 
 progress:{
-type: Charge
+type: charge
 ops:[
 {
 op: compress
