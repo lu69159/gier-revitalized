@@ -21,7 +21,7 @@ type: DrawSideRegion
 ]
 }
 
-liquidOutputDirections:[1,1]
+liquidOutputDirections:[0,0]
 
 consumes:{
 liquids:[
