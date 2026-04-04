@@ -45,9 +45,9 @@ progress: charge
 spinSpeed: 2.5
 color1: a393feff
 color2: a393feff
-radius: 20
+radius: 0
 layer: 111
-radiusTo: 0
+radiusTo: 20
 
 moves:[
 {
