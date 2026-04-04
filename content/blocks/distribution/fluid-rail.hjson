@@ -1,0 +1,33 @@
+type: GenericCrafter
+localizedName: "Fluid Rail"
+description: "Receives liquids."
+
+buildVisibility: sandboxOnly
+envEnabled: -1
+requirements:[lead/5,copper/3]
+  
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+}
+{
+{
+type: DrawLiquidOutputs
+}
+]}
+
+liquidOutputDirections:[1,1]
+
+consumes:{
+liquids:[
+liquid-copper/0
+liquid-lead/0
+]
+}
+
+outputLiquids:[
+liquid-copper/0.166667
+liquid-lead/0.166667
+]
