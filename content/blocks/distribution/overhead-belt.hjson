@@ -1,7 +1,17 @@
 type: ItemBridge
 localizedName: "Overhead Belt"
+description: "
+Transports item above normal buildings.
 
-range: 3
+[green]- Bridge
+[salmon]- Explosive
+
+"
+
+baseExplosiveness: 5
+
+range: 5
 transportTime: 1
 
 requirements:[lead/25,silicon/5]
+
