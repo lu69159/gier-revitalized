@@ -9,11 +9,11 @@ objectives:[electron]
 flying: true
 
 speed: 3.5
+range: 200
 accel: 0.035
 drag: 0.015
 engineSize: 0
 hitSize: 20.25
-range: 5
 
 weapons:[
 {
@@ -32,6 +32,14 @@ health: 1250
 armor: -2.5
 
 abilities:[
+{
+type: StatusFieldAbility
+effect: overdrive
+activeEffect: none
+reload: 5
+duration: 10
+range: 200
+}
 {
 type: MoveEffectAbility
 color: bccae0ff
