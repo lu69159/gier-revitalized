@@ -49,18 +49,21 @@ radius: 0
 layer: 111
 radiusTo: 20
 
-moves:[
+progress:{
+type: Charge
+ops:[
 {
-progress: reload
-gx: -1
-gy: -1
+op: compress
+start: 0
+end: 1
 }
 {
-progress: warmup
-gy: 1
-gx: 1
+op: compress
+start: 1
+end: 0
 }
 ]
+}
 
 }
 ]
