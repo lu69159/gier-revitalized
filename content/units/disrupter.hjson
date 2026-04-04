@@ -58,7 +58,7 @@ type: LaserBulletType
 length: 240
 colors:[a393feff,a393fe66,a393fe22]
 recoil: 4.5
-damage: 150
+damage: 160
 }
 
 }
