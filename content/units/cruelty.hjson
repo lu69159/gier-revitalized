@@ -62,7 +62,7 @@ smokeEffect: shootBigSmoke2
 width: 7.5
 height: 22.5
 
-damage: 15
+damage: 65
 hitShake: 10
 despawnHit: true
 hitSound: unitExplode1
