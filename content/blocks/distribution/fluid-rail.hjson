@@ -25,12 +25,12 @@ liquidOutputDirections:[0,0]
 
 consumes:{
 liquids:[
-liquid-copper/0.166667
-liquid-lead/0.166667
+liquid-copper/0
+liquid-lead/0
 ]
 }
 
 outputLiquids:[
-liquid-copper/0.166667
-liquid-lead/0.166667
+liquid-copper/0
+liquid-lead/0
 ]
