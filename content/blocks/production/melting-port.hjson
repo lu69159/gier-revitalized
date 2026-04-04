@@ -1,6 +1,7 @@
 type: GenericCrafter
 localizedName: Melting Port
 
+category: production
 craftTime: 60
 consumes:{
 items:[copper/1]
