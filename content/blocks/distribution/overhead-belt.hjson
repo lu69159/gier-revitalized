@@ -1,0 +1,7 @@
+type: ItemBridge
+localizedName: "Overhead Belt"
+
+range: 3
+transportTime: 1
+
+requirements:[lead/25,silicon/5]
