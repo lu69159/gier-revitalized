@@ -13,10 +13,10 @@ drawers:[
 type: DrawRegion
 }
 {
-{
 type: DrawLiquidOutputs
 }
-]}
+]
+}
 
 liquidOutputDirections:[1,1]
 
