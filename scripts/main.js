@@ -12,6 +12,7 @@ require("Fabricator");
 require("DummyBlock");
 require("TheStem");
 require("CommandBlock"); // Command Block from minecraft or something
+require("MeltingPort");
 
 // Subclass: Units
 require("IFrameUnit");
