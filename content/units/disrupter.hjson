@@ -51,10 +51,12 @@ radiusTo: 0
 
 moves:[
 {
+progress: reload
 gx: -1
 gy: -1
 }
 {
+progress: warmup
 gy: 1
 gx: 1
 }
