@@ -73,6 +73,12 @@ heatRegion: "gr-ash-full"
 chance: 0
 color: ffffff77
 }
+{
+type: ShieldRegenFieldAbility
+reload: 180
+amount: 30
+max: 300
+}
 ]
 
 
