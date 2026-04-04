@@ -28,20 +28,25 @@ layer: 110
 weapons:[
 {
 reload: 180
+mirror: false
+x: 0
+y: 0
 shoot:{
 firstShotDelay: 90
 }
 
 chargeSound: chargeVela
-shootSound: beamPlasma
+shootSound: explosionNavanax
 shake: 7.5
 parts:[
 {
 type: FlarePart
 progress: charge
+spinSpeed: 2.5
 color1: a393feff
 color2: a393feff
 radius: 20
+layerOffset: 0.1
 radiusTo: 0
 }
 ]
