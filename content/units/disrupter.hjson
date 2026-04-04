@@ -12,14 +12,6 @@ outlineColor: 2f2f3f
 
 engineSize: 0
 hitSize: 12.5
-parts:[
-{
-type: HoverPart
-radius: 18
-color: FFD37F
-layerOffset: -1
-}
-]
 
 flyingLayer: 110.1
 range: 50
@@ -30,5 +22,37 @@ orbRadius: 3
 range: 350
 particles: 0
 layer: 110
+}
+]
+
+weapons:[
+{
+reload: 180
+shoot:{
+firstShotDelay: 90
+}
+
+chargeSound: chargeVela
+shootSound: beamPlasma
+shake: 7.5
+parts:[
+{
+type: FlarePart
+progress: charge
+color1: a393feff
+color2: a393feff
+radius: 20
+radiusTo: 0
+}
+]
+
+bullet:{
+type: LaserBulletType
+length: 240
+colors:[a393feff,a393fe66,a393fe22]
+recoil: 4.5
+damage: 150
+}
+
 }
 ]
