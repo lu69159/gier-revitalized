@@ -46,7 +46,7 @@ spinSpeed: 2.5
 color1: a393feff
 color2: a393feff
 radius: 20
-layerOffset: 0.1
+layer: 111
 radiusTo: 0
 
 moves:[
