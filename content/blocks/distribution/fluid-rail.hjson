@@ -13,7 +13,7 @@ drawers:[
 type: DrawRegion
 }
 {
-type: DrawFluidRail
+type: DrawSideRegion
 }
 ]
 }
