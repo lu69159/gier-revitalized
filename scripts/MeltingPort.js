@@ -65,7 +65,7 @@ blockTile.setBlock(crafters[1], buildTeam);
 } else if (block == crafters[1]) {
 blockTile.setBlock(crafters[2], buildTeam);
 } else if (block == crafters[2]){
-blockTile.setBlock(crafters[0], buildTeam)
+blockTile.setBlock(crafters[0], buildTeam);
 } else {
 return;
 }
