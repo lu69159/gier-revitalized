@@ -35,7 +35,7 @@ kela.ruleSetter = Planets.gier.ruleSetter;
 
 
 
-/// Startip dialog
+/// Startup dialog
 Events.on(ClientLoadEvent, e => { 
 try{
 
@@ -54,7 +54,24 @@ Vars.content.liquid("gr-plague").viscosity = 5;
                 
 } catch(e){
 Vars.ui.showInfoToast(e,10);
-}})});
+}});
+
+t.checkPref("command-block", false, b => {
+try{
+
+const block = Vars.content.block("gr-command-block");
+                
+if (b == true){
+block.buildVisibility = BuildVisibility.shown;
+} else {
+block.buildVisibility = BuildVisibility.worldProcessorOnly;
+}
+                
+} catch(e){
+Vars.ui.showInfoToast(e,10);
+}});
+  
+});
   
   
 const display = Core.bundle.get("mod.gr.display");
@@ -68,6 +85,10 @@ if (Core.settings.getBool("disable-plague") == true){
 Vars.content.liquid("gr-plague").viscosity = 0;
 }
 
+if (Core.settings.getBool("command-block") == true){        
+block.buildVisibility = BuildVisibility.shown;
+}
+  
 } catch(e) {
 Vars.ui.showText("Not work",e,Align.center);
 }})
