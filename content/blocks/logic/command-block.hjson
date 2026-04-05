@@ -7,7 +7,8 @@ alwaysUnlocked: true
 
 description: "
 Simple panel allowing the use of [accent]Command[] presets.
-
+"
+/*
 [accent]<Commands>[]
 - Clear all units
 - Stop player unit
@@ -19,7 +20,7 @@ Simple panel allowing the use of [accent]Command[] presets.
 - Get current unit [grey](saves to spawn unit)[]
 - Unit library [grey](Only accesses vanilla units)[]
 - Fill core
-"
+*/
 
 category: logic
 solid: false
