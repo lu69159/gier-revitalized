@@ -209,3 +209,35 @@ Events.on(EventType.TapEvent, e => {
         Vars.ui.showInfoToast(String(err), 5);
     }
 });
+
+
+
+
+Events.on(BlockInfoEvent, () => {
+try{
+
+const block = Vars.content.block("gr-command-block");
+const cont = Vars.ui.content.cont;
+
+if (Vars.player.selectedBlock != block) return;
+
+cont.row()
+cont.add("[accent]<Commands>[lightgrey]").left().row();
+cont.add().height(3).row()
+cont.image().color(Pal.accent).height(3).width(400).left().row();
+
+
+cont.add("- Clear all units").left().row();
+cont.add("- Stop player unit").left().row();
+cont.add("- Change team").left().row();
+cont.add("- Toggle canGameOver").left().row();
+cont.add("- Toggle editor [gray](saving while enabled crashes)[]").left().row();
+cont.add("- Toggle disableUnitCap").left().row();
+cont.add("- Spawn unit").left().row();
+cont.add("- Get current unit [gray](saves to spawn unit)[]").left().row();
+cont.add("- Unit library [gray](Only accesses vanilla units)[]").left().row();
+cont.add("- Fill core").left().row();
+        
+} catch(e){
+Vars.ui.showText("vruh",e);    
+}});
