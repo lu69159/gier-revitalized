@@ -2,6 +2,8 @@ type: Wall
 # CommandBlock
 localizedName: "Command Block"
 customShadow: true
+envEnabled: -1
+alwaysUnlocked: true
 
 description: "
 Simple panel allowing the use of [accent]Command[] presets.
