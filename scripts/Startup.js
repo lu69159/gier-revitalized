@@ -34,13 +34,40 @@ kela.ruleSetter = Planets.gier.ruleSetter;
 });
 
 
+
 /// Startip dialog
 Events.on(ClientLoadEvent, e => { 
 try{
+
+
+Vars.ui.settings.addCategory("[sky]Gier: Revitalized[]", Icon.menu, t => {
+
+t.checkPref("startup", false, b => {});
+t.checkPref("disable-plague", false, b => {
+try{
+
+if (b == true){
+Vars.content.liquid("gr-plague").viscosity = 0;
+} else {
+Vars.content.liquid("gr-plague").viscosity = 5;
+}
+                
+} catch(e){
+Vars.ui.showInfoToast(e,10);
+}})});
+  
+  
 const display = Core.bundle.get("mod.gr.display");
 const title = Core.bundle.get("mod.gr.mail");
-  
-Vars.ui.showText(title,display,Align.center);
+
+if (Core.settings.getBool("startup") != true){        
+Vars.ui.showText(title,display);
+} 
+
+if (Core.settings.getBool("disable-plague") == true){        
+Vars.content.liquid("gr-plague").viscosity = 0;
+}
+
 } catch(e) {
 Vars.ui.showText("Not work",e,Align.center);
 }})
