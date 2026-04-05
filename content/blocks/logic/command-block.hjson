@@ -4,6 +4,7 @@ localizedName: "Command Block"
 customShadow: true
 envEnabled: -1
 alwaysUnlocked: true
+fullOverride: "gr-command-block-modern"
 
 description: "
 Simple panel allowing the use of [accent]Command[] presets.
