@@ -20,6 +20,8 @@ cont.add().height(6).row();
 cont.add("[#8c7fa9]Lead[lightgrey] -> [#8c7fa9]Liquid Lead[]").left().row();
 cont.add().height(6).row();
 cont.add("[#d99d73]Copper[lightgrey] -> [#d99d73]Liquid Copper[]").left().row();
+cont.add().height(6).row();
+cont.add("[#53565c]Copper[lightgrey] -> [#53565c]Liquid Copper[]").left().row();
 
     
 } catch(e){
@@ -46,7 +48,8 @@ if (player.team() != tile.team() || player.selectedBlock != null) return;
 
 const crafters = [
 Vars.content.block("gr-melting-port"),
-Vars.content.block("gr-lead-melting-port")
+Vars.content.block("gr-lead-melting-port") 
+Vars.content.block("gr-silicon-melting-port")
 ];
 
 if (block == crafters[0] || block == crafters[1] || block == crafters[2]){
@@ -60,7 +63,9 @@ const blockTile = build.tile;
 if (block == crafters[0]){
 blockTile.setBlock(crafters[1], buildTeam);
 } else if (block == crafters[1]) {
-blockTile.setBlock(crafters[0], buildTeam);
+blockTile.setBlock(crafters[2], buildTeam);
+} else if (block == crafters[2]){
+blockTile.setBlock(crafters[0], buildTeam)
 } else {
 return;
 }
