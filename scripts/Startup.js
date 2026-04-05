@@ -86,7 +86,7 @@ Vars.content.liquid("gr-plague").viscosity = 0;
 }
 
 if (Core.settings.getBool("command-block") == true){        
-block.buildVisibility = BuildVisibility.shown;
+Vars.content.block("gr-command-block").buildVisibility = BuildVisibility.shown;
 }
   
 } catch(e) {
