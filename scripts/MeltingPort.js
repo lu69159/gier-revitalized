@@ -17,11 +17,11 @@ cont.add().height(3).row();
 cont.image().color(Pal.accent).height(3).width(400).left().row();
 
 cont.add().height(6).row();
-cont.add("[#8c7fa9]Lead[lightgrey] -> [#8c7fa9]Liquid Lead[]").left().row();
+cont.add(" [#8c7fa9]Lead[lightgrey] -> [#8c7fa9]Liquid Lead[white]").left().row();
 cont.add().height(6).row();
-cont.add("[#d99d73]Copper[lightgrey] -> [#d99d73]Liquid Copper[]").left().row();
+cont.add(" [#d99d73]Copper[lightgrey] -> [#d99d73]Liquid Copper[white]").left().row();
 cont.add().height(6).row();
-cont.add("[#53565c]Silicon[lightgrey] -> [#53565c]Liquid Silicon[]").left().row();
+cont.add("  [#53565c]Silicon[lightgrey] -> [#53565c]Liquid Silicon[]").left().row();
 
     
 } catch(e){
@@ -47,9 +47,9 @@ return;
 if (player.team() != tile.team() || player.selectedBlock != null) return;
 
 const crafters = [
-Vars.content.block(" gr-melting-port"),
-Vars.content.block(" gr-lead-melting-port"),
-Vars.content.block(" gr-silicon-melting-port")
+Vars.content.block("gr-melting-port"),
+Vars.content.block("gr-lead-melting-port"),
+Vars.content.block("gr-silicon-melting-port")
 ];
 
 if (block == crafters[0] || block == crafters[1] || block == crafters[2]){
