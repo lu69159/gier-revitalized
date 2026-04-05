@@ -47,9 +47,9 @@ return;
 if (player.team() != tile.team() || player.selectedBlock != null) return;
 
 const crafters = [
-Vars.content.block("gr-melting-port"),
-Vars.content.block("gr-lead-melting-port"),
-Vars.content.block("gr-silicon-melting-port")
+Vars.content.block(" gr-melting-port"),
+Vars.content.block(" gr-lead-melting-port"),
+Vars.content.block(" gr-silicon-melting-port")
 ];
 
 if (block == crafters[0] || block == crafters[1] || block == crafters[2]){
@@ -73,6 +73,7 @@ return;
 if (blockTile.block() != block){
 Fx.select.at(blockTile.worldx(),blockTile.worldy());
 blockTile.build.health = health;
+lastBuild = null;
 }
   
 } catch(e){
