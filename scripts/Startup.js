@@ -70,6 +70,21 @@ block.buildVisibility = BuildVisibility.worldProcessorOnly;
 } catch(e){
 Vars.ui.showInfoToast(e,10);
 }});
+
+t.checkPref("command-block-texture", false, b => {
+try{
+
+const block = Vars.content.block("gr-command-block");
+                
+if (b == true){
+block.region = Core.atlas.find("gr-command-block");
+} else {
+block.region = Core.atlas.find("gr-command-block-modern");
+}
+                
+} catch(e){
+Vars.ui.showInfoToast(e,10);
+}});
   
 });
   
@@ -77,6 +92,10 @@ Vars.ui.showInfoToast(e,10);
 const display = Core.bundle.get("mod.gr.display");
 const title = Core.bundle.get("mod.gr.mail");
 
+if (Core.settings.getBool("command-block-texture") != true){        
+Vars.content.block("gr-command-block").region = Core.atlas.find("gr-command-block-modern");
+}
+  
 if (Core.settings.getBool("startup") != true){        
 Vars.ui.showText(title,display);
 } 
