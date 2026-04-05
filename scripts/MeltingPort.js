@@ -1,7 +1,7 @@
 // Extra stats
 Events.on(BlockInfoEvent, e => {
 try{
-Vars.ui.showInfoToast("open",10);
+//Vars.ui.showInfoToast("open",10);
 
 const selectBlock = Vars.player.selectedBlock;
 const block = Vars.content.block("gr-melting-port");
