@@ -16,7 +16,7 @@ Events.on(EventType.TapEvent, e => {
         if (!build) return;
         const buildTeam = build.team;
 
-        const target = Vars.content.block("copper-wall");
+        const target = Vars.content.block("gr-command-block");
 
         if (block != target) return;
 
