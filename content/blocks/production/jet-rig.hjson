@@ -1,5 +1,6 @@
 type: Drill
 localizedName: Jet Rig
+size: 2
 
 category: production
 envEnabled: -1
