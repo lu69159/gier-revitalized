@@ -1,0 +1,11 @@
+type: Drill
+localizedName: Jet Rig
+
+category: production
+envEnabled: -1
+buildVisibility: sandboxOnly
+
+requirements:[lead/35,copper/20,silicon/15]
+tier: 2
+liquidBoostIntensity: 1
+drillTime: 240
