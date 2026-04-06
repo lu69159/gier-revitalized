@@ -1,6 +1,6 @@
 var lastUnit = "";
-var lastTeam = 1;
-    
+var lastCommand = "";
+
 Events.on(EventType.TapEvent, e => {
     try {
         if (!e || !e.tile || !e.player) return;
@@ -16,7 +16,7 @@ Events.on(EventType.TapEvent, e => {
         if (!build) return;
         const buildTeam = build.team;
 
-        const target = Vars.content.block("gr-command-block");
+        const target = Vars.content.block("copper-wall");
 
         if (block != target) return;
 
@@ -24,7 +24,7 @@ Events.on(EventType.TapEvent, e => {
 
         Vars.ui.showMenu(
             "<Commands List>",
-            "[lightgrey]Select one of your choosing",
+            "[lightgrey]Free will at last. [red]<Crashes is possibles>[]",
             [
                 ["Clear Units"],
                 ["Stop Player"],
@@ -36,6 +36,7 @@ Events.on(EventType.TapEvent, e => {
                 ["Get Current Unit"],
                 ["Unit Library [grey]<Vanilla Only>[]"],
                 ["Fill Core"],
+                ["Run Javascript"],
                 ["Close"]
             ],
             i => {
@@ -72,7 +73,7 @@ Events.on(EventType.TapEvent, e => {
                 } else if (i == 2) {
                     try {
 
-                        Vars.ui.showTextInput("Change Team", "Enter team id", 100, lastTeam, true, text => {
+                        Vars.ui.showTextInput("Change Team", "Enter team id", 100, lastUnit, true, text => {
                         try{
 
                         Sounds.uiButton.play();
@@ -82,8 +83,6 @@ Events.on(EventType.TapEvent, e => {
                             return;
                         }
 
-                        lastTeam = p.team().id;
-                            
                         const currentTeam = p.team();
                         const newTeam = Team.get(text);
 
@@ -132,7 +131,7 @@ Events.on(EventType.TapEvent, e => {
                         try{
 
                     Sounds.uiButton.play();
-                    Vars.ui.showTextInput("SpawnUnit", "Enter Unit's Name", 100, lastUnit, false, text => {
+                    Vars.ui.showTextInput("SpawnUnit", "Enter unit's internal name (modName-fileName)", 100, lastUnit, false, text => {
                         try{
                     lastUnit = text;
                     const unit = Vars.content.getByName(ContentType.unit, text);
@@ -171,22 +170,24 @@ Events.on(EventType.TapEvent, e => {
                     }} else if(i == 8){
                     try{
 
+                    Sounds.uiButton.play();
                     var units = [];
                         
                    Object.keys(UnitTypes).forEach(unit => {
                     try{
-                    if (unit != null && Vars.content.unit(unit) != null){
+                    if (unit != null || unit != "load"){
                     units.push(unit);
                     }} catch(e){
                     Vars.ui.showInfoToast(e,10);
                     }});
 
-                    Vars.ui.showText("<Vanilla Units>", units.join("[grey],[] "));
+                    Vars.ui.showStartupInfo(units.join(" "));
                     
                     } catch(e){
                     Vars.ui.showInfoToast(e,10);
                     }} else if(i == 9){
 
+                    Sounds.uiButton.play();
                     let core = Vars.player.core();
                     let amount = 0;
                     
@@ -201,7 +202,27 @@ Events.on(EventType.TapEvent, e => {
 
                     Vars.ui.hudfrag.showToast(Icon.effect,"[accent]Filled core with []" + amount + "[accent] different items");
                     
-                    }
+                    } else if (i == 10){
+                    try{
+
+                    Sounds.uiButton.play();
+                    Vars.ui.showTextInput("<Run Javascript>", "May break the game depending on the script", 100, lastCommand, false, text => {
+                    try{      
+
+                    const error = "[red]Error Found";
+                    lastCommand = text;
+                    eval("try{ " + text + "} catch(e) { Vars.ui.showText(error,e)}");
+                    
+                    Sounds.waveSpawn.play();
+                    Vars.ui.hudfrag.showToast(Icon.chat, "[accent]Ran: []" + text);
+                    
+                    } catch(e){
+                    Vars.ui.showInfoToast(e,10);
+                    }});
+                        
+                    } catch(e){
+                    Vars.ui.showInfoToast(e,10);       
+                    }}
             }
         );
 
@@ -237,6 +258,7 @@ cont.add("- Spawn unit").left().row();
 cont.add("- Get current unit [gray](saves to spawn unit)[]").left().row();
 cont.add("- Unit library [gray](Only accesses vanilla units)[]").left().row();
 cont.add("- Fill core").left().row();
+cont.add("- Run Javascript").left().row();
         
 } catch(e){
 Vars.ui.showText("vruh",e);    
