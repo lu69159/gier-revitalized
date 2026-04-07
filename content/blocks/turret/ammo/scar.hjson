@@ -2,6 +2,7 @@ type: ItemTurret
 localizedName: Scar
 size: 3
 clipSize: 9999
+buildVisibility: sandboxOnly
 
 category: turret
 requirements:[
