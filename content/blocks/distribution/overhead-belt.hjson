@@ -3,15 +3,17 @@ localizedName: "Overhead Belt"
 description: "
 Transports item above normal buildings.
 
-[green]- Bridge
-[salmon]- Explosive
-
+[green]- Bridge range: 5
+[red]- Explosive
 "
 
-baseExplosiveness: 5
+baseExplosiveness: 15
+hasPower: false
+
+research: rail-router
 
 range: 5
 transportTime: 1
 
-requirements:[lead/25,silicon/5]
+requirements:[lead/25,copper/10,silicon/5]
 
