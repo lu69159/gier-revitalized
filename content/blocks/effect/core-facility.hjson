@@ -1,6 +1,8 @@
 type: CoreBlock
 size: 4
 name: "Core: [accent]Facility[]"
+
+credit: "Erm"
 description: "A more durable core foundation
 
 [accent]- Drone: Restoration
