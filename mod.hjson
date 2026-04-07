@@ -4,7 +4,7 @@ name: "gr"
 displayName: "[sky[]]Gier: [salmon[]]Revitalized[[]]"
 repo: "Fat-Bird-Owner/gier-revitalized"
 
-author: "Fat Bird's Owner - Main Developer"
+author: "Fat Bird's Owner"
 
 description: "
 Makes gier a playable planet.
@@ -14,6 +14,7 @@ Makes gier a playable planet.
 [grey[]]More info in the repository's ReadMe[[]]
 
 [accent[]]Starring is greatly appreciated[[]]
+[grey[]](Our current goal is 10 stars)[[]]
 "
 
 iosCompatible: true
