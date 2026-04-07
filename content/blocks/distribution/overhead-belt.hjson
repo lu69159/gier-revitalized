@@ -9,6 +9,7 @@ Transports item above normal buildings.
 
 baseExplosiveness: 15
 hasPower: false
+customShadow: true
 
 research: rail-router
 
