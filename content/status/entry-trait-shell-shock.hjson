@@ -1,0 +1,15 @@
+databaseCategory: "entries"
+name: "Directory: [sky]Enraged[]"
+details: '''[lightgrey]
+Shell shocked units releases
+tendrils of lightning upon
+getting damaged.
+
+Applies to[accent] Electron, Arraign[]
+'''
+
+shownPlanets:[gier]
+databaseTag: "traits"
+fullOverride: "gr-entry-mineral-1"
+
+research: entry-trait-iframe
