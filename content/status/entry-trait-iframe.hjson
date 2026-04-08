@@ -1,0 +1,19 @@
+databaseCategory: "entries"
+name: "Directory: [white]IFrame[]"
+details: '''
+[lightgrey]IFrame traited units will receive 
+temporary invincibility upon receiving damage.
+
+This only applies if the damage isnt too little
+or too much.
+'''
+
+shownPlanets:[gier]
+databaseTag: "traits"
+
+research:{
+parent: gier
+objectives:[
+enrty-trair-iframe
+]
+}
