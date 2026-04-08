@@ -13,7 +13,7 @@ databaseTag: "traits"
 fullOverride: "gr-entry-mineral-1"
 
 research:{
-parent: gier
+parent: entry-mineral-1
 objectives:[
 entry-trait-iframe
 ]
