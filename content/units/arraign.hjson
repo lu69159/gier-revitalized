@@ -1,0 +1,63 @@
+type: flying
+localizedName: Arraign
+# ZapUnit
+
+research: {
+parent: electron
+objectives:[arraign]
+}
+flying: true
+
+speed: 2.5
+range: 230
+accel: 0.05
+drag: 0.025
+engineSize: 0
+hitSize: 24
+rotateSpeed: 2.5
+
+weapons:[
+{
+noAttack: true
+display: false
+shootCone: 0
+controllable: false
+aiControllable: false
+}
+]
+
+outlineColor: 2f2f3f
+drawSoftShadow: false
+
+health: 1250
+armor: -2.5
+immunities:[overclock]
+
+abilities:[
+{
+type: StatusFieldAbility
+effect: overclock
+activeEffect: none
+reload: 5
+duration: 10
+range: 230
+}
+{
+type: MoveEffectAbility
+color: bccae0ff
+}
+{
+type: EnergyFieldAbility
+range: 250
+reload: 20
+
+damage: 20
+statusDuration: 90
+maxTargets: 3
+
+sectors: 25
+effectRadius: 2.5
+color: bccae0ff
+sectorRad: 0.0225
+}
+]
