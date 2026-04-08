@@ -29,7 +29,7 @@ aiControllable: false
 outlineColor: 2f2f3f
 drawSoftShadow: false
 
-health: 1250
+health: 2250
 armor: -2.5
 immunities:[overclock]
 
@@ -44,12 +44,14 @@ range: 230
 }
 {
 type: MoveEffectAbility
-color: bccae0ff
+color: EB564BFF
+interval: 0.1
 }
 {
 type: EnergyFieldAbility
 range: 250
 reload: 20
+status: anchored
 
 damage: 20
 statusDuration: 90
@@ -57,7 +59,7 @@ maxTargets: 3
 
 sectors: 25
 effectRadius: 2.5
-color: bccae0ff
+color: EB564BFF
 sectorRad: 0.0225
 }
 ]
