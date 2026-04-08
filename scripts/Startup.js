@@ -85,10 +85,12 @@ block.region = Core.atlas.find("gr-command-block-modern");
 } catch(e){
 Vars.ui.showInfoToast(e,10);
 }});
+
+t.checkPref("deranged", false, b => {});
   
 });
-  
-  
+
+
 const display = Core.bundle.get("mod.gr.display");
 const title = Core.bundle.get("mod.gr.mail");
 
