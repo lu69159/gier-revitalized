@@ -23,8 +23,8 @@ stable.
 "
 
 iosCompatible: true
-version: "v2.15-Gier"
-subtitle: "[sky[]]v2.15-Gier[[]]"
+version: "v2.17-Gier"
+subtitle: "[sky[]]v2.15[lightgrey[]]-Gier[[]]"
 minGameVersion: "156"
 dependencies: []
 hidden: false
