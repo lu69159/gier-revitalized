@@ -11,6 +11,8 @@ baseExplosiveness: 15
 hasPower: false
 customShadow: true
 
+databaseTag: "gier"
+
 research: rail-router
 
 range: 5
