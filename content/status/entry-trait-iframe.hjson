@@ -14,6 +14,6 @@ databaseTag: "traits"
 research:{
 parent: gier
 objectives:[
-enrty-trair-iframe
+entry-trait-iframe
 ]
 }
