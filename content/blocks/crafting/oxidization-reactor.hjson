@@ -56,6 +56,12 @@ padding: 5
 drawLiquid: water
 }
 {
+type: DrawLiquidTile
+padding: 5
+drawLiquid: hydrogen
+alpha: 0.65
+}
+{
 type: DrawBubbles
 color: 596ab8ff
 }
