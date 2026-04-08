@@ -31,12 +31,12 @@ drawSoftShadow: false
 
 health: 1250
 armor: -2.5
-immunities:[overdrive]
+immunities:[overclock]
 
 abilities:[
 {
 type: StatusFieldAbility
-effect: overdrive
+effect: overclock
 activeEffect: none
 reload: 5
 duration: 10
