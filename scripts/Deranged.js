@@ -1,6 +1,6 @@
 Events.on(WorldLoadEvent, () => {
 try{
-if (Core.settings.getBool("deranged") == true){        
+if (Core.settings.getBool("deranged") == true && Var.state.isCampaign()){        
 const rule = Vars.state.rules;
 rule.unitBuildSpeedMultiplier = 0.65
 rule.unitCrashDamageMultiplier = 1.5;
