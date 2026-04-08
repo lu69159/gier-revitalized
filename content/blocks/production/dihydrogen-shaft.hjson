@@ -10,6 +10,8 @@ outputLiquid: water/0.16667
 liquidCapacity: 100
 customShadow: true
 
+datatbaseTag: "gier"
+
 ambientSound: dihydrogen-shaft
 ambientSoundVolume: 0.2
 baseEfficiency: 0
