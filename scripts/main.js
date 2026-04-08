@@ -1,6 +1,6 @@
 // Team changes, showing gier and other stuff
 require("Startup");
-require("deranged");
+require("Deranged");
 
 //    ### Class Overrides ###
 // Subclass: Block
