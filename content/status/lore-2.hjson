@@ -27,6 +27,7 @@ of resources on serpulo.
 
 show: true
 shownPlanets:[gier]
+fullOverride: "gr-lore-1"
 
 research:{
 parent: gier
