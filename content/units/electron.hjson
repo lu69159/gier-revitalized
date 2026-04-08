@@ -14,6 +14,7 @@ accel: 0.035
 drag: 0.015
 engineSize: 0
 hitSize: 20.25
+rotateSpeed: 1.5
 
 weapons:[
 {
@@ -30,6 +31,7 @@ drawSoftShadow: false
 
 health: 1250
 armor: -2.5
+immunities:[overdrive]
 
 abilities:[
 {
