@@ -17,6 +17,7 @@ research: rail-router
 
 range: 5
 transportTime: 1
+envEnabled: -1
 
 requirements:[lead/25,copper/10,silicon/5]
 
