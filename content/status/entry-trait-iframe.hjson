@@ -4,8 +4,8 @@ details: '''
 [lightgrey]IFrame traited units will receive 
 temporary invincibility upon receiving damage.
 
-This only applies if the damage isnt too little
-or too much.
+This only applies if the damage isnt too
+little or too much.
 '''
 
 shownPlanets:[gier]
