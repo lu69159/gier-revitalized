@@ -1,10 +1,23 @@
 type: AttributeCrafter
 size: 3
 squareSprite: false
-  
+
+description: "Bores out water from asteroids.
+
+[I] - Water could be used as coolant for turret
+and is required in certain production procceses.
+
+[sky]Priority[]: 1.5
+
+[green]- Bore out water
+[salmon]- Requires power
+- Requires graphite
+"
+
 localizedName: Dihydrogen Shaft
 category: production
 attribute: carbon
+priority: 1.5
 
 outputLiquid: water/0.16667
 liquidCapacity: 100
