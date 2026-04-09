@@ -8,6 +8,8 @@ Fabricates a unit with the required resources.
 "
 
 polyRadius: 0
+polyStroke: 0
+
 category: effect
 requirements:[lead/275,copper/200,silicon/125]
 unitType: nova
