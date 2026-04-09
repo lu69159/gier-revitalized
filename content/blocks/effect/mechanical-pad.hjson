@@ -13,3 +13,12 @@ polyStroke: 0
 category: effect
 requirements:[lead/275,copper/200,silicon/125]
 unitType: nova
+
+hasItems: false
+itemCapacity: 0
+
+consumes:{
+power: 3
+liquid:{
+liquid: water, amount: 0.16667, optional: true, coolant: true}
+}
