@@ -14,7 +14,7 @@ category: effect
 requirements:[lead/275,copper/200,silicon/125]
 unitType: nova
 
-hasItems: false
+#hasItems: false
 itemCapacity: 0
 
 consumes:{
