@@ -34,7 +34,7 @@ if (attribute <= 0){
 building.enabled = false;
 
 Fx.attackCommand.at(tileWorld.worldx(),tileWorld.worldy(),45)
-//Fx.unitEnvKill.at(tileWorld.worldx(),tileWorld.worldy());
+Fx.unitEnvKill.at(tileWorld.worldx(),tileWorld.worldy());
 
 } else {
 Fx.upgradeCoreBloom.at(tileWorld.worldx(),tileWorld.worldy(),1);
