@@ -1,23 +1,9 @@
-type: BlockProducer
+type: SingleBlockProducer
 localizedName: Fissure Alamgam
 category: units
 size: 1
 
-#result: beryllium-wall
+result: beryllium-wall
 requirements:[lead/65, copper/30, silicon/15, oxide/10]
 buildVisibility: sandboxOnly
 
-stacks: [
-  copper-wall: [
-    copper/6
-  ]
-
-  titanium-wall: [
-    titanium/12
-  ]
-
-  surge-wall: [
-    surge-alloy/8
-    silicon/4
-  ]
-]
