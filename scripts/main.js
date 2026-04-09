@@ -14,6 +14,7 @@ require("DummyBlock");
 require("TheStem");
 require("CommandBlock"); // Command Block from minecraft or something
 require("MeltingPort");
+require("AttributeConstructor");
 
 // Subclass: Units
 require("IFrameUnit");
