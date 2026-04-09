@@ -1,0 +1,13 @@
+type: UnitCargoLoader
+#MechPad
+
+size: 2
+localizedName: Mechanical Pad
+description: "[red]<Test block>[]
+Fabricates a unit with the required resources.
+"
+
+polyRadius: 0
+category: effect
+requirements:[lead/275,copper/200,silicon/125]
+unitType: nova
