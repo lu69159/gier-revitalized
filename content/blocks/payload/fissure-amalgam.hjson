@@ -7,7 +7,7 @@ size: 1
 requirements:[lead/65, copper/30, silicon/15, oxide/10]
 buildVisibility: sandboxOnly
 
-stacks: {
+stacks: [
   copper-wall: [
     copper/6
   ]
@@ -20,4 +20,4 @@ stacks: {
     surge-alloy/8
     silicon/4
   ]
-}
+]
