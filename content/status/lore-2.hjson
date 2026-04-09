@@ -30,7 +30,7 @@ shownPlanets:[gier]
 fullOverride: "gr-lore-1"
 
 research:{
-parent: gier
+parent: gr-lore-1
 objectives:[
 {
 type: SectorComplete
