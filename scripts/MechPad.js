@@ -1,4 +1,4 @@
-Event.on(ContentInitEvent, () => {
+Events.on(ContentInitEvent, () => {
 try{
 const pad = Vars.content.block("gr-mechanical-pad");
   
