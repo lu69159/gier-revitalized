@@ -19,7 +19,7 @@ itemCapacity: 0
 
 consumes:{
 power: 1.5
-liquid:[
+liquids:[
 gallium/0.16667
 ]
 }
