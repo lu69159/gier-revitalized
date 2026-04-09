@@ -30,9 +30,12 @@ dependencies: []
 hidden: false
 
 contentOrder:[
+beryllium-attribute
+
 rail
 rail-router
 rail-overflow
+overhead-rail
 
 drone-facility
 facility-dropzone
