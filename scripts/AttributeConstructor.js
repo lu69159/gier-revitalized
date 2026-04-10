@@ -20,7 +20,7 @@ else if(building.rotation == 2) fx = 1;
 else fy = 1;
 
 const size = building.block.size;
-const offset = Math.round((size - 1) / 2);
+const offset = Math.floor((size - 1) / 2);
 
 let totalAttribute = 0;
 let count = 0;
@@ -42,12 +42,13 @@ for(let dy = 0; dy < size; dy++){
 
     const attribute = block.attributes.get(Attribute.get("beryllium"));
 
+    if (!block == Vars.content.block("gr-fissure-amalgam")){
     if(attribute <= 0){
     building.enabled = false;
     Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
     }else{
     Fx.upgradeCoreBloom.at(worldTile.worldx(), worldTile.worldy(), 1);
-    }
+    }}
 
     
     if(attribute == null) continue;
