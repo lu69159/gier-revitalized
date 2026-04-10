@@ -1,91 +1,95 @@
 const blocks = [
 "gr-fissure-amalgam"
-]
+];
 
-// Main Logic behind the code will enable it if a block has carbon efficiency doesnt actually work tho
 Events.on(TileChangeEvent, e => {
-try{
-const tile = e.tile;
-const building = tile.build;
-if(!building) return;   
-    
-function attributeConstructor(string){
+try {
+    const tile = e.tile;
+    const building = tile.build;
+    if(!building) return;
 
-if(tile.block() != Vars.content.block(string)) return;
+    const attrKey = Attribute.get("beryllium");
 
-let fx = 0, fy = 0;
+    function attributeConstructor(string){
 
-if(building.rotation == 0) fx = -1;
-else if(building.rotation == 1) fy = -1;
-else if(building.rotation == 2) fx = 1;
-else fy = 1;
+        const targetBlock = Vars.content.block(string);
+        if(!targetBlock) return;
 
-const size = building.block.size;
-const offset = Math.floor((size - 1) / 2);
+        if(tile.block() != targetBlock) return;
 
-let totalAttribute = 0;
-let count = 0;
+        let fx = 0, fy = 0;
 
-for(let dx = 0; dx < size; dx++){
-for(let dy = 0; dy < size; dy++){
+        if(building.rotation == 0) fx = -1;
+        else if(building.rotation == 1) fy = -1;
+        else if(building.rotation == 2) fx = 1;
+        else fy = 1;
 
-    const bx = building.tile.x - offset + dx;
-    const by = building.tile.y - offset + dy;
+        const size = building.block.size;
+        const offset = Math.floor((size - 1) / 2);
 
-    const tx = bx + fx;
-    const ty = by + fy;
+        let totalAttribute = 0;
+        let count = 0;
 
-    const worldTile = Vars.world.tile(tx, ty);
-    if(!worldTile) continue;
+        for(let dx = 0; dx < size; dx++){
+            for(let dy = 0; dy < size; dy++){
 
-    const block = worldTile.block();
-    if(!block) continue;
+                const bx = building.tile.x - offset + dx;
+                const by = building.tile.y - offset + dy;
 
-    const attribute = block.attributes.get(Attribute.get("beryllium"));
+                const tx = bx + fx;
+                const ty = by + fy;
 
-    if (block != Vars.content.block(string)){
-    if(attribute <= 0){
-    building.enabled = false;
-    Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
-    }else{
-    Fx.upgradeCoreBloom.at(worldTile.worldx(), worldTile.worldy(), 1);
-    }}
+                const worldTile = Vars.world.tile(tx, ty);
+                if(!worldTile) continue;
 
-    
-    if(attribute == null) continue;
-    
-    totalAttribute += (attribute * 2);
-    count++;
-}
-}
+                const block = worldTile.block();
+                if(!block) continue;
 
-if(count == 0) return;
+                const attribute = block.attributes.get(attrKey);
 
-const attribute = totalAttribute / count;
+                if(block != targetBlock){
+                    if(attribute <= 0){
+                        building.enabled = false;
+                        Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
+                    } else {
+                        Fx.upgradeCoreBloom.at(worldTile.worldx(), worldTile.worldy(), 1);
+                    }
+                }
 
-if(attribute >= 1){
-    building.applyBoost(attribute, Infinity);
-}else{
-    building.applySlowdown(attribute, Infinity);
-}
+                if(attribute == null) continue;
 
-if(attribute <= 0) building.enabled = false;
-}
+                totalAttribute += (attribute * 2);
+                count++;
+            }
+        }
 
-for (let i = 0; i < blocks.length; i++){
+        if(count == 0) return;
 
-    const b = Vars.content.block(blocks[i]);
-    if(!b) continue;
+        const attribute = totalAttribute / count;
 
-    if (building.block == b) {
-        attributeConstructor(blocks[i]);
+        if(attribute >= 1){
+            building.applyBoost(attribute, Infinity);
+        } else {
+            building.applySlowdown(attribute, Infinity);
+        }
+
+        if(attribute <= 0) building.enabled = false;
     }
-}
-    
+
+    for (let i = 0; i < blocks.length; i++){
+
+        const b = Vars.content.block(blocks[i]);
+        if(!b) continue;
+
+        if (building.block == b) {
+            attributeConstructor(blocks[i]);
+            break;
+        }
+    }
+
 } catch(err){
     Vars.ui.showText("bruv", err);
-}
-});
+}});
 
 /*
 Events.on(TileChangeEvent, e => {
