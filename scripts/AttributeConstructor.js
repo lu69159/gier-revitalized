@@ -1,16 +1,18 @@
-
+const blocks = [
+"gr-fissure-amalgam"
+]
 
 // Main Logic behind the code will enable it if a block has carbon efficiency doesnt actually work tho
-
 Events.on(TileChangeEvent, e => {
 try{
-
 const tile = e.tile;
 const building = tile.build;
+    
+function attributeConstructor(string){
 
 if(!building) return;
 
-if(tile.block() != Vars.content.block("gr-fissure-amalgam")) return;
+if(tile.block() != Vars.content.block(string)) return;
 
 let fx = 0, fy = 0;
 
@@ -42,7 +44,7 @@ for(let dy = 0; dy < size; dy++){
 
     const attribute = block.attributes.get(Attribute.get("beryllium"));
 
-    if (block != Vars.content.block("gr-fissure-amalgam")){
+    if (block != Vars.content.block(string)){
     if(attribute <= 0){
     building.enabled = false;
     Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
@@ -69,7 +71,12 @@ if(attribute >= 1){
 }
 
 if(attribute <= 0) building.enabled = false;
+}
 
+for (let i = 0; i < blocks.length; i++){
+if (building.block = Vars.content.block(blocks[i])) attributeConstructor(blocks[i]);
+}
+    
 } catch(err){
     Vars.ui.showText("bruv", err);
 }
@@ -121,11 +128,17 @@ Vars.ui.showText("bruv",e);
 Events.on(ContentInitEvent, () =>{
 try{
 
-Vars.content.block("gr-fissure-amalgam").stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
-Vars.content.block("gr-fissure-amalgam").stats.add(Stat.output, StatValues.content(Blocks.berylliumWall));
+function giveStat(string){
+const block = Vars.content.block(string);
+block.stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
+block.stats.add(Stat.output, StatValues.content(Blocks.berylliumWall));
+block.addBar("ef", e => new Bar( () => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%", () => Pal.lightOrange,         () => e.timeScale() > 0 ? e.timeScale() : 0     ) );
+}
 
-Vars.content.block("gr-fissure-amalgam").addBar("ef", e =>      new Bar(         () => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%",         () => Pal.lightOrange,         () => e.timeScale() > 0 ? e.timeScale() : 0     ) );
-
+for (let i = 0; i < blocks.length; i++){
+giveState(blocks[i]);
+}
+    
 } catch(e){
 Vars.ui.showText("bruv",e);
 }});
