@@ -2,6 +2,19 @@ type: SingleBlockProducer
 # AttributeConstructor
 
 localizedName: Fissure Alamgam
+description: "
+Drains the hardened carbon from the wall
+behind it. And mixes it with silicon and
+graphite.
+
+[grey][i] - Packed Carbon: Used for
+payload purposes.
+
+[green]- Produces packed carbin
+- Doesn't require power
+[red]- Needs a required tile behind it
+- Explosive
+"
 category: units
 size: 2
 
@@ -11,3 +24,13 @@ buildVisibility: sandboxOnly
 
 privileged: true
 buildSpeed: 0.1
+
+destroyBullet:{
+type: ExplosionBulletType
+splashDamage: 200
+splashDamageRadius: 60
+scaledSplashDamage: true
+despawnHit: true
+hitShake: 15
+hitEffect: plasticExplosionFlak
+}
