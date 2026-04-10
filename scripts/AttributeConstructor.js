@@ -41,8 +41,17 @@ for(let dy = 0; dy < size; dy++){
     if(!block) continue;
 
     const attribute = block.attributes.get(Attribute.get("beryllium"));
-    if(attribute == null) continue;
 
+    if(attribute <= 0){
+    building.enabled = false;
+    Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
+    }else{
+    Fx.upgradeCoreBloom.at(worldTile.worldx(), worldTile.worldy(), 1);
+    }
+
+    
+    if(attribute == null) continue;
+    
     totalAttribute += attribute;
     count++;
 }
@@ -58,12 +67,7 @@ if(attribute >= 1){
     building.applySlowdown(attribute, Infinity);
 }
 
-if(attribute <= 0){
-    building.enabled = false;
-    Fx.unitEnvKill.at(tile.worldx(), tile.worldy());
-}else{
-    Fx.upgradeCoreBloom.at(tile.worldx(), tile.worldy(), 1);
-}
+if(attribute <= 0) building.enabled = false;
 
 } catch(err){
     Vars.ui.showText("bruv", err);
