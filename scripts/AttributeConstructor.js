@@ -48,7 +48,8 @@ try{
 
 Vars.content.block("gr-fissure-amalgam").stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 Vars.content.block("gr-fissure-amalgam").stats.add(Stat.output, StatValues.content(Blocks.berylliumWall));
-//Vars.content.block("gr-fissure-amalgam").addBar("ef", e => new Bar("Efficency", Pal.lightOrange, () => e && e.efficiency > 0 ? e.efficiency : 0));
+
+Vars.content.block("gr-fissure-amalgam").addBar("ef", e =>      new Bar(         () => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%",         () => Pal.lightOrange,         () => e.timeScale() > 0 ? e.timeScale() : 0     ) );
 
 } catch(e){
 Vars.ui.showText("bruv",e);
