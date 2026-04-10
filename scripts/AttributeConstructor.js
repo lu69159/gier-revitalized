@@ -44,7 +44,6 @@ for(let dy = 0; dy < size; dy++){
 
     if (block != Vars.content.block("gr-fissure-amalgam")){
     if(attribute <= 0){
-    building.enabled = false;
     Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
     }else{
     Fx.upgradeCoreBloom.at(worldTile.worldx(), worldTile.worldy(), 1);
@@ -69,7 +68,8 @@ if(attribute >= 1){
 }
 
 if(attribute <= 0) building.enabled = false;
-
+else building.enabled = false;
+    
 } catch(err){
     Vars.ui.showText("bruv", err);
 }
