@@ -7,10 +7,9 @@ Events.on(TileChangeEvent, e => {
 try{
 const tile = e.tile;
 const building = tile.build;
+if(!building) return;   
     
 function attributeConstructor(string){
-
-if(!building) return;
 
 if(tile.block() != Vars.content.block(string)) return;
 
@@ -74,7 +73,13 @@ if(attribute <= 0) building.enabled = false;
 }
 
 for (let i = 0; i < blocks.length; i++){
-if (building.block == Vars.content.block(blocks[i])) attributeConstructor(blocks[i]);
+
+    const b = Vars.content.block(blocks[i]);
+    if(!b) continue;
+
+    if (building.block == b) {
+        attributeConstructor(blocks[i]);
+    }
 }
     
 } catch(err){
