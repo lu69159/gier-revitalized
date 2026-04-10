@@ -23,12 +23,12 @@ const tileWorld = Vars.world.tile(x,y)
 if (!worldTile) return;
     
 const attribute = worldTile.attributes.get(Attribute.get("beryllium"));
-building.timeScale = attribute;
+//building.timeScale = attribute;
 
 if (attribute <= 0){
 building.enabled = false;
 
-Fx.attackCommand.at(tileWorld.worldx(),tileWorld.worldy(),45)
+//Fx.attackCommand.at(tileWorld.worldx(),tileWorld.worldy(),45)
 Fx.unitEnvKill.at(tileWorld.worldx(),tileWorld.worldy());
 
 } else {
