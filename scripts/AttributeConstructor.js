@@ -136,7 +136,7 @@ block.addBar("ef", e => new Bar( () => "Efficiency: " + Math.floor(e.timeScale()
 }
 
 for (let i = 0; i < blocks.length; i++){
-giveState(blocks[i]);
+giveStat(blocks[i]);
 }
     
 } catch(e){
