@@ -22,6 +22,8 @@ result: gr-packed-graphite
 requirements:[lead/65, copper/30, silicon/15, oxide/10]
 buildVisibility: sandboxOnly
 
+canOverdrive: false
+
 privileged: true
 buildSpeed: 0.1
 
