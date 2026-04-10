@@ -1,6 +1,7 @@
 // The blocks that will be given stats on contentInit
 const mechPads = [
-"gr-mechanical-pad"
+"gr-mechanical-pad",
+"unit-cargo-loader"
 ];
 
 // Basically an init for this override class
@@ -18,7 +19,7 @@ pad.stats.add(Stat.output, StatValues.content(pad.unitType));
 }
 
 for (let i = 0; i < mechPads.length; i++){
-mechPadBuild(i);
+mechPadBuild(mechPads[i]);
 }
   
 } catch(e){
