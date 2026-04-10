@@ -119,10 +119,10 @@ Vars.ui.showText("bruv",e);
 // Sets stats for the block
 Events.on(ContentInitEvent, () =>{
 try{
-    
-Vars.content.block("gr-fissure-amalgam").stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
-Vars.content.block("gr-fissure-amalgam").stats.add(Stat.output, StatValues.content(Blocks.berylliumWall));
-Vars.content.block("gr-fissure-amalgam").addBar("ef", e =>      new Bar(         () => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%",         () => Pal.lightOrange,         () => e.timeScale() > 0 ? e.timeScale() : 0     ) );
+const block =  Vars.content.block("gr-fissure-amalgam")
+block.stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
+block.stats.add(Stat.output, StatValues.content(block.result));
+block.addBar("ef", e =>      new Bar(         () => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%",         () => Pal.lightOrange,         () => e.timeScale() > 0 ? e.timeScale() : 0     ) );
     
 } catch(e){
 Vars.ui.showText("bruv",e);
