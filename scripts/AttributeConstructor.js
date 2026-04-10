@@ -1,95 +1,79 @@
-const blocks = [
-"gr-fissure-amalgam"
-];
+
+
+// Main Logic behind the code will enable it if a block has carbon efficiency doesnt actually work tho
 
 Events.on(TileChangeEvent, e => {
-try {
-    const tile = e.tile;
-    const building = tile.build;
-    if(!building) return;
+try{
 
-    const attrKey = Attribute.get("beryllium");
+const tile = e.tile;
+const building = tile.build;
 
-    function attributeConstructor(string){
+if(!building) return;
 
-        const targetBlock = Vars.content.block(string);
-        if(!targetBlock) return;
+if(tile.block() != Vars.content.block("gr-fissure-amalgam")) return;
 
-        if(tile.block() != targetBlock) return;
+let fx = 0, fy = 0;
 
-        let fx = 0, fy = 0;
+if(building.rotation == 0) fx = -1;
+else if(building.rotation == 1) fy = -1;
+else if(building.rotation == 2) fx = 1;
+else fy = 1;
 
-        if(building.rotation == 0) fx = -1;
-        else if(building.rotation == 1) fy = -1;
-        else if(building.rotation == 2) fx = 1;
-        else fy = 1;
+const size = building.block.size;
+const offset = Math.floor((size - 1) / 2);
 
-        const size = building.block.size;
-        const offset = Math.floor((size - 1) / 2);
+let totalAttribute = 0;
+let count = 0;
 
-        let totalAttribute = 0;
-        let count = 0;
+for(let dx = 0; dx < size; dx++){
+for(let dy = 0; dy < size; dy++){
 
-        for(let dx = 0; dx < size; dx++){
-            for(let dy = 0; dy < size; dy++){
+    const bx = building.tile.x - offset + dx;
+    const by = building.tile.y - offset + dy;
 
-                const bx = building.tile.x - offset + dx;
-                const by = building.tile.y - offset + dy;
+    const tx = bx + fx;
+    const ty = by + fy;
 
-                const tx = bx + fx;
-                const ty = by + fy;
+    const worldTile = Vars.world.tile(tx, ty);
+    if(!worldTile) continue;
 
-                const worldTile = Vars.world.tile(tx, ty);
-                if(!worldTile) continue;
+    const block = worldTile.block();
+    if(!block) continue;
 
-                const block = worldTile.block();
-                if(!block) continue;
+    const attribute = block.attributes.get(Attribute.get("beryllium"));
 
-                const attribute = block.attributes.get(attrKey);
+    if (block != Vars.content.block("gr-fissure-amalgam")){
+    if(attribute <= 0){
+    building.enabled = false;
+    Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
+    }else{
+    Fx.upgradeCoreBloom.at(worldTile.worldx(), worldTile.worldy(), 1);
+    }}
 
-                if(block != targetBlock){
-                    if(attribute <= 0){
-                        building.enabled = false;
-                        Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
-                    } else {
-                        Fx.upgradeCoreBloom.at(worldTile.worldx(), worldTile.worldy(), 1);
-                    }
-                }
+    
+    if(attribute == null) continue;
+    
+    totalAttribute += (attribute * 2);
+    count++;
+}
+}
 
-                if(attribute == null) continue;
+if(count == 0) return;
 
-                totalAttribute += (attribute * 2);
-                count++;
-            }
-        }
+const attribute = totalAttribute / count;
 
-        if(count == 0) return;
+if(attribute >= 1){
+    building.applyBoost(attribute, Infinity);
+}else{
+    building.applySlowdown(attribute, Infinity);
+}
 
-        const attribute = totalAttribute / count;
-
-        if(attribute >= 1){
-            building.applyBoost(attribute, Infinity);
-        } else {
-            building.applySlowdown(attribute, Infinity);
-        }
-
-        if(attribute <= 0) building.enabled = false;
-    }
-
-    for (let i = 0; i < blocks.length; i++){
-
-        const b = Vars.content.block(blocks[i]);
-        if(!b) continue;
-
-        if (building.block == b) {
-            attributeConstructor(blocks[i]);
-            break;
-        }
-    }
+if(attribute <= 0) building.enabled = false;
 
 } catch(err){
     Vars.ui.showText("bruv", err);
-}});
+}
+});
 
 /*
 Events.on(TileChangeEvent, e => {
@@ -137,17 +121,11 @@ Vars.ui.showText("bruv",e);
 Events.on(ContentInitEvent, () =>{
 try{
 
-function giveStat(string){
-const block = Vars.content.block(string);
-block.stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
-block.stats.add(Stat.output, StatValues.content(Blocks.berylliumWall));
-block.addBar("ef", e => new Bar( () => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%", () => Pal.lightOrange,         () => e.timeScale() > 0 ? e.timeScale() : 0     ) );
-}
+Vars.content.block("gr-fissure-amalgam").stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
+Vars.content.block("gr-fissure-amalgam").stats.add(Stat.output, StatValues.content(Blocks.berylliumWall));
 
-for (let i = 0; i < blocks.length; i++){
-giveStat(blocks[i]);
-}
-    
+Vars.content.block("gr-fissure-amalgam").addBar("ef", e =>      new Bar(         () => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%",         () => Pal.lightOrange,         () => e.timeScale() > 0 ? e.timeScale() : 0     ) );
+
 } catch(e){
 Vars.ui.showText("bruv",e);
 }});
