@@ -1,0 +1,6 @@
+type: Wall
+requirements:[silicon/5,graphite/15]
+localizedName: Packed Carbon
+
+placeablePlayer: true
+buildVisibility: sandboxOnly
