@@ -3,7 +3,7 @@ type: SingleBlockProducer
 
 localizedName: Fissure Alamgam
 category: units
-size: 1
+size: 2
 
 result: beryllium-wall
 requirements:[lead/65, copper/30, silicon/15, oxide/10]
