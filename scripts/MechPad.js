@@ -1,7 +1,6 @@
 // The blocks that will be given stats on contentInit
 const mechPads = [
-"gr-mechanical-pad",
-"unit-cargo-loader"
+"gr-mechanical-pad"
 ];
 
 // Basically an init for this override class
