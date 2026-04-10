@@ -1,6 +1,76 @@
 
 
 // Main Logic behind the code will enable it if a block has carbon efficiency doesnt actually work tho
+
+Events.on(TileChangeEvent, e => {
+try{
+
+const tile = e.tile;
+const building = tile.build;
+
+if(!building) return;
+
+if(tile.block() != Vars.content.block("gr-fissure-amalgam")) return;
+
+let fx = 0, fy = 0;
+
+if(building.rotation == 0) fx = -1;
+else if(building.rotation == 1) fy = -1;
+else if(building.rotation == 2) fx = 1;
+else fy = 1;
+
+const size = building.block.size;
+const offset = Math.floor((size - 1) / 2);
+
+let totalAttribute = 0;
+let count = 0;
+
+for(let dx = 0; dx < size; dx++){
+for(let dy = 0; dy < size; dy++){
+
+    const bx = building.tile.x - offset + dx;
+    const by = building.tile.y - offset + dy;
+
+    const tx = bx + fx;
+    const ty = by + fy;
+
+    const worldTile = Vars.world.tile(tx, ty);
+    if(!worldTile) continue;
+
+    const block = worldTile.block();
+    if(!block) continue;
+
+    const attribute = block.attributes.get(Attribute.get("beryllium"));
+    if(attribute == null) continue;
+
+    totalAttribute += attribute;
+    count++;
+}
+}
+
+if(count == 0) return;
+
+const attribute = totalAttribute / count;
+
+if(attribute >= 1){
+    building.applyBoost(attribute, Infinity);
+}else{
+    building.applySlowdown(attribute, Infinity);
+}
+
+if(attribute <= 0){
+    building.enabled = false;
+    Fx.unitEnvKill.at(tile.worldx(), tile.worldy());
+}else{
+    Fx.upgradeCoreBloom.at(tile.worldx(), tile.worldy(), 1);
+}
+
+} catch(err){
+    Vars.ui.showText("bruv", err);
+}
+});
+
+/*
 Events.on(TileChangeEvent, e => {
 try{
 const tile = e.tile;
@@ -38,7 +108,7 @@ Fx.upgradeCoreBloom.at(tileWorld.worldx(),tileWorld.worldy(),1);
     
 } catch(e){
 Vars.ui.showText("bruv",e);
-}});
+}});*/
 
 
 
