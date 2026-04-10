@@ -74,7 +74,7 @@ if(attribute <= 0) building.enabled = false;
 }
 
 for (let i = 0; i < blocks.length; i++){
-if (building.block = Vars.content.block(blocks[i])) attributeConstructor(blocks[i]);
+if (building.block == Vars.content.block(blocks[i])) attributeConstructor(blocks[i]);
 }
     
 } catch(err){
