@@ -23,7 +23,8 @@ const tileWorld = Vars.world.tile(x,y)
 if (!worldTile) return;
     
 const attribute = worldTile.attributes.get(Attribute.get("beryllium"));
-//building.timeScale = attribute;
+if (attribute >= 1) building.applyBoost(attribute,Infinity);
+else building.applySlowdown(attribute,Infinity);
 
 if (attribute <= 0){
 building.enabled = false;
