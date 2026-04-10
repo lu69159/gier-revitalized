@@ -1,0 +1,6 @@
+type: UnitAssembler
+size: 3
+localizedName: Imprinter
+
+// unfinished to be continued
+requirements:[lead/275,copper/195,silicon/65]
