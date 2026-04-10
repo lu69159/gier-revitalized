@@ -68,7 +68,6 @@ if(attribute >= 1){
 }
 
 if(attribute <= 0) building.enabled = false;
-else building.enabled = false;
     
 } catch(err){
     Vars.ui.showText("bruv", err);
