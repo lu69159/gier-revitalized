@@ -53,7 +53,7 @@ for(let dy = 0; dy < size; dy++){
     
     if(attribute == null) continue;
     
-    totalAttribute += attribute;
+    totalAttribute += (attribute * 2);
     count++;
 }
 }
