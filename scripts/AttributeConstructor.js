@@ -42,7 +42,7 @@ for(let dy = 0; dy < size; dy++){
 
     const attribute = block.attributes.get(Attribute.get("beryllium"));
 
-    if (!block == Vars.content.block("gr-fissure-amalgam")){
+    if (block != Vars.content.block("gr-fissure-amalgam")){
     if(attribute <= 0){
     building.enabled = false;
     Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
