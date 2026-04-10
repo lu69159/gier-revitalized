@@ -5,7 +5,7 @@ localizedName: Fissure Alamgam
 category: units
 size: 2
 
-result: beryllium-wall
+result: gr-packed-graphite
 requirements:[lead/65, copper/30, silicon/15, oxide/10]
 buildVisibility: sandboxOnly
 
