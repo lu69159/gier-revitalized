@@ -20,13 +20,13 @@ else if(building.rotation == 2) fx = 1;
 else fy = 1;
 
 const size = building.block.size;
-const offset = Math.floor((size - 1) / 2);
+const offset = Math.round((size - 1) / 2);
 
 let totalAttribute = 0;
 let count = 0;
 
-for(let dx = 0; dx < size; dx++){
-for(let dy = 0; dy < size; dy++){
+for(let dx = 0; dx <= size; dx++){
+for(let dy = 0; dy <= size; dy++){
 
     const bx = building.tile.x - offset + dx;
     const by = building.tile.y - offset + dy;
