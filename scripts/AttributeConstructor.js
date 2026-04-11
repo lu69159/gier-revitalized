@@ -149,10 +149,10 @@ block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), fa
 block.stats.replace(Stat.output, StatValues.content(list));
 
 amount++;
-
+/*
 const content = Vars.ui.content.cont.content;
 Vars.ui.content.hide();
-Vars.ui.content.show(content);
+Vars.ui.content.show(content);*/
 
     
 } catch(e){
