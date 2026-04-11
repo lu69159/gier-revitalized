@@ -126,8 +126,10 @@ Vars.ui.showText("bruv",e);
 
 
 // Sets stats for the block
+let amount = 0;
 Events.on(ContentPatchLoadEvent, () =>{
-try{  
+try{ 
+if (amount >= 2); return
 const block = Vars.content.block("gr-fissure-amalgam");
 Timer.schedule(() =>{ 
 block.stats.remove(Stat.buildSpeed);
@@ -137,6 +139,8 @@ block.stats.remove(Stat.output);
 block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 block.stats.replace(Stat.output, StatValues.content(Vars.content.block("gr-packed-graphite")));
 }, 1);
+
+amount++;
     
 } catch(e){
 Vars.ui.showText("bruv",e);
