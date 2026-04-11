@@ -139,12 +139,10 @@ list.addAll([
     Vars.content.block("gr-packed-beryllium")
 ]);
 
-Timer.schedule(() => {
 block.stats.remove(Stat.buildSpeed);
 block.stats.remove(Stat.itemCapacity);
 block.stats.remove(Stat.output);
-Vars.ui.showInfoToast("bruh",10);
-}, 6.5);
+//Vars.ui.showInfoToast("bruh",10);
     
 block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 block.stats.replace(Stat.output, StatValues.content(list));
