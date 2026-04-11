@@ -22,5 +22,5 @@ logicControllable: false
 playerControllable: false
 allowedInPayloads: false
 
-engineSize: 2
-engineOffset: 4.75
+engineSize: 2.5
+engineOffset: 5.5
