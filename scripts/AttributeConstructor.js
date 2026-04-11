@@ -130,7 +130,7 @@ let amount = 0;
 
 Events.on(BlockInfoEvent, () =>{
 try{ 
-if (amount >= 2) return;
+if (amount >= 1) return;
 const block = Vars.content.block("gr-fissure-amalgam");
 //block.stats = new Stats;
     
@@ -149,6 +149,11 @@ block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), fa
 block.stats.replace(Stat.output, StatValues.content(list));
 
 amount++;
+
+const content = Vars.ui.content.cont.content;
+Vars.ui.content.hide();
+Vars.ui.content.show(content);
+
     
 } catch(e){
 Vars.ui.showText("bruv",e);
