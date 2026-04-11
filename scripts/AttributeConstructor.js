@@ -143,6 +143,7 @@ Timer.schedule(() => {
 block.stats.remove(Stat.buildSpeed);
 block.stats.remove(Stat.itemCapacity);
 block.stats.remove(Stat.output);
+Vars.ui.showInfoToast("bruh",10);
 }, 6.5);
     
 block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
