@@ -126,8 +126,10 @@ Vars.ui.showText("bruv",e);
 
 
 // Sets stats for the block
-Events.on(PlayerConnect, () =>{
+const initiaited = false
+Events.on(BlockBuildEndEvent, () =>{
 try{  
+if (initiaited == true) return;
 const block = Vars.content.block("gr-fissure-amalgam");
     
 block.stats.remove(Stat.buildSpeed);
@@ -138,6 +140,8 @@ block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), fa
 block.stats.replace(Stat.output, StatValues.content(Vars.content.block("gr-packed-graphite")));
 block.addBar("ef", e => new Bar(() => "Efficiency: " + 
 Math.floor(e.timeScale() * 100) + "%",() => Pal.lightOrange,() => e.timeScale() > 0 ? e.timeScale() : 0     ) );
+
+initiaited=true
     
 } catch(e){
 Vars.ui.showText("bruv",e);
