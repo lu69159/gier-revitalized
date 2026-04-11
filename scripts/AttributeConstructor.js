@@ -124,10 +124,10 @@ Vars.ui.showText("bruv",e);
 
 // Sets stats for the block
 var initiated = false;
-Events.on(WorldLoadEvent, () =>{
+Events.on(BlockInfoEvent, () =>{
 try{
 if (initiated == true) return;
-    
+   
 const block =  Vars.content.block("gr-fissure-amalgam");
     
 block.stats.remove(Stat.buildSpeed);
