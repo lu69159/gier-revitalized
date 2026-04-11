@@ -124,7 +124,7 @@ Vars.ui.showText("bruv",e);
 
 // Sets stats for the block
 var initiated = false;
-Events.on(BlockInfoEvent, () =>{
+Events.on(WorldLoadEvent, () =>{
 try{
 if (initiated == true) return;
    
