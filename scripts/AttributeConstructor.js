@@ -129,13 +129,14 @@ Vars.ui.showText("bruv",e);
 Events.on(WorldLoadEvent, () =>{
 try{  
 const block = Vars.content.block("gr-fissure-amalgam");
-    
+Timer.schedule(() =>{ 
 block.stats.remove(Stat.buildSpeed);
 block.stats.remove(Stat.itemCapacity);
 block.stats.remove(Stat.output);
     
 block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 block.stats.replace(Stat.output, StatValues.content(Vars.content.block("gr-packed-graphite")));
+}, 3);
     
 } catch(e){
 Vars.ui.showText("bruv",e);
