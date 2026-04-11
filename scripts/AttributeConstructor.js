@@ -126,10 +126,10 @@ Vars.ui.showText("bruv",e);
 
 
 // Sets stats for the block
-let amount = 0;
-Events.on(WorldLoadEvent, () =>{
+//let amount = 0;
+Events.on(ClientLoadEvent, () =>{
 try{ 
-if (amount >= 2) return;
+//if (amount >= 2) return;
 const block = Vars.content.block("gr-fissure-amalgam");
 
 const list = new Seq();
@@ -145,7 +145,7 @@ block.stats.remove(Stat.output);
 block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 block.stats.replace(Stat.output, StatValues.content(list));
 
-amount++;
+//amount++;
     
 } catch(e){
 Vars.ui.showText("bruv",e);
