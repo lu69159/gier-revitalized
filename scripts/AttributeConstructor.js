@@ -129,7 +129,8 @@ Vars.ui.showText("bruv",e);
 Events.on(ContentInitEvent, () =>{
 try{  
 const block = Vars.content.block("gr-fissure-amalgam");
-
+block.stats.useCategories = true;
+    
 block.stats.remove(Stat.buildSpeed);
 block.stats.remove(Stat.itemCapacity);
 block.stats.remove(Stat.output);
