@@ -36,17 +36,75 @@ priority: 10
 
 weapons:[
 {
-noAttack: true
-display: false
-shootCone: 0
-controllable: false
-aiControllable: false
+shootWarmup: 0.05
+minWarmup: 0.9
+reload: 180
+
+parts:[
+{
+type: ShapePart
+hollow: true
+circle: true
+layer: 110
+
+stroke: 0
+strokeTo: 4
+
+color: FFD37F00
+colorTo: FFD37FFF
+
+radius: 80
+radiusTo: 0
+}
+{
+type: ShapePart
+hollow: true
+circle: true
+layer: 110
+
+stroke: 0
+strokeTo: 4
+
+color: FFD37F00
+colorTo: FFD37FFF
+
+radius: 120
+radiusTo: 0
+}
+]
+
+bullet:{
+type: BasicBulletType
+splashDamage: 85
+buildingDamageMultiplier: 0.5
+unitDamageMultiplier: 1.5
+
+knockback: 25
+hitShake: 15
+impact: true
+
+despawnHit: true
+instantDisappear: true
+
+hitEffect:{
+type: WaveEffect
+
+stroke: 4
+strokeTo: 0
+
+color: FFD37FFF
+colorTo: FFD37F00
+
+sizeTo: 0
+sizeTo: 120
+}}
+
 }
 ]
 
 range: 15
 engineSize: 0
-hitSize: 18
+hitSize: 17.5
 armor: 5
 
 research: {
