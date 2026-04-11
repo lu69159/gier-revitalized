@@ -127,7 +127,7 @@ Events.on(ContentInitEvent, () =>{
 try{
 const block =  Vars.content.block("gr-fissure-amalgam")
 block.stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
-block.stats.add(Stat.output, StatValues.content(block.result));
+block.stats.add(Stat.output, StatValues.content(Vars.content.block("gr-packed-graphite")));
 block.addBar("ef", e =>      new Bar(         () => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%",         () => Pal.lightOrange,         () => e.timeScale() > 0 ? e.timeScale() : 0     ) );
     
 } catch(e){
