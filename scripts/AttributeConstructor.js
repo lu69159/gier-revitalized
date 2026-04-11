@@ -23,6 +23,7 @@ const size = building.block.size;
 const offset = Math.floor((size - 1) / 2);
 
 let totalAttribute = 0;
+let carbon = 0;
 let count = 0;
 
 for(let dx = 0; dx < size; dx++){
@@ -42,11 +43,6 @@ for(let dy = 0; dy < size; dy++){
 
     const attribute = block.attributes.get(Attribute.get("beryllium"));
 
-    if (block.attributes.get(Attribute.get("carbon"))){
-    building.recipe = Vars.content.block("gr-packed-graphite");
-    } else {
-    building.recipe = Blocks.berylliumWall;
-    }
     
     if (block != Vars.content.block("gr-fissure-amalgam")){
     if(attribute <= 0){
@@ -59,6 +55,7 @@ for(let dy = 0; dy < size; dy++){
     if(attribute == null) continue;
     
     totalAttribute += (attribute * 2);
+    carbon += Block.attributes.get(Attribute.carbon);
     count++;
 }
 }
@@ -67,6 +64,12 @@ if(count == 0) return;
 
 const attribute = totalAttribute / count;
 
+if (carbon >= attribute){
+building.recipe = Vars.content.block("gr-packed-graphite");
+} else {
+building.recipe = Blocks.berylliumWall;
+}
+    
 if(attribute >= 1){
     building.applyBoost(attribute, Infinity);
 }else{
@@ -126,8 +129,8 @@ Vars.ui.showText("bruv",e);
 var initiated = false;
 Events.on(WorldLoadEvent, () =>{
 try{
-if (initiated == true) return;
-const block =  Vars.content.block("gr-fissure-amalgam");
+//if (initiated == true) return;
+const block = Vars.content.block("gr-fissure-amalgam");
     
 block.stats.remove(Stat.buildSpeed);
 block.stats.remove(Stat.itemCapacity);
@@ -135,7 +138,8 @@ block.stats.remove(Stat.output);
     
 block.stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 block.stats.add(Stat.output, StatValues.content(Vars.content.block("gr-packed-graphite")));
-block.addBar("ef", e => new Bar(() => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%",() => Pal.lightOrange,() => e.timeScale() > 0 ? e.timeScale() : 0     ) );
+block.addBar("ef", e => new Bar(() => "Efficiency: " + 
+    Math.floor(e.timeScale() * 100) + "%",() => Pal.lightOrange,() => e.timeScale() > 0 ? e.timeScale() : 0     ) );
 
 initiated = true;
     
