@@ -131,14 +131,19 @@ Events.on(ContentPatchLoadEvent, () =>{
 try{ 
 if (amount >= 2); return
 const block = Vars.content.block("gr-fissure-amalgam");
-Timer.schedule(() =>{ 
+
+const list = new Seq();
+list.addAll([
+    Vars.content.block("gr-packed-graphite"),
+    Vars.content.block("beryllium-wall")
+]);
+    
 block.stats.remove(Stat.buildSpeed);
 block.stats.remove(Stat.itemCapacity);
 block.stats.remove(Stat.output);
     
 block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
-block.stats.replace(Stat.output, StatValues.content(Vars.content.block("gr-packed-graphite")));
-}, 1);
+block.stats.replace(Stat.output, StatValues.content(list));
 
 amount++;
     
