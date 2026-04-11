@@ -43,7 +43,7 @@ for(let dy = 0; dy < size; dy++){
     const attribute = block.attributes.get(Attribute.get("beryllium"));
 
     if (block.attributes.get(Attribute.get("carbon")){
-    building.recipe = Vars.content.block.getByName("gr-packed-graphite");
+    building.recipe = Vars.content.block("gr-packed-graphite");
     } else {
     building.recipe = Blocks.berylliumWall;
     }
