@@ -123,7 +123,7 @@ Vars.ui.showText("bruv",e);
 
 
 // Sets stats for the block
-Events.on(ModContentLoadEvent, () =>{
+Events.on(ContentInitEvent, () =>{
 try{
 const block =  Vars.content.block("gr-fissure-amalgam");
     
