@@ -125,10 +125,15 @@ Vars.ui.showText("bruv",e);
 // Sets stats for the block
 Events.on(ContentInitEvent, () =>{
 try{
-const block =  Vars.content.block("gr-fissure-amalgam")
+const block =  Vars.content.block("gr-fissure-amalgam");
+    
+block.stats.remove(Stat.buildSpeed);
+block.stats.remove(Stat.itemCapacity);
+block.stats.remove(Stat.output);
+    
 block.stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 block.stats.add(Stat.output, StatValues.content(Vars.content.block("gr-packed-graphite")));
-block.addBar("ef", e =>      new Bar(         () => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%",         () => Pal.lightOrange,         () => e.timeScale() > 0 ? e.timeScale() : 0     ) );
+block.addBar("ef", e => new Bar(() => "Efficiency: " + Math.floor(e.timeScale() * 100) + "%",() => Pal.lightOrange,() => e.timeScale() > 0 ? e.timeScale() : 0     ) );
     
 } catch(e){
 Vars.ui.showText("bruv",e);
