@@ -16,7 +16,7 @@ require("CommandBlock"); // Command Block from minecraft or something
 require("MeltingPort");
 require("AttributeConstructor");
 require("MechPad");
-require("DroneBay");
+//require("DroneBay");
 
 // Subclass: Units
 require("IFrameUnit");
