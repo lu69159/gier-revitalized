@@ -28,7 +28,7 @@ time: 5700
 requirements: [
 gr-packed-graphite/9
 gr-mend-pylon/1
-gr-surge-wall/2
+gr-packed-beryllium/4
 ]
 }
 ]
