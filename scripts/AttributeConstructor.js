@@ -132,7 +132,8 @@ Events.on(WorldLoadEvent, () =>{
 try{ 
 if (amount >= 2) return;
 const block = Vars.content.block("gr-fissure-amalgam");
-
+block.stats = new Stats;
+    
 const list = new Seq();
 list.addAll([
     Vars.content.block("gr-packed-graphite"),
