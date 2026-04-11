@@ -130,6 +130,8 @@ var initiated = false;
 Events.on(ContentPatchLoadEvent, () =>{
 try{
 if (initiated == true) return;
+Vars.ui.showText("bruv","idk");
+    
 const block = Vars.content.block("gr-fissure-amalgam");
     
 block.stats.remove(Stat.buildSpeed);
