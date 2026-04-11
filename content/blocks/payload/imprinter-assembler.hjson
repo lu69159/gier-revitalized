@@ -9,7 +9,7 @@ customShadow: true
 
 plans: [{
 type: AssemblerUnitPlan
-unit: frontier
+unit: ruthless
 
 time: 2100
 requirements: [
