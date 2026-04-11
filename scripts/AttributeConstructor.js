@@ -42,6 +42,12 @@ for(let dy = 0; dy < size; dy++){
 
     const attribute = block.attributes.get(Attribute.get("beryllium"));
 
+    if (block.attributes.get(Attribute.get("carbon")){
+    building.recipe = Vars.content.block.getByName("gr-packed-graphite");
+    } else {
+    building.recipe = Blocks.berylliumWall;
+    }
+    
     if (block != Vars.content.block("gr-fissure-amalgam")){
     if(attribute <= 0){
     Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
