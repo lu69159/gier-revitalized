@@ -126,7 +126,7 @@ Vars.ui.showText("bruv",e);
 
 
 // Sets stats for the block
-Events.on(ContentInitEvent, () =>{
+Events.on(AtlasPackEvent, () =>{
 try{  
 const block = Vars.content.block("gr-fissure-amalgam");
 block.stats.useCategories = true;
