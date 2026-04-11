@@ -67,7 +67,7 @@ const attribute = totalAttribute / count;
 if (carbon >= attribute){
 building.recipe = Vars.content.block("gr-packed-graphite");
 } else {
-building.recipe = Blocks.berylliumWall;
+building.recipe = Vars.content.block("gr-packed-beryllium");
 }
     
 if(attribute >= 1){
