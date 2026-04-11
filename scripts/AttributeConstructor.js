@@ -127,6 +127,7 @@ Vars.ui.showText("bruv",e);
 
 // Sets stats for the block
 //let amount = 0;
+/*
 Events.on(ClientLoadEvent, () =>{
 try{ 
 //if (amount >= 2) return;
@@ -149,7 +150,34 @@ block.stats.replace(Stat.output, StatValues.content(list));
     
 } catch(e){
 Vars.ui.showText("bruv",e);
-}});
+}});*/
+let done = false;
+
+Events.run(Trigger.update, () => {
+    if (done) return;
+
+    const block = Vars.content.block("gr-fissure-amalgam");
+    if (!block) return;
+
+    if (!block.stats || !block.stats.map) return;
+
+    done = true;
+
+    block.stats.remove(Stat.buildSpeed);
+    block.stats.remove(Stat.itemCapacity);
+    block.stats.remove(Stat.output);
+
+    block.stats.add(
+        Stat.tiles,
+        StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false)
+    );
+
+    block.stats.replace(
+        Stat.output,
+        StatValues.content(Vars.content.block("gr-packed-graphite"))
+    );
+});
+
 
 Events.on(ContentInitEvent, () =>{
 try{  
