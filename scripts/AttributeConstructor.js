@@ -126,7 +126,7 @@ Vars.ui.showText("bruv",e);
 
 
 // Sets stats for the block
-Events.on(PlayerConnect, () =>{
+Events.on(ContentPatchLoadEvent, () =>{
 try{  
 const block = Vars.content.block("gr-fissure-amalgam");
 Timer.schedule(() =>{ 
