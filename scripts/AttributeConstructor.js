@@ -130,13 +130,9 @@ var initiated = false;
 Events.on(ContentInitEvent, () =>{
 try{
 if (initiated == true) return;
-Vars.ui.showText("bruv","idk");
     
 const block = Vars.content.block("gr-fissure-amalgam");
-    
-block.stats.remove(Stat.buildSpeed);
-block.stats.remove(Stat.itemCapacity);
-block.stats.remove(Stat.output);
+
     
 block.stats.add(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 block.stats.add(Stat.output, StatValues.content(Vars.content.block("gr-packed-graphite")));
