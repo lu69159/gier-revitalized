@@ -150,9 +150,11 @@ block.stats.replace(Stat.output, StatValues.content(list));
 
 amount++;
 
+Timer.schedule(() => {
 const content = Vars.ui.content.cont.content;
 Vars.ui.content.hide();
 Vars.ui.content.show(content);
+}, 0.1);
 
     
 } catch(e){
