@@ -159,7 +159,7 @@ Events.run(Trigger.update, () => {
     const block = Vars.content.block("gr-fissure-amalgam");
     if (!block) return;
 
-    if (!block.stats || !block.stats.map) return;
+    if (!block.stats) return;
 
     done = true;
 
@@ -167,7 +167,7 @@ Events.run(Trigger.update, () => {
     block.stats.remove(Stat.itemCapacity);
     block.stats.remove(Stat.output);
 
-    block.stats.add(
+    block.stats.replace(
         Stat.tiles,
         StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false)
     );
