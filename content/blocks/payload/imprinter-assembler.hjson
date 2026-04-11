@@ -6,6 +6,7 @@ requirements:[lead/275,copper/195,silicon/65]
 category: units
 
 customShadow: true
+droneType: mechanic
 
 plans: [{
 type: AssemblerUnitPlan
