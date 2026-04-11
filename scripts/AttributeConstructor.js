@@ -135,7 +135,7 @@ const block = Vars.content.block("gr-fissure-amalgam");
 const list = new Seq();
 list.addAll([
     Vars.content.block("gr-packed-graphite"),
-    Vars.content.block("beryllium-wall")
+    Vars.content.block("gr-packed-beryllium")
 ]);
     
 block.stats.remove(Stat.buildSpeed);
