@@ -2,5 +2,15 @@ type: UnitAssembler
 size: 3
 localizedName: Imprinter
 
-// unfinished to be continued
 requirements:[lead/275,copper/195,silicon/65]
+category: units
+plans: [{
+type: AssemblerUnitPlan
+unit: frontier
+
+time: 2100
+requirements: [
+gr-packed-carbon/5
+gr-insulated-wall/2
+]
+}]
