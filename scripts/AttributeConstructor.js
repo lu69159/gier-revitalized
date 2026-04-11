@@ -128,7 +128,7 @@ Vars.ui.showText("bruv",e);
 // Sets stats for the block
 let amount = 0;
 
-Events.on(WorldLoadEvent, () =>{
+Events.on(BlockInfoEvent, () =>{
 try{ 
 if (amount >= 2) return;
 const block = Vars.content.block("gr-fissure-amalgam");
