@@ -36,7 +36,10 @@ priority: 10
 
 weapons:[
 {
-shootWarmup: 0.05
+mirror: false
+x: 0
+y: 0
+shootWarmup: 0.025
 minWarmup: 0.9
 reload: 180
 
@@ -76,6 +79,7 @@ radiusTo: 0
 bullet:{
 type: BasicBulletType
 splashDamage: 85
+splashDamageRadius: 125
 buildingDamageMultiplier: 0.5
 unitDamageMultiplier: 1.5
 
