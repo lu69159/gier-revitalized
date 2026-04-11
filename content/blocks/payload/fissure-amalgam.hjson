@@ -1,4 +1,5 @@
-type: SingleBlockProducer
+type: Constructor
+configurable: false
 # AttributeConstructor
 
 localizedName: Fissure Alamgam
