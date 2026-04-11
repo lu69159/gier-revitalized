@@ -126,7 +126,7 @@ Vars.ui.showText("bruv",e);
 
 
 // Sets stats for the block
-Events.on(WorldLoadEvent, () =>{
+Events.on(PlayerConnect, () =>{
 try{  
 const block = Vars.content.block("gr-fissure-amalgam");
 Timer.schedule(() =>{ 
@@ -136,7 +136,7 @@ block.stats.remove(Stat.output);
     
 block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 block.stats.replace(Stat.output, StatValues.content(Vars.content.block("gr-packed-graphite")));
-}, 3);
+}, 1);
     
 } catch(e){
 Vars.ui.showText("bruv",e);
