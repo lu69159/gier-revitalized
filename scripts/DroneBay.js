@@ -1,6 +1,6 @@
 const blocks = [
 "gr-extractor-bastion"
-]
+];
 
 
 Events.on(ContentInitEvent, () => {
