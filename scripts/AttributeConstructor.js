@@ -127,7 +127,7 @@ Vars.ui.showText("bruv",e);
 
 // Sets stats for the block
 var initiated = false;
-Events.on(ContentPatchLoadEvent, () =>{
+Events.on(ContentInitEvent, () =>{
 try{
 if (initiated == true) return;
 Vars.ui.showText("bruv","idk");
