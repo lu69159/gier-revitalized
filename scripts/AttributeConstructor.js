@@ -59,7 +59,7 @@ for(let dy = 0; dy < size; dy++){
 
 if(count == 0) return;
 
-const attribute = totalAttribute // count;
+const attribute = totalAttribute / count;
 
 if(attribute >= 1){
     building.applyBoost(attribute, Infinity);
