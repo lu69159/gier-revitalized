@@ -11,7 +11,7 @@ const buildTime = new Stat("buildTime", StatCat.crafting)
 
 function constructDroneBay(string){
 const block = Vars.content.block(string);
-if (block && block instanceof DroneCenter){
+if (block){
 block.stats.add(Stat.output, StatValues.content(block.droneType));
 block.stats.add(drones, block.unitsSpawned);
 block.stats.add(buildTime, (block.droneConstructTime/60));
