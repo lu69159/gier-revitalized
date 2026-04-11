@@ -55,7 +55,7 @@ for(let dy = 0; dy < size; dy++){
     if(attribute == null) continue;
     
     totalAttribute += (attribute * 2);
-    carbon += block.attributes.get(Attribute.carbon);
+    carbon += block.attributes.get(Attribute.get("carbon"));
     count++;
 }
 }
