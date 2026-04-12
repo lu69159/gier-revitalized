@@ -128,9 +128,11 @@ Vars.ui.showText("bruv",e);
 // Sets stats for the block
 let amount = 0;
 
-Events.on(BlockInfoEvent, () =>{
+Events.on(ClientLoadEvent, () =>{
 try{    
 const block = Vars.content.block("gr-fissure-amalgam");
+Vars.ui.content(block);
+Vaes.ui.content.hide();
 //block.setStats();
 //block.stats = new Stats;
     
