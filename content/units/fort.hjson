@@ -39,9 +39,13 @@ weapons:[
 mirror: false
 x: 0
 y: 0
-shootWarmup: 0.005
+shootWarmup: 0.00642857
 minWarmup: 0.9
 reload: 180
+
+shoot:{
+firstShotDelay: 60
+}
 
 parts:[
 {
@@ -74,6 +78,22 @@ colorTo: FFD37FFF
 radius: 120
 radiusTo: 0
 }
+{
+type: ShapePart
+hollow: true
+circle: true
+layer: 110
+progress: charge
+
+stroke: 0
+strokeTo: 4
+
+color: FFD37F00
+colorTo: FFD37FFF
+
+radius: 120
+radiusTo: 0
+}
 ]
 
 bullet:{
@@ -95,8 +115,9 @@ instantDisappear: true
 
 hitEffect:{
 type: WaveEffect
+layer: 110
 
-stroke: 4
+stroke: 15
 strokeTo: 0
 
 color: FFD37FFF
@@ -104,6 +125,8 @@ colorTo: FFD37F00
 
 sizeTo: 0
 sizeTo: 120
+
+lifetime: 90
 }}
 
 }
