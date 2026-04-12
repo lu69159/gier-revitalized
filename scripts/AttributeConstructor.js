@@ -131,7 +131,7 @@ let amount = 0;
 Events.on(ClientLoadEvent, () =>{
 try{    
 const block = Vars.content.block("gr-fissure-amalgam");
-Vars.ui.content(block);
+Vars.ui.content.show(block);
 Vaes.ui.content.hide();
 //block.setStats();
 //block.stats = new Stats;
