@@ -116,17 +116,18 @@ instantDisappear: true
 hitEffect:{
 type: WaveEffect
 layer: 110
+interp: sineOut
 
-stroke: 15
+strokeFrom: 4
 strokeTo: 0
 
 color: FFD37FFF
 colorTo: FFD37F00
 
 sizeTo: 0
-sizeTo: 120
+sizeTo: 140
 
-lifetime: 90
+lifetime: 50
 }}
 
 }
