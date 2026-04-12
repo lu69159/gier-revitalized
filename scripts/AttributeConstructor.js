@@ -134,7 +134,7 @@ if (amount >= 2) return;
 if (amount == 0) Vars.ui.content.hide();
     
 const block = Vars.content.block("gr-fissure-amalgam");
-block.setStats();
+//block.setStats();
 //block.stats = new Stats;
     
 const list = new Seq();
