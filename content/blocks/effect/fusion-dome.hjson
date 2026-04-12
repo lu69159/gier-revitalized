@@ -37,7 +37,7 @@ shieldHealth: 4500
 cooldownNormal: 19.5
 
 shieldRotation: 45
-cooldownBrokenBase: 15.75
+cooldownBrokenBase: 6.3
 
 consumes:{
 power: 4.5
