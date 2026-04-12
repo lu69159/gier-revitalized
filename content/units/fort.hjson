@@ -43,6 +43,7 @@ shootWarmup: 0.00642857
 minWarmup: 0.9
 reload: 180
 
+chargeSound: chargeVela
 shoot:{
 firstShotDelay: 60
 }
@@ -116,6 +117,7 @@ instantDisappear: true
 status: anchored
 statusDuration: 120
 
+hitSound: explosionNavanax
 hitEffect:{
 type: WaveEffect
 layer: 110
