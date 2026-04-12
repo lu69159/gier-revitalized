@@ -130,8 +130,9 @@ let amount = 0;
 
 Events.on(BlockInfoEvent, () =>{
 try{ 
-if (amount >= 1) return;
+if (amount >= 2) return;
 const block = Vars.content.block("gr-fissure-amalgam");
+block.setStats();
 //block.stats = new Stats;
     
 const list = new Seq();
