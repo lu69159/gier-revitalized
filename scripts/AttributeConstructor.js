@@ -128,11 +128,8 @@ Vars.ui.showText("bruv",e);
 // Sets stats for the block
 let amount = 0;
 
-Events.on(ContentInitEvent, () =>{
-try{ 
-if (amount >= 2) return;
-if (amount == 0) Vars.ui.content.hide();
-    
+Events.on(BlockInfoEvent, () =>{
+try{    
 const block = Vars.content.block("gr-fissure-amalgam");
 //block.setStats();
 //block.stats = new Stats;
