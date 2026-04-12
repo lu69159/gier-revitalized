@@ -9,11 +9,22 @@ description: "Very durable defensive barrier, able to reliably tank constant dam
 "
 
 baseExplosiveness: 105
+destroyBullet:{
+type: ExplosionBulletType
+instantDisappear: true
+despawnHit: true
+splashDamage: 1500
+scaledSplashDamage: true
+splashDamageRadius: 120
+hitEffect: reactorExplosion
+hitShake: 45
+}
+
 radius: 160
 sides: 4
 itemCapacity: 0
 envEnabled: -1
-health: 4250
+health: 4750
 customShadow: true
 squareSprite: false
 
@@ -23,7 +34,7 @@ researchCostMultiplier: 0.15
 researchCostMultiplier: 0.35
 databaseTag: "gier"
 shieldHealth: 4500
-cooldownNormal: 25
+cooldownNormal: 17.5
 
 shieldRotation: 45
 
