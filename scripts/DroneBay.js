@@ -5,18 +5,14 @@ const blocks = [
 
 Events.on(ContentInitEvent, () => {
 try{
-
 const drones = new Stat("drones", StatCat.crafting);
 
 function constructDroneBay(string){
     const block = Vars.content.block(string);
     if (!block) return;
 
-    if (!(block instanceof DroneCenter)) return;
-
-    if (block.droneType) block.stats.add(Stat.output, StatValues.content(block.droneType));
-
-    if (block.unitsSpawned != null) block.stats.add(drones, block.unitsSpawned);
+     block.stats.add(Stat.output, StatValues.content(block.droneType));
+     block.stats.add(drones, block.unitsSpawned);
 
 }
   
