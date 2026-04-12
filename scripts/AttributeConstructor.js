@@ -83,58 +83,12 @@ if(attribute <= 0) building.enabled = false;
 }
 });
 
-/*
-Events.on(TileChangeEvent, e => {
-try{
-const tile = e.tile;
-const building = tile.build;
-
-var x = tile.x;
-var y = tile.y;
-
-if (e.tile.block() != Vars.content.block("gr-fissure-amalgam")) return;
-
-const rotation = building.rotation;
-
-if (rotation == 0) x--;
-else if (rotation == 1) y--;
-else if (rotation == 2) x++;
-else y++;
-
-const worldTile = Vars.world.tile(x,y).block();
-const tileWorld = Vars.world.tile(x,y)
-if (!worldTile) return;
-    
-const attribute = worldTile.attributes.get(Attribute.get("beryllium"));
-if (attribute >= 1) building.applyBoost(attribute,Infinity);
-else building.applySlowdown(attribute,Infinity);
-
-if (attribute <= 0){
-building.enabled = false;
-
-//Fx.attackCommand.at(tileWorld.worldx(),tileWorld.worldy(),45)
-Fx.unitEnvKill.at(tileWorld.worldx(),tileWorld.worldy());
-
-} else {
-Fx.upgradeCoreBloom.at(tileWorld.worldx(),tileWorld.worldy(),1);
-}
-    
-} catch(e){
-Vars.ui.showText("bruv",e);
-}});*/
-
-
-
 // Sets stats for the block
-let amount = 0;
-
 Events.on(ClientLoadEvent, () =>{
 try{    
 const block = Vars.content.block("gr-fissure-amalgam");
 Vars.ui.content.show(block);
 Vars.ui.content.hide();
-//block.setStats();
-//block.stats = new Stats;
     
 const list = new Seq();
 list.addAll([
@@ -145,17 +99,9 @@ list.addAll([
 block.stats.remove(Stat.buildSpeed);
 block.stats.remove(Stat.itemCapacity);
 block.stats.remove(Stat.output);
-//Vars.ui.showInfoToast("bruh",10);
     
 block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 block.stats.replace(Stat.output, StatValues.content(list));
-
-amount++;
-/*
-const content = Vars.ui.content.cont.content;
-Vars.ui.content.hide();
-Vars.ui.content.show(content);*/
-
     
 } catch(e){
 Vars.ui.showText("bruv",e);
