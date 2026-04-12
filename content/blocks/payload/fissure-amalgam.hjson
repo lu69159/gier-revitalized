@@ -26,6 +26,7 @@ canOverdrive: true
 
 privileged: true
 buildSpeed: 0.1
+fullOverride: "gr-fissure-amalgam-icon"
 
 destroyBullet:{
 type: ExplosionBulletType
