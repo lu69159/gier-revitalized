@@ -5,7 +5,7 @@ configurable: false
 localizedName: Fissure Alamgam
 description: "
 Drains the hardened carbon from the wall
-behind it. And mixes it with silicom.
+behind it. And mixes it with silicon.
 
 [grey][i] - Outputted blocks are used for
 payload purposes.
