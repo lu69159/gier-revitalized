@@ -113,9 +113,13 @@ impact: true
 despawnHit: true
 instantDisappear: true
 
+status: anchored
+statusDuration: 120
+
 hitEffect:{
 type: WaveEffect
 layer: 110
+parentizeEffect: true
 interp: sineOut
 
 strokeFrom: 4
