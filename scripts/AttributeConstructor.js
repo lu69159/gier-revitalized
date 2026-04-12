@@ -131,6 +131,8 @@ let amount = 0;
 Events.on(BlockInfoEvent, () =>{
 try{ 
 if (amount >= 2) return;
+if (amount == 0) Vars.ui.content.hide();
+    
 const block = Vars.content.block("gr-fissure-amalgam");
 block.setStats();
 //block.stats = new Stats;
