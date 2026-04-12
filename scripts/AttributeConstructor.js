@@ -128,7 +128,7 @@ Vars.ui.showText("bruv",e);
 // Sets stats for the block
 let amount = 0;
 
-Events.on(BlockInfoEvent, () =>{
+Events.on(ContentInitEvent, () =>{
 try{ 
 if (amount >= 2) return;
 if (amount == 0) Vars.ui.content.hide();
