@@ -34,7 +34,7 @@ researchCostMultiplier: 0.15
 researchCostMultiplier: 0.35
 databaseTag: "gier"
 shieldHealth: 4500
-cooldownNormal: 21.5
+cooldownNormal: 15
 
 shieldRotation: 45
 cooldownBrokenBase: 6.3
