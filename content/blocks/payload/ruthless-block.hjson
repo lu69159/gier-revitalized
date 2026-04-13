@@ -32,21 +32,8 @@ firstShotDelay: 30
 drawer: [
 {
 type: DrawRegion
-suffix: -construct
+name: ruthless
 buildingRotate: true
-}
-{
-type: DrawTurret
-basePrefix: ruthless-
-parts: [
-{
-type: RegionPart 
-name: gr-ruthless-full
-y: 0
-layer: 60
-outline: false
-}
-]
 }
 ]
 
