@@ -28,13 +28,14 @@ shootSound: none
 shootY: 0
 outlineIcon: false
 
-shootWarmup: 0.0006 
-minWarmup: 0.9
+shoot:{
+firstShotDelay: 1500
+}
 
 drawer: [
 {
 type: DrawRegion
-name: ruthless
+name: "gr-ruthless"
 buildingRotate: true
 }
 ]
