@@ -1,6 +1,6 @@
 const blocks = [
 "gr-ruthless-block"
-]
+];
 
 Events.on(ClientLoadEvent, () => {
 try{
@@ -16,6 +16,9 @@ stats.remove(Stat.inaccuracy);
 stats.remove(Stat.reload);
 stats.remove(Stat.targetsAir);
 stats.remove(Stat.targetsGround);
+
+block.addBar("warmup", e => new Bar("Progress", Pal.lightOrange, () => e && e.shootWarmup > 0 ?   e.shootWarmup : 0 ));
+  
 }
 
 for (let i = 0; i < blocks.length; i++){
