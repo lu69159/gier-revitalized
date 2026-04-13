@@ -16,8 +16,9 @@ stats.remove(Stat.inaccuracy);
 stats.remove(Stat.reload);
 stats.remove(Stat.targetsAir);
 stats.remove(Stat.targetsGround);
-
-block.addBar("warmup", e => new Bar("Progress", Pal.lightOrange, () => e && e.shootWarmup > 0 ?   e.shootWarmup : 0 ));
+stats.remove(Stat.shootRange);
+  
+block.addBar("warmup", e => new Bar("Progress", Pal.lightOrange, () => e && e.charge > 0 ?   e.charge : 0 ));
   
 }
 
