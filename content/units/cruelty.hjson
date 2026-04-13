@@ -12,6 +12,7 @@ rotateSpeed: 1
 
 drawSoftShadow: false
 lowAltitude: true
+inaccuracy: 15
 
 engineSize: 0
 parts:[
