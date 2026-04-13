@@ -5,3 +5,21 @@ sector: 69
 captureWave: 10
 planet: kela
 #shieldSectors:[gr-fragmented]
+
+research: {
+parent: fragmented
+objectives:[
+rail
+rail-router
+rail-overflow
+hydro-drill
+photon-panel
+tension
+copper-fort
+core-facility
+output-port
+drone-facility
+facility-dropzone
+crate
+]
+}
