@@ -127,7 +127,7 @@ interp: sineOut
 strokeFrom: 4
 strokeTo: 0
 
-color: FFD37FFF
+colorFrom: FFD37FFF
 colorTo: FFD37F00
 
 sizeTo: 0
