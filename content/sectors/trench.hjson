@@ -4,4 +4,4 @@ difficulty: 5
 sector: 69
 captureWave: 10
 planet: kela
-shieldSectors:[gr-fragmented]
+#shieldSectors:[gr-fragmented]
