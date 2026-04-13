@@ -125,16 +125,18 @@ bullet:{
 type: BasicBulletType
 width: 15
 height: 21
+
 speed: 4.5
+lifetime: 60
+
 splashDamage: 205
 splashDamageRadius: 40
 scaledSplashDamage: true
 
 hitShake: 25
 despawnHit: true
-instantDisappear: true
 
-recoil: 15
+recoil: 2.5
 
 hitEffect: launchPod
 hitSound: explosionArtilleryShockBig
