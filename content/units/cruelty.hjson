@@ -12,7 +12,6 @@ rotateSpeed: 1
 
 drawSoftShadow: false
 lowAltitude: true
-inaccuracy: 15
 
 engineSize: 0
 parts:[
@@ -59,6 +58,7 @@ x: 0
 
 bullet:{
 type: BasicBulletType
+inaccuracy: 15
 speed: 8
 lifetime: 50
 homingPower: 0.05
