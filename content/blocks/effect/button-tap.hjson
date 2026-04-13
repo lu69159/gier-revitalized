@@ -10,12 +10,12 @@ effects:[
 type: ParticleEffect
 region: "gr-button-close"
 length: 0
-lifetime: 35
+lifetime: 15
 sizeFrom: 4
 sizeTo: 4
 layer: 30.05
 offset: 0
-colorFrom: 9f9f9f
+colorFrom: ffffff
 colorTo: ffffff
 }
 {
