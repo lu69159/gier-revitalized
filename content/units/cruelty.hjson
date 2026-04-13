@@ -31,11 +31,16 @@ name: cr-weapon
 x: 5
 y: -5
 
-reload: 15
+reload: 300
 rotate: true
 rotateSpeed: 2.5
 shake: 5
 shootSound: massdriver
+
+shoot:{
+shots: 120
+shotDelay: 1.5
+}
 
 parts:[
 {
@@ -62,7 +67,7 @@ smokeEffect: shootBigSmoke2
 width: 7.5
 height: 22.5
 
-damage: 65
+damage: 6.5
 hitShake: 10
 despawnHit: true
 hitSound: unitExplode1
