@@ -14,7 +14,9 @@ category: units
 databaseTag: "exogen"
 databaseCategory: "unit-spawn"
 
-buildTime: 2000
+
+
+buildTime: 180
 requirements:[lead/65,copper/35,graphite/20]
 reload: 30
 alwaysShooting: true
@@ -25,9 +27,9 @@ fullOverride: gr-ruthless-full
 shootSound: none
 shootY: 0
 outlineIcon: false
-shoot:{
-firstShotDelay: 30
-}
+
+shootWarmup: 0.0006 
+minWarmup: 0.9
 
 drawer: [
 {
