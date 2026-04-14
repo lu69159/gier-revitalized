@@ -23,21 +23,21 @@ Events.on(EventType.TapEvent, e => {
         Sounds.click.at(build.x, build.y);
 
         Vars.ui.showMenu(
-            "<Commands List>",
-            "[lightgrey]Free will at last. [red]<Crashes is possibles>[]",
+            Core.bundle.format("commandblock.title"),
+            Core.bundle.format("commandblock.description"),
             [
-                ["Clear Units"],
-                ["Stop Player"],
-                ["Change Team"],
-                ["Toggle canGameover"],
-                ["Toggle Editor"],
-                ["Toggle disableUnitCap"],
-                ["Spawn Unit"],
-                ["Get Current Unit"],
-                ["Unit Library [grey]<Vanilla Only>[]"],
-                ["Fill Core"],
-                ["Run Javascript"],
-                ["Close"]
+                [Core.bundle.format("commandblock.commands.clear-units")],
+                [Core.bundle.format("commandblock.commands.stop-player")],
+                [Core.bundle.format("commandblock.commands.change-team")],
+                [Core.bundle.format("commandblock.commands.toggle-cancanover")],
+                [Core.bundle.format("commandblock.commands.toggle-editor")],
+                [Core.bundle.format("commandblock.commands.toggle-disable-unitcap")],
+                [Core.bundle.format("commandblock.commands.spawn-unit")],
+                [Core.bundle.format("commandblock.commands.get-current-unit")],
+                [Core.bundle.format("commandblock.commands.unit-library")],
+                [Core.bundle.format("commandblock.commands.fill-core")],
+                [Core.bundle.format("commandblock.commands.run-javascript")],
+                [Core.bundle.format("close")]
             ],
             i => {
 
@@ -45,19 +45,19 @@ Events.on(EventType.TapEvent, e => {
 
                     Sounds.uiButton.play();
                     Groups.unit.clear();
-                    Vars.ui.hudfrag.showToast(Icon.tree, "[green]All units cleared");
+                    Vars.ui.hudfrag.showToast(Icon.tree, Core.bundle.format("commandblock.showtoast.clear-units"));
 
                 } else if (i == 1) {
                     try {
 
                         Sounds.uiButton.play();
+
                         const p = Vars.player;
                         if (!p) {
                             Vars.ui.hudfrag.showToast(Icon.tree, "[grey]Player does not exist.");
                             return;
                         }
                         const unit = p.unit();
-
                         if (!unit) {
                             Vars.ui.hudfrag.showToast(Icon.tree, "[grey]No unit found");
                             return;
@@ -73,13 +73,13 @@ Events.on(EventType.TapEvent, e => {
                 } else if (i == 2) {
                     try {
 
-                        Vars.ui.showTextInput("Change Team", "Enter team id", 100, lastUnit, true, text => {
+                        Vars.ui.showTextInput(Core.bundle.format("commandblock.commands.change-team"), Core.bundle.format("commandblock.showtoast.change-team-1"), 100, lastUnit, true, text => {
                         try{
 
                         Sounds.uiButton.play();
                         const p = Vars.player;
                         if (!p) {
-                            Vars.ui.showInfoToast("Wheres the player vro.", 3);
+                            Vars.ui.showInfoToast(Core.bundle.format("commandblock.showtoast.change-team-2"), 3);
                             return;
                         }
 
@@ -87,7 +87,7 @@ Events.on(EventType.TapEvent, e => {
                         const newTeam = Team.get(text);
 
                         p.team(newTeam);
-                        Vars.ui.hudfrag.showToast(Icon.tree, "[accent]Team changed");
+                        Vars.ui.hudfrag.showToast(Icon.tree, Core.bundle.format("commandblock.showtoast.change-team-3"));
 
                         } catch(e){
                         Vars.ui.showInfoToast(e,10);
@@ -102,7 +102,7 @@ Events.on(EventType.TapEvent, e => {
                     const gameOver = Vars.state.rules.canGameOver;
                     Vars.state.rules.canGameOver = !gameOver;
 
-                    Vars.ui.hudfrag.showToast(Icon.tree, "[accent]Toggled canGameOver: [lightgrey]" + !gameOver);
+                    Vars.ui.hudfrag.showToast(Icon.tree, Core.bundle.format("commandblock.showtoast.toggle-cancanover") + "[lightgrey]" + !gameOver);
                         
                     } catch(e){
                     Vars.ui.showInfoToast(e,5);    
@@ -112,7 +112,7 @@ Events.on(EventType.TapEvent, e => {
                     const editor = Vars.state.rules.editor;
                     Vars.state.rules.editor = !editor;
 
-                    Vars.ui.hudfrag.showToast(Icon.tree, "[accent]Toggled editor: [lightgrey]" + !editor);
+                    Vars.ui.hudfrag.showToast(Icon.tree, Core.bundle.format("commandblock.showtoast.toggle-editor") + "[lightgrey]" + !editor);
                              
                     } catch(e){
                     Vars.ui.showInfoToast(e,5);  
@@ -123,7 +123,7 @@ Events.on(EventType.TapEvent, e => {
                     const disableUnitCap = Vars.state.rules.disableUnitCap;
                     Vars.state.rules.disableUnitCap = !disableUnitCap;
 
-                    Vars.ui.hudfrag.showToast(Icon.tree, "[accent]Toggled disableUnitCap: [lightgrey]" + !disableUnitCap);
+                    Vars.ui.hudfrag.showToast(Icon.tree, Core.bundle.format("commandblock.showtoast.toggle-disable-unitcap") + "[lightgrey]" + !disableUnitCap);
                             
                     } catch(e){
                     Vars.ui.showInfoToast(e,10);
@@ -131,13 +131,13 @@ Events.on(EventType.TapEvent, e => {
                         try{
 
                     Sounds.uiButton.play();
-                    Vars.ui.showTextInput("SpawnUnit", "Enter unit's internal name (modName-fileName)", 100, lastUnit, false, text => {
+                    Vars.ui.showTextInput(Core.bundle.format("commandblock.commands.spawn-unit"), Core.bundle.format("commandblock.showtoast.spawn-unit-1"), 100, lastUnit, false, text => {
                         try{
                     lastUnit = text;
                     const unit = Vars.content.getByName(ContentType.unit, text);
 
                     if (unit == null){
-                    Vars.ui.hudfrag.showToast(Icon.chat,"[red]Unit Invalid[]");
+                    Vars.ui.hudfrag.showToast(Icon.chat, Core.bundle.format("commandblock.showtoast.spawn-unit-2"));
                     return;
                     }
                         
@@ -145,7 +145,7 @@ Events.on(EventType.TapEvent, e => {
                     Sounds.waveSpawn.at(build.x,build.y);
                     Fx.spawn.at(build.x,build.y);
                             
-                    Vars.ui.hudfrag.showToast(Icon.chat, "[accent]Spawned in a(n) []" + unit.localizedName);
+                    Vars.ui.hudfrag.showToast(Icon.chat, Core.bundle.format("commandblock.showtoast.spawn-unit-3") + unit.localizedName);
 
                     } catch(e){
                     Vars.ui.showInfoToast(e,5);
@@ -163,7 +163,7 @@ Events.on(EventType.TapEvent, e => {
                     if (!unit) return;
                     const type = unit.type.name;
                     lastUnit = type;
-                    Vars.ui.hudfrag.showToast(Icon.eye,"[lightgrey]Copied to spawn unit");
+                    Vars.ui.hudfrag.showToast(Icon.eye, Core.bundle.format("commandblock.showtoast.get-current-unit"));
                             
                     } catch(e){
                     Vars.ui.showInfoToast(e,5);
@@ -200,21 +200,21 @@ Events.on(EventType.TapEvent, e => {
                     Vars.ui.showInfoToast(e,15);
                     }});
 
-                    Vars.ui.hudfrag.showToast(Icon.effect,"[accent]Filled core with []" + amount + "[accent] different items");
+                    Vars.ui.hudfrag.showToast(Icon.effect, Core.bundle.format("commandblock.showtoast.fill-core-1") + amount + Core.bundle.format("commandblock.showtoast.fill-core-2"));
                     
                     } else if (i == 10){
                     try{
 
                     Sounds.uiButton.play();
-                    Vars.ui.showTextInput("<Run Javascript>", "May break the game depending on the script", 100, lastCommand, false, text => {
+                    Vars.ui.showTextInput("<" + Core.bundle.format("commandblock.commands.run-javascript") + ">", Core.bundle.format("commandblock.showtoast.run-javascript-1"), 100, lastCommand, false, text => {
                     try{      
 
-                    const error = "[red]Error Found";
+                    const error = Core.bundle.format("commandblock.showtoast.run-javascript-2");
                     lastCommand = text;
                     eval("try{ " + text + "} catch(e) { Vars.ui.showText(error,e)}");
                     
                     Sounds.waveSpawn.play();
-                    Vars.ui.hudfrag.showToast(Icon.chat, "[accent]Ran: []" + text);
+                    Vars.ui.hudfrag.showToast(Icon.chat, Core.bundle.format("commandblock.showtoast.run-javascript-3") + text);
                     
                     } catch(e){
                     Vars.ui.showInfoToast(e,10);
@@ -243,22 +243,21 @@ const cont = Vars.ui.content.cont;
 if (Vars.player.selectedBlock != block) return;
 
 cont.row()
-cont.add("[accent]<Commands>[lightgrey]").left().row();
+cont.add(Core.bundle.format("commandblock.info.title") + "[lightgrey]").left().row();
 cont.add().height(3).row()
 cont.image().color(Pal.accent).height(3).width(400).left().row();
 
-
-cont.add("- Clear all units").left().row();
-cont.add("- Stop player unit").left().row();
-cont.add("- Change team").left().row();
-cont.add("- Toggle canGameOver").left().row();
-cont.add("- Toggle editor [gray](saving while enabled crashes)[]").left().row();
-cont.add("- Toggle disableUnitCap").left().row();
-cont.add("- Spawn unit").left().row();
-cont.add("- Get current unit [gray](saves to spawn unit)[]").left().row();
-cont.add("- Unit library [gray](Only accesses vanilla units)[]").left().row();
-cont.add("- Fill core").left().row();
-cont.add("- Run Javascript").left().row();
+cont.add(Core.bundle.format("commandblock.info.clear-units")).left().row();
+cont.add(Core.bundle.format("commandblock.info.stop-player")).left().row();
+cont.add(Core.bundle.format("commandblock.info.change-team")).left().row();
+cont.add(Core.bundle.format("commandblock.info.toggle-cancanover")).left().row();
+cont.add(Core.bundle.format("commandblock.info.toggle-editor")).left().row();
+cont.add(Core.bundle.format("commandblock.info.toggle-disable-unitcap")).left().row();
+cont.add(Core.bundle.format("commandblock.info.spawn-unit")).left().row();
+cont.add(Core.bundle.format("commandblock.info.get-current-unit")).left().row();
+cont.add(Core.bundle.format("commandblock.info.unit-library")).left().row();
+cont.add(Core.bundle.format("commandblock.info.fill-core")).left().row();
+cont.add(Core.bundle.format("commandblock.info.run-javascript")).left().row();
         
 } catch(e){
 Vars.ui.showText("vruh",e);    
