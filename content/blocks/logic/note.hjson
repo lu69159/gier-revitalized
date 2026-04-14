@@ -2,3 +2,4 @@ type: MessageBlock
 name: Note
 buildVisibility: worldProcessorOnly
 category: logic
+customShadow: true
