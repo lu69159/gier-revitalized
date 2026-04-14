@@ -1,6 +1,6 @@
 type: Wall
 requirements:[silicon/10,beryllium/25]
-localizedName: Packed Beryllium
+name: Packed Beryllium
 
 placeablePlayer: true
 buildVisibility: sandboxOnly
