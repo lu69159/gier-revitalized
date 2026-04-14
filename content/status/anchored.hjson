@@ -1,7 +1,7 @@
 speedMultiplier: 0.5
 reloadMultiplier: 0.65
 
-localizedName: Anchored
+name: Anchored
 applyEffect:{
 type: ParticleEffect
 region: "gr-anchored-borderless"

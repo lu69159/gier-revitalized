@@ -1,5 +1,5 @@
 type: Conduit
-localizedName: Pipeline
+name: Pipeline
 
 requirements:[lead/2,metaglass/1]
 envEnabled: -1

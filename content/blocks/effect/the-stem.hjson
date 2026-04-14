@@ -1,6 +1,6 @@
 type: GenericCrafter
 fullOverride: "gr-gren-router"
-localizedName: "[#3a8f64]The Stem[]"
+name: "[#3a8f64]The Stem[]"
 
 drawer:{
 type: DrawRegion

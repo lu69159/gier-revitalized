@@ -1,6 +1,6 @@
 type: GenericCrafter
 size: 2
-localizedName: Sealent Capsule
+name: Sealent Capsule
 squareSprite: false
 
 databaseTag: "gier"

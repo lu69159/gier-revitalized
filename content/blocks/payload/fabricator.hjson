@@ -1,5 +1,5 @@
 type: PayloadRouter
-localizedName: Fabricator
+name: Fabricator
 acceptsPayload: false
 buildVisibility: sandboxOnly
 size: 1

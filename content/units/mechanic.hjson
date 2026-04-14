@@ -1,5 +1,5 @@
 type: tether
-localizedName: Mechanic
+name: Mechanic
 
 hitSize: 14
 health: 350

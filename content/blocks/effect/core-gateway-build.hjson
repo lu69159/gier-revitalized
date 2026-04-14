@@ -1,5 +1,5 @@
 type: PowerTurret
-localizedName: "Core: [accent]Gateway[]"
+name: "Core: [accent]Gateway[]"
 fullOverride: "gr-core-gateway"
 description: "Build a compacted core.
 This core is very destructive and doesnt increase Item Capacity.

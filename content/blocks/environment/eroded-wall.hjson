@@ -1,4 +1,4 @@
 type: StaticWall
 variants: 3
 
-localizedName: Eroded Wall
+name: Eroded Wall

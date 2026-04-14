@@ -1,6 +1,6 @@
 type: Wall
 size: 2
-localizedName: Insulated Wall
+name: Insulated Wall
 description: "The classic. Protects from enemy projectiles and can also stop lasers and eletric bullets."
 variants: 4
 
