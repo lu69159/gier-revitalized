@@ -1,6 +1,6 @@
 type: GenericCrafter
 size: 2
-localizedName: Fluid Cracker
+name: Fluid Cracker
 
 category: crafting
 research: sealent-capsule
