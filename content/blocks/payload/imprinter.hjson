@@ -1,5 +1,5 @@
 type: UnitFactory
-localizedName: Imprinter
+name: Imprinter
 size: 3
 
 databaseTag: "gier"
