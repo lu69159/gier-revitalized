@@ -1,7 +1,7 @@
 type: ItemTurret
 # LaunchSilo
 
-localizedName: Launch Silo
+name: Launch Silo
 description: "Launches flaks of bullets in all direction, Could also shoot manually by being clicked.
 
 [green]- Omni Directional
