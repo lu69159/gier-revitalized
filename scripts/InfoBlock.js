@@ -5,7 +5,7 @@ const build = tile.build;
 const block = tile.block();
 const target = Vars.content.block("gr-note");
 
-if (block != target || !build) return;
+if (block != target || !build || Vars.player.selectBlock != null) return;
 const stringBuild = build.message;
 Vars.ui.showText("Note", stringBuild.toString());
 Sounds.click.play();
