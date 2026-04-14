@@ -3,3 +3,6 @@ name: Note
 buildVisibility: worldProcessorOnly
 category: logic
 customShadow: true
+
+breakable: false
+drawTeamOverlay: false
