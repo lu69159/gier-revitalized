@@ -14,7 +14,7 @@ and is required in certain production procceses.
 - Requires graphite
 "
 
-localizedName: Dihydrogen Shaft
+name: Dihydrogen Shaft
 category: production
 attribute: carbon
 priority: 1.5
