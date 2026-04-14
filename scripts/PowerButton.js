@@ -4,7 +4,7 @@ var lastUpdate = 0
 Events.on(TapEvent, event => {
     try {
         
-        if(Vars.state.updateId == lastUpdate) return;
+        if(Vars.state.updateId == lastUpdate || event.player == null) return;
 
         lastUpdate = Vars.state.updateId;
         

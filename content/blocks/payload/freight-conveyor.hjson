@@ -1,6 +1,6 @@
 type: PayloadConveyor
 size: 3
-localizedName: Freight Conveyor
+name: Freight Conveyor
 
 fullOverride: "gr-freight-conveyor-preview"
 databaseTag: "gier"

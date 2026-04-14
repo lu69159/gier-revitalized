@@ -1,6 +1,6 @@
 type: Wall
 # CommandBlock
-localizedName: "Command Block"
+name: "Command Block"
 customShadow: true
 envEnabled: -1
 alwaysUnlocked: true

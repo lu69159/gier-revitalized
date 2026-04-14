@@ -1,6 +1,6 @@
 type: PowerTurret
 size: 4
-localizedName: Deviate
+name: Deviate
 
 research:{
 parent: trident

@@ -1,5 +1,5 @@
 type: GenericCrafter
-localizedName: Melting Port
+name: Melting Port
 description: "Melts a varity of metals into liquids.
 Clicking on this building will change it's recipe.
 "

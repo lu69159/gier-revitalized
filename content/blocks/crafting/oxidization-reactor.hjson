@@ -1,6 +1,6 @@
 type: GenericCrafter
 size: 4
-localizedName: "Oxidization Reactor"
+name: "Oxidization Reactor"
 description: "Consumes water and beryllium to produce oxide.
 Hydrogen is made as a byproduct.
 

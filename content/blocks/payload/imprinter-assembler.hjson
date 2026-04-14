@@ -1,6 +1,6 @@
 type: UnitAssembler
 size: 3
-localizedName: Imprinter
+name: Imprinter
 
 requirements:[lead/275,copper/195,silicon/65]
 category: units
