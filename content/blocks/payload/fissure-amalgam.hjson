@@ -2,7 +2,7 @@ type: Constructor
 configurable: false
 # AttributeConstructor
 
-localizedName: Fissure Alamgam
+name: Fissure Alamgam
 description: "
 Drains the hardened carbon from the wall
 behind it. And mixes it with silicon.
