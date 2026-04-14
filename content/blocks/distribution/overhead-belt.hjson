@@ -1,5 +1,5 @@
 type: ItemBridge
-localizedName: "Overhead Belt"
+name: "Overhead Belt"
 description: "
 Transports item above normal buildings.
 
