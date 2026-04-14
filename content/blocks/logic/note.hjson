@@ -1,4 +1,4 @@
 type: MessageBlock
 name: Note
 buildVisibility: worldProcessorOnly
-category: Logic
+category: logic
