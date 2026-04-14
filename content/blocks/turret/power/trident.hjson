@@ -1,6 +1,6 @@
 type: ItemTurret
 size: 4
-localizedName: Trident
+name: Trident
 category: turret
 outlineColor: 2f2f3f
 
