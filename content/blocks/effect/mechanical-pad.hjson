@@ -2,7 +2,7 @@ type: UnitCargoLoader
 #MechPad
 
 size: 2
-localizedName: Mechanical Pad
+name: Mechanical Pad
 description: "[red]<Test block>[]
 Fabricates a unit with the required resources.
 "
