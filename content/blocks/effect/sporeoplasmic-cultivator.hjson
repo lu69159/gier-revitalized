@@ -1,6 +1,6 @@
 type: ConsumeGenerator
 size: 3
-localizedName: "Sporeoplasmic Cultivator"
+name: "Sporeoplasmic Cultivator"
 customShadow: true
 
 envEnabled: -1

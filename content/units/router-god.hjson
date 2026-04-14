@@ -1,6 +1,6 @@
 type: flying
 flying: true
-localizedName: "Router God"
+name: "Router God"
 
 fullOverride: "gr-gren-router"
 hidden: true

@@ -1,5 +1,5 @@
 type: Wall
-localizedName: Dummy
+name: Dummy
 category: defense
 description: "A wall to release your anger on, Very primitive.
 

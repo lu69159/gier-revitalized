@@ -1,5 +1,5 @@
       type: ParticleWeather
-      localizedName: Frag storm
+      name: Frag storm
       color: a7c1fa
       noiseColor: 3c3837
       drawNoise: true

@@ -1,7 +1,7 @@
-localizedName: Fragmented
+#name: Fragmented
 difficulty: 4.5
 
-sector: 24
+sector: 25
 captureWave: 15
 planet: kela
 
