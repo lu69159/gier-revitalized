@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: Scar
+name: Scar
 size: 3
 clipSize: 9999
 buildVisibility: sandboxOnly

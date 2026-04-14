@@ -1,6 +1,6 @@
 radius: 0.85
 statParent: gier
-localizedName: Kela
+name: Kela
 iconColor: 596ab8ff
 alwaysUnlocked: true
 accessible: true

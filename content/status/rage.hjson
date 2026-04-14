@@ -46,4 +46,4 @@ color: D15E60FF
 damageMultiplier: 1.25
 speedMultiplier: 2.5
 permanent: true
-localizedName: Rage
+name: Rage

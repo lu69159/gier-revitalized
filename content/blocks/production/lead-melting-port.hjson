@@ -1,5 +1,5 @@
 type: GenericCrafter
-localizedName: Melting Port
+name: Melting Port
 
 category: production
 craftTime: 60

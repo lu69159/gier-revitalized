@@ -1,7 +1,7 @@
 type: flying
 speed: 2.45
 flying: true
-localizedName: Ruthless
+name: Ruthless
 
 accel: 0.025
 drag: 0.02
