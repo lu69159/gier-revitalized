@@ -1,0 +1,8 @@
+type: Floor
+wallOre: true
+variants: 3
+
+name: Fissure
+
+drawEdgeIn: false
+drawEdgeOut: false
