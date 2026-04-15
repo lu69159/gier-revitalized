@@ -12,7 +12,8 @@ linearWarmup: false
 minWarmup: 0.9
 inaccuracy: 90
 heatRequirement: 30
-  
+warmupMaintainTime: 50
+
 drawer:{
 type: DrawTurret
 parts:[
