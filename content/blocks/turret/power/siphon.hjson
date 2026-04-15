@@ -54,7 +54,7 @@ radiusTo: 40
 color1: 7457ce
 color2: 7457ce
 
-layer: 110.1
+layer: 110
 spinSpeed: 2.5
 }
 {
@@ -63,7 +63,7 @@ radius: 0
 radiusTo: 8
 color1: 7457ce
 color2: 7457ce
-layer: 110.1
+layer: 110
 y: 80
 }
 ]
