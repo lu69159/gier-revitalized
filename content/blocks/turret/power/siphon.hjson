@@ -1,0 +1,70 @@
+type: PowerTurret
+size: 4
+name: Siphon
+
+buildVisibility: sandboxOnly
+category: turret
+  
+shootWarmup: 0.0075
+minWarmup: 0.9
+inaccuracy: 90
+heatRequirement: 25
+  
+drawer:{
+type: DrawTurret
+parts:[
+{
+x: 0
+y: 0
+moveX: -12
+}
+{
+x: 0
+y: 0
+moveX: 12
+}
+{
+type: ShapePart
+circle: true
+radius: 0
+radiusTo: 40
+layer: 110
+}
+{
+type: ShapePart
+circle: true
+radius: 0
+hollow: true
+color: 7457ce
+radiusTo: 60
+stroke: 0
+strokeTo: 10
+layer: 110
+}
+]
+}
+
+consumes:{
+power: 10
+}
+
+reload: 4.5
+rotateSpeed: 1.5
+
+shootType:{
+type: MissileBulletType
+frontColor: 7457ce
+backColor: 7457ce
+trailColor: 7457ce
+
+speed: 3.5
+damage: 25
+fragBullets: 0
+fragRandomSpread: 0
+fragBullet:{
+type: SapBulletType
+color: 7457ce
+lifesteal: 0.5
+damage: 10
+}
+}
