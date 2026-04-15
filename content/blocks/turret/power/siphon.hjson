@@ -93,13 +93,12 @@ hitShake: 4.5
 
 parts:[
 {
-type: ShapePart
-circle: true
-hollow: true
-radius: 40
-radiusTo: 0
-color: 7457ce00
-colorTo: 7457ce
+type: FlarePart
+spinSpeed: 2.5
+radius: 0
+radiusTo: 40
+color1: 7457ce00
+color2: 7457ce00
 progress: life
 }
 ]
