@@ -6,3 +6,7 @@ name: Fissure
 
 drawEdgeIn: false
 drawEdgeOut: false
+
+attribute:{
+beryllium: 1.25
+}
