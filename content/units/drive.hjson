@@ -14,7 +14,7 @@ parent: techtree-kela
 objectives:[
 {
 type: SectorComplete
-preset: fragmented
+preset: fragmented-fix
 }
 ]
 }

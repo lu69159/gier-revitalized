@@ -6,14 +6,14 @@ drawers:[
 type: DrawShape
 color: 7457ce55
 sides: 8
-radius: 8
+radius: 9.5
 layer: 125
 }
 {
 type: DrawShape
 color: f803fc55
 sides: 8
-radius: 9.5
+radius: 12.5
 layer: 125
 }
 ]
@@ -26,7 +26,7 @@ effect: mineBig
 color: f803fc
 }
 destroySound: stepWater
-envRequired: -1
+envEnabled: -1
 drawCracks: false
 
 flammabilityScale: 3.5

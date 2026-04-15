@@ -13,7 +13,7 @@ parent: modifier
 objectives:[
 {
 type: SectorComplete
-preset: fragmented
+preset: fragmented-fix
 }
 ]
 }
