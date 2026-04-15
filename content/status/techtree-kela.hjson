@@ -5,4 +5,5 @@ research:{
 planet: kela
 root: true
 name: "[sky]Kela[]"
+alwaysUnlocked: true
 }
