@@ -1,0 +1,12 @@
+type: OverlayFloor
+wallOre: true
+variants: 3
+
+name: Fissure
+
+drawEdgeIn: false
+drawEdgeOut: false
+
+attribute:{
+beryllium: 1.25
+}
