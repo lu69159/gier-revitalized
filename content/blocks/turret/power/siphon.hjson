@@ -96,9 +96,9 @@ parts:[
 type: FlarePart
 spinSpeed: 2.5
 radius: 0
-radiusTo: 40
-color1: 7457ce00
-color2: 7457ce00
+radiusTo: 12
+color1: 7457ce
+color2: 7457ce
 progress: life
 }
 ]
