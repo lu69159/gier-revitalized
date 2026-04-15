@@ -8,7 +8,7 @@ category: turret
 shootY: 0
 
 shootWarmupSpeed: 0.0075
-linearWarmup: true
+linearWarmup: false
 minWarmup: 0.9
 inaccuracy: 90
 heatRequirement: 25
