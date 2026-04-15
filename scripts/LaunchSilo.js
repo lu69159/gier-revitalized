@@ -8,14 +8,17 @@ const silo = Vars.content.getByName(ContentType.block, "gr-launch-silo");
     
 if (block == null || block != silo || build == null) return;
 const peekAmmo = build.peekAmmo();
-if (peekAmmo == null) return;
+const ammo = build.totalAmmo;
+if (peekAmmo == null || totalAmmo <= 0) return;
     
-build.control(LAccess.shoot, build.x, build.y, 1, 0);
+build.shoot(peekAmmo);
 Sounds.click.at(build.x,build.y);
 
+/*
 Timer.schedule(() => {  
 build.control(LAccess.shoot, build.x, build.y, 0, 0);
 }, 0.0166665);
+*/
     
 } catch(e) {
 Vars.ui.showInfoToast(e,4.5);
