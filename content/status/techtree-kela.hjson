@@ -9,7 +9,7 @@ name: "[sky]Kela[]"
 objectives:[
 {
 type: SectorComplete
-preset: fragmented
+preset: fragmented-fix
 }
 ]
 }
