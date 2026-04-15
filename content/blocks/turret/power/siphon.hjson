@@ -11,7 +11,7 @@ shootWarmupSpeed: 0.0075
 linearWarmup: false
 minWarmup: 0.9
 inaccuracy: 90
-heatRequirement: 25
+heatRequirement: 30
   
 drawer:{
 type: DrawTurret
@@ -49,12 +49,15 @@ layer: 110
 ]
 }
 
+recoilPow: 0
+
 consumes:{
 power: 10
 }
 
-reload: 4.5
+reload: 3
 rotateSpeed: 1.5
+shootSound: shootAvert
 
 shootType:{
 type: MissileBulletType
