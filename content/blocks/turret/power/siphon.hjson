@@ -47,6 +47,22 @@ stroke: 0
 strokeTo: 4
 layer: 110
 }
+{
+type: FlarePart
+radius: 0
+radiusTo: 20
+color: 7457ce
+layer: 110.1
+spinSpeed: 4.5
+}
+{
+type: FlarePart
+radius: 0
+radiusTo: 8
+color: 7457ce
+layer: 110.1
+y: 20
+}
 ]
 }
 
@@ -58,7 +74,7 @@ power: 10
 
 reload: 3
 rotateSpeed: 1.5
-shootSound: shootAvert
+shootSound: shootMalign
 
 shootType:{
 type: MissileBulletType
