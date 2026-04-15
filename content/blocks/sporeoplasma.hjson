@@ -6,7 +6,7 @@ drawers:[
 type: DrawShape
 color: 7457ce55
 sides: 8
-radius: 8
+radius: 9.5
 layer: 125
 }
 {
