@@ -11,7 +11,7 @@ shootCone: 110
 shootWarmupSpeed: 0.0325
 linearWarmup: false
 minWarmup: 0.9
-inaccuracy: 90
+inaccuracy: 150
 heatRequirement: 30
 warmupMaintainTime: 50
 
