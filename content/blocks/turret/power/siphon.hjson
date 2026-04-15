@@ -1,6 +1,7 @@
 type: PowerTurret
 size: 4
 name: Siphon
+range: 300
 
 buildVisibility: sandboxOnly
 category: turret
@@ -25,18 +26,20 @@ moveX: 12
 }
 {
 type: ShapePart
+y: 8
 circle: true
 radius: 0
-radiusTo: 40
+radiusTo: 20
 layer: 110
 }
 {
 type: ShapePart
+y: 8
 circle: true
 radius: 0
 hollow: true
 color: 7457ce
-radiusTo: 60
+radiusTo: 30
 stroke: 0
 strokeTo: 10
 layer: 110
@@ -58,6 +61,7 @@ backColor: 7457ce
 trailColor: 7457ce
 
 speed: 3.5
+lifetime: 60
 damage: 25
 fragBullets: 0
 fragRandomSpread: 0
