@@ -7,7 +7,7 @@ buildVisibility: sandboxOnly
 category: turret
 shootY: 0
 
-shootWarmupSpeed: 0.0075
+shootWarmupSpeed: 0.075
 linearWarmup: false
 minWarmup: 0.9
 inaccuracy: 90
