@@ -1,4 +1,4 @@
-type: Floor
+type: OverlayFloor
 wallOre: true
 variants: 3
 
