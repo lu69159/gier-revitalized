@@ -6,7 +6,8 @@ range: 300
 buildVisibility: sandboxOnly
 category: turret
   
-shootWarmup: 0.0075
+shootWarmup: 0.00075
+linearWarmup: true
 minWarmup: 0.9
 inaccuracy: 90
 heatRequirement: 25
@@ -26,22 +27,22 @@ moveX: 12
 }
 {
 type: ShapePart
-y: 8
+y: 0
 circle: true
 radius: 0
-radiusTo: 20
+radiusTo: 8
 layer: 110
 }
 {
 type: ShapePart
-y: 8
+y: 0
 circle: true
 radius: 0
 hollow: true
 color: 7457ce
-radiusTo: 30
+radiusTo: 14
 stroke: 0
-strokeTo: 10
+strokeTo: 4
 layer: 110
 }
 ]
@@ -62,6 +63,8 @@ trailColor: 7457ce
 
 speed: 3.5
 lifetime: 60
+despawnHit: true
+
 damage: 25
 fragBullets: 0
 fragRandomSpread: 0
