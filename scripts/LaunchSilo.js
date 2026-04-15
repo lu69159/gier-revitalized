@@ -9,7 +9,7 @@ const silo = Vars.content.getByName(ContentType.block, "gr-launch-silo");
 if (block == null || block != silo || build == null) return;
 const peekAmmo = build.peekAmmo();
 const ammo = build.totalAmmo;
-if (peekAmmo == null || totalAmmo <= 0) return;
+if (peekAmmo == null || ammo <= 0) return;
     
 build.shoot(peekAmmo);
 Sounds.click.at(build.x,build.y);
