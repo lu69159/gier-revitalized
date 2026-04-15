@@ -5,8 +5,9 @@ range: 300
 
 buildVisibility: sandboxOnly
 category: turret
-  
-shootWarmup: 0.00075
+shootY: 0
+
+shootWarmupSpeed: 0.0075
 linearWarmup: true
 minWarmup: 0.9
 inaccuracy: 90
@@ -66,7 +67,7 @@ lifetime: 60
 despawnHit: true
 
 damage: 25
-fragBullets: 0
+fragBullets: 1
 fragRandomSpread: 0
 fragBullet:{
 type: SapBulletType
