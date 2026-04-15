@@ -50,24 +50,27 @@ layer: 110
 {
 type: FlarePart
 radius: 0
-radiusTo: 20
-color: 7457ce
+radiusTo: 40
+color1: 7457ce
+color2: 7457ce
+
 layer: 110.1
-spinSpeed: 4.5
+spinSpeed: 2.5
 }
 {
 type: FlarePart
 radius: 0
 radiusTo: 8
-color: 7457ce
+color1: 7457ce
+color2: 7457ce
 layer: 110.1
-y: 20
+y: 80
 }
 ]
 }
 
 recoilPow: 0
-
+shake: 2.5
 consumes:{
 power: 10
 }
@@ -85,6 +88,7 @@ trailColor: 7457ce
 speed: 3.5
 lifetime: 60
 despawnHit: true
+hitShake: 10
 
 damage: 25
 fragBullets: 1
