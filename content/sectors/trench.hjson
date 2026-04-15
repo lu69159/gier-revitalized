@@ -7,7 +7,7 @@ planet: kela
 #shieldSectors:[gr-fragmented]
 
 research: {
-parent: fragmented
+parent: fragmented-fix
 objectives:[
 rail
 rail-router
@@ -23,7 +23,7 @@ facility-dropzone
 crate
 {
 type: SectorComplete
-preset: fragmented
+preset: fragmented-fix
 }
 ]
 }
