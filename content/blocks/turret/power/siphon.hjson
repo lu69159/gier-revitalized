@@ -6,6 +6,7 @@ range: 300
 buildVisibility: sandboxOnly
 category: turret
 shootY: 0
+shootCone: 110
 
 shootWarmupSpeed: 0.0325
 linearWarmup: false
@@ -88,7 +89,20 @@ trailColor: 7457ce
 speed: 3.5
 lifetime: 60
 despawnHit: true
-hitShake: 10
+hitShake: 4.5
+
+parts:[
+{
+type: ShapePart
+circle: true
+hollow: true
+radius: 40
+radiusTo: 0
+color: 7457ce00
+colorTo: 7457ce
+progress: life
+}
+]
 
 damage: 25
 fragBullets: 1
