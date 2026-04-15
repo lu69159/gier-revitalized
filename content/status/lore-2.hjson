@@ -34,7 +34,7 @@ parent: gr-lore-1
 objectives:[
 {
 type: SectorComplete
-preset: fragmented
+preset: fragmented-fix
 }
 ]
 }
