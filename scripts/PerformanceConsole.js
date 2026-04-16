@@ -21,9 +21,13 @@ Events.on(TapEvent, e => {
         Vars.ui.showMenu("@performance-console.title", "", 
         [
             ["@performance-console.showStat"],
+            
+            [
             ["@performance-console.dedrone"],
-            ["@performance-console.reinforced"],
-            ["@performance-consle.delisted"],
+            ["@performance-console.reinforced"], 
+            ["@performance-console.delisted"]
+            ],
+            
             ["@close"]
         ], p => {
             try{  
