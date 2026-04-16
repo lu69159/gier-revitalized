@@ -20,10 +20,12 @@ try{
                 
 if (p == 0){
 const stat = Vars.state.stats;
+const points = (stat.enemyUnitsDestroyed + stat.buildingsBuilt) * ((stat.wavesLasted * 0.45) + 1);
 
 Vars.ui.showText("@preformance-console.option1.title",
 Core.bundle.format("preformance-console.option1.enemyKill") + stat.enemyUnitsDestroyed + "\n" +
-Core.bundle.format("preformance-console.option1.buildingsBuilt") + stat.buildingsBuilt         
+Core.bundle.format("preformance-console.option1.buildingsBuilt") + stat.buildingsBuilt + "\n\n" +
+Core.bundle.format("preformance-console.option1.points") + points
 )}
 
 
