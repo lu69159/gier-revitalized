@@ -36,7 +36,7 @@ try{
 const facility = Vars.content.getByName(ContentType.block,"gr-drone-facility");
 const dropzone = Vars.content.getByName(ContentType.block,"gr-facility-dropzone");
             
-Vars.ui.hudfrag.showToast(new TextureRegionDrawable(Core.atlas.find("gr-dedrone") , "[tan]Dedrone[red] Enabled");
+Vars.ui.hudfrag.showToast(new TextureRegionDrawable(Core.atlas.find("gr-dedrone")) , "[tan]Dedrone[red] Enabled");
 Vars.state.rules.bannedBlocks.add(facility);
 Vars.state.rules.bannedBlocks.add(dropzone);
 
