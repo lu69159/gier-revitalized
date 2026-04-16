@@ -19,6 +19,7 @@ require("MechPad");
 require("AssemblyRig");
 require("AddBar");
 require("InfoBlock");
+require("ReflectWall");
 //require("DroneBay");
 
 // Subclass: Units
