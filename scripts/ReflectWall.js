@@ -12,7 +12,7 @@ bullet.type.create(e.build, bullet.x, bullet.y, bullet.rotation() + 180);
 
 for (let i = 0; i < blocks.length; i++){
 if (e.build.block.name == blocks[i]){
-deflect(source);
+deflect(e.source);
 }}
 
 
