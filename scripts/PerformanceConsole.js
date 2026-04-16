@@ -16,7 +16,9 @@ Events.on(TapEvent, e => {
         Vars.ui.showMenu("@performance-console.title", "", 
         [
             ["@performance-console.showStat"],
-            ["@performance-console.dedrone"]
+            ["@performance-console.dedrone"],
+            ["@performance-console.reinforced"],
+            ["@close"]
         ], p => {
             try{  
                 if (p == 0){
@@ -41,6 +43,16 @@ Events.on(TapEvent, e => {
 
                     if(facility) Vars.state.rules.bannedBlocks.add(facility);
                     if(dropzone) Vars.state.rules.bannedBlocks.add(dropzone);
+                
+                } else if (p == 2){
+                Vars.ui.hudfrag.showToast(
+                new TextureRegionDrawable(Core.atlas.find("gr-reinforced")),
+                "[lightgrey]Reinforced[red] Enabled"
+                );
+
+                Vars.state.rules.teams.get(Team.get(5)).unitHealthMultiplier = 1.45;
+                reinforced.clearUnlock();
+                      
                 }
 
             } catch(err){
