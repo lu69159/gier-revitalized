@@ -8,6 +8,6 @@ drawEdgeIn: false
 drawEdgeOut: false
 itemDrop: beryllium
 
-attribute:{
+attributes:{
 beryllium: 1.25
 }
