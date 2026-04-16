@@ -5,7 +5,7 @@ return true;
 
 // left like this incase
 function hasCap(string){
-const cap = Vars.content.sector(string).info.wasCaptured;
+const cap = Vars.content.sector(string).sector.info.wasCaptured;
 return cap;
 }
 
