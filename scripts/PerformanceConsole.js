@@ -3,6 +3,12 @@ if ((Vars.state.rules.planet != Planets.gier && Vars.state.rules.planet != Plane
 return true;
 }
 
+// left like this incase
+function hasCap(string){
+const cap = Vars.content.sector(string).info.wasCaptured;
+return cap;
+}
+
 Events.on(TapEvent, e => {
     try{
         const tile = e.tile;
@@ -37,7 +43,7 @@ Events.on(TapEvent, e => {
                     );
 
                 } else if (p == 1){
-                if (!valid()) return;
+                if (!valid() || !hasCap("gr-fragmented-fix")) return;
 
                     const facility = Vars.content.block("gr-drone-facility");
                     const dropzone = Vars.content.block("gr-facility-dropzone");
@@ -51,7 +57,7 @@ Events.on(TapEvent, e => {
                     if(dropzone) Vars.state.rules.bannedBlocks.add(dropzone);
                 
                 } else if (p == 2){
-                if (!valid()) return;
+                if (!valid() && !hasCap("gr-fragmented-fix")) return;
                 
                 Vars.ui.hudfrag.showToast(
                 new TextureRegionDrawable(Core.atlas.find("gr-reinforced")),
@@ -61,7 +67,7 @@ Events.on(TapEvent, e => {
                 Vars.state.rules.teams.get(Team.get(5)).unitHealthMultiplier = 1.45;
                       
                 } else if (p == 3){
-                if (!valid()) return; 
+                if (!valid() || !hasCap("gr-fragmented-fix")) return; 
         
                 const outpost = Vars.content.getByName(ContentType.block,"gr-outpost");
             
