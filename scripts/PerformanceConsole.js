@@ -23,6 +23,7 @@ Events.on(TapEvent, e => {
             ["@performance-console.showStat"],
             ["@performance-console.dedrone"],
             ["@performance-console.reinforced"],
+            ["@performance-consle.delisted"],
             ["@close"]
         ], p => {
             try{  
@@ -60,6 +61,14 @@ Events.on(TapEvent, e => {
 
                 Vars.state.rules.teams.get(Team.get(5)).unitHealthMultiplier = 1.45;
                       
+                } else if (p == 3){
+                if (!valid()) return; 
+        
+                const outpost = Vars.content.getByName(ContentType.block,"gr-outpost");
+            
+                Vars.ui.hudfrag.showToast(new TextureRegionDrawable(Core.atlas.find("gr-delisted")), "[accent]Delisted[red] Enabled");
+                Vars.state.rules.bannedBlocks.add(outpost);
+                    
                 }
 
             } catch(err){
