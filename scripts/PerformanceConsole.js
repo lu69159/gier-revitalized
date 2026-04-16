@@ -7,7 +7,11 @@ return true;
 function hasCap(string){
 try{
 if (Vars.content.sector(string) == null) return;
-return Vars.content.sector(string).sector.info.wasCaptured;
+const capped = Vars.content.sector(string).sector.info.wasCaptured;
+if (!Vars.state.isCampaign) capped = true;
+
+
+return capped
 } catch(e){
 Vars.ui.showInfoToast(e,15);
 }}
