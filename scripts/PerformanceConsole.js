@@ -51,7 +51,6 @@ Events.on(TapEvent, e => {
                 );
 
                 Vars.state.rules.teams.get(Team.get(5)).unitHealthMultiplier = 1.45;
-                reinforced.clearUnlock();
                       
                 }
 
