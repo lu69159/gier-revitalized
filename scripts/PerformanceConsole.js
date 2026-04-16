@@ -3,6 +3,15 @@ if ((Vars.state.rules.planet != Planets.gier && Vars.state.rules.planet != Plane
 return true;
 }
 
+// left like this incase
+function hasCap(string){
+try{
+if (Vars.content.sector(string) == null) return;
+return Vars.content.sector(string).sector.info.wasCaptured;
+} catch(e){
+Vars.ui.showInfoToast(e,15);
+}}
+
 Events.on(TapEvent, e => {
     try{
         const tile = e.tile;
@@ -27,12 +36,6 @@ Events.on(TapEvent, e => {
         ], p => {
             try{  
 
-
-// left like this incase
-function hasCap(string){
-if (Vars.content.sector(string) == null) return;
-return Vars.content.sector(string).sector.info.wasCaptured;
-}
                 
                 if (p == 0){
                     const stat = Vars.state.stats;
