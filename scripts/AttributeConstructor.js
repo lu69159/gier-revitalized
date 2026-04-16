@@ -38,6 +38,7 @@ for(let dy = 0; dy < size; dy++){
     if(!worldTile) continue;
 
     const block = worldTile.block();
+    const overlay = worldTile.overlay();
     if(!block) continue;
 
     const attribute = block.attributes.get(Attribute.get("beryllium"));
@@ -52,7 +53,10 @@ for(let dy = 0; dy < size; dy++){
 
     
     if(attribute == null) continue;
-    
+    if (overlay != null){
+    const attributeOverlay = overlay.attributes.get(Attribute.get("beryllium"));
+    totalAttribute += (attributeOverlay * 2);
+    }
     totalAttribute += (attribute * 2);
     carbon += block.attributes.get(Attribute.get("carbon"));
     count++;
