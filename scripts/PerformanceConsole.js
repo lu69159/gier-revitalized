@@ -1,3 +1,8 @@
+function valid(){
+if (Vars.state.rules.planet != Planets.gier && Vars.state.wave != 1) return false;
+return true;
+}
+
 Events.on(TapEvent, e => {
     try{
         const tile = e.tile;
@@ -32,6 +37,7 @@ Events.on(TapEvent, e => {
                     );
 
                 } else if (p == 1){
+                if (!valid()) return;
 
                     const facility = Vars.content.block("gr-drone-facility");
                     const dropzone = Vars.content.block("gr-facility-dropzone");
@@ -45,6 +51,8 @@ Events.on(TapEvent, e => {
                     if(dropzone) Vars.state.rules.bannedBlocks.add(dropzone);
                 
                 } else if (p == 2){
+                if (!valid()) return;
+                
                 Vars.ui.hudfrag.showToast(
                 new TextureRegionDrawable(Core.atlas.find("gr-reinforced")),
                 "[lightgrey]Reinforced[red] Enabled"
