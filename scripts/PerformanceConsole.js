@@ -13,12 +13,14 @@ if (block != console || selectBlock != null || buildTeam != playerTeam) return;
 
 Vars.ui.showMenu("@preformance-console.title", "", 
 [
-["@preformance-console.showStat"]
+["@preformance-console.showStat"],
+["@preformance-console.dedrone"]
 ]
 , p => {
 try{  
                 
 if (p == 0){
+try{
 const stat = Vars.state.stats;
 const points = (stat.enemyUnitsDestroyed + stat.buildingsBuilt) * ((stat.wavesLasted * 0.45) + 1);
 
@@ -26,7 +28,11 @@ Vars.ui.showText("@preformance-console.option1.title",
 Core.bundle.format("preformance-console.option1.enemyKill") + stat.enemyUnitsDestroyed + "\n" +
 Core.bundle.format("preformance-console.option1.buildingsBuilt") + stat.buildingsBuilt + "\n\n" +
 Core.bundle.format("preformance-console.option1.points") + points
-)}
+} catch(e){
+Vars.ui.showInfoToast(e + " - PreformanceConsole - [red]Inner",5); 
+})} else if (p == 1){
+
+}
 
 
 } catch(e){
