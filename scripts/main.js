@@ -19,6 +19,7 @@ require("MechPad");
 require("AssemblyRig");
 require("AddBar");
 require("InfoBlock");
+require("PerformanceConsole");
 //require("ReflectWall");
 //require("DroneBay");
 
