@@ -9,7 +9,14 @@ buildtime: 300
 requirements:[lead/65,copper/35,graphite/25]
 underBullet: true
 
-research: techtree-kela
+research: {
+parent: techtree-kela
+objectives:[
+{
+type: SectorComplete
+preset: fragmented-fix
+}]
+}
 shownPlanets:[gier]
 
 # the function in javascript
