@@ -8,7 +8,7 @@ researchCostMultiplier: 0.45
 customShadow: true
 
 requirements:[lead/175,copper/100,graphite/75,metaglass/50,silicon/25]
-outputLiquid: water/0.1667
+outputLiquid: water/0.16667
 
 productionTime: 60
 consumes:{
