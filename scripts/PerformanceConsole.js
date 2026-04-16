@@ -31,15 +31,19 @@ Core.bundle.format("preformance-console.option1.points") + points
 } catch(e){
 Vars.ui.showInfoToast(e + " - PreformanceConsole - [red]Inner",5); 
 })} else if (p == 1){
+try{
 
-}
+
+
+} catch(e){
+Vars.ui.showInfoToast(e + " - PreformanceConsole - [red]Inner",5); 
+}}
 
 
 } catch(e){
 Vars.ui.showInfoToast(e + " - PreformanceConsole - [red]Inner",5); 
 }});
 
-  
 } catch(e){
 Vars.ui.showInfoToast(e + " - PreformanceConsole",5); 
 }});
