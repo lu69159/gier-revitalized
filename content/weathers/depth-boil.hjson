@@ -3,7 +3,8 @@ color: ffffff00
 noiseScale: 3500
 baseSpeed: 8
 
-noiseColor: e36619
+noiseColor: fc5e4266
 drawNoise: true
 drawParticles: false
-noiseLayers: 2
+noiseLayers: 1
+
