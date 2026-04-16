@@ -2,6 +2,6 @@ type: Wall
 name: Preformance Console
 
 category: effect
-buildVisibilitt: sandboxOnly
+buildVisibility: sandboxOnly
 
 # the function in javascript
