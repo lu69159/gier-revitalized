@@ -1,4 +1,4 @@
-type: OverlayFloor
+type: OreBlock
 wallOre: true
 variants: 3
 
