@@ -7,3 +7,4 @@ requirements:[silicon/25,surge-alloy/15,carbide/20]
 
 flashHit: true
 flashColor: C67A96FF
+chanceDeflect: 100000
