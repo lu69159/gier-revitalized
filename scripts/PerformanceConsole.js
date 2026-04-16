@@ -36,7 +36,7 @@ Events.on(TapEvent, e => {
 
                     Vars.ui.hudfrag.showToast(
                         new TextureRegionDrawable(Core.atlas.find("gr-dedrone")),
-                        "[tan]Dedrone[red] Enabled"
+                        Core.bundle.get("modifiers.dedrone.enable")
                     );
 
                     if(facility) Vars.state.rules.bannedBlocks.add(facility);
