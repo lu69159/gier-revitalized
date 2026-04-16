@@ -1,5 +1,5 @@
 function valid(){
-if (Vars.state.rules.planet != Planets.gier || Vars.state.wave != 1) return false;
+if ((Vars.state.rules.planet != Planets.gier && Vars.state.rules.planet != Planets.sun) || Vars.state.wave != 1) return false;
 return true;
 }
 
