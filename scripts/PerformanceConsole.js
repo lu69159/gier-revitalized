@@ -5,8 +5,8 @@ return true;
 
 // left like this incase
 function hasCap(string){
-const cap = Vars.content.sector(string).sector.info.wasCaptured;
-return cap;
+if (Vars.content.sector(string) == null) return;
+return Vars.content.sector(string).sector.info.wasCaptured;
 }
 
 Events.on(TapEvent, e => {
