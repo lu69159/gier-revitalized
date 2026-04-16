@@ -1,0 +1,7 @@
+type: Wall
+name: Preformance Console
+
+category: effect
+buildVisibilitt: sandboxOnly
+
+# the function in javascript
