@@ -52,7 +52,8 @@ Vars.ui.showInfoToast(e + " - PerformanceConsole - [red]Inner",5);
 
 } catch(e){
 Vars.ui.showInfoToast(e + " - PerformanceConsole",5); 
-}});
+}
+});
 
 /*
 @preformance-console.option1.buildingsBuilt
