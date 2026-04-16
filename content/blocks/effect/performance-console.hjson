@@ -1,5 +1,5 @@
 type: Wall
-name: Preformance Console
+name: Performance Console
 
 category: effect
 buildVisibility: sandboxOnly
