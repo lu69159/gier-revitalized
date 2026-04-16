@@ -12,7 +12,9 @@ const selectBlock = player.selectedBlock;
 if (block != console || selectBlock != null || buildTeam != playerTeam) return;
 
 Vars.ui.showMenu("@preformance-console.title", "", 
+[
 ["@preformance-console.showStat"]
+]
 , p => {
 try{  
                 
