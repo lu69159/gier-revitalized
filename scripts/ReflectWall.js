@@ -1,3 +1,5 @@
+// A reflecting wall but for all bulletTypes
+
 const block = [
 "gr-reflectum-wall"
 ];
