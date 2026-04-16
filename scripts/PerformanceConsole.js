@@ -23,7 +23,7 @@ Events.on(TapEvent, e => {
         if (!tile || !player) return;
 
         const block = tile.block();
-        const console = Vars.content.block("gr-preformance-console");
+        const console = Vars.content.block("gr-performance-console");
 
         const buildTeam = tile.team();
         const playerTeam = player.team();
