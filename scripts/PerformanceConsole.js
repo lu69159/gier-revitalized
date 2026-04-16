@@ -11,10 +11,10 @@ const playerTeam = player.team();
 const selectBlock = player.selectedBlock;
 if (block != console || selectBlock != null || buildTeam != playerTeam) return;
 
-Vars.ui.showMenu("@preformance-console.title", "", 
+Vars.ui.showMenu("@performance-console.title", "", 
 [
-["@preformance-console.showStat"],
-["@preformance-console.dedrone"]
+["@performance-console.showStat"],
+["@performance-console.dedrone"]
 ]
 , p => {
 try{  
@@ -24,13 +24,13 @@ try{
 const stat = Vars.state.stats;
 const points = (stat.enemyUnitsDestroyed + stat.buildingsBuilt) * ((stat.wavesLasted * 0.45) + 1);
 
-Vars.ui.showText("@preformance-console.option1.title",
-Core.bundle.format("preformance-console.option1.enemyKill") + stat.enemyUnitsDestroyed + "\n" +
-Core.bundle.format("preformance-console.option1.buildingsBuilt") + stat.buildingsBuilt + "\n\n" +
-Core.bundle.format("preformance-console.option1.points") + points
+Vars.ui.showText("@performance-console.option1.title",
+Core.bundle.format("performance-console.option1.enemyKill") + stat.enemyUnitsDestroyed + "\n" +
+Core.bundle.format("performance-console.option1.buildingsBuilt") + stat.buildingsBuilt + "\n\n" +
+Core.bundle.format("performance-console.option1.points") + points
 } catch(e){
 Vars.ui.showInfoToast(e + " - PreformanceConsole - [red]Inner",5); 
-})} else if (p == 1){
+}} else if (p == 1){
 try{
 
 const facility = Vars.content.getByName(ContentType.block,"gr-drone-facility");
@@ -41,16 +41,17 @@ Vars.state.rules.bannedBlocks.add(facility);
 Vars.state.rules.bannedBlocks.add(dropzone);
 
 } catch(e){
-Vars.ui.showInfoToast(e + " - PreformanceConsole - [red]Inner",5); 
+Vars.ui.showInfoToast(e + " - PerformanceConsole - [red]Inner",5); 
 }}
+);
 
 
 } catch(e){
-Vars.ui.showInfoToast(e + " - PreformanceConsole - [red]Inner",5); 
+Vars.ui.showInfoToast(e + " - PerformanceConsole - [red]Inner",5); 
 }});
 
 } catch(e){
-Vars.ui.showInfoToast(e + " - PreformanceConsole",5); 
+Vars.ui.showInfoToast(e + " - PerformanceConsole",5); 
 }});
 
 /*
