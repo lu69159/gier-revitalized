@@ -5,4 +5,11 @@ category: effect
 buildVisibility: sandboxOnly
 customShadow: true
 
+buildtime: 300
+requirements:[lead/65,copper/35,graphite/25]
+underBullet: true
+
+research: techtree-kela
+shownPlanets:[gier]
+
 # the function in javascript
