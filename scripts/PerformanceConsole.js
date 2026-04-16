@@ -22,7 +22,7 @@ if (p == 0){
 const stat = Vars.state.stats;
 
 Vars.ui.showText("@preformance-console.option1.title",
-"@preformance-console.option1.enemyKill" + stat.enemyUnitsDestroyed + "\n"
+"@preformance-console.option1.enemyKill" + stat.enemyUnitsDestroyed + "\n" +
 "@preformance-console.option1.buildingsBuilt" + stat.buildingsBuilt         
 )}
 
