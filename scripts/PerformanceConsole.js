@@ -33,10 +33,10 @@ Vars.ui.showInfoToast(e + " - PreformanceConsole - [red]Inner",5);
 }} else if (p == 1){
 try{
 
-const facility = Vars.content.getByName(ContentType.block,"gr-drone-facility");
-const dropzone = Vars.content.getByName(ContentType.block,"gr-facility-dropzone");
+const facility = Vars.content.block("gr-drone-facility");
+const dropzone = Vars.content.block("gr-facility-dropzone");
             
-Vars.ui.hudfrag.showToast(new TextureRegionDrawable(Core.atlas.find("gr-dedrone")) , "[tan]Dedrone[red] Enabled");
+Vars.ui.hudfrag.showToast(new TextureRegionDrawable(Core.atlas.find("gr-dedrone")), "[tan]Dedrone[red] Enabled");
 Vars.state.rules.bannedBlocks.add(facility);
 Vars.state.rules.bannedBlocks.add(dropzone);
 
@@ -52,7 +52,6 @@ Vars.ui.showInfoToast(e + " - PerformanceConsole - [red]Inner",5);
 
 } catch(e){
 Vars.ui.showInfoToast(e + " - PerformanceConsole",5); 
-}
 });
 
 /*
