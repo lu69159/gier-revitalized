@@ -6,7 +6,7 @@ name: Fissure
 
 drawEdgeIn: false
 drawEdgeOut: false
-itemDrop: beryllium
+itemDrop: fissure
 
 attributes:{
 beryllium: 1.25
