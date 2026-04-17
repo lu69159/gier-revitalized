@@ -1,6 +1,7 @@
 type: LiquidTurret
 size: 2
 name: Torpedo
+outlineColor: 212121
 
 buildVisibility: sandboxOnly
 requirements:[lead/275,copper/175,graphite/45,silicon/125,titanium/45]
@@ -21,7 +22,8 @@ damage: 105
 status: melting
 puddles: 8
 puddleRange: 20
-puddleLiquid: liquid-copper
+puddleLiquid: liquid-lead
+puddleAmount: 80
 despawnHit: true
 hitEffect:{
 type: WrapEffect
