@@ -5,7 +5,7 @@ size: 2
 
 requirements:[lead/175,copper/65,silicon/45]
 
-consume:{
+consumes:{
 liquids:[liquid-copper/0.016667]
 }
 
