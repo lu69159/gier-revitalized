@@ -37,6 +37,7 @@ effect: missileTrailSmoke
 
 drawer:{
 type: DrawTurret
+turretLayer: 50.1
 parts:[
 {
 suffix: "-front"
