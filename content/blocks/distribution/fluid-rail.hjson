@@ -19,17 +19,17 @@ suffix: "-bottom"
 {
 type: DrawLiquidTile
 padding: 0.6
-liquid: liquid-copper
+drawLiquid: liquid-copper
 }
 {
 type: DrawLiquidTile
 padding: 0.6
-liquid: liquid-lead
+drawLiquid: liquid-lead
 }
 {
 type: DrawLiquidTile
 padding: 0.6
-liquid: liquid-silicon
+drawLiquid: liquid-silicon
 }
 {
 type: DrawRegion
