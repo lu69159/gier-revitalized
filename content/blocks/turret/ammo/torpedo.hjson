@@ -3,7 +3,7 @@ size: 2
 name: Torpedo
 
 buildVisibility: sandboxOnly
-requirements:[lead/275,copper/175,graphite/45,silicon/125,titaniuum/45]
+requirements:[lead/275,copper/175,graphite/45,silicon/125,titanium/45]
 category: turret
 
 range: 240
