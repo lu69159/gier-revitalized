@@ -42,7 +42,7 @@ parts:[
 suffix: "-front"
 moveY: -3
 progress: recoil
-layerOffset: -0.0009
+outline: true
 }
 ]
 }
