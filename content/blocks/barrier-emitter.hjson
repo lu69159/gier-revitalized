@@ -16,7 +16,7 @@ radius: 200.5
 buildVisibility: sandboxOnly
 customShadow: true
 
-shieldHealth: 450
+shieldHealth: 1000
 
 cooldownNormal: 0.4
 cooldownLiquid: 0.4
