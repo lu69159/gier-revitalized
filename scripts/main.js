@@ -19,6 +19,8 @@ require("MechPad");
 require("AssemblyRig");
 require("AddBar");
 require("InfoBlock");
+require("PerformanceConsole");
+//require("ReflectWall");
 //require("DroneBay");
 
 // Subclass: Units
@@ -27,4 +29,4 @@ require("EnrageUnit");
 require("ZapUnit");
 
 // Mods
-require("Modifiers");
+//require("Modifiers");

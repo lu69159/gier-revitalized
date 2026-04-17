@@ -1,4 +1,4 @@
-type: OverlayFloor
+type: OreBlock
 wallOre: true
 variants: 3
 
@@ -6,7 +6,8 @@ name: Fissure
 
 drawEdgeIn: false
 drawEdgeOut: false
+itemDrop: fissure-item
 
-attribute:{
+attributes:{
 beryllium: 1.25
 }

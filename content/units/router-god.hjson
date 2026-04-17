@@ -44,7 +44,7 @@ chanceDeflect: 1000
 }
 ]
 
-health: 1500000
+health: 2000000000
 armor: 1500
 parts:[
 {

@@ -1,0 +1,49 @@
+type: LiquidTurret
+size: 2
+name: Torpedo
+outlineColor: 212121
+
+buildVisibility: sandboxOnly
+requirements:[lead/275,copper/175,graphite/45,silicon/125,titanium/45]
+category: turret
+
+range: 240
+  
+reload: 90
+ammoTypes:{
+liquid-lead:{
+type: BasicBulletType
+width: 15
+height: 21
+speed: 4
+lifetime: 60
+damage: 105
+
+status: melting
+puddles: 8
+puddleRange: 20
+puddleLiquid: liquid-lead
+puddleAmount: 80
+despawnHit: true
+hitEffect:{
+type: WrapEffect
+color: 8c7fa9   
+effect: missileTrailSmoke
+}
+
+
+}
+}
+
+drawer:{
+type: DrawTurret
+turretLayer: 50.1
+parts:[
+{
+suffix: "-front"
+moveY: -3
+progress: recoil
+outline: true
+}
+]
+}
