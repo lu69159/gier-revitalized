@@ -3,6 +3,7 @@ name: "Fluid Rail"
 description: "Receives and transports liquids."
 
 buildVisibility: sandboxOnly
+category: liquid
 envEnabled: -1
 requirements:[lead/5,copper/3]
 
@@ -40,7 +41,7 @@ type: DrawSideRegion
 ]
 }
 
-liquidOutputDirections:[0,0]
+liquidOutputDirections:[0,0,0]
 
 consumes:{
 liquids:[
