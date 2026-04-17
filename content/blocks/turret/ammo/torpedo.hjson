@@ -32,3 +32,14 @@ effect: missileTrailSmoke
 
 }
 }
+
+drawer:{
+type: DrawTurret
+parts:[
+{
+suffix: "-front"
+moveY: -3
+progress: recoil
+}
+]
+}
