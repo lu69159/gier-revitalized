@@ -1,6 +1,6 @@
 type: GenericCrafter
 name: "Fluid Rail"
-description: "Receives liquids."
+description: "Receives and transports liquids."
 
 buildVisibility: sandboxOnly
 envEnabled: -1
@@ -12,6 +12,25 @@ enableDrawStatus: false
 drawer:{
 type: DrawMulti
 drawers:[
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+padding: 0.6
+liquid: liquid-copper
+}
+{
+type: DrawLiquidTile
+padding: 0.6
+liquid: liquid-lead
+}
+{
+type: DrawLiquidTile
+padding: 0.6
+liquid: liquid-silicon
+}
 {
 type: DrawRegion
 }
@@ -27,10 +46,12 @@ consumes:{
 liquids:[
 liquid-copper/0
 liquid-lead/0
+liquid-silicon/0
 ]
 }
 
 outputLiquids:[
 liquid-copper/0
 liquid-lead/0
+liquid-silicon/0
 ]
