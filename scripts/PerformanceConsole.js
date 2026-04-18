@@ -70,7 +70,7 @@ Events.on(TapEvent, e => {
                 
                 Vars.ui.hudfrag.showToast(
                 new TextureRegionDrawable(Core.atlas.find("gr-reinforced")),
-                "[lightgrey]Reinforced[red] Enabled"
+                Core.bundle.get("modifiers.reinforced.enable")
                 );
 
                 Vars.state.rules.teams.get(Team.get(5)).unitHealthMultiplier = 1.45;
@@ -80,7 +80,7 @@ Events.on(TapEvent, e => {
         
                 const outpost = Vars.content.getByName(ContentType.block,"gr-outpost");
             
-                Vars.ui.hudfrag.showToast(new TextureRegionDrawable(Core.atlas.find("gr-delisted")), "[accent]Delisted[red] Enabled");
+                Vars.ui.hudfrag.showToast(new TextureRegionDrawable(Core.atlas.find("gr-delisted")), Core.bundle.get("modifiers.delisted.enable"));
                 Vars.state.rules.bannedBlocks.add(outpost);
                     
                 }
