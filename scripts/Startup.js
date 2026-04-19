@@ -2,7 +2,7 @@
 
 Events.on(ContentInitEvent, e => { 
 
-Team.get(5).setPalette(Color.valueOf("8ecff5"));
+Team.get(5).setPalette(Color.valueOf("9FA4C5"));
 Team.get(5).emoji = "[#8ecff5][]"; 
 
 Team.get(4).setPalette(Color.valueOf("8f55ce"));
