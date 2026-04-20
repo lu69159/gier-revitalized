@@ -15,7 +15,9 @@ reload: 90
 ammoTypes:{
 liquid-lead:{
 type: ArtilleryBulletType
+collides: true
 collidesAir: true
+targetsAir: true
 
 frontColor: 8c7fa9
 backColor: 8c7fa9
@@ -23,15 +25,12 @@ trailColor: 8c7fa9
 
 width: 12.5
 height: 19.5
-speed: 8
-lifetime: 30
-damage: 35
+speed: 6
+lifetime: 45
+splashDamage: 35
+splashDamageRadius: 8
 
 status: melting
-puddles: 8
-puddleRange: 20
-puddleLiquid: liquid-lead
-puddleAmount: 80
 despawnHit: true
 hitEffect:{
 type: WrapEffect
