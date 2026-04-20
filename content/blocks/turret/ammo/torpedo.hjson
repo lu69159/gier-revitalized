@@ -8,16 +8,24 @@ requirements:[lead/275,copper/175,graphite/45,silicon/125,titanium/45]
 category: turret
 
 range: 240
-  
+minRange: 80
+drawMinRange: true
+
 reload: 90
 ammoTypes:{
 liquid-lead:{
-type: BasicBulletType
-width: 15
-height: 21
-speed: 4
-lifetime: 60
-damage: 105
+type: ArtilleryBulletType
+collidesAir: true
+
+frontColor: 8c7fa9
+backColor: 8c7fa9
+trailColor: 8c7fa9
+
+width: 12.5
+height: 19.5
+speed: 8
+lifetime: 30
+damage: 35
 
 status: melting
 puddles: 8
