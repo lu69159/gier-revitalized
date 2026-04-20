@@ -15,6 +15,12 @@ reload: 90
 ammoTypes:{
 liquid-lead:{
 type: ArtilleryBulletType
+smokeEffect:{
+type: WrapEffect
+effect: shootSmokeTitan
+color: 8c7fa9
+}
+
 collides: true
 collidesAir: true
 targetsAir: true
@@ -23,10 +29,13 @@ frontColor: 8c7fa9
 backColor: 8c7fa9
 trailColor: 8c7fa9
 
+knockback: 5
+impact: true
+
 width: 12.5
 height: 19.5
-speed: 6
-lifetime: 45
+speed: 4
+lifetime: 60
 splashDamage: 35
 splashDamageRadius: 8
 
