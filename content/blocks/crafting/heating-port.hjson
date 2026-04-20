@@ -1,8 +1,17 @@
 type: HeatProducer
 name: Heating port
+description: "
+Burns graphite to produce heat, Which is
+than channel using oxide.
 
+[salmon]- Explosive
+"
 requirements:[lead/75,copper/50,silicon/35,oxide/25]
 envEnabled: -1
+
+explosiveness: 5
+heatOutput: 4
+warmupRate: 0.025
 
 rotateDraw: false
 databaseTag: "gier"
