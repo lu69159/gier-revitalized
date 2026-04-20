@@ -9,7 +9,7 @@ than channel using oxide.
 requirements:[lead/75,copper/50,silicon/35,oxide/25]
 envEnabled: -1
 
-explosiveness: 5
+baseExplosiveness: 5
 heatOutput: 4
 warmupRate: 0.025
 
