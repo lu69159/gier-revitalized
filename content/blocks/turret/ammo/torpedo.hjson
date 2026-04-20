@@ -15,7 +15,8 @@ reload: 90
 ammoTypes:{
 liquid-lead:{
 type: ArtilleryBulletType
-smokeEffect:{
+
+shootEffect:{
 type: WrapEffect
 effect: shootSmokeTitan
 color: 8c7fa9
