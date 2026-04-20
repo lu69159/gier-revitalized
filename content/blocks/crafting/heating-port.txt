@@ -1,8 +1,0 @@
-type: HeatProducer
-name: Heating port
-
-category: crafting
-productionTime: 60
-consumes:{
-items:[graphite/1]
-}

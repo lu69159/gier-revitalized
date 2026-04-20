@@ -1,0 +1,32 @@
+type: HeatProducer
+name: Heating port
+
+requirements:[lead/75,copper/50,silicon/35,oxide/25]
+envEnabled: -1
+
+databaseTag: "gier"
+research:{
+parent: oxidization-reactor
+objectives:[
+heating-port
+]
+}
+
+category: crafting
+productionTime: 60
+consumes:{
+items:[graphite/1]
+}
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawDefault
+}
+{
+type: DrawHeatOutput
+drawGlow: false
+}
+]
+}
