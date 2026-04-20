@@ -4,6 +4,7 @@ name: Heating port
 requirements:[lead/75,copper/50,silicon/35,oxide/25]
 envEnabled: -1
 
+rotateDraw: false
 databaseTag: "gier"
 research:{
 parent: oxidization-reactor
@@ -26,7 +27,6 @@ type: DrawDefault
 }
 {
 type: DrawHeatOutput
-drawGlow: false
 }
 ]
 }
