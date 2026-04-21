@@ -22,6 +22,15 @@ type: DrawRegion
 suffix: "-bottom"
 }
 {
+type: DrawLiquidTile
+padding: 6
+drawLiquid: water
+}
+{
+type: DrawParticles
+color: ffffff66
+}
+{
 type: DrawDefault
 }
 {
