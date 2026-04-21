@@ -1,0 +1,14 @@
+type:  VariableReactor
+name: Steam Turbine
+size: 3
+
+requirements:[lead/235,copper/125,silicon/75,metaglass/75,oxide/45]
+category: power
+
+explosionDamage: 100
+explosionRadius: 80
+explosionEffect: none
+
+consumes:{
+
+}
