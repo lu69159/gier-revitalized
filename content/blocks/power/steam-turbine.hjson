@@ -12,19 +12,20 @@ explosionEffect: none
 
 powerProduction: 4.16667
 maxHeat: 20
-effectChance: 0.25
+effectChance: 1
 effect:{
 type: RadialEffect
 amount: 2
-rotationOffset: 45
+rotationOffset: 50
 lengthOffset: 10
+rotationSpacing: 80
 effect:{
 type: ParticleEffect
 colorFrom: ffffff66
 colorTo: ffffff00
 length: 23
 interp: sineOut
-particles: 2
+particles: 1
 lifetime: 85
 sizeFrom: 2
 sizeTo: 4
