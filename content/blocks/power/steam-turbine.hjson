@@ -10,6 +10,24 @@ explosionDamage: 100
 explosionRadius: 80
 explosionEffect: none
 
+powerProduction: 4.16667
+maxHeat: 20
+effectChance: 0.15
+effect:{
+type: RadialEffect
+amount: 2
+rotationOffset: 45
+effect:{
+type: ParticleEffect
+colorFrom: ffffff66
+colorTo: ffffff00
+length: 23
+interp: sineOut
+particles: 4
+shootCone: 20
+}
+}
+
 consumes:{
 liquids:[water/0.04167]
 }
