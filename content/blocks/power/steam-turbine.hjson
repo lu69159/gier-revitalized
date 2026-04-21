@@ -5,6 +5,7 @@ size: 3
 requirements:[lead/235,copper/125,silicon/75,metaglass/75,oxide/45]
 category: power
 
+envEnabled: -1
 databaseTag: "gier"
 research: {
 parent: photon-panel
