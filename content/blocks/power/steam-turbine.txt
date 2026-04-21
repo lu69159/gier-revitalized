@@ -5,10 +5,28 @@ size: 3
 requirements:[lead/235,copper/125,silicon/75,metaglass/75,oxide/45]
 category: power
 
+explosionPuddles: 0
 explosionDamage: 100
 explosionRadius: 80
 explosionEffect: none
 
 consumes:{
+liquids:[0.04167]
+}
 
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+suffix: "-wire"
+}
+]
 }
