@@ -11,7 +11,7 @@ explosionRadius: 80
 explosionEffect: none
 
 consumes:{
-liquids:[0.04167]
+liquids:[water/0.04167]
 }
 
 drawer:{
