@@ -51,13 +51,13 @@ padding: 2
 drawLiquid: water
 }
 {
-type: DrawFrames
-frames: 6
-}
-{
 type: DrawParticles
 color: ffffff66
 reverse: true
+}
+{
+type: DrawFrames
+frames: 6
 }
 {
 type: DrawDefault
