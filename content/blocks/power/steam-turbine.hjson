@@ -56,6 +56,10 @@ color: ffffff66
 reverse: true
 }
 {
+type: DrawRegion
+suffix: "-extra"
+}
+{
 type: DrawFrames
 frames: 6
 sine: false
