@@ -11,15 +11,15 @@ explosionRadius: 80
 explosionEffect: none
 customShadow: true
 
-powerProduction: 4.16667
+powerProduction: 7.91667
 maxHeat: 20
 effectChance: 1
 effect:{
 type: RadialEffect
 amount: 2
-rotationOffset: 50
+rotationOffset: 55
 lengthOffset: 10
-rotationSpacing: 80
+rotationSpacing: 70
 effect:{
 type: ParticleEffect
 colorFrom: ffffff66
@@ -51,8 +51,12 @@ padding: 2
 drawLiquid: water
 }
 {
+type: DrawBubble
+color: 596ab8
+}
+{
 type: DrawParticles
-color: ffffff66
+color: ffffff88
 reverse: true
 }
 {
