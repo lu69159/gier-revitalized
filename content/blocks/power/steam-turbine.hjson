@@ -58,6 +58,7 @@ reverse: true
 {
 type: DrawFrames
 frames: 6
+sine: false
 }
 {
 type: DrawDefault
