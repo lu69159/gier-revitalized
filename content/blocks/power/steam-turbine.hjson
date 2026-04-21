@@ -17,6 +17,7 @@ effect:{
 type: RadialEffect
 amount: 2
 rotationOffset: 45
+lengthOffset: 12
 effect:{
 type: ParticleEffect
 colorFrom: ffffff66
@@ -24,6 +25,9 @@ colorTo: ffffff00
 length: 23
 interp: sineOut
 particles: 4
+lifetime: 35
+sizeFrom: 4
+sizeTo: 6
 shootCone: 20
 }
 }
