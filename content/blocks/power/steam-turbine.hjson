@@ -5,14 +5,24 @@ size: 3
 requirements:[lead/235,copper/125,silicon/75,metaglass/75,oxide/45]
 category: power
 
+databaseTag: "gier"
+research: {
+parent: photon-panel
+research:[steam-turbine]
+}
+
+unstableSpeed: 0
+explosionMinWarmup: 1
+
 explosionPuddles: 0
 explosionDamage: 100
-explosionRadius: 80
+explosionRadius: 6
 explosionEffect: none
+explosionShake: 6
 customShadow: true
 
 powerProduction: 7.91667
-maxHeat: 20
+maxHeat: 12
 effectChance: 1
 effect:{
 type: RadialEffect
