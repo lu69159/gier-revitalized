@@ -24,7 +24,7 @@ databaseTag: "gier"
 category: power
 
 explosionMinWarmup: 1.25
-explodeEffect{
+explodeEffect: {
 type: MultiEffect
 effects :[
 {
