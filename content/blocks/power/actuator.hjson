@@ -12,7 +12,7 @@ enableDrawStatus: false
 
 requirements:[lead/105,copper/75,graphite/65,silicon/45,titanium/65, surge-alloy/35]
 
-customShadow: true
+//customShadow: true
 consumes:{
 items:[tap/1]
 }
@@ -32,8 +32,8 @@ type: ParticleEffect
 region: "gr-actuator-button-clicked"
 length: 0
 lifetime: 15
-sizeFrom: 4
-sizeTo: 4
+sizeFrom: 8
+sizeTo: 8
 layer: 30.05
 offset: 0
 colorFrom: ffffff
