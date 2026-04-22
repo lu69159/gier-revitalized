@@ -1,5 +1,9 @@
 // Power button class
 var lastUpdate = 0
+const blocks = [
+"gr-button",
+"gr-actuator"
+];
 
 Events.on(TapEvent, event => {
     try {
@@ -11,7 +15,12 @@ Events.on(TapEvent, event => {
         const tile = event.tile;
         if (!tile || !tile.build) return;
 
-        const target = Vars.content.getByName(ContentType.block, "gr-button");
+        let target = null;
+        for (let i = 0; i < blocks.length; i++){
+        if (tile.block() == Vars.content.block(blocks[i])) target = Vars.content.block(blocks[i]);
+        }
+
+        if (target == null) return; 
         const effect = target.explodeEffect;
 
         const block = tile.block();
