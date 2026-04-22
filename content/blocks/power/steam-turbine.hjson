@@ -85,7 +85,7 @@ suffix: "-bottom"
 }
 {
 type: DrawLiquidTile
-padding: 2
+padding: 2.1
 drawLiquid: water
 }
 {
@@ -105,7 +105,7 @@ suffix: "-extra"
 type: DrawFrames
 frames: 6
 sine: false
-interval: 2.5
+interval: 3.5
 }
 {
 type: DrawDefault
