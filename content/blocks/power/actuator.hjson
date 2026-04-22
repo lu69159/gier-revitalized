@@ -39,18 +39,6 @@ offset: 0
 colorFrom: ffffff
 colorTo: ffffff
 }
-{
-type: WaveEffect
-rotation: 44
-lifetime: 25
-sides: 4
-sizeFrom: 4
-sizeTo: 16
-strokeFrom: 3
-strokeTo: 0
-colorFrom: f3e979
-colorTo: f3e979
-}
 ]
 }
 
