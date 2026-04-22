@@ -7,7 +7,7 @@ try {
 const source = e.source;
 const build = e.build;
 const block = build.block;
-var valid = false;
+let valid = false;
   
 for (let i = 0; i < blocks.length; i++){
 if (block == Vars.content.block(blocks[i])) valid = true;
