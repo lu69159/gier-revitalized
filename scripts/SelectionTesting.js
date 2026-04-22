@@ -11,7 +11,7 @@ if (!build) return;
 const block = Blocks.copperWall;
 if (block != build.block) return;
 
-Drawf.dashSquare(Color.valueOf("ffffff"), mx, my, 24);
+Drawf.dashSquare(Color.valueOf("ffffff"), build.x, build.y, 24);
   
 } catch(e){
 Vars.ui.showInfoToast(e,5); 
