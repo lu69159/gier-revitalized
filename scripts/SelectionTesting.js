@@ -2,8 +2,8 @@ Events.on(Trigger.draw, () => {
 try {
 const player = Vars.player;
 if (player == null) return;
-const mx = player.mouseX();
-const my = player.mouseY();
+const mx = Core.input.mouseWorldX();
+const my = Core.input.mouseWorldY();
 
 const build = Vars.world.build(mx, my);
 if (!build) return;
