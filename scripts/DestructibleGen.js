@@ -10,7 +10,7 @@ const block = build.block;
 const valid = false;
   
 for (let i = 0; i < blocks.length; i++){
-if (block == Vars.content.block(blocks[i]) valid = true;
+if (block == Vars.content.block(blocks[i])) valid = true;
 }
 
 if (valid != true) return;
