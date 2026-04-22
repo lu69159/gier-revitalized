@@ -15,7 +15,7 @@ if (block == Vars.content.block(blocks[i]) valid = true;
 
 if (valid != true) return;
 
-let damage = (source.damage / 100);
+let damage = (source.damage / 10);
 if (damage >= 0.35) damage = 0.35;
 build.instability += damage;
 
