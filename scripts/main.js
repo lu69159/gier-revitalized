@@ -24,6 +24,8 @@ require("DestructibleGen");
 //require("ReflectWall");
 //require("DroneBay");
 
+require("SelectionTesting");
+
 // Subclass: Units
 require("IFrameUnit");
 require("EnrageUnit");
