@@ -5,7 +5,7 @@ size: 2
 productionTime: 1
 consumes:{
 items:[copper/0]
-liquid:[water/0]
+liquids:[water/0]
 }
 
 databaseTag: "gier"
