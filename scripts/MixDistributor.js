@@ -5,12 +5,18 @@ const itemSeq = [];
 const liquidSeq = [];
 
 Vars.content.items().each(t => {
-itemSeq.push(new ItemStack(t,1);
-});
+try {
+itemSeq.push(new ItemStack(t, 0);
+} catch(e){
+Vars.ui.showInfoToast(e,5);
+}});
 
 Vars.content.liquids().each(t => {
-liquidSeq.push(new ItemStack(t,1);
-});
+try {
+liquidSeq.push(new ItemStack(t, 0);
+} catch(e){
+Vars.ui.showInfoToast(e,5);
+}});
 
 block.consumers[0] = new ConsumeItems(itemSeq);
 block.consumers[1] = new ConsumeLiquids(liquidSeq);
