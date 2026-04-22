@@ -22,9 +22,7 @@ require("InfoBlock");
 require("PerformanceConsole");
 require("DestructibleGen");
 //require("ReflectWall");
-//require("DroneBay");
-
-require("SelectionTesting");
+//require("DroneBay")
 
 // Subclass: Units
 require("IFrameUnit");
