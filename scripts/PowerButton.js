@@ -12,7 +12,7 @@ Events.on(TapEvent, event => {
         if (!tile || !tile.build) return;
 
         const target = Vars.content.getByName(ContentType.block, "gr-button");
-        const effect = Vars.content.getByName(ContentType.block, "gr-button-tap").generateEffect;
+        const effect = target.explodeEffect;
 
         const block = tile.block();
         if (block != target) return;
