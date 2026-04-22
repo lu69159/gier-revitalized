@@ -6,14 +6,14 @@ const liquidSeq = [];
 
 Vars.content.items().each(t => {
 try {
-itemSeq.push(new ItemStack(t, 0);
+itemSeq.push(new ItemStack(t, 0));
 } catch(e){
 Vars.ui.showInfoToast(e,5);
 }});
 
 Vars.content.liquids().each(t => {
 try {
-liquidSeq.push(new ItemStack(t, 0);
+liquidSeq.push(new ItemStack(t, 0));
 } catch(e){
 Vars.ui.showInfoToast(e,5);
 }});
