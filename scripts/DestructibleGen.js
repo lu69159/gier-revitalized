@@ -16,7 +16,7 @@ if (block == Vars.content.block(blocks[i]) valid = true;
 if (valid != true || build.status != BlockStatus.active) return;
 
 let damage = (source.damage / 100);
-if (damage >= 0.35) damage = 35;
+if (damage >= 0.35) damage = 0.35;
 build.instability += damage;
 
 } catch(e){
