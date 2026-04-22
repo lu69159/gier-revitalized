@@ -21,6 +21,7 @@ require("AddBar");
 require("InfoBlock");
 require("PerformanceConsole");
 require("DestructibleGen");
+require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
 
