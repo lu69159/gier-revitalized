@@ -1,6 +1,7 @@
 const blocks = [
 "gr-sunder-furnace",
-"gr-oxidization-reactor"
+"gr-oxidization-reactor",
+"gr-steam-turbine"
 ]
 
 Events.on(ContentInitEvent, () => {
@@ -9,6 +10,10 @@ try{
 function giveBar(string){
 const block = Vars.content.block(string);
 if (!block) return;
+if (block instanceof VariableReactor){
+block.removeBar("instability");
+return;
+}
   
 block.addBar("progress", e => new Bar(
 "Process", 
