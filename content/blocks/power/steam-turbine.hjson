@@ -2,6 +2,18 @@ type:  VariableReactor
 name: Steam Turbine
 size: 3
 
+description: "
+Produces power by condensing water into
+steam and turning it into usable power.
+
+Receiving damage while active increases
+[accent]Instability[].
+
+[green]- Very reliable
+- Lesser maintance
+[red]- Explosive whilst active[]
+"
+
 requirements:[lead/235,copper/125,silicon/75,metaglass/75,oxide/45]
 category: power
 
@@ -13,12 +25,30 @@ research:[steam-turbine]
 }
 
 unstableSpeed: 0
-explosionMinWarmup: 1
+explosionMinWarmup: 0.65
 
 explosionPuddles: 0
-explosionDamage: 100
+explosionDamage: 430
 explosionRadius: 6
-explosionEffect: none
+explosionEffect: {
+type: MultiEffect
+effects:[
+{
+type: WrapEffect
+color: 9f9fff
+effect: missileTrailSmoke
+}
+{
+type: waveEffect
+sizeFrom: 0
+sizeTo: 36
+lifetime: 16
+strokeFrom: 6
+strokeTo: 0
+}
+]
+}
+
 explosionShake: 6
 customShadow: true
 
