@@ -20,6 +20,7 @@ require("AssemblyRig");
 require("AddBar");
 require("InfoBlock");
 require("PerformanceConsole");
+require("DestructibleGen");
 //require("ReflectWall");
 //require("DroneBay");
 
