@@ -13,7 +13,7 @@ Vars.ui.showInfoToast(e,5);
 
 Vars.content.liquids().each(t => {
 try {
-liquidSeq.push(new ItemStack(t, 0));
+liquidSeq.push(new LiquidStack(t, 0));
 } catch(e){
 Vars.ui.showInfoToast(e,5);
 }});
