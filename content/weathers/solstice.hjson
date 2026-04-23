@@ -1,7 +1,9 @@
 type: ParticleWeather
-color: 8f8f9f
+color: 9eabf7
 noiseScale: 2500
-baseSpeed: 5
+baseSpeed: 6
+yspeed: -5
+
 
 sound: wind
 soundVol: 1.2
