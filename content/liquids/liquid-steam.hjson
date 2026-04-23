@@ -1,5 +1,10 @@
 gas: true
-color: AEBDBCFF
+color: D3DEE4FF
 name: Steam
+
+description: "Condensed water, Hot.
+[grey]Used for defrosting purposes and as a
+heating solution.
+"
 
 shownPlanets:[kela,gier]
