@@ -6,7 +6,7 @@ databaseTag: "gier"
 envEnabled: -1
   
 category: crafting
-outputLiquids: liquid-steam/0.1667
+outputLiquids: [liquid-steam/0.1667]
 consumes:{
 liquids:[water/0.16667]
 }
