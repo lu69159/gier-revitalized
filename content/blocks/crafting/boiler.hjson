@@ -11,7 +11,7 @@ customShadow: true
 requirements:[lead/175, copper/125, silicon/65, metaglass/75, oxide/35]
 
 category: crafting
-outputLiquids: [liquid-steam/0.16767]
+outputLiquids: [liquid-steam/0.16667]
 consumes:{
 liquids:[water/0.16667]
 }
@@ -31,7 +31,7 @@ padding: 2.1
 {
 type: DrawLiquidTile
 drawLiquid: liquid-steam
-alpha: 0.3
+alpha: 0.6
 padding: 2.1
 }
 {
