@@ -9,3 +9,21 @@ omniMovement: false
 engineOffset: 10
 trailScl: 1
 trailLength: 8
+
+weapons:[
+{
+reload: 5
+shootCone: 10
+x: 0
+y: 0
+mirror: false
+
+bullet:{
+type: BasicBulletType
+speed: 2.5
+width: 10.5
+height: 7.5
+damage: 10
+}
+}
+]
