@@ -1,0 +1,11 @@
+type: flying
+flying: true
+speed: 3.5
+hitSize: 12
+
+health: 450
+circleTarget: true
+omniMovement: false
+engineOffset: 10
+trailScl: 1
+trailLength: 8
