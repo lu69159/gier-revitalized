@@ -15,7 +15,7 @@ accel: 0.035
 drag: 0.02
 hitSize: 12
 
-health: 125
+health: 200
 outlineRadius: 0
 armor: 2.5
 circleTarget: true
@@ -28,7 +28,7 @@ range: 150
 abilities:[
 {
 type: UnitSpawnAbility
-spawnTime: 1200
+spawnTime: 1300
 unit: fleet
 }
 ]
