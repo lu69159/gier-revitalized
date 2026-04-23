@@ -1,12 +1,16 @@
-type: GenericCrafter
+type: HeatCrafter
 size: 2
 name: "Boiler"
+heatRequirement: 8
+maxEfficiency: 1.5
 
 databaseTag: "gier"
 envEnabled: -1
-  
+
+requirements:[lead/175, copper/125, silicon/65, metaglass/75, oxide/35]
+
 category: crafting
-outputLiquids: [liquid-steam/0.1667]
+outputLiquids: [liquid-steam/0.16767]
 consumes:{
 liquids:[water/0.16667]
 }
