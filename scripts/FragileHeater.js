@@ -9,13 +9,13 @@ const build = e.build;
 let found = false;
 
 for (let i = 0; i < blocks.length; i++){
-if (build.block == Vars.content.block(blocks[i]) found = true;
+if (build.block == Vars.content.block(blocks[i])) found = true;
 }
 
-if (found == false) return;
+if (!found) return;
 const heat = build.heat;
 
-if (heat < heatRequirement) return;
+if (heat < build.block.heatRequirement) return;
 
 const damageInc = bullet.damage / 2;
 build.damage(damageInc);
