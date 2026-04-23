@@ -19,6 +19,10 @@ envEnabled: -1
 databaseTag: "gier"
 category: power
 
+consumes:{
+power: 0
+}
+
 explosionMinWarmup: 1.25
 explodeEffect: {
 type: MultiEffect
