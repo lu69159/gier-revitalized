@@ -11,11 +11,7 @@ consumesTap: true
 enableDrawStatus: false
 
 requirements:[lead/105,copper/75,graphite/65,silicon/45,titanium/65, surge-alloy/35]
-
 //customShadow: true
-consumes:{
-items:[tap/1]
-}
 
 warmupSpeed: 0
 powerProduction: 2.5
