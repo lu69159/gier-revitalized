@@ -9,7 +9,7 @@ const build = e.build;
 let found = false;
 
 for (let i = 0; i < blocks.length; i++){
-if (build.block == Vars.content.block(blocks[i]) found == true;
+if (build.block == Vars.content.block(blocks[i]) found = true;
 }
 
 if (found == false) return;
@@ -19,7 +19,7 @@ if (heat < heatRequirement) return;
 
 const damageInc = bullet.damage / 2;
 build.damage(damageInc);
-const recol = Fx.hitBeam.wrap(Color.valueof("ffd37fff"));
+const recol = Fx.squareWaveEffect.wrap(Team.crux.color);
 recol.at(bullet.x, bullet.y);
   
 } catch(e){
