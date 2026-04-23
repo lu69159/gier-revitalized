@@ -15,11 +15,11 @@ if (build.block == Vars.content.block(blocks[i])) found = true;
 if (!found) return;
 const heat = build.heat;
 
-if (heat < build.block.heatRequirement) return;
+if (heat <= build.block.heatRequirement) return;
 
 const damageInc = bullet.damage / 2;
 build.damage(damageInc);
-const recol = Fx.squareWaveEffect.wrap(Team.crux.color);
+const recol = Fx.hitBeam.wrap(Team.crux.color);
 recol.at(bullet.x, bullet.y);
   
 } catch(e){
