@@ -1,13 +1,15 @@
 type: ParticleWeather
-color: ffffff00
+color: 8f8f9f
 noiseScale: 2500
-baseSpeed: 3
+baseSpeed: 5
 
 sound: wind
-  
+soundVol: 1.2
+soundVolMin: 0.45
+
 noiseColor: 9eabf766
 drawNoise: true
-drawParticles: false
+drawParticles: true
 noiseLayers: 1
 
 status: gr-frigid
