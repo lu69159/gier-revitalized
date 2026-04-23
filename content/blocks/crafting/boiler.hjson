@@ -1,0 +1,44 @@
+type: GenericCrafter
+size: 2
+name: "Boiler"
+
+databaseTag: "gier"
+envEnabled: -1
+  
+category: crafting
+outputLiquids: liquid-steam/0.1667
+consumes:{
+liquids:[water/0.16667]
+}
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+padding: 2.1
+}
+{
+type: DrawLiquidTile
+drawLiquid: liquid-steam
+alpha: 0.3
+padding: 2.1
+}
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+suffix: "-wire"
+}
+{
+type: DrawGlowRegion
+suffix: "-top"
+}
+]
+}
