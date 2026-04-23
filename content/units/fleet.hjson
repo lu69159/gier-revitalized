@@ -1,15 +1,18 @@
 type: flying
 flying: true
 speed: 3.5
+accel: 0.035
+drag: 0.02
 hitSize: 12
 
 health: 125
+outlineRadius: 0
 armor: 2.5
 circleTarget: true
 omniMovement: false
-engineOffset: 10
+engineOffset: 7.5
 trailScl: 1
-trailLength: 8
+trailLength: 4
 range: 150
   
 abilities:[
