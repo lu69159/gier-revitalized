@@ -1,7 +1,9 @@
 const blocks = [
 "gr-sunder-furnace",
 "gr-oxidization-reactor",
-"gr-steam-turbine"
+"gr-steam-turbine",
+"gr-button",
+"gr-actuator"
 ]
 
 Events.on(ContentInitEvent, () => {
@@ -12,6 +14,11 @@ const block = Vars.content.block(string);
 if (!block) return;
 if (block instanceof VariableReactor){
 block.removeBar("instability");
+return;
+}
+
+if (block instanceof PowerGenerator){
+block.removeBar("power");
 return;
 }
   
