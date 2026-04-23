@@ -3,13 +3,23 @@ flying: true
 speed: 3.5
 hitSize: 12
 
-health: 450
+health: 125
+armor: 2.5
 circleTarget: true
 omniMovement: false
 engineOffset: 10
 trailScl: 1
 trailLength: 8
-
+range: 150
+  
+abilities:[
+{
+type: UnitSpawnAbility
+spawnTime: 1200
+unit: fleet
+}
+]
+  
 weapons:[
 {
 reload: 5
@@ -17,10 +27,12 @@ shootCone: 10
 x: 0
 y: 0
 mirror: false
+shootSound: shootCyclone
 
 bullet:{
 type: BasicBulletType
 speed: 2.5
+lifetime: 60
 width: 10.5
 height: 7.5
 damage: 10
