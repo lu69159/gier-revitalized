@@ -4,3 +4,6 @@ color: 3C3838FF
 
 databaseCategory: "gr-capsules"
 databaseTag: "gr-volatile"
+
+explosiveness: 1.5
+flammability: 2
