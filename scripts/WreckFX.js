@@ -23,7 +23,7 @@ particle.region = String(block.uiIcon);
 particle.sizeFrom = particle.sizeTo = block.size * 3.95;
 particle.lifetime = Mathf.random(300,3000);
 particle.at(build.x, build.y);
-//particle.baseLength = Mathf.random(-14,14);
+particle.baseLength = Mathf.random(-3,3);
 particle.offset = Mathf.random(-15,15) + (build.rotation * 90);
   
 } catch(e){
