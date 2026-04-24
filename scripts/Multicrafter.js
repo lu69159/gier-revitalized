@@ -11,7 +11,7 @@ const seq = new Seq();
 seq.add(Vars.content.item("gr-water-capsule");
 seq.add(Vars.content.item("gr-steam-capsule");
   
-block.stats.add(stats.outputs, StatValue.content(seq));
+block.stats.add(stats.Recipe, StatValue.content(seq));
 
 } catch(e){
 Vars.ui.showText("Oh no", e);
