@@ -27,7 +27,7 @@ items:[metaglass/3]
 
 outputItem: oil-capsule/1
 customShadow: true
-playerPlaceable: false
+placeablePlayer: false
 hasShadow: false
 
 drawer:{
