@@ -15,7 +15,7 @@ titanium/50
 ]
 
 buildVisibility: hidden
-shownPlanets:[]
+shownPlanets:[gier, kela]
 alwaysUnlocked: true
 envEnabled: -1
 
