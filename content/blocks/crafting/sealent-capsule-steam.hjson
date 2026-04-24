@@ -15,6 +15,7 @@ titanium/50
 
 buildVisibility: hidden
 shownPlanets:[gier, kela]
+alwaysUnlocked: true
 
 consumes:{
 power: 0.5
@@ -33,7 +34,7 @@ drawers:[
 {
 type: DrawRegion
 name: "gr-sealent-capsule-shadow"
-color: ffffff44
+color: ffffffff
 }
 {
 type: DrawRegion
