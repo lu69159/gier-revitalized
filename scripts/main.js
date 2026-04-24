@@ -23,6 +23,7 @@ require("InfoBlock");
 require("PerformanceConsole");
 require("DestructibleGen");
 require("FragileHeater");
+require("Multicrafter");
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
