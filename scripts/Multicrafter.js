@@ -1,21 +1,3 @@
-// Extra stats
-Events.on(BlockInfoEvent, e => {
-try{
-//Vars.ui.showInfoToast("open",10);
-
-const selectBlock = Vars.player.selectedBlock;
-const block = Vars.content.block("gr-sealent-capsule");
-
-if (selectBlock != block) return;
-
-const cont = Vars.ui.content.cont;
-if (!cont) return;
-
-    
-} catch(e){
-Vars.ui.showInfoToast(e,10);
-}});
-
 var lastBuild = null;
 
 Events.on(TapEvent, e => {
@@ -24,7 +6,6 @@ const tile = e.tile;
 const block = tile.block();
 const player = e.player;
 const build = tile.build;
-const health = build.health;
   
 if (build != lastBuild){
 lastBuild = build;
@@ -33,8 +14,9 @@ return;
 
 
 // Multicrafter logic  
-if (player.team() != tile.team() || player.selectedBlock != null) return;
+if ( !build || player.team() != build.team || player.selectedBlock != null) return;
 
+const health = tile.build.health;
 const crafters = [
 Vars.content.block("gr-sealent-capsule"),
 Vars.content.block("gr-sealent-capsule-steam")
