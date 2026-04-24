@@ -1,5 +1,7 @@
 Events.on(BlockDestroyEvent, e => {
 try{ 
+if (!Core.settings.getBool("wreckEnabled")) return;
+  
 const tile = e.tile;
 const block = tile.block();
 const build = tile.build;
