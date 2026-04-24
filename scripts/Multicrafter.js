@@ -40,7 +40,7 @@ const health = tile.build.health;
 const crafters = [
 Vars.content.block("gr-sealent-capsule"),
 Vars.content.block("gr-sealent-capsule-steam"),
-Vars.content.block("gr-sealent-capsule-oil")
+Vars.content.block("gr-sealant-capsule-oil")
 ];
 
 if (block == crafters[0] || block == crafters[1]){
