@@ -1,7 +1,7 @@
 var lastBuild = null;
 const stats = require("Stats");
 
-Events.on(ContentInitEvent, () => {
+Events.on(ClientLoadEvent, () => {
 try {
 const block = Vars.content.block("gr-sealent-capsule");
 Vars.ui.content.show(block);
