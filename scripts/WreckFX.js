@@ -20,7 +20,7 @@ interp: Interp.sineIn
 });
   
 particle.region = String(block.uiIcon);
-particle.sizeFrom = particle.sizeTo = block.size * 4;
+particle.sizeFrom = particle.sizeTo = block.size * 3.95;
 particle.lifetime = Mathf.random(300,3000);
 particle.at(build.x, build.y);
 //particle.baseLength = Mathf.random(-14,14);
