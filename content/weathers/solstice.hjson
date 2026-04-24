@@ -1,5 +1,6 @@
 type: ParticleWeather
 color: 9eabf7
+name: Solstice
 noiseScale: 2500
 baseSpeed: 6
 yspeed: -5
@@ -9,7 +10,7 @@ sound: wind
 soundVol: 1.2
 soundVolMin: 0.45
 
-noiseColor: 9eabf766
+noiseColor: D3DEE466
 drawNoise: true
 drawParticles: true
 noiseLayers: 1
