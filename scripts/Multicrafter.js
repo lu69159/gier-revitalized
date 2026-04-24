@@ -13,7 +13,7 @@ seq.add(Vars.content.item("gr-steam-capsule"));
   
 block.stats.add(stats.Recipe, StatValues.content(seq));
 block.stats.remove(Stat.input);
-blocks.stats.output(Stat.output);
+block.stats.output(Stat.output);
 
 } catch(e){
 Vars.ui.showText("Oh no", e);
