@@ -1,0 +1,62 @@
+type: GenericCrafter
+size: 2
+name: Sealent Capsule
+squareSprite: false
+
+databaseTag: "gier"
+category: crafting
+requirements:[
+lead/150
+copper/100
+graphite/100
+silicon/75
+titanium/50
+]
+
+buildVisibility: hidden
+shownPlanets:[gier, kela]
+
+consumes:{
+power: 0.5
+liquids:[liquid-steam/0.16667]
+items:[metaglass/3]
+}
+
+outputItem: steam-capsule/1
+customShadow: true
+playerPlaceable: false
+hasShadow: false
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+name: "gr-sealent-capsule-shadow"
+color: ffffff44
+}
+{
+type: DrawRegion
+name: "gr-sealent-capsule-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+padding: 1.75
+}
+{
+type: DrawRegion
+name: "gr-sealent-capsule"
+}
+{
+type: DrawRegion
+name: "gr-sealent-capsule-metaglass"
+}
+{
+type: DrawRegion
+name: "gr-sealent-capsule-capsule"
+spinSprite: true
+rotateSpeed: 3.5
+}
+]
+}
