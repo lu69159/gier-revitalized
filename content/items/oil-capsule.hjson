@@ -1,0 +1,6 @@
+name: Oil Capsule
+shownPlanets:[gier,kela]
+color: 3C3838FF
+
+databaseCategory: "gr-capsules"
+databaseTag: "gr-volatile"
