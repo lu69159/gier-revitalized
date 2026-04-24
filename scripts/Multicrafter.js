@@ -12,8 +12,8 @@ seq.add(Vars.content.item("gr-water-capsule"));
 seq.add(Vars.content.item("gr-steam-capsule"));
   
 block.stats.add(stats.Recipe, StatValues.content(seq));
-block.stats.remove(stat.input);
-blocks.stats.output(stat.output);
+block.stats.remove(Stat.input);
+blocks.stats.output(Stat.output);
 
 } catch(e){
 Vars.ui.showText("Oh no", e);
