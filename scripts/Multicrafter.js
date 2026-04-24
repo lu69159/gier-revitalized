@@ -10,6 +10,7 @@ Vars.ui.content.hide();
 const seq = new Seq();
 seq.add(Vars.content.item("gr-water-capsule"));
 seq.add(Vars.content.item("gr-steam-capsule"));
+seq.add(Vars.content.item("gr-oil-capsule"));
   
 block.stats.add(stats.Recipe, StatValues.content(seq));
 block.stats.remove(Stat.input);
@@ -38,7 +39,8 @@ if ( !build || player.team() != build.team || player.selectedBlock != null) retu
 const health = tile.build.health;
 const crafters = [
 Vars.content.block("gr-sealent-capsule"),
-Vars.content.block("gr-sealent-capsule-steam")
+Vars.content.block("gr-sealent-capsule-steam"),
+Vars.content.block("gr-sealent-capsule-oil")
 ];
 
 if (block == crafters[0] || block == crafters[1]){
@@ -51,6 +53,8 @@ const blockTile = build.tile;
 if (block == crafters[0]){
 blockTile.setBlock(crafters[1], buildTeam);
 } else if (block == crafters[1]) {
+blockTile.setBlock(crafters[2], buildTeam);
+} else if (block == crafters[2]) {
 blockTile.setBlock(crafters[0], buildTeam);
 } else {
 return;
