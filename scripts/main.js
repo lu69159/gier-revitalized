@@ -1,6 +1,7 @@
 // Team changes, showing gier and other stuff
 require("Startup");
 require("Deranged");
+require("WreckFX");
 
 //    ### Class Overrides ###
 // Subclass: Block
