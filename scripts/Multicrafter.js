@@ -8,8 +8,8 @@ Vars.ui.content.show(block);
 Vars.ui.content.hide();
 
 const seq = new Seq();
-seq.add(Vars.content.item("gr-water-capsule");
-seq.add(Vars.content.item("gr-steam-capsule");
+seq.add(Vars.content.item("gr-water-capsule"));
+seq.add(Vars.content.item("gr-steam-capsule"));
   
 block.stats.add(stats.Recipe, StatValues.content(seq));
 
