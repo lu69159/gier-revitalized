@@ -38,6 +38,7 @@ type: DrawRegion
 name: "gr-sealent-capsule-shadow"
 color: ffffffff
 layer: 10
+drawPlan: false
 }
 {
 type: DrawRegion
