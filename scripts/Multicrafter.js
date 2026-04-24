@@ -1,4 +1,21 @@
 var lastBuild = null;
+const stats = require("Stats");
+
+Events.on(ContentInitEvent, () => {
+try {
+const block = Vars.content.block("gr-sealent-capsule");
+Vars.ui.content.show(block);
+Vars.ui.content.hide();
+
+const seq = new Seq();
+seq.add(Vars.content.item("gr-water-capsule");
+seq.add(Vars.content.item("gr-steam-capsule");
+  
+block.stats.add(stats.outputs, StatValue.content(seq));
+
+} catch(e){
+Vars.ui.showText("Oh no", e);
+}});
 
 Events.on(TapEvent, e => {
 try{
