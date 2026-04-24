@@ -44,7 +44,7 @@ name: "gr-sealent-capsule-bottom"
 }
 {
 type: DrawLiquidTile
-drawLiquid: steam
+drawLiquid: liquid-steam
 padding: 1.75
 }
 {
