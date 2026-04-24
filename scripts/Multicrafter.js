@@ -22,7 +22,7 @@ Vars.content.block("gr-sealent-capsule"),
 Vars.content.block("gr-sealent-capsule-steam")
 ];
 
-if (block == crafters[0] || block == crafters[1] || block == crafters[2]){
+if (block == crafters[0] || block == crafters[1]){
 Sounds.click.at(tile.worldx(),tile.worldy());
 }
 
@@ -32,7 +32,7 @@ const blockTile = build.tile;
 if (block == crafters[0]){
 blockTile.setBlock(crafters[1], buildTeam);
 } else if (block == crafters[1]) {
-blockTile.setBlock(crafters[2], buildTeam);
+blockTile.setBlock(crafters[0], buildTeam);
 } else {
 return;
 }
