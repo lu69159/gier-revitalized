@@ -89,10 +89,11 @@ Vars.ui.showInfoToast(e,10);
 }});
 
 t.checkPref("deranged", false, b => {});
+
+t.checkPref("wreckEnabled", true, b => {});
   
 });
 
-t.checkPref("wreckEnabled", false, b => {});
   
 const display = Core.bundle.get("mod.gr.display");
 const title = Core.bundle.get("mod.gr.mail");
