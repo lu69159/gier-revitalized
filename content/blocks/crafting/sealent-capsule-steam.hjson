@@ -3,6 +3,7 @@ size: 2
 name: Sealent Capsule
 squareSprite: false
 
+envEnabled: -1
 fullOverride: "gr-sealent-capsule"
 databaseTag: "gier"
 category: crafting
