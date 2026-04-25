@@ -27,25 +27,25 @@ items:[metaglass/30]
 }
 
 outputItem: tinted-oil-capsule/10
-customShadow: true
 craftTime: 600
 
 buildVisibility: hidden
 playerPlaceable: false
 shownPlanets:[gier, kela]
-  
+hasShadow: false
+
 drawer:{
 type: DrawMulti
 drawers:[
 {
 type: DrawRegion
-suffix: "gr-sealent-chamber-shadow"
+name: "gr-sealent-chamber-shadow"
 color: ffffff
 drawPlan: false
 }
 {
 type: DrawRegion
-suffix: "gr-sealent-chamber-bottom"
+name: "gr-sealent-chamber-bottom"
 }
 {
 type: DrawLiquidTile
