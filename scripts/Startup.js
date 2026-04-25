@@ -25,7 +25,7 @@ kela.techTree.addPlanet(kela);
 kela.defaultEnv = Planets.tantros.defaultEnv;
 kela.generator = new TantrosPlanetGenerator();
 kela.meshLoader = () => new HexMesh(kela, 6);
-kela.reloadMesh();
+Core.app.post(() => kela.reloadMesh());
   
 Planets.gier.ruleSetter = r => {
 r.waveTeam = Team.blue;
