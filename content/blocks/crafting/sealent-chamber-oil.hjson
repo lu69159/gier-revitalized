@@ -39,7 +39,13 @@ type: DrawMulti
 drawers:[
 {
 type: DrawRegion
-suffix: "-bottom"
+suffix: "gr-sealent-chamber-shadow"
+color: ffffff
+drawPlan: false
+}
+{
+type: DrawRegion
+suffix: "gr-sealent-chamber-bottom"
 }
 {
 type: DrawLiquidTile
@@ -47,17 +53,18 @@ drawLiquid: water
 padding: 3.4
 }
 {
-type: DrawDefault
+type: DrawRegion
+name: "gr-sealent-chamber"
 }
 {
-type: DrawBlurSpin
-suffix: "-capsule"
-blurThresh: 1
+type: DrawRegion
+name: "gr-sealent-chamber-capsule"
+spinSprite: true
 rotateSpeed: 5
 }
 {
 type: DrawRegion
-suffix: "-config"
+name: "gr-sealent-chamber-config"
 color: 313131ff
 }
 ]
