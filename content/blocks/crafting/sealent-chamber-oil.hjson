@@ -30,7 +30,7 @@ outputItem: tinted-oil-capsule/10
 craftTime: 600
 
 buildVisibility: hidden
-playerPlaceable: false
+placeablePlayer: false
 shownPlanets:[gier, kela]
 hasShadow: false
 
@@ -42,6 +42,7 @@ type: DrawRegion
 name: "gr-sealent-chamber-shadow"
 color: ffffff
 drawPlan: false
+layer: 10
 }
 {
 type: DrawRegion
