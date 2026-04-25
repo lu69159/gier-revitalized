@@ -20,7 +20,6 @@ description: "Seals liquids into capsules in packs. Capsules could then be trans
 envEnabled: -1
 #research: dihydrogen-shaft
 
-productionTime: 600
 shownPlanets:[gier, kela]
 researchCostMultiplier: 0.25
 
@@ -32,6 +31,7 @@ items:[metaglass/30]
 
 outputItem: water-capsule/10
 customShadow: true
+craftTime: 600
 
 drawer:{
 type: DrawMulti
