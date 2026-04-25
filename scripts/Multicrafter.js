@@ -33,38 +33,73 @@ return;
 }
 
 
-// Multicrafter logic  
-if ( !build || player.team() != build.team || player.selectedBlock != null) return;
-
-const health = tile.build.health;
-const crafters = [
-Vars.content.block("gr-sealent-capsule"),
-Vars.content.block("gr-sealent-capsule-steam"),
-Vars.content.block("gr-sealant-capsule-oil")
+const blocks = [
+"gr-sealent-capsule",
+"gr-sealent-capsule-steam",
+"gr-sealant-capsule-oil"
 ];
 
-if (block == crafters[0] || block == crafters[1]){
-Sounds.click.at(tile.worldx(),tile.worldy());
+const items = [
+"gr-water-capsule",
+"gr-steam-capsule",
+"gr-oil-capsule"
+];
+
+function build(item){
+try {
+const button = new Button();
+button.image(item.uiIcon).size(160);
+
+return button;
+} catch(e) {
+Vars.ui.showInfoToast(e,5);
+}}
+
+Events.on(TapEvent, e => {
+try {
+const tile = e.tile;
+const block = tile.block();
+const player = e.player;
+  
+if (!tile || !block || !tile.build || tile.build.team != player.team() || player.selectedBlock != null) return;
+var valid = false;
+const building = tile.build;
+
+for (let i = 0; i < blocks.length; i++){
+if (block == Vars.content.block(blocks[i])) valid = true;
 }
 
-const buildTeam = build.team;
+if (!valid) return;
+var count = 0;
+const dialog = new BaseDialog("Configure");
+dialog.addCloseButton();
 
-const blockTile = build.tile;
-if (block == crafters[0]){
-blockTile.setBlock(crafters[1], buildTeam);
-} else if (block == crafters[1]) {
-blockTile.setBlock(crafters[2], buildTeam);
-} else if (block == crafters[2]) {
-blockTile.setBlock(crafters[0], buildTeam);
+  
+for (let i = 0; i < items.length; i++){
+const button = build(Vars.content.item(items[i]));
+dialog.cont.add(button).size(250);
+let num = i;
+
+button.clicked(() => {
+try {
+const health = building.health;
+building.tile.setBlock(Vars.content.block(blocks[num]), building.team);
+tile.build.health = health;
+
+dialog.hide();
+} catch(e) {
+Vars.ui.showInfoToast(e,5);
+}});
+  
+if (count > 3){
+dialog.cont.row();
+count = 0;
 } else {
-return;
+count++;
+}  
 }
 
-if (blockTile.block() != block){
-Fx.select.at(blockTile.worldx(),blockTile.worldy());
-blockTile.build.health = health;
-lastBuild = null;
-}
+dialog.show();
   
 } catch(e){
 Vars.ui.showInfoToast(e,5);
