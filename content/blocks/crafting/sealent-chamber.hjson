@@ -43,7 +43,7 @@ items:[metaglass/30]
 
 outputItem: water-capsule/10
 customShadow: true
-craftTime: 600
+craftTime: 540
 
 drawer:{
 type: DrawMulti
