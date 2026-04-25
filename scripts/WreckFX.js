@@ -16,7 +16,8 @@ length: 0.1,
 lifetime: 600,
 colorTo: Color.valueOf("00000000"),
 colorFrom: Color.valueOf("9f9f9f"),
-interp: Interp.sineIn
+interp: Interp.sineIn,
+clip: 1000
 });
   
 particle.region = String(block.uiIcon);
