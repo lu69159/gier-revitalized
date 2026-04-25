@@ -1,0 +1,21 @@
+name: Intercept
+difficulty: 5
+
+sector: 66
+captureWave: 2
+planet: kela
+
+research: {
+parent: trench
+objectives:[
+{
+type: SectorComplete
+preset: trench
+}
+sunder-furnace
+mend-pylon
+overhead-belt
+trident
+sand-strate
+]
+}
