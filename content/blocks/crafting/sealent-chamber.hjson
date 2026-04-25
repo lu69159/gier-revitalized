@@ -2,7 +2,8 @@ type: GenericCrafter
 size: 3
 name: Sealent Chamber
 squareSprite: false
-itemCapacity: 30
+itemCapacity: 60
+baseExplosiveness: 50
 
 databaseTag: "gier"
 category: crafting
@@ -16,9 +17,20 @@ titanium/75
 plastanium/75
 ]
 
-description: "Seals liquids into capsules in packs. Capsules could then be transported and released."
+description: "
+Seals liquids into capsules in packs. Capsules
+could then be transported and released.
+[green]
+- Could contain more volatile liquids
+[red]- Explosive
+"
 envEnabled: -1
-#research: dihydrogen-shaft
+research: {
+parent: sealent-capsule
+objectives: [
+sealent-chamber
+]
+}
 
 shownPlanets:[gier, kela]
 researchCostMultiplier: 0.25
@@ -52,7 +64,7 @@ type: DrawDefault
 type: DrawBlurSpin
 suffix: "-capsule"
 blurThresh: 1
-rotateSpeed: 3.5
+rotateSpeed: 5
 }
 ]
 }
