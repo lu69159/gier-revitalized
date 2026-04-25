@@ -2,6 +2,7 @@ type: GenericCrafter
 size: 3
 name: Sealent Chamber
 squareSprite: false
+itemCapacity: 30
 
 databaseTag: "gier"
 category: crafting
