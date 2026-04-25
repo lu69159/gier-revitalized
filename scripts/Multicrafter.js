@@ -1,4 +1,3 @@
-var lastBuild = null;
 const stats = require("Stats");
 
 Events.on(ClientLoadEvent, () => {
@@ -19,19 +18,6 @@ block.stats.remove(Stat.output);
 } catch(e){
 Vars.ui.showText("Oh no", e);
 }});
-
-Events.on(TapEvent, e => {
-try{
-const tile = e.tile;
-const block = tile.block();
-const player = e.player;
-const build = tile.build;
-  
-if (build != lastBuild){
-lastBuild = build;
-return;
-}
-
 
 const blocks = [
 "gr-sealent-capsule",
