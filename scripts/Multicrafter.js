@@ -47,7 +47,7 @@ const tile = e.tile;
 const block = tile.block();
 const player = e.player;
   
-if (!tile || !block || !tile.build || tile.build.team != player.team() || player.selectedBlock != null) return;
+if (!tile || !block || !tile.build || tile.build.team != player.team() || player.selectedBlock != null || player.unit().plans.size > 0) return;
 var valid = false;
 const building = tile.build;
 
