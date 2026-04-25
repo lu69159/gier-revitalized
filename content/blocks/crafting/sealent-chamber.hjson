@@ -42,7 +42,7 @@ suffix: "-bottom"
 {
 type: DrawLiquidTile
 drawLiquid: water
-padding: 1.75
+padding: 3.4
 }
 {
 type: DrawDefault
