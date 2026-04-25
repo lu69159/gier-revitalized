@@ -4,7 +4,8 @@ const blocks = [
 "gr-steam-turbine",
 "gr-button",
 "gr-actuator",
-"gr-sealent-chamber"
+"gr-sealent-chamber",
+"gr-sealent-chamber-oil"
 ]
 
 Events.on(ContentInitEvent, () => {
