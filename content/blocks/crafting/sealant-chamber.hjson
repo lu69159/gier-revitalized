@@ -1,0 +1,57 @@
+type: GenericCrafter
+size: 3
+name: Sealent Chamber
+squareSprite: false
+
+databaseTag: "gier"
+category: crafting
+requirements:[
+lead/375
+copper/200
+graphite/175
+metaglass/125
+silicon/125
+titanium/75
+plastanium/75
+]
+
+description: "Seals liquids into capsules in packs. Capsules could then be transported and released."
+envEnabled: -1
+#research: dihydrogen-shaft
+
+productionTime: 600
+shownPlanets:[gier, kela]
+researchCostMultiplier: 0.25
+
+consumes:{
+power: 0.5
+liquids:[water/1.66667]
+items:[metaglass/30]
+}
+
+outputItem: water-capsule/10
+customShadow: true
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+padding: 1.75
+}
+{
+type: DrawDefault
+}
+{
+type: DrawBlurSpin
+suffix: "-capsule"
+blurThresh: 1
+rotateSpeed: 3.5
+}
+]
+}
