@@ -1,0 +1,52 @@
+type: mech
+speed: 5
+health: 10500
+
+drawBody: false
+drawCell: false
+hitSize: 24
+parts:[
+{
+name: "gr-sealent-chamber-bottom"
+}
+{
+name: "gr-sealent-chamber"
+}
+name: "gr-sealent-chamber-capsule"
+  }
+]
+  
+armor: 15
+weapons:[
+{
+shootCone: 180
+shootOnDeath: true
+bullet:{
+type: ExplosionBulletType
+splashDamage: 10500
+splashDamageRadius: 240
+scaledSplashDamage: true
+
+instantDisappear: true
+hitShake: 105
+despawnHit: true
+hitEffect: {
+type: MultiEffect
+effects:[
+impactReactorExplosion
+{
+type: ParticleEffect
+length: 0
+sizeFrom: 8000
+sizeTo: 8000
+colorFrom: ffffffff
+colorTo: ffffff00
+lifetime: 30
+particles: 1
+}
+]
+}
+  
+}
+}
+]
