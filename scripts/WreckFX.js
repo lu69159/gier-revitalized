@@ -23,7 +23,7 @@ clip: 1000
 });
 
 var rotation = 0;
-if (block instanceof turret){
+if (block instanceof Turret){
 rotation = build.rotation;
 } else {
 rotation = build.rotation * 90;
