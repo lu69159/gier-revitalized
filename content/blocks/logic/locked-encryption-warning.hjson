@@ -4,3 +4,4 @@ name: Locked Encryption Warning
 
 buildVisibility: sandboxOnly
 category: logic
+customShadow: true
