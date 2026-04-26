@@ -35,6 +35,7 @@ function build(item){
 try {
 const button = new Button();
 button.image(item.uiIcon).size(Core.graphics.getWidth() * 0.065);
+button.row();
 button.add(item.localizedName);
 
 return button;
