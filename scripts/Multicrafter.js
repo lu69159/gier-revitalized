@@ -34,8 +34,9 @@ const items = [
 function build(item){
 try {
 const button = new Button();
-button.image(item.uiIcon).size(Core.graphics.getWidth() * 0.075);
-
+button.image(item.uiIcon).size(Core.graphics.getWidth() * 0.065);
+button.add(item.localizedName);
+  
 return button;
 } catch(e) {
 Vars.ui.showInfoToast(e,5);
