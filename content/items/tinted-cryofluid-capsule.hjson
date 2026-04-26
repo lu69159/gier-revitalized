@@ -1,0 +1,9 @@
+name: Tinted Cyro Capsule
+
+shownPlanets:[gier,kela]
+color: 6ecdecff
+
+databaseCategory: "gr-capsules"
+databaseTag: "gr-volatile"
+
+explosiveness: 1
