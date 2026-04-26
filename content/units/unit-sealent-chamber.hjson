@@ -2,6 +2,7 @@ type: mech
 speed: 5
 health: 10500
 outlineRadius: 0
+range: 10
 
 drawBody: false
 drawCell: false
