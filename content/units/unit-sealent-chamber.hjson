@@ -28,6 +28,8 @@ type: ExplosionBulletType
 splashDamage: 10500
 splashDamageRadius: 350
 buildDamageMultiplier: 12.5
+pierce: true
+pierceBuildings: true
 
 instantDisappear: true
 hitShake: 225
