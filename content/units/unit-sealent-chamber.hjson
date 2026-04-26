@@ -26,10 +26,10 @@ bullet:{
 type: ExplosionBulletType
 splashDamage: 10500
 splashDamageRadius: 240
-scaledSplashDamage: true
+buildDamageMultiplier: 12.5
 
 instantDisappear: true
-hitShake: 105
+hitShake: 1050
 despawnHit: true
 hitEffect: {
 type: MultiEffect
