@@ -24,6 +24,7 @@ require("PerformanceConsole");
 require("DestructibleGen");
 require("FragileHeater");
 require("Multicrafter");
+require("SealentChamber")
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
