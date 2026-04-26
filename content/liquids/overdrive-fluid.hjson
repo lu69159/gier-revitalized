@@ -1,0 +1,12 @@
+color: EA8878FF
+flammability: 1.5
+temperature: 1
+viscosity: 0
+
+description: "
+Fluids with [#f4ba6e]phase bound[] properties.
+Has accelerated heating properties.
+
+Used to overdrive certain blocks.
+Prominently used for [#f4ba6e]overdrive healing.
+"
