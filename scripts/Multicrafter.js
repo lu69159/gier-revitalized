@@ -63,7 +63,7 @@ dialog.addCloseButton();
   
 for (let i = 0; i < items.length; i++){
 const button = build(Vars.content.item(items[i]));
-dialog.cont.add(button).size(Core.graphics.getWidth() * 0.15);
+dialog.cont.add(button).size(Core.graphics.getWidth() * 0.1);
 let num = i;
 
 button.clicked(() => {
