@@ -143,7 +143,7 @@ buildSpeed: 2
 itemOffsetY: 0
 
 engineSize: 0
-hitSize: 14
+hitSize: 12
 health: 350
 
 description: "Much better drone for general purpose. Can repair nearby blocks, Has bigger damage detection range, can carry payloads and has IFrame.
