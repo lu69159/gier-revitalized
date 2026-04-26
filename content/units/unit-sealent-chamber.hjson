@@ -12,8 +12,9 @@ name: "gr-sealent-chamber-bottom"
 {
 name: "gr-sealent-chamber"
 }
+{
 name: "gr-sealent-chamber-capsule"
-  }
+}
 ]
   
 armor: 15
