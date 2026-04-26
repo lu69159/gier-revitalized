@@ -34,7 +34,7 @@ Vars.ui.showText("Oh no", e);
 function build(item){
 try {
 const button = new Button();
-button.image(item.uiIcon).size(160);
+button.image(item.uiIcon).size(Core.graphics.getWidth() * 0.075);
 
 return button;
 } catch(e) {
