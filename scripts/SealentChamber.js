@@ -1,7 +1,7 @@
 const stats = require("Stats");
 
 const blocks = [
-"gr-sealent-capsule",
+"gr-sealent-chamber",
 "gr-sealent-chamber-oil",
 "gr-sealent-chamber-slag"
 ];
