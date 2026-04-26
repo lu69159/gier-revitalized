@@ -25,11 +25,11 @@ shootOnDeath: true
 bullet:{
 type: ExplosionBulletType
 splashDamage: 10500
-splashDamageRadius: 240
+splashDamageRadius: 350
 buildDamageMultiplier: 12.5
 
 instantDisappear: true
-hitShake: 1050
+hitShake: 225
 despawnHit: true
 hitEffect: {
 type: MultiEffect
