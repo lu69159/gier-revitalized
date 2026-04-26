@@ -5,6 +5,9 @@ squareSprite: false
 itemCapacity: 60
 baseExplosiveness: 50
 
+research: sealent-chamber
+researchCostMultiplier: 0.25
+
 databaseTag: "gier"
 category: crafting
 requirements:[
