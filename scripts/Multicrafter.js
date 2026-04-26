@@ -59,7 +59,7 @@ if (block == Vars.content.block(blocks[i])) valid = true;
 
 if (!valid) return;
 var count = 0;
-const dialog = new BaseDialog("Configure");
+const dialog = new BaseDialog(Core.bundle.format("stat.recipes"));
 dialog.addCloseButton();
 
   
