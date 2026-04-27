@@ -25,6 +25,8 @@ clip: 1000
 var rotation = 0;
 if (block instanceof Turret){
 rotation = build.rotation;
+} else if (!block.rotate){
+rotation = 0;
 } else {
 rotation = build.rotation * 90;
 }
