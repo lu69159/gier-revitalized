@@ -2,6 +2,7 @@ type: GenericCrafter
 size: 2
 name: Sealent Capsule
 squareSprite: false
+hideDatabase: true
 
 fullOverride: "gr-sealent-capsule"
 databaseTag: "gier"
