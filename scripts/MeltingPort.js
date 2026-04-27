@@ -2,7 +2,8 @@
 Events.on(BlockInfoEvent, e => {
 try{
 //Vars.ui.showInfoToast("open",10);
-
+if (!e.player || !e.player.team()) return;
+    
 const selectBlock = Vars.player.selectedBlock;
 const block = Vars.content.block("gr-melting-port");
 
