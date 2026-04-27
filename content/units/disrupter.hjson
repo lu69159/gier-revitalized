@@ -31,6 +31,11 @@ reload: 180
 mirror: false
 x: 0
 y: 0
+shootEffect:{
+type: WrapEffect
+color: a393fe66
+effect: shootSmokeSmite
+}
 shoot:{
 firstShotDelay: 90
 }
