@@ -3,7 +3,7 @@ var lastCommand = "";
 
 Events.on(EventType.TapEvent, e => {
     try {
-        if (!e || !e.tile || !e.player) return;
+        if (!e || !e.tile || !e.player || !e.player.team()) return;
 
         const tile = e.tile;
         const player = e.player;
