@@ -26,7 +26,7 @@ try{
 const tile = event.tile;
 const player = event.player;
 
-if (tile.build == null) return;
+if (!player || !player.team() || tile.build == null || tile.build.team != player.team()) return;
 const block = tile.block();
 const build = tile.build;
 const target = Vars.content.getByName(ContentType.block,"gr-ton-crusher");
