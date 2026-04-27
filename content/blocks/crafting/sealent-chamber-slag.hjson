@@ -4,6 +4,7 @@ name: Sealent Chamber
 squareSprite: false
 itemCapacity: 60
 baseExplosiveness: 50
+hideDatabase: true
 
 databaseTag: "gier"
 category: crafting
