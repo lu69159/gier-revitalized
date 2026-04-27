@@ -8,7 +8,7 @@ const blocks = [
 Events.on(TapEvent, event => {
     try {
         
-        if(Vars.state.updateId == lastUpdate || event.player == null) return;
+        if(Vars.state.updateId == lastUpdate || event.player == null || !event.player.team()) return;
 
         lastUpdate = Vars.state.updateId;
         
