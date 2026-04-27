@@ -2,7 +2,8 @@ let lastBuild = null;
 
 Events.on(TapEvent, e => {
 try{
-
+if (!e.player || !e.player.team()) return;
+  
 const tile = e.tile;
 const block = tile.block();
 const target = Vars.content.getByName(ContentType.block,"gr-core-gateway");
