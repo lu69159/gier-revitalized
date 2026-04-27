@@ -1,5 +1,7 @@
 Events.on(TapEvent, event => {
 try{
+if (!e.player || !e.player.team()) return;
+    
 const tile = event.tile;
 const player = event.player;
 const block = tile.block();
