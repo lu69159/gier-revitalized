@@ -56,7 +56,7 @@ radiusTo: 20
 
 bullet:{
 
-shootEffect:{
+ejectEffect:{
 type: WrapEffect
 color: a393fe66
 effect: shootSmokeSmite
