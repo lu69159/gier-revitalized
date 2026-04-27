@@ -32,6 +32,12 @@ mirror: false
 x: 0
 y: 0
 
+ejectEffect:{
+type: WrapEffect
+color: a393fe66
+effect: shootSmokeSmite
+}
+
 shoot:{
 firstShotDelay: 90
 }
@@ -55,12 +61,6 @@ radiusTo: 20
 ]
 
 bullet:{
-
-ejectEffect:{
-type: WrapEffect
-color: a393fe66
-effect: shootSmokeSmite
-}
 
 type: LaserBulletType
 length: 240
