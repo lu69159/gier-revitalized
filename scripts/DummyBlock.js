@@ -4,7 +4,7 @@ const tile = e.tile;
 const block = tile.block();
 const target = Vars.content.getByName(ContentType.block,"gr-dummy");
 
-if (block != target || tile.build == null) return;
+if (!e.player || !e.player.team() || block != target || tile.build == null) return;
 
 const player = e.player;
 const team = player.team();
