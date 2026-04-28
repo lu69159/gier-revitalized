@@ -10,7 +10,9 @@ drawSoftShadow: false
 outlineColor: 2f2f3f
 autoDropBombs: true
 range: 160
-  
+circleTarget: true
+omniMovement: false
+
 weapons:[
 {
 reload: 7.5
