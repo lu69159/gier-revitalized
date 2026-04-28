@@ -46,8 +46,6 @@ bullet:{
 type: BombBulletType
 speed: 2.5
 drag: 0.0833333
-width: 10
-height: 13
 
 splashDamage: 15
 trailLength: 4
@@ -58,7 +56,7 @@ scaledSplashDamage: true
 lifetime: 60
 hitShake: 2
 
-hitEffect: dynamicSpikes
+hitEffect: missileTrailSmokeSmall
 hitColor: FFD37F
 
 }
