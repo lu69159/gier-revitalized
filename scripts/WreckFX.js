@@ -105,7 +105,7 @@ particle.baseLength = Mathf.random(-8,8);
 particle.offset = Mathf.random(-5,5) + (unit.rotation);
 
 if (unit.flying) {
-layer += 3.5;
+particle.layer += 3.5;
 }
   
 particle.at(unit.x, unit.y);
