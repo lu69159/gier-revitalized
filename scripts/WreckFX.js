@@ -131,7 +131,7 @@ teamEffect.colorFrom = base.cpy().mul(0.6, 0.6, 0.6, 1);
 teamEffect.baseLength = particle.baseLength;
 teamEffect.offset = particle.offset;
 teamEffect.colorTo = base.cpy().mul(0, 0, 0, 0);
-teamEffect.at(build.x, build.y);
+teamEffect.at(unit.x, unit.y);
 } 
 particle.at(unit.x, unit.y);
 
