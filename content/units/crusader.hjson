@@ -63,13 +63,17 @@ hitColor: FFD37F
   
 }
 {
-reload: 600
+reload: 900
 alwaysShooting: true
 
 bullet:{
 type: BasicBulletType
 speed: 0
 keepVelocity: false
+lifetime: 180
+
+shrinkX: -0.1
+shrinkY: -0.2
 
 shootEffect: none
 sparkEffect: none
@@ -77,13 +81,14 @@ smokeEffect: none
 collides: false
 absorbable: false
 width: 16
-height: 16
+height: 12
 sprite: "gr-fleet"
 layer: 62
 despawnHit: true
 hitShake: 15
 
 hitEffect: dynamicSpikes
+splashDamageRadius: 24
 hitColor: FFD37F
 
 despawnUnit: gr-fleet
