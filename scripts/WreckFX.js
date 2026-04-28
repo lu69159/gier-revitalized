@@ -98,6 +98,10 @@ randLength: false
 });
   
 const region = type.region;
+if (Mathf.random(0,2) >= 1){
+region = type.fullIcon;
+}
+  
 particle.region = region;
 particle.sizeFrom = particle.sizeTo = ((region.width + region.height) / 2.5) / 8;
 particle.lifetime = Mathf.random(300,3000);
