@@ -4,6 +4,7 @@ name: Crusader
 
 hitSize: 12
 speed: 2.5
+drag: 0.025
 armor: 5
 
 drawSoftShadow: false
@@ -12,6 +13,8 @@ autoDropBombs: true
 range: 160
 circleTarget: true
 omniMovement: false
+trailScl: 1
+trailLength: 6
 
 weapons:[
 {
@@ -51,7 +54,7 @@ trailWidth: 1
 splashDamageRadius: 12
 scaledSplashDamage: true
 lifetime: 60
-hitShake: 15
+hitShake: 2
 
 hitEffect:{
 type: WrapEffect
