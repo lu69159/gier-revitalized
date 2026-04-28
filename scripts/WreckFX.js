@@ -23,7 +23,7 @@ clip: 1000
 });
 
 var rotation = 0;
-if (block instanceof Turret){
+if (block instanceof BaseTurret){
 rotation = build.rotation;
 } else if (!block.rotate){
 rotation = 0;
@@ -35,7 +35,7 @@ const baseLength = Mathf.random(-5,5);
 const offset = Mathf.random(-15,15) + rotation;
 
 if (block.underBullets) particle.layer -= 2;
-particle.region = block.uiIcon;
+  
 particle.sizeFrom = particle.sizeTo = block.size * 3.95;
 particle.lifetime = Mathf.random(300,3000);
 particle.baseLength = baseLength;
