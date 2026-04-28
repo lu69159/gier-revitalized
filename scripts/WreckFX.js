@@ -97,7 +97,7 @@ clip: 1000,
 randLength: false
 });
   
-const region = type.region;
+var region = type.region;
 if (Mathf.random(0,2) >= 1){
 region = type.fullIcon;
 }
