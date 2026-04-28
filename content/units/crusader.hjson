@@ -1,6 +1,14 @@
 type: flying
 flying: true
 name: Crusader
+description: "
+Extremely dangerous threat.
+a lightly armored assualt vehicle.
+
+Able to rapidly shells fire [accent]fowards[]
+Drops bombs [accent]below[] it
+and can call in an [accent]Ash[] as reinforcement.
+"
 
 hitSize: 12
 speed: 2.5
@@ -15,7 +23,7 @@ range: 160
 circleTarget: true
 omniMovement: false
 trailScl: 1
-trailLength: 6
+trailLength: 10
 
 weapons:[
 {
@@ -64,7 +72,7 @@ hitColor: FFD37F
   
 }
 {
-reload: 900
+reload: 2200
 alwaysShooting: true
 
 bullet:{
@@ -83,7 +91,7 @@ collides: false
 absorbable: false
 width: 16
 height: 12
-sprite: "gr-deday"
+sprite: "gr-ash"
 layer: 62
 despawnHit: true
 hitShake: 15
@@ -92,7 +100,7 @@ hitEffect: dynamicSpikes
 splashDamageRadius: 24
 hitColor: FFD37F
 
-despawnUnit: gr-decay
+despawnUnit: gr-ash
 
 }
 
