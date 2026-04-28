@@ -128,8 +128,8 @@ const base = unit.team.color.cpy();
 teamEffect.layer += 0.01;
 teamEffect.region = regionT;
 teamEffect.colorFrom = base.cpy().mul(0.6, 0.6, 0.6, 1);
-teamEffect.baseLength = baseLength;
-teamEffect.offset = offset;
+teamEffect.baseLength = particle.baseLength;
+teamEffect.offset = particle.offset;
 teamEffect.colorTo = base.cpy().mul(0, 0, 0, 0);
 teamEffect.at(build.x, build.y);
 } 
