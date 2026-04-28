@@ -83,7 +83,7 @@ layer: 62
 despawnHit: true
 hitShake: 15
 
-hitEffect: dynamicSpike
+hitEffect: dynamicSpikes
 hitColor: FFD37F
 
 despawnUnit: gr-fleet
