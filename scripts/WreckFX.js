@@ -102,7 +102,7 @@ particle.region = region;
 particle.sizeFrom = particle.sizeTo = ((region.width + region.height) / 2.5) / 8;
 particle.lifetime = Mathf.random(300,3000);
 particle.baseLength = Mathf.random(-8,8);
-particle.offset = Mathf.random(-5,5) + (unit.rotation);
+particle.offset = Mathf.random(-5,5) + (unit.rotation) + 90;
 
 if (unit.flying) {
 particle.layer += 3.5;
