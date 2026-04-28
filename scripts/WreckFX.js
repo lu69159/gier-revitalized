@@ -65,7 +65,7 @@ teamEffect.region = regionT;
 teamEffect.colorFrom = base.cpy().mul(0.6, 0.6, 0.6, 1);
 teamEffect.baseLength = baseLength;
 teamEffect.offset = offset;
-teamEffect.colorTo = base.cpy().mul(0.6, 0.6, 0.6, 0);
+teamEffect.colorTo = base.cpy().mul(0, 0, 0, 0);
 teamEffect.at(build.x, build.y);
 }
 particle.at(build.x, build.y);
@@ -107,7 +107,32 @@ particle.offset = Mathf.random(-5,5) + (unit.rotation) + -90;
 if (unit.flying) {
 particle.layer += 3.5;
 }
-  
+
+const regionT = type.cellRegion;
+if (type.drawCell && regionT != Core.atlas.find("error")){
+const teamEffect = new ParticleEffect();
+
+for (let k in particle){
+try{
+let val = particle[k];
+
+if(typeof val !== "function" && k != "class"){
+teamEffect[k] = val;
+}
+
+}catch(e){
+Vars.ui.showInfoToast(e + "[red] - WreckFX", 5);
+}}
+
+const base = unit.team.color.cpy();
+teamEffect.layer += 0.01;
+teamEffect.region = regionT;
+teamEffect.colorFrom = base.cpy().mul(0.6, 0.6, 0.6, 1);
+teamEffect.baseLength = baseLength;
+teamEffect.offset = offset;
+teamEffect.colorTo = base.cpy().mul(0, 0, 0, 0);
+teamEffect.at(build.x, build.y);
+} 
 particle.at(unit.x, unit.y);
 
 } catch(e){
