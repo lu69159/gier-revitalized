@@ -1,0 +1,47 @@
+type: flying
+flying: true
+name: Crusader
+
+hitSize: 12
+speed: 2.5
+armor: 5
+
+drawSoftShadow: false
+outlineColor: 2f2f3f
+autoDropBombs: true
+  
+weapons:[
+{
+reload: 7.5
+shootCone: 15
+  
+bullet:{
+type: BasicBulletType
+width: 7.5
+height: 10.5
+speed: 2.5
+damage: 10
+lifetime: 60
+}
+  
+}
+{
+reload: 20
+baseRotation: 45
+shootCone: 180
+  
+shoot:{
+shots: 2
+}
+
+bullet:{
+type: BombBulletType
+speed: 0.5
+splashDamage: 15
+traillength: 4
+splashDamageRadius: 12
+scaledSplashDamage: true
+}
+  
+}
+]
