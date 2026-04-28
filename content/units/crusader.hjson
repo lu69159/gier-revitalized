@@ -62,4 +62,33 @@ hitColor: FFD37F
 }
   
 }
+{
+reload: 600
+alwaysShooting: true
+
+bullet:{
+type: BasicBulletType
+speed: 0
+keepVelocity: false
+
+shootEffect: none
+sparkEffect: none
+smokeEffect: none
+collides: false
+absorbable: false
+width: 16
+height: 16
+sprite: "gr-fleet"
+layer: 62
+despawnHit: true
+hitShake: 15
+
+hitEffect: dynamicSpike
+hitColor: FFD37F
+
+despawnUnit: gr-fleet
+
+}
+
+}
 ]
