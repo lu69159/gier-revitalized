@@ -6,6 +6,7 @@ hitSize: 12
 speed: 2.5
 drag: 0.025
 armor: 5
+health: 500
 
 drawSoftShadow: false
 outlineColor: 2f2f3f
@@ -27,7 +28,7 @@ type: BasicBulletType
 width: 7.5
 height: 10.5
 speed: 2.5
-damage: 10
+damage: 40
 lifetime: 60
 }
   
@@ -51,7 +52,7 @@ splashDamage: 15
 trailLength: 4
 trailWidth: 1
 
-splashDamageRadius: 12
+splashDamageRadius: 47
 scaledSplashDamage: true
 lifetime: 60
 hitShake: 2
@@ -68,7 +69,7 @@ alwaysShooting: true
 
 bullet:{
 type: BasicBulletType
-speed: 0
+speed: 0.25
 keepVelocity: false
 lifetime: 180
 
@@ -82,7 +83,7 @@ collides: false
 absorbable: false
 width: 16
 height: 12
-sprite: "gr-fleet"
+sprite: "gr-deday"
 layer: 62
 despawnHit: true
 hitShake: 15
@@ -91,7 +92,7 @@ hitEffect: dynamicSpikes
 splashDamageRadius: 24
 hitColor: FFD37F
 
-despawnUnit: gr-fleet
+despawnUnit: gr-decay
 
 }
 
