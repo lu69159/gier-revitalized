@@ -9,12 +9,14 @@ armor: 5
 drawSoftShadow: false
 outlineColor: 2f2f3f
 autoDropBombs: true
+range: 160
   
 weapons:[
 {
 reload: 7.5
 shootCone: 15
-  
+x: 2
+
 bullet:{
 type: BasicBulletType
 width: 7.5
@@ -32,15 +34,29 @@ shootCone: 180
   
 shoot:{
 shots: 2
+shotDelay: 0
 }
 
 bullet:{
 type: BombBulletType
-speed: 0.5
+speed: 2.5
+drag: 0.0833333
+
 splashDamage: 15
-traillength: 4
+trailLength: 4
+trailWidth: 1
+
 splashDamageRadius: 12
 scaledSplashDamage: true
+lifetime: 60
+hitShake: 15
+
+hitEffect:{
+type: WrapEffect
+effect: dynamicSpikes
+color: FFD37F
+}
+
 }
   
 }
