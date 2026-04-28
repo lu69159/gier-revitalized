@@ -73,3 +73,43 @@ particle.at(build.x, build.y);
 } catch(e){
 Vars.ui.showInfoToast(e + "[red] - WreckFX",5); 
 }});
+
+
+Events.on(UnitDestroyEvent, e => {
+try{ 
+if (!Core.settings.getBool("unitWreckEnabled")) return;
+  
+const unit = e.unit;
+const type = unit.type;
+  
+const particle = new ParticleEffect();
+Object.assign(particle, {
+particles: 1,
+cone: 5,
+cap: false,
+layer: 23,
+length: 0.1,
+lifetime: 600,
+colorTo: Color.valueOf("00000000"),
+colorFrom: Color.valueOf("2b2b2bff"),
+interp: Interp.sineIn,
+clip: 1000,
+randLength: false
+});
+  
+const region = type.region;
+particle.region = region;
+particle.sizeFrom = particle.sizeTo = ((region.width + region.height) / 2.5) / 8;
+particle.lifetime = Mathf.random(300,3000);
+particle.baseLength = Mathf.random(-8,8);
+particle.offset = Mathf.random(-5,5) + (unit.rotation);
+
+if (unit.flying) {
+layer += 3.5;
+}
+  
+particle.at(unit.x, unit.y);
+
+} catch(e){
+Vars.ui.showInfoToast(e,5); 
+}});
