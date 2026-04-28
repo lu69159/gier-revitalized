@@ -124,10 +124,10 @@ teamEffect[k] = val;
 Vars.ui.showInfoToast(e + "[red] - WreckFX", 5);
 }}
 
-const base = unit.team.color.cpy();
+const base = Team.derelict.color.cpy();
 teamEffect.layer += 0.01;
 teamEffect.region = regionT;
-teamEffect.colorFrom = base.cpy().mul(0.6, 0.6, 0.6, 1);
+teamEffect.colorFrom = base.cpy().mul(0.2, 0.2, 0.2, 1);
 teamEffect.baseLength = particle.baseLength;
 teamEffect.offset = particle.offset;
 teamEffect.colorTo = base.cpy().mul(0, 0, 0, 0);
