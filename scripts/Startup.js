@@ -91,6 +91,8 @@ Vars.ui.showInfoToast(e,10);
 t.checkPref("deranged", false, b => {});
 
 t.checkPref("wreckEnabled", true, b => {});
+
+t.checkPref("unitWreckEnabled", false, b => {});
   
 });
 
