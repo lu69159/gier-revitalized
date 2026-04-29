@@ -80,8 +80,8 @@ type: ParticleEffect
 particles: 1
 length: 0
 region: "gr-plastanium-crusher-crusher"
-lifetime: 120
-layer: 30.25
+lifetime: 30
+layer: 31
 sizeTo: 8
 sizeFrom: 12
 clipSize: 10
@@ -93,8 +93,8 @@ type: ParticleEffect
 particles: 1
 length: 0
 region: "gr-plastanium-crusher-crusher"
-lifetime: 60
-layer: 30.25
+lifetime: 130
+layer: 31
 sizeTo: 12
 sizeFrom: 8
 clipSize: 10
