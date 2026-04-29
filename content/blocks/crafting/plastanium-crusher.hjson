@@ -42,7 +42,7 @@ effects:[
 {
 type: SoundEffect
 effect: none
-sound: shieldBreak
+sound: shootSpectre
 }
 
 // Puddles
