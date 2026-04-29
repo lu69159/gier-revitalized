@@ -14,8 +14,9 @@ steam and turning it into usable power.
 requirements:[lead/235,copper/125,silicon/75,metaglass/75,oxide/45]
 category: power
 
+databaseTag: "adv-oxide"
 envEnabled: -1
-databaseTag: "gier"
+
 research: {
 parent: photon-panel
 research:[steam-turbine]
