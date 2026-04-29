@@ -34,6 +34,13 @@ craftTime: 1500
 craftEffect:{
 type: MultiEffect
 effects:[
+// sound
+{
+type: SoundEffect
+effect: none
+sound: shieldBreak
+}
+
 // Dush
 {
 type: ParticleEffect
@@ -54,9 +61,9 @@ particles: 1
 length: 0
 region: "gr-plastanium-crusher-bottom"
 lifetime: 180
-layer: 30.05
-sizeTo: 10
-sizeFrom: 10
+layer: 30.125
+sizeTo: 12
+sizeFrom: 12
 lightScl: 0
 }
 
@@ -70,9 +77,9 @@ particles: 1
 length: 0
 region: "gr-plastanium-crusher-crusher"
 lifetime: 120
-layer: 30.055
-sizeTo: 6
-sizeFrom: 10
+layer: 30.15
+sizeTo: 8
+sizeFrom: 12
 lightOpacity: 0
 clipSize: 10
 colorTo: 8f8f8f
@@ -84,9 +91,9 @@ particles: 1
 length: 0
 region: "gr-plastanium-crusher-crusher"
 lifetime: 60
-layer: 30.055
-sizeTo: 10
-sizeFrom: 6
+layer: 30.15
+sizeTo: 12
+sizeFrom: 8
 lightOpacity: 0
 clipSize: 10
 colorTo: ffffff
