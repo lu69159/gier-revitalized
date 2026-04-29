@@ -84,14 +84,38 @@ lifetime: 180
 shrinkX: -0.1
 shrinkY: -0.2
 
+parts:[
+{
+type: FlarePart
+color1: FFD37F
+color2: FFD37F
+radius: 0
+radiusTo: 25
+spinSpeed: 3.5
+progress: life
+}
+{
+type: ShapePart
+color: FFD37F00
+colorTo: FFD37Fff
+radius: 40
+radiusTo: 0
+circle: true
+hollow: true
+stroke: 4
+strokeTo: 0
+progress: life
+}
+]
+
 shootEffect: none
 sparkEffect: none
 smokeEffect: none
 collides: false
 absorbable: false
-width: 16
-height: 12
-sprite: "gr-ash"
+width: 0
+height: 0
+sprite: "empty"
 layer: 62
 despawnHit: true
 hitShake: 15
