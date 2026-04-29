@@ -38,6 +38,8 @@ craftTime: 1500
 craftEffect:{
 type: MultiEffect
 effects:[
+coalSmeltSmoke
+
 // sound
 {
 type: SoundEffect
