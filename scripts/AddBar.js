@@ -6,7 +6,7 @@ const blocks = [
 "gr-actuator",
 "gr-sealent-chamber",
 "gr-sealent-chamber-oil",
-"plastanium-crusher"
+"gr-plastanium-crusher"
 ]
 
 Events.on(ContentInitEvent, () => {
