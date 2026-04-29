@@ -54,8 +54,8 @@ length: 0
 region: "gr-plastanium-crusher-bottom"
 lifetime: 180
 layer: 30.05
-sizeTo: 24
-sizeFrom: 24
+sizeTo: 6
+sizeFrom: 6
 lightScl: 0
 }
 
@@ -70,8 +70,8 @@ length: 0
 region: "gr-plastanium-crusher-crusher"
 lifetime: 120
 layer: 30.075
-sizeTo: 16
-sizeFrom: 24
+sizeTo: 6
+sizeFrom: 10
 lightScl: 0
 colorTo: 8f8f8f
 interp: bounceOut
@@ -83,8 +83,8 @@ length: 0
 region: "gr-plastanium-crusher-crusher"
 lifetime: 60
 layer: 30.075
-sizeTo: 16
-sizeFrom: 24
+sizeTo: 10
+sizeFrom: 6
 lightScl: 0
 colorTo: ffffff
 interp: bounceOut
