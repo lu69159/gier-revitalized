@@ -1,0 +1,97 @@
+type: GenericCrafter
+size: 3
+name: Plastanium Crusher
+
+requirements:[lead/375, copper/225, silicon/125, metaglass/75, titanium/45]
+category: crafting
+
+description: "
+Refines titanium with oil turning it
+into [#cbd97f]plastanium[]
+[grey]
+[I] - Plastanium: Used for advanced
+defenses
+[green]
+- Produces plastanium
+[red]- Explosive
+[salmon]- Requires power
+- Requires oil
+- Long crafting proccess
+"
+
+itemCapacity: 100
+liquidCapacity: 100
+consumes:{
+power: 3.66667
+liquids:[oil/0.16667]
+items:[titanium/40]
+}
+
+outputItem: plastanium/20
+craftTime: 1500
+
+craftEffect:{
+type: MultiEffect
+effects:[
+// Dush
+{
+type: ParticleEffect
+particles: 32
+colorFrom: 4f4f4f
+colorTo: 6f6f6f
+length: 34
+sizeFrom: 4
+sizeTo: 0
+interp: sineOut
+layer: 29
+}
+
+// Bottom
+{
+type: ParticleEffect
+particles: 1
+length: 0
+region: "gr-plastanium-crusher-bottom"
+lifetime: 180
+layer: 30.05
+sizeTo: 24
+sizeFrom: 24
+lightScl: 0
+}
+
+// Crusher
+{
+type: SeqEffect
+effects:[
+{
+type: ParticleEffect
+particles: 1
+length: 0
+region: "gr-plastanium-crusher-crusher"
+lifetime: 120
+layer: 30.075
+sizeTo: 16
+sizeFrom: 24
+lightScl: 0
+colorTo: 8f8f8f
+interp: bounceOut
+}
+{
+type: ParticleEffect
+particles: 1
+length: 0
+region: "gr-plastanium-crusher-crusher"
+lifetime: 60
+layer: 30.075
+sizeTo: 16
+sizeFrom: 24
+lightScl: 0
+colorTo: ffffff
+interp: bounceOut
+}
+]
+}
+// end
+
+]
+}
