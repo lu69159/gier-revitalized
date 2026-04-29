@@ -45,6 +45,20 @@ effect: none
 sound: shieldBreak
 }
 
+// Puddles
+{
+type: ParticleEffect
+particles: 32
+colorFrom: 4f4f4f
+colorTo: 6f6f6f
+baseLength: 35
+sizeFrom: 24
+sizeTo: 0
+interp: sineOut
+layer: 22
+lifetime: 300
+}
+
 // Dush
 {
 type: ParticleEffect
