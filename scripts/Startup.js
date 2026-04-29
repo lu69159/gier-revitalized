@@ -38,7 +38,7 @@ kela.ruleSetter = Planets.gier.ruleSetter;
 const plast = Core.bundle.get("database-tag.adv-plastanium");
 Core.bundle.properties.put("database-tag.adv-plastanium", Items.plastanium.emoji() + " " + plast);
 
-const oxide = Core.bundle.get("database-tag.adv-plastanium");
+const oxide = Core.bundle.get("database-tag.adv-oxide");
 Core.bundle.properties.put("database-tag.adv-oxide", Items.oxide.emoji() + " " + oxide);
   
 } catch(e){
