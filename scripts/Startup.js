@@ -1,7 +1,7 @@
 
 
 Events.on(ContentInitEvent, e => { 
-
+try{ 
 Team.get(5).setPalette(Color.valueOf("A4CBE0"));
 Team.get(5).emoji = "[#A4CBE0][]"; 
 
@@ -31,9 +31,19 @@ Planets.gier.ruleSetter = r => {
 r.waveTeam = Team.blue;
 }
 
+
+
 kela.ruleSetter = Planets.gier.ruleSetter;
 
-});
+const plast = Core.bundle.get("database-tag.adv-plastanium");
+Core.bundle.properties.put(
+"database-tag.adv-plastanium",
+Items.plastanium.emoji() + " " + plast
+);
+  
+} catch(e){
+Vars.ui.showText("Startup.js Crash", e);
+}});
 
 
 
