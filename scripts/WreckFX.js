@@ -36,7 +36,7 @@ const offset = Mathf.random(-15,15) + rotation;
 
 if (block.underBullets) particle.layer -= 2;
 
-particle.region = block.uiIcon;
+particle.region = block.region;
 particle.sizeFrom = particle.sizeTo = block.size * 3.95;
 particle.lifetime = Mathf.random(300,3000);
 particle.baseLength = baseLength;
