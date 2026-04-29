@@ -7,7 +7,7 @@ category: crafting
 baseExplosiveness: 25
 squareSprite: false
 
-databaseTag: "gier"
+databaseTag: "adv-plastanium"
 envEnabled: -1
 
 description: "
