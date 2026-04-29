@@ -37,7 +37,7 @@ const offset = Mathf.random(-15,15) + rotation;
 if (block.underBullets) particle.layer -= 2;
 
 particle.region = block.region;
-if (block instanceof Turret) particle.region = block.region;
+if (block instanceof Turret || block.rotate == true) particle.region = block.fullRegion;
 else if (block.region == Core.atlas.find("error")) particle.region = block.fullIcon;
   
 particle.sizeFrom = particle.sizeTo = block.size * 3.95;
