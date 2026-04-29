@@ -4,6 +4,7 @@ name: Plastanium Crusher
 
 requirements:[lead/375, copper/225, silicon/125, metaglass/75, titanium/45]
 category: crafting
+baseExplosiveness: 25
 
 description: "
 Refines titanium with oil turning it
@@ -54,8 +55,8 @@ length: 0
 region: "gr-plastanium-crusher-bottom"
 lifetime: 180
 layer: 30.05
-sizeTo: 6
-sizeFrom: 6
+sizeTo: 10
+sizeFrom: 10
 lightScl: 0
 }
 
@@ -69,10 +70,11 @@ particles: 1
 length: 0
 region: "gr-plastanium-crusher-crusher"
 lifetime: 120
-layer: 30.075
+layer: 30.055
 sizeTo: 6
 sizeFrom: 10
-lightScl: 0
+lightOpacity: 0
+clipSize: 10
 colorTo: 8f8f8f
 interp: bounceOut
 }
@@ -82,10 +84,11 @@ particles: 1
 length: 0
 region: "gr-plastanium-crusher-crusher"
 lifetime: 60
-layer: 30.075
+layer: 30.055
 sizeTo: 10
 sizeFrom: 6
-lightScl: 0
+lightOpacity: 0
+clipSize: 10
 colorTo: ffffff
 interp: bounceOut
 }
