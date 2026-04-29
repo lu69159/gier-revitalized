@@ -53,6 +53,7 @@ colorFrom: 4f4f4f
 colorTo: 6f6f6f
 baseLength: 10
 sizeFrom: 12
+length: 0
 sizeTo: 0
 interp: sineOut
 layer: 22
