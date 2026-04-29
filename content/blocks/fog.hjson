@@ -1,0 +1,12 @@
+type: GenericCrafter
+name: Fog Block
+destructible: false
+
+hasPower: false
+hasShadow: false
+health: 275600
+
+underBullets: true
+placeableLiquid: true
+drawer: []
+forceDark: true
