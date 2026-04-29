@@ -1,32 +1,8 @@
-type: GenericCrafter
+type: Wall
 name: Fog Block
-destructible: false
-
-hasPower: false
+variants: 0
 hasShadow: false
-health: 275600
-
-underBullets: true
-placeableLiquid: true
-drawer: []
 forceDark: true
-
-drawTeamOverlay: false
-updateEffectSpread: 60
-updateEffect: {
-  particles: 1
-  length: 40
-  baseLength: 40
-  lifetime: 400
-  sizeFrom: 0
-  sizeTo: 50
-  colorFrom: 888888
-  colorTo: 00000000
-  layer: 61
-}
-
-buildVisiblity: editorOnly
-
-envEnabled: 0
-envRequired: 0
-envDisabled: 0
+update: false
+breakable: false
+destructible: false
