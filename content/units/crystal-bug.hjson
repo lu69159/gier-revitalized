@@ -1,7 +1,11 @@
 type: crawl
 name: Crystal Bug
-health: 1250
+health: 450
+armor: 10
+
 speed: 1.25
+
+databaseTag: "crystal-bug"
 
 drawCell: false
 legColor: 00000000
@@ -27,7 +31,7 @@ mirror: false
 
 reload: 90
 name: "crystal-bug-weapon"
-
+shootSound: blockPlace2
 parts: [
 {
 name: "gr-crystal-bug-weapon-shadow"
