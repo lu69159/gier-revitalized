@@ -2,12 +2,12 @@ type: legs
 health: 465
 armor: 5
 
-speed: 0.85
+speed: 1.2
 hitSize: 12
 
 legCount: 6
 legMoveSpace: 2.25
-legLength: 30
+legLength: 15
 legMaxLength: 1.25
 legMinLength: 0.75
 
