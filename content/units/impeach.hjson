@@ -7,7 +7,7 @@ hitSize: 12
 
 legCount: 6
 legMoveSpace: 2.25
-legLength: 10
+legLength: 30
 legMaxLength: 1.25
 legMinLength: 0.75
 
