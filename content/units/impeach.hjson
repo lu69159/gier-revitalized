@@ -5,7 +5,7 @@ armor: 5
 speed: 0.85
 hitSize: 12
 
-legCount: 4
+legCount: 6
 legMoveSpace: 2.25
 legLength: 10
 legMaxLength: 1.25
