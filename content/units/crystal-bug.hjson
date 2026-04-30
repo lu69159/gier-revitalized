@@ -5,6 +5,8 @@ speed: 1.25
 
 drawCell: false
 legColor: 00000000
+shadowElevation: 0.16
+controller: HugAI
 
 rotateSpeed: 6
 omniMovement: false
