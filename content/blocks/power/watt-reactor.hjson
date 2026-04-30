@@ -70,7 +70,11 @@ minFlammability: 0.1
 amount: 15
 } 
 
-coolant: 1.66667
+coolant: {
+maxTemp: 0.2
+maxFlammability: 0.1
+amount: 1.66667
+}
 //liquids:[water/1.66667]
 
 }
