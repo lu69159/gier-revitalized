@@ -1,4 +1,4 @@
-type: Missile
+type: missile
 physics: false
 health: 250
 
