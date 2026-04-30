@@ -116,7 +116,7 @@ particle.layer += 3.5;
 }
 
 const regionT = type.cellRegion;
-if (type.drawCell && regionT != Core.atlas.find("error")){
+if (type.drawCell == true && type.drawCell && regionT != Core.atlas.find("error")){
 const teamEffect = new ParticleEffect();
 
 for (let k in particle){
@@ -140,8 +140,11 @@ teamEffect.offset = particle.offset;
 teamEffect.colorTo = base.cpy().mul(0, 0, 0, 0);
 teamEffect.at(unit.x, unit.y);
 } 
-particle.at(unit.x, unit.y);
 
+if (type.drawBody){
+particle.at(unit.x, unit.y);
+}
+  
 } catch(e){
 Vars.ui.showInfoToast(e,5); 
 }});
