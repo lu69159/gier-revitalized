@@ -6,8 +6,10 @@ speed: 0.85
 hitSize: 12
 
 legCount: 4
-legMoveSpace: 2.65
+legMoveSpace: 2.25
 legLength: 10
+legMaxLength: 1.25
+legMinLength: 0.75
 
 outlineRadius: 0
 outlineColor: 00000000
