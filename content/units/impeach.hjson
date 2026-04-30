@@ -16,15 +16,24 @@ outlineColor: 00000000
 
 weapons:[
 {
-reload: 5
+reload: 1.4
 shootStatus: unmoving
 shootStatusDuration: 20
+shootSound: stepMud
 
 bullet: {
 type: BasicBulletType
 speed: 2.5
-damage: 22.5
+damage: 6
 
+ifeScaleRandMin: 0.75
+lifeScaleRandMax: 1.25
+velocityScaleRandMin: 0.75
+velocityScaleRandMax: 0.75
+
+hitEffect: hitFlameBeam
+
+hitColor: ffffff
 frontColor: 9f9f9f
 backColor: ffffff
 trailColor: ffffff
