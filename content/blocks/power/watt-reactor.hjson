@@ -18,12 +18,6 @@ envEnabled: -1
 
 customShadow: true
 
-[scarlet]Priority: 35
-
-[salmon]- Expensive
-- Very explosive
-[green]- Insane power output (40 photon panels)[]
-"
 
 itemDuration: 180
 requirements: [
