@@ -64,7 +64,7 @@ explodeEffect: reactorExplosion
 explodeSound: explosionCore
 
 consumes:{
-//items:[graphite/45]
+items:[graphite/5]
 itemFlammable: {
 minFlammability: 0.1
 amount: 15
