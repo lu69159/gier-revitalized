@@ -6,9 +6,23 @@ speed: 1.25
 drawBody: false
 drawCell: false
 
+parts:[
+{
+name: "gr-crystal-bug"
+outline: false
+
+}
+]
+
+segmentPhase: 5
+segmentMag: 0.5
+rotateSpeed: 6
+omniMovement: false
+
 rotateToBuilding: false
 segments: 1
 segmentScl: 3
+faceTarget: false
 
 outlineRadius: 0
 weapons:[
