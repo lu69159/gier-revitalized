@@ -37,25 +37,34 @@ under: true
   
 bullet:{
 type: BasicBulletType
-speed: 1.5
+speed: 3.5
 lifetime: 60
 inaccuracy: 15
 
-trailWidth: 1
-trailLength: 8
+weaveScl: 1
+weaveMag: 2
+
+trailEffect: sapped
 hitShake: 2.5
 
 homingDelay: 15
 homingPower: 0.15
 
-frontColor: 9f9f9f
-backColor: ffffff
-trailColor: ffffff
+frontColor: 89769a
+trailChance: 0.6
+backColor: 89769a
+trailColor: 89769a
 layer: 55
 
 damage: 15
-hitEffect: colorSparkBig
-hitColor: ffffff
+
+fragBullets: 1
+fragBullet:{
+type: SapBulletType
+damage: 5
+lifesteal: 0.6
+}
+
 }
 
 }
