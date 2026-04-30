@@ -31,29 +31,31 @@ parts: [
 {
 name: "gr-crystal-bug-weapon-shadow"
 outline: false
+under: true
 }
 ]
   
 bullet:{
 type: BasicBulletType
-speed: 2.5
+speed: 4.5
 lifetime: 60
-inaccuracy: 10
+inaccuracy: 15
 
 trailWidth: 1
 trailLength: 8
+hitShake: 2.5
 
-homingDelay: 30
+homingDelay: 15
 homingPower: 0.15
 
 frontColor: ffffff
-backColor: ffffff
+backColor: 9f9f9f
 trailColor: ffffff
 layer: 55
 
 damage: 15
 hitEffect: colorSparkBig
-hitColor: C9A5C8FF
+hitColor: ffffff
 }
 
 }
