@@ -92,6 +92,10 @@ type: DrawCrucibleFlame
 particleInterp: sineOut
 }
 {
+type: DrawRegion
+suffix: "-internals"
+}
+{
 type: DrawDefault
 }
 ]
