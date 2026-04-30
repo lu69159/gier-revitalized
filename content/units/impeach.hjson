@@ -25,6 +25,7 @@ bullet: {
 type: BasicBulletType
 speed: 2.5
 damage: 6
+inaccuracy: 15
 
 ifeScaleRandMin: 0.75
 lifeScaleRandMax: 1.25
@@ -32,6 +33,7 @@ velocityScaleRandMin: 0.75
 velocityScaleRandMax: 0.75
 
 hitEffect: hitFlameBeam
+despawnHit: true
 
 hitColor: ffffff
 frontColor: 9f9f9f
