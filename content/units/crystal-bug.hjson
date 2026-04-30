@@ -1,27 +1,15 @@
-type: crawl
+type: mech
 name: Crystal Bug
 health: 1250
 speed: 1.25
 
-drawBody: false
 drawCell: false
+legColor: 00000000
 
-parts:[
-{
-name: "gr-crystal-bug"
-outline: false
-
-}
-]
-
-segmentPhase: 5
-segmentMag: 0.5
 rotateSpeed: 6
 omniMovement: false
 
 rotateToBuilding: false
-segments: 1
-segmentScl: 3
 faceTarget: false
 
 outlineRadius: 0
