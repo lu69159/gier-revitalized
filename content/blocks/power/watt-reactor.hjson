@@ -64,12 +64,12 @@ explodeEffect: reactorExplosion
 explodeSound: explosionCore
 
 consumes:{
-  items:[graphite/10]
+items:[graphite/10]
 
 coolant:{
 amount: 0.166667
-maxTemp: 0.2
-maxFlammability: 0.2
+maxTemp: 0.5
+maxFlammability: 0
 allowGas: false
 }
 //liquids:[water/1.66667]
