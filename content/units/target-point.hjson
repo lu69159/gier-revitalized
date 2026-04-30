@@ -2,7 +2,7 @@ type: missile
 physics: false
 health: 250
 
-lifetime: 60
+lifetime: 120
 drawSoftShadow: false
 
 hoverable: false
@@ -18,8 +18,7 @@ type: ShapePart
 circle: true
 hollow: true
 strokeTo: 0
-strokeFrom: 8
-layer: 122
+stroke: 8
 color: ff795eff
 colorTo: ff795e00
 progress: life
