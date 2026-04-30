@@ -68,8 +68,8 @@ items:[graphite/10]
 
 coolant:{
 amount: 0.166667
-maxTemp: 0.5
-maxFlammability: 0
+maxTemp: 0.75
+maxFlammability: 0.2
 allowGas: false
 }
 //liquids:[water/1.66667]
