@@ -10,9 +10,14 @@ rotateToBuilding: false
 segments: 1
 segmentScl: 3
 
-outlinRadius: 0
+outlineRadius: 0
 weapons:[
 {
+x: 0
+y: 0
+rotate: true
+mirror: false
+
 reload: 90
 name: "crystal-bug-weapon"
 shoot:{
@@ -24,6 +29,7 @@ parts: [
 {
 name: "gr-crystal-bug-weapon-shadow"
 layerOffset: -0.1
+outline: false
 }
 ]
   
