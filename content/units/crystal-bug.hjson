@@ -22,10 +22,6 @@ mirror: false
 
 reload: 90
 name: "crystal-bug-weapon"
-shoot:{
-shots: 15
-shotDelay: 0
-}
 
 parts: [
 {
@@ -37,6 +33,9 @@ under: true
   
 bullet:{
 type: BasicBulletType
+width: 7.5
+height: 10.5
+
 speed: 3.5
 lifetime: 60
 inaccuracy: 15
@@ -56,12 +55,12 @@ backColor: 89769a
 trailColor: 89769a
 layer: 55
 
-damage: 15
+damage: 25
 
 fragBullets: 1
 fragBullet:{
 type: SapBulletType
-damage: 5
+damage: 15
 lifesteal: 0.6
 }
 
