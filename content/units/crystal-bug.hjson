@@ -1,4 +1,4 @@
-type: mech
+type: crawler
 name: Crystal Bug
 health: 1250
 speed: 1.25
@@ -37,7 +37,7 @@ under: true
   
 bullet:{
 type: BasicBulletType
-speed: 4.5
+speed: 1.5
 lifetime: 60
 inaccuracy: 15
 
@@ -48,8 +48,8 @@ hitShake: 2.5
 homingDelay: 15
 homingPower: 0.15
 
-frontColor: ffffff
-backColor: 9f9f9f
+frontColor: 9f9f9f
+backColor: ffffff
 trailColor: ffffff
 layer: 55
 
