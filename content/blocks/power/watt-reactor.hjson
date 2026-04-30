@@ -17,7 +17,6 @@ shownPlanets: [gier]
 envEnabled: -1
 
 customShadow: true
-description: "Extremely expensive building, Has insane power output, uses water as coolant.
 
 [scarlet]Priority: 35
 
@@ -28,18 +27,17 @@ description: "Extremely expensive building, Has insane power output, uses water 
 
 itemDuration: 180
 requirements: [
-lead/2050
-copper/1650
-graphite/875
-silicon/550
-metaglass/330
-beryllium/275
-titanium/225
+lead/465
+copper/375
+silicon/225
+metaglass/175
+beryllium/45
+titanium/75
 ]
 
 powerProduction: 24.33334
 explosionRadius: 13.125
-explosionDamage: 3750
+explosionDamage: 4750
 category: power
 
 databaseTag: "gier"
@@ -72,8 +70,15 @@ explodeEffect: reactorExplosion
 explodeSound: explosionCore
 
 consumes:{
-items:[graphite/45]
-liquids:[water/1.66667]
+//items:[graphite/45]
+itemFlammable: {
+minFlammability: 0.1
+amount: 15
+} 
+
+coolant: 1.66667
+//liquids:[water/1.66667]
+
 }
 
 drawer:{
