@@ -11,6 +11,9 @@ omniMovement: false
 
 rotateToBuilding: false
 faceTarget: false
+drawSoftShadow: false
+
+crushDamage: 0.5
 
 outlineRadius: 0
 weapons:[
@@ -58,8 +61,10 @@ layer: 55
 damage: 25
 
 fragBullets: 1
+fragRandomSpread: 0
 fragBullet:{
 type: SapBulletType
+color: 89769a
 damage: 15
 lifesteal: 0.6
 }
