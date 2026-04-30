@@ -7,10 +7,35 @@ hitSize: 12
 
 legCount: 6
 legMoveSpace: 2.25
-legLength: 15
+legLength: 20
 legMaxLength: 1.25
 legMinLength: 0.75
 
 outlineRadius: 0
 outlineColor: 00000000
 
+weapons:[
+{
+reload: 100
+shootStatus: unmoving
+shootStatusDuration: 70
+
+bullet: {
+type: BasicBulletType
+speed: 2.5
+damage: 65
+
+frontColor: 9f9f9f
+backColor: ffffff
+trailColor: ffffff
+
+width: 10
+height: 14
+trailWidth: 2
+trailLength: 12
+
+recoil: 3.5
+}
+
+}
+]
