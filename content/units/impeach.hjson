@@ -1,5 +1,5 @@
 type: legs
-health: 465
+health: 1225
 armor: 5
 
 speed: 1.2
@@ -16,14 +16,14 @@ outlineColor: 00000000
 
 weapons:[
 {
-reload: 100
+reload: 5
 shootStatus: unmoving
-shootStatusDuration: 70
+shootStatusDuration: 20
 
 bullet: {
 type: BasicBulletType
 speed: 2.5
-damage: 65
+damage: 22.5
 
 frontColor: 9f9f9f
 backColor: ffffff
@@ -34,7 +34,6 @@ height: 14
 trailWidth: 2
 trailLength: 12
 
-recoil: 3.5
 }
 
 }
