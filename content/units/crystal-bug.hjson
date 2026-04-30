@@ -1,0 +1,45 @@
+type: crawl
+name: Crystal Bug
+health: 1250
+speed: 1.25
+
+drawBody: false
+drawCell: false
+
+rotateToBuilding: false
+segments: 1
+segmentScl: 3
+
+outlinRadius: 0
+weapons:[
+{
+reload: 90
+name: "crystal-bug-weapon"
+shoot:{
+shots: 15
+shotDelay: 0
+}
+
+parts: [
+{
+name: "gr-crystal-bug-weapon-shadow"
+layerOffset: -0.1
+}
+]
+  
+bullet:{
+type: BasicBulletType
+speed: 2.5
+lifetime: 60
+  
+trailEffect: colorSpark
+trailChance: 0.5
+trailColor: C9A5C8FF
+
+damage: 15
+hitEffect: colorSparkBig
+hitColor: C9A5C8FF
+}
+
+}
+]
