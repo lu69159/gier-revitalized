@@ -23,7 +23,7 @@ shootSound: stepMud
 
 bullet: {
 type: BasicBulletType
-speed: 2.5
+speed: 5
 damage: 6
 inaccuracy: 15
 
@@ -34,6 +34,7 @@ velocityScaleRandMax: 0.75
 
 hitEffect: hitFlameBeam
 despawnHit: true
+despawnEffect: none
 
 hitColor: ffffff
 frontColor: 9f9f9f
