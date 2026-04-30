@@ -1,4 +1,4 @@
-type: crawler
+type: crawl
 name: Crystal Bug
 health: 1250
 speed: 1.25
