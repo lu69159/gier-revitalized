@@ -40,6 +40,9 @@ Core.bundle.properties.put("database-tag.adv-plastanium", Items.plastanium.emoji
 
 const oxide = Core.bundle.get("database-tag.adv-oxide");
 Core.bundle.properties.put("database-tag.adv-oxide", Items.oxide.emoji() + " " + oxide);
+
+const crystal = Core.bundle.get("database-tag.crystal-bug");
+Core.bundle.properties.put("database-tag.crystal-bug", Blocks.crystalCluster.emoji() + " " + crystal);
   
 } catch(e){
 Vars.ui.showText("Startup.js Crash", e);
