@@ -51,10 +51,7 @@ bullet:{
 type: BasicBulletType
 speed: 2.5
 lifetime: 60
-  
-trailEffect: colorSpark
-trailChance: 0.5
-trailColor: C9A5C8FF
+inaccuracy: 15
 
 damage: 15
 hitEffect: colorSparkBig
