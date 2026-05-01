@@ -1,0 +1,9 @@
+type: LiquidJunction
+name: Fluid Junction
+category: liquid
+
+requirements: [metaglass/2, plastanium/1]
+research: dihydrogen-shaft
+
+envEnabled: -1
+databaseTag: "adv-plastanium"
