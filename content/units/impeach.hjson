@@ -21,9 +21,13 @@ reload: 1.4
 shootStatus: unmoving
 shootStatusDuration: 200
 shootSound: stepMud
+x: 0
+y: 0
+mirror: false
 
 parts:[
 {
+type: FlarePart
 color1: ff7f7f
 color2: ff7f7f
 radius: 0
@@ -58,7 +62,7 @@ despawnHit: true
 despawnEffect: none
 
 hitColor: ffffff
-frontColor: 9f9f9f
+frontColor: ffffff
 backColor: ffffff
 
 width: 16
