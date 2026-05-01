@@ -18,6 +18,9 @@ outlineColor: 00000000
 weapons:[
 {
 reload: 60
+rotate: true
+rotateSpeed: 7.5
+
 shootStatus: unmoving
 shootStatusDuration: 70
 shootSound: stepMud
