@@ -1,4 +1,13 @@
 type: NuclearReactor
+description: "
+Generates power by burning graphite.
+A variety of coolants could be used.
+
+[green]- Not expensive
+- Low maintance
+[red]- Extremely explosive
+[salmon]- Requires active cooling
+"
 
 // overrides
 fuelItem: graphite
