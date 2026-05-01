@@ -12,7 +12,7 @@ legCount: 6
 legMoveSpace: 2.25
 legLength: 15
 legMaxLength: 1.25
-legMinLength: 1.15
+legMinLength: 0.75
 
 outlineRadius: 0
 outlineColor: 00000000
@@ -60,6 +60,7 @@ speed: 4.5
 lifetime: 45
 recoil: 1
 keepVelocity: false
+scaleLife: true
 
 splashDamage: 35
 splashDamageRadius: 8
