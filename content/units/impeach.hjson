@@ -19,16 +19,33 @@ weapons:[
 {
 reload: 1.4
 shootStatus: unmoving
-shootStatusDuration: 20
+shootStatusDuration: 200
 shootSound: stepMud
+
+parts:[
+{
+color1: ff7f7f
+color2: ff7f7f
+radius: 0
+radiusTo: 8
+spinSpeed: 4
+progress: charge
+}
+]
+shoot:{
+firstShotDelay: 180
+}
 
 bullet: {
 type: BasicBulletType
-speed: 5
+speed: 2.5
+lifetime: 90
+
 splashDamage: 215
 splashDamageRadius: 12
 damage: 0
 inaccuracy: 15
+hitShake: 15
 killShooter: true
 
 ifeScaleRandMin: 0.75
