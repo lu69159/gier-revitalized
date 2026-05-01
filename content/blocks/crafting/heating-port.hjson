@@ -14,7 +14,7 @@ heatOutput: 4
 warmupRate: 0.025
 
 rotateDraw: false
-databaseTag: "gier"
+databaseTag: "adv-oxide"
 research:{
 parent: oxidization-reactor
 objectives:[
