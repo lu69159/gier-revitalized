@@ -17,12 +17,12 @@ outlineColor: 00000000
 
 weapons:[
 {
-reload: 60
+reload: 150
 rotate: true
 rotateSpeed: 7.5
 
 shootStatus: unmoving
-shootStatusDuration: 70
+shootStatusDuration: 160
 shootSound: stepMud
 x: -3
 y: -2.75
@@ -56,6 +56,7 @@ type: BasicBulletType
 speed: 4.5
 lifetime: 45
 recoil: 1
+keepVelocity: false
 
 splashDamage: 15
 splashDamageRadius: 8
@@ -72,14 +73,7 @@ hitEffect: hitFlameBeam
 despawnHit: true
 despawnEffect: none
 
-hitColor: ffffff
-frontColor: ffffff
-backColor: ffffff
-
-width: 16
-height: 16
 layer: 44
-
 }
 
 }
