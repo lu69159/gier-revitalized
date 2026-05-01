@@ -10,7 +10,7 @@ shadowElevation: 0.36
 
 legCount: 6
 legMoveSpace: 2.25
-legLength: 15
+legLength: 25
 legMaxLength: 1.25
 legMinLength: 0.75
 
