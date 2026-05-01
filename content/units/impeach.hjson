@@ -1,7 +1,7 @@
 type: legs
-health: 1225
+health: 665
 name: Impeach
-armor: 5
+armor: 15
 drag: 0.14
 
 speed: 1.2
@@ -19,13 +19,11 @@ outlineColor: 00000000
 
 weapons:[
 {
-reload: 150
+reload: 12.5
 rotate: true
 rotateSpeed: 7.5
 
-shootStatus: unmoving
-shootStatusDuration: 160
-shootSound: explosionTitan
+shootSound: blockPlace1
 x: -3
 y: -2.75
 mirror: false
@@ -48,19 +46,16 @@ name: "gr-impeach-weapon-shadow"
 }
 ]
 
-shoot:{
-firstShotDelay: 90
-shots: 14
-shotDelay: 0
-}
-
 bullet: {
 type: BasicBulletType
 speed: 4.5
-lifetime: 45
+lifetime: 15
 recoil: 1
 keepVelocity: false
 scaleLife: true
+
+frontColor: 00000000
+backColor: 00000000
 
 splashDamage: 35
 splashDamageRadius: 8
@@ -73,7 +68,6 @@ lifeScaleRandMax: 1.15
 velocityScaleRandMin: 0.85
 velocityScaleRandMax: 1.15
 
-hitSound: shootBeamPlasmaSmall
 hitEffect: blastExplosion
 despawnHit: true
 despawnEffect: none
