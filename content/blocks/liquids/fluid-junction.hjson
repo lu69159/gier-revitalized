@@ -2,6 +2,8 @@ type: LiquidJunction
 name: Fluid Junction
 category: liquid
 
+customShadow: true
+
 requirements: [metaglass/2, plastanium/1]
 research: dihydrogen-shaft
 
