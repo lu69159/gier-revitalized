@@ -1,5 +1,6 @@
 type: legs
 health: 1225
+name: Impeach
 armor: 5
 
 speed: 1.2
@@ -24,8 +25,11 @@ shootSound: stepMud
 bullet: {
 type: BasicBulletType
 speed: 5
-damage: 6
+splashDamage: 215
+splashDamageRadius: 12
+damage: 0
 inaccuracy: 15
+killShooter: true
 
 ifeScaleRandMin: 0.75
 lifeScaleRandMax: 1.25
@@ -39,12 +43,12 @@ despawnEffect: none
 hitColor: ffffff
 frontColor: 9f9f9f
 backColor: ffffff
-trailColor: ffffff
 
-width: 10
-height: 14
-trailWidth: 2
-trailLength: 12
+width: 16
+height: 16
+sprite: "gr-crystal-bug"
+despawnUnit: crystal-bug
+layer: 44
 
 }
 
