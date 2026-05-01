@@ -24,7 +24,7 @@ Does enough base damage to ignore basic [white][IFrame][] and could use multiple
 - Inflict melting[]
 "
 
-requirements:[lead/2000,copper/1500,graphite/950]
+requirements:[lead/625,copper/475,graphite/220]
 research: tension
 researchCostMultiplier: 0.25
 
