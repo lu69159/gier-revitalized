@@ -26,6 +26,7 @@ drawRim: false
 drawSpinSprite: true
 drawMineItem: true
 squareSprite: false
+drillTime: 187.5
 
 baseExplosiveness: 2.5
 
