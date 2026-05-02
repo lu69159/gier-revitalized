@@ -7,7 +7,7 @@ planet: kela
 
 rules:{
 lighting: true
-ambientLight: 767aa6bd
+ambientLight: 1d214ec3
 }
 
 research: {
