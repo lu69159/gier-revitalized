@@ -18,6 +18,7 @@ atmosphereColor: 1d214ec3
 orbitSpacing: 30
 orbitRadius: 120
 
+clearSectorOnLose: true
 campaignRuleDefaults: {
 	showSpawns: true
 	sectorInvasion: false
