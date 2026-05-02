@@ -5,6 +5,11 @@ sector: 69
 captureWave: 10
 planet: kela
 
+rules:{
+lighting: true
+ambientLight: 767aa6bd
+}
+
 research: {
 parent: fragmented-fix
 objectives:[
