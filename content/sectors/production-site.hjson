@@ -4,6 +4,11 @@ sector: 0
 planet: kela
 captureWave: 2
 
+rules: [
+waveSpacing = 600
+unitCap = 80
+]
+
 research: {
 parent: intercept
 objectives:[
