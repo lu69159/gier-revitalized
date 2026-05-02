@@ -1,0 +1,16 @@
+difficulty: 0
+
+sector: 0
+planet: kela
+
+research: {
+parent: intercept
+objectives:[
+{
+type: SectorComplete
+preset: intercept
+}
+sunder-furnace
+sand-strate
+]
+}
