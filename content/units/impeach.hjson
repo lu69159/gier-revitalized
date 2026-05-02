@@ -47,15 +47,14 @@ name: "gr-impeach-weapon-shadow"
 ]
 
 bullet: {
-type: BasicBulletType
-speed: 4.5
-lifetime: 15
-recoil: 1
+type: RailBulletType
 keepVelocity: false
 scaleLife: true
 
 frontColor: 00000000
 backColor: 00000000
+
+length: 40
 
 splashDamage: 35
 splashDamageRadius: 8
