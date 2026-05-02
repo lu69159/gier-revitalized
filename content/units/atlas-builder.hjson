@@ -1,5 +1,5 @@
 type: missile
-lifetime: 750
+lifetime: 420
 name: Atlas Builder
 health: 75
   
@@ -33,7 +33,7 @@ color: ffd37fff
 type: ShapePart
 circle: true
 radius: 6
-stroke: 2
+stroke: 2.5
 hollow: true
 color: ffd37fff
 }
@@ -49,7 +49,7 @@ layer: 122
 type: ShapePart
 circle: true
 radius: 6
-stroke: 2
+stroke: 2.5
 hollow: true
 color: ffd37fff
 layer: 122
