@@ -29,6 +29,7 @@ prebuildBase: true
 defaultCore: core-shard
 parent: sun
 #solarSystem: sun
+updateLighting: false
 
 mesh: [
 {
