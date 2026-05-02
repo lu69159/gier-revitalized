@@ -11,7 +11,7 @@ requirements:[lead/10,copper/20]
 customShadow: true
 
 consumes:{
-liquid: {
+liquids: {
 liquids:[
 water/0.016667
 ]
