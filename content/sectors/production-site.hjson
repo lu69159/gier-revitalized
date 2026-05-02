@@ -5,8 +5,7 @@ planet: kela
 captureWave: 2
 
 rules: {
-waveSpacing: 600
-unitCap: 80
+lighting: true
 }
 
 research: {
