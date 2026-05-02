@@ -19,7 +19,8 @@ lifetime: 600,
 colorTo: Color.valueOf("00000000"),
 colorFrom: Color.valueOf("9f9f9f"),
 interp: Interp.sineIn,
-clip: 1000
+clip: 1000,
+lightScl: 0
 });
 
 var rotation = 0;
@@ -97,7 +98,8 @@ colorTo: Color.valueOf("00000000"),
 colorFrom: Color.valueOf("2b2b2bff"),
 interp: Interp.sineIn,
 clip: 1000,
-randLength: false
+randLength: false,
+lightScl: 0
 });
   
 var region = type.region;
