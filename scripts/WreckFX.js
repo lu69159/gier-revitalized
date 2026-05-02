@@ -25,7 +25,7 @@ lightScl: 0
 
 var rotation = 0;
 if (block instanceof BaseTurret){
-rotation = build.rotation;
+rotation = build.rotation + -90;
 } else if (!block.rotate){
 rotation = 0;
 } else {
@@ -33,7 +33,7 @@ rotation = build.rotation * 90;
 }
 
 const baseLength = Mathf.random(-5,5);
-const offset = Mathf.random(-15,15) + rotation;
+const offset = Mathf.random(-45,45) + rotation;
 
 if (block.underBullets) particle.layer -= 2;
 
@@ -110,8 +110,8 @@ region = type.fullIcon;
 particle.region = region;
 particle.sizeFrom = particle.sizeTo = ((region.width + region.height) / 2.5) / 8;
 particle.lifetime = Mathf.random(300,3000);
-particle.baseLength = Mathf.random(-8,8);
-particle.offset = Mathf.random(-5,5) + (unit.rotation) + -90;
+particle.baseLength = Mathf.random(-8, 8);
+particle.offset = Mathf.random(-25, 25) + (unit.rotation) + -90;
 
 if (unit.flying) {
 particle.layer += 3.5;
