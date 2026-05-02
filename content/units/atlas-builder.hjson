@@ -1,0 +1,31 @@
+type: missile
+lifetime: 750
+name: Atlas Builder
+health: 75
+  
+playerControllable: true
+defaultCommand: rebuild
+
+hoverable: false
+drawMinimap: false
+shadowElevation: 0.35
+
+buildSpeed: 0.25
+drawBody: false
+drawCell: false
+
+parts:[
+{
+type: HaloPart
+radius: 10
+radius: 12
+haloRotateSpeed: 1.5
+}
+{
+type: ShapePart
+circle: true
+radius: 6
+stroke: 3
+hollow: true
+}
+]
