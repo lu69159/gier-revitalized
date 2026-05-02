@@ -24,15 +24,34 @@ buildBeamOffset: 0
 parts:[
 {
 type: HaloPart
-radius: 16
+radius: 20
 radius: 4
 haloRotateSpeed: 1.5
+color: ffd37fff
 }
 {
 type: ShapePart
 circle: true
 radius: 6
-stroke: 3
+stroke: 2
 hollow: true
+color: ffd37fff
+}
+{
+type: HaloPart
+radius: 20
+radius: 4
+haloRotateSpeed: 1.5
+color: ffd37fff
+layer: 122
+}
+{
+type: ShapePart
+circle: true
+radius: 6
+stroke: 2
+hollow: true
+color: ffd37fff
+layer: 122
 }
 ]
