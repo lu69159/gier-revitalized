@@ -70,7 +70,7 @@ lifetime: 85
 sizeFrom: 1
 sizeTo: 4
 cone: 20
-spin: 2.5
+spin: 6.5
 region: "gr-gas"
 }
 }
