@@ -5,6 +5,7 @@ health: 75
   
 playerControllable: false
 defaultCommand: assist
+aiController: builderAI
 
 hoverable: false
 drawMinimap: false
