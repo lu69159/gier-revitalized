@@ -2,7 +2,6 @@ difficulty: 0
 
 sector: 0
 planet: kela
-captureWave: 2
 
 research: {
 parent: intercept
