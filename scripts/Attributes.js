@@ -1,7 +1,7 @@
 // pretty late but whatever
 
 const attributes = {
-healPercent = Attribute.add("healPerc")
+healPercent: Attribute.add("healPerc")
 }
 
 module.exports = attributes;
