@@ -1,5 +1,7 @@
 const {content} = Vars;
 const attributes = require("Attributes");
+const stats = require("Stats");
+
 const blocks = [
 "gr-reinforced-structure"
 ];
@@ -39,10 +41,13 @@ try {
 
 for (let i = 0; i < blocks.length; i++){
 const block = content.block(blocks[i]);
+const healPerc = block.attributes.get(attributes.healPercent);
+
 Vars.ui.content.show(block);
 Vars.ui.content.hide();
 
 block.stats.remove(Stat.repairTime);
+block.stats.add(stats.HealPercent, healPerc * 100, StatUnit.percent);
 }
 
 } catch(e){
