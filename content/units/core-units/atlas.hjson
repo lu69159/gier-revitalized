@@ -51,7 +51,8 @@ bullet:{
 type: ArtilleryBulletType
 scaleLife: true
 
-speed: 1
+lifetime: 90
+speed: 1.5
 collides: false
 despawnUnit: gr-atlas-builder
 }
