@@ -1,0 +1,13 @@
+type: RegenProjector
+name: Reinforced Structure
+
+blockGroup: walls
+category: defense
+customShadow: true
+priority: 0
+  
+requirements: [lead/15, silicon/10, plastanium/5]
+baseColor: CBD97FFF
+range: 3
+
+healPercent: 0
