@@ -15,6 +15,7 @@ blockGroup: walls
 category: defense
 customShadow: true
 priority: 0
+hasPower: false
 
 health: 475
 armor: -5
