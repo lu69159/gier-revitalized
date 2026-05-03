@@ -18,68 +18,37 @@ drawSoftShadow: false
 isEnemy: false
 
 weapons:[
-/*
 {
-alwaysShooting: true
-shootCone: 180
-alternate: false
-shootY: 0
-recoil: 0
-mirror: false
-y: 0
-x: 0
-show: true
+reload: 180
+shootWarmupSpeed: 0.01
+minWarmup: 0.9
+
+parts:[
+{
+type: ShapePart
+
+circle: true
+hollow: true
+
+strokeFrom: 0
+strokeTo: 4
+
+radius: 40
+radiusTo: 0
+
+progress: warmup
+}
+]
 
 bullet:{
-type: EmpBulletType
-timeIncrease: 2
-timeDuration: 300
-radius: 60
-damage: 0
-absorbable: false
-shootEffect: none
-smokeEffect: none
-hitEffect: none
-despawnEffect: none
-despawnHit: true
-instantDisappear: true
-unitDamageScl: 1
-hitPowerEffect: none
-hitUnits: false
-}
-
-}
-
-{
-show: false
-alwaysShooting: true
-alwaysContinuous: true
-alternate: false
-shootY: 0
-recoil: 0
-mirror: false
-y: 0
-x: 0
-shootSound: none
-bullet: {
-type: BulletType
-keepVelocity: false
-speed: 0
+type: ArtilleryBulletType
+lifetime: 145
+speed: 2.5
 collides: false
-hittable: false
-absorbable: false
-shootEffect: none
-smokeEffect: none
-hitEffect: none
-despawnEffect: none
-trailLength: 30
-trailWidth: 1
-trailColor: ffd37fff
-lightOpacity: 0
-layer: 123.1
+despawnUnit: gr-atlas-builder
 }
+
 }
-*/
 ]
 
 abilities:[
