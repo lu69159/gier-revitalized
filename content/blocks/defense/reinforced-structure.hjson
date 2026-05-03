@@ -1,6 +1,6 @@
 type: RegenProjector
 name: Reinforced Structure
-descriprion: "
+description: "
 Upon taking damage a small portion of 
 the damage will heal the surrounding walls 
 [lightgrey](including itself)[]
