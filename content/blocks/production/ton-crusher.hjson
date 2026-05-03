@@ -15,7 +15,7 @@ A more advanced mineral drill, Can now be used to bore up beryllium and titanium
 
 liquidBoostIntensity: 1.5
 consumes:{
-power: 1.5
+power: 0.5
 liquid: {
 liquid: water
 amount: 0.05
@@ -43,4 +43,4 @@ explosivenessScale: 6
 flammabilityScale: 0.35
 
 
-requirements:[lead/550,copper/450,graphite/225,silicon/125]
+requirements:[lead/150,copper/225,graphite/85,silicon/45]
