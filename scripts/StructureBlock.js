@@ -26,9 +26,13 @@ targets.each(b => {
 try {
 if (!b.damaged()) return;
 
-b.heal(damage * 0.4);
-lightBlock.at(b.x, b.y, b.block.size, Color.valueOf(build.block.baseColor));
+b.heal(damage * healPerc);
 
+lightBlock.at(b.x, b.y, b.block.size, Color.valueOf(build.block.baseColor));
+if (build.isHealSuppressed()){
+Fx.hitLancer.at(b.x, b.y, build.suppressColor);
+}
+  
 } catch(e){
 Vars.ui.showInfoToast(e + "[red] - StructureBlock - Inner", 5);
 }});
