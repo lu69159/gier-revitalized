@@ -27,6 +27,7 @@ require("FragileHeater");
 require("Multicrafter");
 require("SealentChamber");
 require("StructureBlock");
+require("ImageBlock");
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
