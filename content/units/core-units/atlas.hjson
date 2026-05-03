@@ -20,6 +20,7 @@ isEnemy: false
 weapons:[
 {
 reload: 300
+rotate: true
 
 shoot:{
 firstShotDelay: 120
@@ -48,6 +49,8 @@ progress: charge
 
 bullet:{
 type: ArtilleryBulletType
+scaleLife: true
+
 lifetime: 145
 speed: 2.5
 collides: false
