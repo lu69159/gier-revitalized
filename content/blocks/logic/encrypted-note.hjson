@@ -1,6 +1,6 @@
 type: MessageBlock
 size: 1
-name: Locked Encryption Warning
+name: Encrypted Block
 
 buildVisibility: sandboxOnly
 category: logic
