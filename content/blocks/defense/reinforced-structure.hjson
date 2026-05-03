@@ -5,7 +5,10 @@ blockGroup: walls
 category: defense
 customShadow: true
 priority: 0
-  
+
+health: 475
+armor: 5
+
 requirements: [lead/15, silicon/10, plastanium/5]
 baseColor: CBD97FFF
 range: 3
