@@ -11,3 +11,7 @@ baseColor: CBD97FFF
 range: 3
 
 healPercent: 0
+
+attributes:{
+healPerc: 0.4
+}
