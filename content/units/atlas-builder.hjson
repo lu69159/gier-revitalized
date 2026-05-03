@@ -3,7 +3,7 @@ lifetime: 420
 name: Atlas Builder
 health: 75
   
-playerControllable: true
+playerControllable: false
 defaultCommand: assist
 
 hoverable: false
@@ -13,6 +13,7 @@ shadowElevation: 0.35
 buildSpeed: 0.25
 drawBody: false
 drawCell: false
+hidden: true
 
 physics: false
 rotateToBuilding: false
