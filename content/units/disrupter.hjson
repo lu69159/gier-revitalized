@@ -6,7 +6,7 @@ speed: 3.5
 accel: 0.035
 drag: 0.025
 
-armor: 15
+armor: 17
 health: 650
 outlineColor: 2f2f3f
 
