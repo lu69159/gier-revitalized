@@ -2,6 +2,7 @@
 require("Startup");
 require("Deranged");
 require("WreckFX");
+require("attributes");
 
 //    ### Class Overrides ###
 // Subclass: Block
