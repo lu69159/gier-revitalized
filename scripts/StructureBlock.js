@@ -19,7 +19,7 @@ if (build.block == content.block(blocks[i])) found = true;
 }
   
 if (!found || !build || !source || !lightBlock || !targets) return;
-const healPerc = build.block.attributes.get(attributes.healPercent);
+let healPerc = build.block.attributes.get(attributes.healPercent);
 if (build.isHealSuppressed()) healPerc = healPerc * 0.25;
   
 targets.each(b => {
