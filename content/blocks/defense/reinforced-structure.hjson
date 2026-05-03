@@ -6,6 +6,8 @@ the damage will heal the surrounding walls
 [lightgrey](including itself)[]
 
 [green]- Doesnt need power
+- Could resist being suppressed
+- Heals are lower when suppressed
 [salmon]- Takes increased damage
 "
 
@@ -19,10 +21,12 @@ armor: -5
 
 envEnabled: -1
 databaseTag: "adv-plastanium"
+shownPlanets: [gier, kela]
 
 requirements: [lead/15, silicon/10, plastanium/5]
 baseColor: CBD97FFF
 range: 3
+effectChance: 0
 
 healPercent: 0
 
