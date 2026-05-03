@@ -19,9 +19,12 @@ isEnemy: false
 
 weapons:[
 {
-reload: 180
-shootWarmupSpeed: 0.1
-minWarmup: 0.9
+reload: 300
+
+shoot:{
+firstShotDelay: 120
+}
+
 x: 0
 y: 0
 mirror: false
@@ -39,7 +42,7 @@ strokeTo: 4
 radius: 40
 radiusTo: 0
 
-progress: warmup
+progress: charge
 }
 ]
 
