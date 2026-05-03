@@ -46,5 +46,5 @@ block.stats.remove(Stat.repairTime);
 }
 
 } catch(e){
-Vars.ui.showInfoToast(e + "[red] - StructureBlock - SetStats", 5);
+Vars.ui.showText("", e + "[red] - StructureBlock - SetStats");
 }});
