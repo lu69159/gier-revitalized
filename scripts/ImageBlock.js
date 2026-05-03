@@ -1,12 +1,11 @@
-const {content} = Vars;
-const {atlas} = Core;
-const block = content.block("gr-encrypted-note");
-
 Events.on(TapEvent, event => {
 try {
 
     const {tile, player} = event;
-
+    const {content} = Vars;
+    const {atlas} = Core;
+    const block = content.block("gr-encrypted-note");
+    
     if(!tile || !tile.build || !player) return;
     if(player.team() != tile.team()) return;
     if(player.selectedBlock != null) return;
