@@ -20,7 +20,7 @@ isEnemy: false
 weapons:[
 {
 reload: 180
-shootWarmupSpeed: 0.01
+shootWarmupSpeed: 0.1
 minWarmup: 0.9
 x: 0
 y: 0
@@ -33,7 +33,7 @@ type: ShapePart
 circle: true
 hollow: true
 
-strokeFrom: 0
+stroke: 0
 strokeTo: 4
 
 radius: 40
