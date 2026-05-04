@@ -6,4 +6,3 @@ const unit = {
 };
 
 module.exports = unit;
-module.exports = unit;
