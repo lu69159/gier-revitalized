@@ -1,5 +1,9 @@
 const unit = {
-circuitUnit: new StatUnit("circuit-rate", "[teal]" + String.fromCharCode(Iconc.link) + "[]");
-}
+    circuitUnit: new StatUnit(
+    "circuit-rate",
+    "[teal]" + String.fromCharCode(Iconc.link) + "[]"
+    )
+};
 
-module.export = unit;
+module.exports = unit;
+module.exports = unit;
