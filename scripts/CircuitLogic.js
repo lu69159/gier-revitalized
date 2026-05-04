@@ -45,7 +45,7 @@ Events.on(TapEvent, event => {
         const circuitRate = block.attributes.get(Attribute.get("circuitRate"));
         const circuitHeatingDamage = block.attributes.get(Attribute.get("circuitHeatDamage"));
           
-        Fx.dooropen.at(frontBuild.x, frontBuild.y, frontBuild.block.size);
+        Fx.absorb.at(frontBuild.x, frontBuild.y, frontBuild.block.size);
         Sounds.shootSegment.at(frontBuild.x, frontBuild.y);
         
         for (let i = 0; i < heating.length; i++){
@@ -58,8 +58,8 @@ Events.on(TapEvent, event => {
         }
         
         heating.push(frontBuild);
-        if (heating.length > 100) heating.shift();
-            
+        if (heating.length > 225) heating.shift();
+        
         Time.run((1/circuitRate) * 60, () => {
         try {
         if (!frontBuild || !frontBuild.isValid() || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
