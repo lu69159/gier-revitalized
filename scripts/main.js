@@ -28,6 +28,7 @@ require("Multicrafter");
 require("SealentChamber");
 require("StructureBlock");
 require("ImageBlock");
+require("CircuitLogic");
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
