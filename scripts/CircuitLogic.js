@@ -44,14 +44,17 @@ Events.on(TapEvent, event => {
         const frontBuild = build.nearbyBuild(build.build.rotation); 
 
         let found = false;
-        let index;
+        let index = -1;
+        if (!frontBuild || !build) return;
+
         for (let i = 0; i < other.length; i++){
         if (frontBuild.block.name == other[i]){
         found = true;
         index = i;
-        }}
+        }
+        }
           
-        if (!frontBuild || !build || (frontBuild.block != wireBlock && !found)) return;
+        if (frontBuild.block != wireBlock && !found) return;
           
         const {block} = frontBuild;
         const circuitRate = block.attributes.get(Attribute.get("circuitRate"));
