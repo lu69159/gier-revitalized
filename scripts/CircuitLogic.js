@@ -11,8 +11,8 @@ const block = Vars.content.block(block[i]);
 const rate = block.attributes.get(Attribute.get("circuitRate"));
 const circuitUnit = statUnit.circuitUnit;
 
-block.stats.remove(stat.circuitSpeed);
-block.stats.add(stat.circuitSpeed, rate, circuitUnit);
+block.stats.remove(stat.CircuitRate);
+block.stats.add(stat.CircuitRate, rate, circuitUnit);
 }
   
 } catch(e){
