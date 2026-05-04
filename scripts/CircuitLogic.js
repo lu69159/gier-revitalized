@@ -1,5 +1,5 @@
 const statUnit = require("StarUnits");
-const stat = require("Stat");
+const stat = require("CircuitRate");
 const block = [
 "gr-circuit-wire"
 ];
