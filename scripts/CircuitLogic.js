@@ -1,13 +1,13 @@
 const statUnit = require("StatUnits");
 const stat = require("Stats");
-const block = [
+const blocks = [
 "gr-circuit-wire"
 ];
 
 Events.on(ClientLoadEvent, () => {
 try {
-for (let i = 0; i < block.length; i++){
-const block = Vars.content.block(block[i]);
+for (let i = 0; i < blocks.length; i++){
+const block = Vars.content.block(blocks[i]);
 Vars.ui.content.show(block);
 Vars.ui.content.hide();
   
