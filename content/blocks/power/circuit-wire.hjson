@@ -8,7 +8,10 @@ envEnabled: -1
 shownPlanets: [kela, gier]
 
 requirements:[titanium/1, copper/2]
-  
+consumes:{
+powerBuffered: 12
+}
+
 rotate: true
 drawer:{
 type: DrawRegion
