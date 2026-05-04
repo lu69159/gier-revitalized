@@ -1,5 +1,6 @@
 type: Wall
 name: Ruined Photon Panel
+size: 2
 
 requirements:[lead/35, copper/20, graphite/12]
 buildVisibility: editorOnly
