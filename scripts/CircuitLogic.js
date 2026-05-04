@@ -75,7 +75,7 @@ Events.on(TapEvent, event => {
         heating.push(frontBuild);
         if (heating.length > 225) heating.shift();
         
-          
+        Vars.ui.showInfoToast(index,5);
         Time.run((1/circuitRate) * 60, () => {
         try {
         if (!found){
