@@ -1,6 +1,7 @@
 type: Battery
 size: 1
 name: Circuit Wire
+solid: false
 
 category: power
 databaseTag: "gier"
