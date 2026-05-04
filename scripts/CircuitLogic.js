@@ -80,7 +80,7 @@ Events.on(TapEvent, event => {
         if (!frontBuild.tile || !heating) return;
 
         nearby(frontBuild.tile);
-        } else if (index == 1){
+        } else if (index == 0){
         Fx.dooropen.at(frontBuild.x, frontBuild.y, 1);
         const enabled = frontBuild.enabled;
         frontBuild.enabled = !enabled;
