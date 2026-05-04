@@ -1,14 +1,28 @@
 type: Battery
 size: 1
 name: Circuit Wire
+description: "
+Used to transport [accent]power[] or [accent]circuit pulses[].
+stores a small amount of power.
+
+[grey][I] - Circuit Heating: Triggered when the same circuit pulse
+travelled to a block it already travelled to once before[]
+
+[green]- Very cheap
+- Non-solid
+[salmon]- Takes damage from circuit heating
+- Takes more damage
+"
+
 solid: false
 health: 45
+armor: -2
 
 attributes:{
 # The speed of the circuit =1/circuitRate
 circuitRate: 20
 # Damage of heating
-circuitHeatDamage: 12.5
+circuitHeatDamage: 11.5
 }
 
 category: power
