@@ -1,0 +1,30 @@
+type: Battery
+size: 1
+name: Signal
+
+solid: true
+health: 185
+armor: -2
+baswExplosiveness: 12
+
+category: logic
+databaseTag: "gier"
+envEnabled: -1
+shownPlanets: [kela, gier]
+
+requirements:[lead/20, copper/20, silicon/15, titanium/10]
+
+rotate: true
+customShadow: true
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+}
+{
+type: DrawRegion
+name: "gr-circuit-wire-top1"
+}
+]
+}
