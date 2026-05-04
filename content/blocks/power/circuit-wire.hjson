@@ -2,6 +2,14 @@ type: Battery
 size: 1
 name: Circuit Wire
 solid: false
+health: 45
+
+attribute:{
+# The speed of the circuit =1/circuitRate
+circuitRate: 20
+# Damage of heating
+circuitHeatDamage: 12.5
+}
 
 category: power
 databaseTag: "gier"
