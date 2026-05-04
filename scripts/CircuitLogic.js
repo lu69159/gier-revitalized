@@ -3,7 +3,7 @@ const stat = require("Stats");
 // Blocks specifically Wires
 const blocks = ["gr-circuit-wire"];
 // Blocks with special functions
-const other = ["gr-copper-fort"];
+const other = ["gr-photon-panel"];
 
 
 // Block stat setter
@@ -84,7 +84,7 @@ Events.on(TapEvent, event => {
 
         nearby(frontBuild.tile);
         } else if (index == 0){
-        Fx.dooropen.at(frontBuild.x, frontBuild.y, 1);
+        Fx.dooropen.at(frontBuild.x, frontBuild.y, frontBuild.block.size);
         const enabled = frontBuild.enabled;
         frontBuild.enabled = !enabled;
         }
