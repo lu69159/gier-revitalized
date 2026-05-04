@@ -8,6 +8,9 @@ Events.on(ClientLoadEvent, () => {
 try {
 for (let i = 0; i < block.length; i++){
 const block = Vars.content.block(block[i]);
+Vars.ui.content.show(block);
+Vars.ui.content.hide();
+  
 const rate = block.attributes.get(Attribute.get("circuitRate"));
 const circuitUnit = statUnit.circuitUnit;
 
