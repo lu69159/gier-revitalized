@@ -28,13 +28,37 @@ explosionMinWarmup: 0.65
 explosionPuddles: 0
 explosionDamage: 430
 explosionRadius: 6
-explosionEffect: {
+explodeEffect: {
 type: MultiEffect
 effects:[
 {
 type: WrapEffect
 color: 9f9fff
 effect: missileTrailSmoke
+}
+{
+type: ParticleEffect
+spin: 2.25
+sozeFrom: 6
+sizeTo: 8
+colorFrom: 9f9fff
+colorTo: 9f9fff00
+length: 18
+particles: 8
+lifetime: 140
+region: "gr-gas"
+}
+{
+type: ParticleEffect
+spin: 2.25
+sozeFrom: 6
+sizeTo: 8
+colorFrom: 9f9fff
+colorTo: 9f9fff00
+length: 23
+particles: 13
+lifetime: 120
+region: "gr-gas"
 }
 {
 type: waveEffect
