@@ -72,6 +72,7 @@ Events.on(TapEvent, event => {
         }}
 
         Fx.generate.at(tile.worldx(), tile.worldy());
+        tile.block().configureSound.at(tile.worldx(), tile.worldy());
         nearby(tile);
 
     }catch(e){
