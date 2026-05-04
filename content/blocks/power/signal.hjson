@@ -25,6 +25,7 @@ type: DrawRegion
 {
 type: DrawRegion
 name: "gr-circuit-wire-top1"
+buildingRotate: true
 }
 ]
 }
