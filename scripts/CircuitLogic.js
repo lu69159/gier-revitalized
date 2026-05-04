@@ -2,6 +2,9 @@ const statUnit = require("StatUnits");
 const stat = require("Stats");
 // Blocks specifically Wires
 const blocks = ["gr-circuit-wire"];
+// Blocks with special functions
+const other = [];
+
 
 // Block stat setter
 Events.on(ClientLoadEvent, () => {
@@ -62,6 +65,7 @@ Events.on(TapEvent, event => {
         
         Time.run((1/circuitRate) * 60, () => {
         try {
+          
         if (!frontBuild || !frontBuild.isValid() || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
         if (!frontBuild.tile || !heating) return;
 
