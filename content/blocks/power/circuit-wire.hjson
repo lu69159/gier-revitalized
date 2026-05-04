@@ -4,7 +4,7 @@ name: Circuit Wire
 solid: false
 health: 45
 
-attribute:{
+attributes:{
 # The speed of the circuit =1/circuitRate
 circuitRate: 20
 # Damage of heating
