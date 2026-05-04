@@ -1,5 +1,5 @@
-const statUnit = require("StatUnit");
-const stat = require("stat");
+const statUnit = require("StarUnits");
+const stat = require("Stat");
 const block = [
 "gr-circuit-wire"
 ];
@@ -9,10 +9,10 @@ try {
 for (let i = 0; i < block.length; i++){
 const block = Vars.content.block(block[i]);
 const rate = block.attributes.get(Attribute.get("circuitRate"));
-const circuitUnit = statUnit.circuitRate;
+const circuitUnit = statUnit.circuitUnit;
 
-block.stats.remove(Stat.speed);
-block.stats.add(Stat.speed, rate, circuitUnit);
+block.stats.remove(stat.circuitSpeed);
+block.stats.add(stat.circuitSpeed, rate, circuitUnit);
 }
   
 } catch(e){
