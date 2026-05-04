@@ -81,10 +81,9 @@ Events.on(TapEvent, event => {
 
         nearby(frontBuild.tile);
         } else if (index == 0){
+        Fx.dooropen.at(frontBuild.x, frontBuild.y, 1);
         const enabled = frontBuild.enabled;
-        frontBuild.enabled = !enabled
-        return;
-        
+        frontBuild.enabled = !enabled;
         }
           
         } catch(e){
