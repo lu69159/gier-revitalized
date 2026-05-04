@@ -2,8 +2,8 @@
 
 const attributes = {
 healPercent: Attribute.add("healPerc"),
-circuitHeatDamage: Attribute.add("circuitHeatDamage")
-  
+circuitHeatDamage: Attribute.add("circuitHeatDamage"),
+circuitRate: Attribute.add("circuitRate")
 }
 
 module.exports = attributes;
