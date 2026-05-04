@@ -82,7 +82,7 @@ Events.on(TapEvent, event => {
         nearby(frontBuild.tile);
         } else if (index == 0){
         const enabled = frontBuild.enabled;
-        frontBuild.enabled = !enabled;
+        frontBuild.enabled = !enabled
         return;
         
         }
