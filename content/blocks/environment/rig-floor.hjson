@@ -2,3 +2,4 @@ type: Floor
 drawEdgeIn: false
 drawEdgeOut: false
 name: Rig Floor
+variants: 0
