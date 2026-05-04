@@ -17,7 +17,7 @@ drawer:{
 type: DrawMulti
 drawers:[
 {
-type: DrawDefault
+type: DrawRegion
 }
 {
 type: DrawSideRegion
