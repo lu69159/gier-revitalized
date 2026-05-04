@@ -75,7 +75,7 @@ Events.on(TapEvent, event => {
         heating.push(frontBuild);
         if (heating.length > 225) heating.shift();
         
-        Vars.ui.showInfoToast(index,5);
+  
         Time.run((1/circuitRate) * 60, () => {
         try {
         if (!found){
@@ -85,8 +85,7 @@ Events.on(TapEvent, event => {
         nearby(frontBuild.tile);
         } else if (index == 0){
         Fx.dooropen.at(frontBuild.x, frontBuild.y, frontBuild.block.size);
-        const enabled = frontBuild.enabled;
-        frontBuild.enabled = !enabled;
+        frontBuild.kill();
         }
           
         } catch(e){
