@@ -38,13 +38,16 @@ Events.on(TapEvent, event => {
         function nearby(build){
         try {
         if (!build.build || build.block().rotate == false || build.block.size > 1 || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
-        const frontBuild = build.nearbyBuild(build.build.rotation);
+        const frontBuild = build.nearbyBuild(build.build.rotation); 
         if (!frontBuild || !build || frontBuild.block != wireBlock) return;
+          
         const {block} = frontBuild;
         const circuitRate = block.attributes.get(Attribute.get("circuitRate"));
         const circuitHeatingDamage = block.attributes.get(Attribute.get("circuitHeatDamage"));
-            
+          
         Fx.dooropen.at(frontBuild.x, frontBuild.y, frontBuild.block.size);
+        Sounds.shootSegment.at(frontBuild.x, frontBuild.y);
+        
         for (let i = 0; i < heating.length; i++){
         if (heating[i] == frontBuild) {
         frontBuild.damage(circuitHeatingDamage);
