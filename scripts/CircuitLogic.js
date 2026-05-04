@@ -42,7 +42,16 @@ Events.on(TapEvent, event => {
         try {
         if (!build.build || build.block().rotate == false || build.block.size > 1 || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
         const frontBuild = build.nearbyBuild(build.build.rotation); 
-        if (!frontBuild || !build || frontBuild.block != wireBlock) return;
+
+        let found = false;
+        let index;
+        for (let i = 0; i < other.length; i++){
+        if (frontBuild.block.name == other[i]){
+        found = true;
+        index = i;
+        }}
+          
+        if (!frontBuild || !build || (frontBuild.block != wireBlock && !found)) return;
           
         const {block} = frontBuild;
         const circuitRate = block.attributes.get(Attribute.get("circuitRate"));
@@ -62,14 +71,7 @@ Events.on(TapEvent, event => {
         
         heating.push(frontBuild);
         if (heating.length > 225) heating.shift();
-          
-        let found = false;
-        let index;
-        for (let i = 0; i < other.length; i++){
-        if (frontBuild.block.name == other[i]){
-        found = true;
-        index = i;
-        }}
+        
           
         Time.run((1/circuitRate) * 60, () => {
         try {
