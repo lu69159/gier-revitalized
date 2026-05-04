@@ -3,7 +3,7 @@ const stat = require("Stats");
 // Blocks specifically Wires
 const blocks = ["gr-circuit-wire"];
 // Blocks with special functions
-const other = [];
+const other = ["gr-copper-fort"];
 
 
 // Block stat setter
@@ -62,14 +62,29 @@ Events.on(TapEvent, event => {
         
         heating.push(frontBuild);
         if (heating.length > 225) heating.shift();
-        
+          
+        let found = false;
+        let index;
+        for (let i = 0; i < other.length; i++){
+        if (frontBuild.block.name == other[i]){
+        found = true;
+        index = i;
+        }}
+          
         Time.run((1/circuitRate) * 60, () => {
         try {
-          
+        if (!found){
         if (!frontBuild || !frontBuild.isValid() || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
         if (!frontBuild.tile || !heating) return;
 
         nearby(frontBuild.tile);
+        } else if (index == 0){
+        const enabled = frontBuild.enabled;
+        frontBuild.enabled = !enabled;
+        return;
+        
+        }
+          
         } catch(e){
         Vars.ui.showInfoToast(e + "[red] - inner2", 5); 
         }});
