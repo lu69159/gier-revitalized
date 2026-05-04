@@ -14,5 +14,13 @@ powerBuffered: 12
 
 rotate: true
 drawer:{
-type: DrawRegion
+type: DrawMulti
+drawers:[
+{
+type: DrawDefault
+}
+{
+type: DrawSideRegion
+}
+]
 }
