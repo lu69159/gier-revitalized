@@ -6,8 +6,8 @@ Used to transport [accent]power[] or [accent]circuit pulses[].
 stores a small amount of power.
 [grey]
 [I] - Circuit Heating: Triggered when the same 
-circuit pulse travelled to a block it already travelled to 
-once before.
+circuit pulse travelled to a block it already 
+travelled to once before.
 []
 [green]- Very cheap
 - Non-solid
