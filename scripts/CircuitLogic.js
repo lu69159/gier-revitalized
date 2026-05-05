@@ -94,7 +94,7 @@ Events.on(TapEvent, event => {
         const number = Number(frontBuild.message.toString());
 
         if (number){
-        baseTimer = Mathf.clamp(number, 1, 15) * circuitRate;
+        baseTimer = Mathf.clamp(number, 1/circuitRate, 15) * circuitRate;
         }
         
         }
