@@ -3,7 +3,7 @@ const stat = require("Stats");
 // Blocks specifically Wires
 const blocks = ["gr-circuit-wire"];
 // Blocks with special functions
-const other = ["gr-photon-panel"];
+const other = ["gr-power-cell"];
 
 
 // Block stat setter
@@ -76,7 +76,19 @@ Events.on(TapEvent, event => {
         if (heating.length > 225) heating.shift();
         if (found){
         if (index == 0){
-        frontBuild.kill();
+        build.power.graph.transferPower(-10);
+        Fx.generate.at(build.x,build.y);
+        frontBuild.block.configureSound.at(build.x,build.y);
+    
+        Lightning.create(
+        frontBuild.team,
+        frontBuild.team.color,
+        10,
+        frontBuild.x,
+        frontBuild.y,
+        Mathf.random(360),
+        10
+        );
         }
         return;
         }
