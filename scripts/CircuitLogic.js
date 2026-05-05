@@ -20,6 +20,7 @@ const circuitRange = block.attributes.get(Attribute.get("circuitRange"));
 const circuitUnit = statUnit.circuitUnit;
 const circuitRangeUnit = statUnit.circuitRange;
 
+block.databaseTag = "circuit-logic"
 block.stats.remove(stat.CircuitRate);
 if (rate) block.stats.add(stat.CircuitRate, rate, circuitUnit);
 if (heatDamage) block.stats.add(stat.CircuitHeatDamage, heatDamage);
