@@ -90,7 +90,7 @@ Events.on(TapEvent, event => {
         Lightning.create(frontBuild.team, frontBuild.team.color, 35, frontBuild.x, frontBuild.y, Mathf.random(360), 25);
           
         return;
-        } else if (i == 2){
+        } else if (index == 2){
         const number = parseInt(frontBuild.message.toString());
 
         if (number){
