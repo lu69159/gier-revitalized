@@ -36,6 +36,7 @@ Events.on(TapEvent, event => {
         const targetBlock = Vars.content.block("gr-signal");
         const wireBlock = Vars.content.block("gr-circuit-wire");
         let heating = [];
+        let distance = 0;
         if(!tile.build || tile.block() != targetBlock) return;
 
         function nearby(build){
@@ -55,12 +56,13 @@ Events.on(TapEvent, event => {
         }
           
         if (frontBuild.block != wireBlock && !found) return;
-          
+
+        distance++;
         const {block} = frontBuild;
         const circuitRate = block.attributes.get(Attribute.get("circuitRate"));
         const circuitHeatingDamage = block.attributes.get(Attribute.get("circuitHeatDamage"));
           
-        Fx.absorb.at(frontBuild.x, frontBuild.y, frontBuild.block.size);
+        Fx.absorb.at(frontBuild.x, frontBuild.y, block.size);
         Sounds.shootSegment.at(frontBuild.x, frontBuild.y);
         
         for (let i = 0; i < heating.length; i++){
@@ -73,7 +75,8 @@ Events.on(TapEvent, event => {
         }
         
         heating.push(frontBuild);
-        if (heating.length > 225) heating.shift();
+        if (distance >= 225) return;
+        
         if (found){
         // PowerCell Function
         if (index == 0){
@@ -84,6 +87,8 @@ Events.on(TapEvent, event => {
 
         Sounds.shootPulsar.at(frontBuild.x, frontBuild.y);
         Lightning.create(frontBuild.team, frontBuild.team.color, 35, frontBuild.x, frontBuild.y, Mathf.random(360), 25);
+          
+        // Circuit Splitter Function
         } else if (index == 1){
           
         Time.run((1/circuitRate) * 60, () => {
