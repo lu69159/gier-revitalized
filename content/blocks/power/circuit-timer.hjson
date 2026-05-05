@@ -1,0 +1,16 @@
+type: MessageBlock
+name: Circuit Timer
+
+databaseTag: "gier"
+envEnabled: -1
+shownPlanets: [kela, gier]
+  
+requirements:[titanium/5, copper/15, silicon/15, metaglass/15]
+category: power
+consumes:{
+powerBuffered: 15
+}
+
+rotate: true
+rotateDraw: false
+  
