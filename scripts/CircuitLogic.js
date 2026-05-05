@@ -93,7 +93,7 @@ Events.on(TapEvent, event => {
         try {
           
         Time.run((1/circuitRate) * 60, () => {
-        if (!frontBuild || !frontBuild.isValid() || !frontBuild.tile) return;
+        if (!frontBuild || !frontBuild.isValid() || !frontBuild.tile || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
           
         const front = frontBuild.front();
         const left = frontBuild.left();
