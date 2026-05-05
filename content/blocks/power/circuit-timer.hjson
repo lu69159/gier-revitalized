@@ -4,7 +4,15 @@ name: Circuit Timer
 databaseTag: "gier"
 envEnabled: -1
 shownPlanets: [kela, gier]
-  
+
+health: 85
+attributes:{
+# The speed of the circuit =1/circuitRate
+circuitRate: 15
+# Damage of heating
+circuitHeatDamage: 45
+}
+
 requirements:[titanium/5, copper/15, silicon/15, metaglass/15]
 category: power
 consumes:{
@@ -12,5 +20,6 @@ powerBuffered: 15
 }
 
 rotate: true
+customShadow: true
 rotateDraw: false
   
