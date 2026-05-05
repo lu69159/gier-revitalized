@@ -3,7 +3,7 @@ const stat = require("Stats");
 // Blocks specifically Wires
 const blocks = ["gr-circuit-wire", "gr-circuit-splitter", "gr-power-cell", "gr-circuit-timer", "gr-signal"];
 // Blocks with special functions
-const other = ["gr-power-cell", "gr-circuit-splitter", "gr-circuit-timer"];
+const other = ["gr-power-cell", "gr-circuit-splitter", "gr-circuit-timer", "gr-signal-detector"];
 
 
 // Block stat setter
@@ -99,8 +99,8 @@ Events.on(TapEvent, event => {
 
         if (number){
         baseTimer = Mathf.clamp(number, 1/circuitRate, 15) * circuitRate;
-        }
-        
+        } else if (index == 3){
+        frontBuild.message.text = String(distance);
         }
         
         }
