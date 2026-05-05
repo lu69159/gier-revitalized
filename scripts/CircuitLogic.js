@@ -75,20 +75,14 @@ Events.on(TapEvent, event => {
         heating.push(frontBuild);
         if (heating.length > 225) heating.shift();
         if (found){
+        // PowerCell Function
         if (index == 0){
+        if (frontBuild.power.graph.getBatteryStored() < 10) return;
         frontBuild.power.graph.transferPower(-10);
         Fx.generate.at(build.x,build.y);
         frontBuild.block.configureSound.at(build.x,build.y);
     
-        Lightning.create(
-        frontBuild.team,
-        frontBuild.team.color,
-        10,
-        frontBuild.x,
-        frontBuild.y,
-        Mathf.random(360),
-        10
-        );
+        Lightning.create(frontBuild.team, frontBuild.team.color, 10, frontBuild.x, frontBuild.y, Mathf.random(360), 10);
         }
         return;
         }
