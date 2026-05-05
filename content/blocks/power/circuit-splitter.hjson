@@ -1,0 +1,30 @@
+type: Battery
+size: 1
+name: Circuit Splitter
+description: "
+Like a circuit wire but distributes the
+signal in all directions
+"
+
+solid: false
+health: 105
+armor: -2
+
+attributes:{
+# The speed of the circuit =1/circuitRate
+circuitRate: 20
+# Damage of heating
+circuitHeatDamage: 11.5
+}
+
+category: power
+databaseTag: "gier"
+envEnabled: -1
+shownPlanets: [kela, gier]
+
+requirements:[titanium/4, copper/8, silicon/4]
+consumes:{
+powerBuffered: 20
+}
+
+customShadow: true
