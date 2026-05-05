@@ -92,6 +92,8 @@ Events.on(TapEvent, event => {
         } else if (index == 1){
           
         Time.run((1/circuitRate) * 60, () => {
+        if (!frontBuild || !frontBuild.isValid() || !frontBuild.tile) return;
+          
         const front = frontBuild.front();
         const left = frontBuild.left();
         const right = frontBuild.right();
