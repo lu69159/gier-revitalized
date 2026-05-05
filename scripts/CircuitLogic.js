@@ -41,7 +41,7 @@ Events.on(TapEvent, event => {
         let heating = [];
         let distance = 0;
         if(!tile.build || tile.block() != targetBlock) return;
-        const range = block.attributes.get(Attribute.get("circuitRange"));
+        const range = tile.block().attributes.get(Attribute.get("circuitRange"));
       
         function nearby(build){
         try {
