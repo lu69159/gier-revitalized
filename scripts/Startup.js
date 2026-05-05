@@ -44,7 +44,9 @@ Core.bundle.properties.put("database-tag.adv-oxide", Items.oxide.emoji() + " " +
 
 const crystal = Core.bundle.get("database-tag.crystal-bug");
 Core.bundle.properties.put("database-tag.crystal-bug", Blocks.crystalCluster.emoji() + " " + crystal);
-  
+
+const circuitLogic = Core.bundle.get("database-tag.circuit-logic");
+Core.bundle.properties.put("database-tag.circuit-logic", Iconc.link.emoji() + " " + circuitLogic);
 } catch(e){
 Vars.ui.showText("Startup.js Crash", e);
 }});
