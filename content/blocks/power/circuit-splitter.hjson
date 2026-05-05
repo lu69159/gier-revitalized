@@ -28,3 +28,7 @@ powerBuffered: 20
 }
 
 customShadow: true
+drawer:{
+type: DrawRegion
+name: "gr-circuit-splitter"
+}
