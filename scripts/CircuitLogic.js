@@ -59,6 +59,7 @@ Events.on(TapEvent, event => {
 
         distance++;
         const {block} = frontBuild;
+        let baseTimer = 1;
         const circuitRate = block.attributes.get(Attribute.get("circuitRate"));
         const circuitHeatingDamage = block.attributes.get(Attribute.get("circuitHeatDamage"));
           
@@ -89,12 +90,19 @@ Events.on(TapEvent, event => {
         Lightning.create(frontBuild.team, frontBuild.team.color, 35, frontBuild.x, frontBuild.y, Mathf.random(360), 25);
           
         return;
+        } else if (i == 2){
+        const number = parseInt(frontBuild.message.toString());
+
+        if (number){
+        baseTimer = Mathf.clamp(number, 1, 15);
+        }
+        
         }
         
         }
 
           
-        Time.run((1/circuitRate) * 60, () => {
+        Time.run((baseTimer/circuitRate) * 60, () => {
         try {
         if (!frontBuild || !frontBuild.isValid() || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
         if (!frontBuild.tile || !heating) return;
@@ -107,7 +115,7 @@ Events.on(TapEvent, event => {
           
         if (left && left.isValid()) nearby(left.tile);
         if (right && right.isValid()) nearby(right.tile);
-        }
+        } 
           
         } catch(e){
         Vars.ui.showInfoToast(e + "[red] - inner2", 5); 
