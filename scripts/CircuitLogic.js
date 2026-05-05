@@ -1,7 +1,7 @@
 const statUnit = require("StatUnits");
 const stat = require("Stats");
 // Blocks specifically Wires
-const blocks = ["gr-circuit-wire"];
+const blocks = ["gr-circuit-wire", "gr-circuit-splitter"];
 // Blocks with special functions
 const other = ["gr-power-cell"];
 
