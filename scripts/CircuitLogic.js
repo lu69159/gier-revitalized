@@ -3,7 +3,7 @@ const stat = require("Stats");
 // Blocks specifically Wires
 const blocks = ["gr-circuit-wire", "gr-circuit-splitter"];
 // Blocks with special functions
-const other = ["gr-power-cell"];
+const other = ["gr-power-cell", "gr-circuit-splitter"];
 
 
 // Block stat setter
@@ -84,6 +84,10 @@ Events.on(TapEvent, event => {
 
         Sounds.shootPulsar.at(frontBuild.x, frontBuild.y);
         Lightning.create(frontBuild.team, frontBuild.team.color, 35, frontBuild.x, frontBuild.y, Mathf.random(360), 25);
+        } else if (index == 1){
+        nearby(frontBuild.front().tile);
+        nearby(frontBuild.left().tile);
+        nearby(frontBuild.right().tile);
         }
         return;
         }
