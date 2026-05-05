@@ -19,8 +19,8 @@ const heatDamage = block.attributes.get(Attribute.get("circuitHeatDamage"));
 const circuitUnit = statUnit.circuitUnit;
 
 block.stats.remove(stat.CircuitRate);
-block.stats.add(stat.CircuitRate, rate, circuitUnit);
-block.stats.add(stat.CircuitHeatDamage, heatDamage);
+if (rate) block.stats.add(stat.CircuitRate, rate, circuitUnit);
+if (heatDamage) block.stats.add(stat.CircuitHeatDamage, heatDamage);
 }
   
 } catch(e){
