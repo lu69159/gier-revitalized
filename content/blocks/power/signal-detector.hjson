@@ -11,6 +11,14 @@ consumes:{
 powerBuffered: 15
 }
 
+configurable: false
+attributes:{
+# The speed of the circuit =1/circuitRate
+circuitRate: 20
+# Damage of heating
+circuitHeatDamage: 45
+}
+
 rotate: true
 customShadow: true
 rotateDraw: false
