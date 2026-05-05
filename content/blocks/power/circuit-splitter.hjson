@@ -40,6 +40,6 @@ name: "gr-circuit-splitter"
 type: DrawRegion
 name: "gr-circuit-wire-top1"
 buildingRotate: true
-l
+}
 ]
 }
