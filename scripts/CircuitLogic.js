@@ -101,12 +101,13 @@ Events.on(TapEvent, event => {
 
         nearby(frontBuild.tile);
 
+        if (index == 1){
         const left = frontBuild.left();
         const right = frontBuild.right();
           
         if (left && left.isValid()) nearby(left.tile);
         if (right && right.isValid()) nearby(right.tile);
-        
+        }
           
         } catch(e){
         Vars.ui.showInfoToast(e + "[red] - inner2", 5); 
