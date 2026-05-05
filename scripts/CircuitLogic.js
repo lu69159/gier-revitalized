@@ -85,9 +85,14 @@ Events.on(TapEvent, event => {
         Sounds.shootPulsar.at(frontBuild.x, frontBuild.y);
         Lightning.create(frontBuild.team, frontBuild.team.color, 35, frontBuild.x, frontBuild.y, Mathf.random(360), 25);
         } else if (index == 1){
-        nearby(frontBuild.front().tile);
-        nearby(frontBuild.left().tile);
-        nearby(frontBuild.right().tile);
+        const front = frontBuild.front();
+        const left = frontBuild.left();
+        const right = frontBuild.right();
+          
+        if (front) nearby(front.tile);
+        if (left) nearby(left.tile);
+        if (right) nearby(right.tile);
+          
         }
         return;
         }
