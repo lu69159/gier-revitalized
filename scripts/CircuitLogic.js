@@ -90,6 +90,7 @@ Events.on(TapEvent, event => {
           
         // Circuit Splitter Function
         } else if (index == 1){
+        try {
           
         Time.run((1/circuitRate) * 60, () => {
         if (!frontBuild || !frontBuild.isValid() || !frontBuild.tile) return;
@@ -102,7 +103,8 @@ Events.on(TapEvent, event => {
         if (left) nearby(left.tile);
         if (right) nearby(right.tile);
         });
-          
+
+        } catch(e){Vars.ui.showInfoToast(e + " - Circuit Splitter Function/CircuitLogic", 5)}
         }
         return;
         }
