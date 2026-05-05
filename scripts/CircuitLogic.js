@@ -66,9 +66,6 @@ Events.on(TapEvent, event => {
         let baseTimer = 1;
         const circuitRate = block.attributes.get(Attribute.get("circuitRate"));
         const circuitHeatingDamage = block.attributes.get(Attribute.get("circuitHeatDamage"));
-          
-        Fx.absorb.at(frontBuild.x, frontBuild.y, block.size);
-        Sounds.shootSegment.at(frontBuild.x, frontBuild.y);
         
         for (let i = 0; i < heating.length; i++){
         if (heating[i] == frontBuild) {
@@ -81,7 +78,9 @@ Events.on(TapEvent, event => {
         
         heating.push(frontBuild);
         if (distance > range) return;
-        
+        Fx.absorb.at(frontBuild.x, frontBuild.y, block.size);
+        Sounds.shootSegment.at(frontBuild.x, frontBuild.y);
+          
         if (found){
         // PowerCell Function
         if (index == 0){
