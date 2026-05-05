@@ -99,9 +99,9 @@ Events.on(TapEvent, event => {
         const left = frontBuild.left();
         const right = frontBuild.right();
           
-        if (front) nearby(front.tile);
-        if (left) nearby(left.tile);
-        if (right) nearby(right.tile);
+        if (front && front.isValid()) nearby(front.tile);
+        if (left && left.isValid()) nearby(left.tile);
+        if (right && right.isValid()) nearby(right.tile);
         });
 
         } catch(e){Vars.ui.showInfoToast(e + " - Circuit Splitter Function/CircuitLogic", 5)}
