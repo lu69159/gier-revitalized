@@ -76,7 +76,7 @@ Events.on(TapEvent, event => {
         if (heating.length > 225) heating.shift();
         if (found){
         if (index == 0){
-        build.power.graph.transferPower(-10);
+        frontBuild.power.graph.transferPower(-10);
         Fx.generate.at(build.x,build.y);
         frontBuild.block.configureSound.at(build.x,build.y);
     
