@@ -8,6 +8,7 @@ description: "Behaves as a battery.
 
 [green]- Durable
 - Releases lightning arcs upon damage
+- Could be manually activated via circuit logic
 [salmon]- Consumes power to produce a lightning arc
 
 [grey]- Damage is proportional to damage taken
