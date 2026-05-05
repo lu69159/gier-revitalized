@@ -35,13 +35,14 @@ Events.on(TapEvent, event => {
     try{
         const tile = event.tile;
         if(tile == null) return;
-
+        
         const targetBlock = Vars.content.block("gr-signal");
         const wireBlock = Vars.content.block("gr-circuit-wire");
         let heating = [];
         let distance = 0;
         if(!tile.build || tile.block() != targetBlock) return;
-
+        const range = block.attributes.get(Attribute.get("circuitRange"));
+      
         function nearby(build){
         try {
         if (!build.build || build.block().rotate == false || build.block.size > 1 || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
@@ -79,7 +80,7 @@ Events.on(TapEvent, event => {
         }
         
         heating.push(frontBuild);
-        if (distance >= 225) return;
+        if (distance > range) return;
         
         if (found){
         // PowerCell Function
