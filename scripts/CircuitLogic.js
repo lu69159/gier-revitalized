@@ -99,6 +99,7 @@ Events.on(TapEvent, event => {
 
         if (number){
         baseTimer = Mathf.clamp(number, 1/circuitRate, 15) * circuitRate;
+        }
         } else if (index == 3){
         frontBuild.message.text = String(distance);
         }
