@@ -14,6 +14,10 @@ shownPlanets: [kela, gier]
 
 requirements:[lead/20, copper/20, silicon/15, titanium/10]
 
+attributes:{
+circuitRange: 45
+}
+
 rotate: true
 customShadow: true
 drawer:{
