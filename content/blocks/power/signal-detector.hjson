@@ -1,0 +1,17 @@
+type: MessageBlock
+name: Signal Detector
+
+databaseTag: "gier"
+envEnabled: -1
+shownPlanets: [kela, gier]
+
+requirements:[titanium/8, copper/20, silicon/20, metaglass/25]
+category: power
+consumes:{
+powerBuffered: 15
+}
+
+rotate: true
+customShadow: true
+rotateDraw: false
+  
