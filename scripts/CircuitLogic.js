@@ -77,12 +77,13 @@ Events.on(TapEvent, event => {
         if (found){
         // PowerCell Function
         if (index == 0){
-        if (frontBuild.power.graph.getBatteryStored() < 10) return;
-        frontBuild.power.graph.transferPower(-10);
+        if (frontBuild.power.graph.getBatteryStored() < 45) return;
+        frontBuild.power.graph.transferPower(-45);
         Fx.generate.at(build.x,build.y);
         frontBuild.block.configureSound.at(build.x,build.y);
-    
-        Lightning.create(frontBuild.team, frontBuild.team.color, 10, frontBuild.x, frontBuild.y, Mathf.random(360), 10);
+
+        Sounds.shootPulsar.at(frontBuild.x, frontBuild.y);
+        Lightning.create(frontBuild.team, frontBuild.team.color, 35, frontBuild.x, frontBuild.y, Mathf.random(360), 25);
         }
         return;
         }
