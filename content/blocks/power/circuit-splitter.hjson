@@ -28,7 +28,18 @@ powerBuffered: 20
 }
 
 customShadow: true
+rotate: true
 drawer:{
+type: DrawMulti
+drawers:[
+{
 type: DrawRegion
 name: "gr-circuit-splitter"
+}
+{
+type: DrawRegion
+name: "gr-circuit-wire-top1"
+buildingRotate: true
+l
+]
 }
