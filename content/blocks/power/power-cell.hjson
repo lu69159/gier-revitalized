@@ -16,6 +16,10 @@ description: "Behaves as a battery.
 [accent]- Lighting is team colored
 "
 
+attributes:{
+circuitHeatDamage: 125
+}
+
 databaseTag: "gier"
 requirements:[lead/45,copper/30,metaglass/15,silicon/10]
 category: power
