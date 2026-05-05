@@ -46,7 +46,8 @@ const crystal = Core.bundle.get("database-tag.crystal-bug");
 Core.bundle.properties.put("database-tag.crystal-bug", Blocks.crystalCluster.emoji() + " " + crystal);
 
 const circuitLogic = Core.bundle.get("database-tag.circuit-logic");
-Core.bundle.properties.put("database-tag.circuit-logic", Iconc.link.emoji() + " " + circuitLogic);
+Core.bundle.properties.put("database-tag.circuit-logic", Iconc.link + " " + circuitLogic);
+  
 } catch(e){
 Vars.ui.showText("Startup.js Crash", e);
 }});
