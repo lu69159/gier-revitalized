@@ -8,7 +8,7 @@ shownPlanets: [kela, gier]
 health: 85
 attributes:{
 # The speed of the circuit =1/circuitRate
-circuitRate: 15
+circuitRate: 1
 # Damage of heating
 circuitHeatDamage: 45
 }
