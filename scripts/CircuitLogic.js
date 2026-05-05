@@ -101,7 +101,9 @@ Events.on(TapEvent, event => {
         baseTimer = Mathf.clamp(number, 1/circuitRate, 15) * circuitRate;
         }
         } else if (index == 3){
-        frontBuild.message.text = String(distance);
+        const msg = frontBuild.message;
+        msg.setLength(0);
+        msg.append(String(distance));
         }
         
         }
