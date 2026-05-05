@@ -88,25 +88,9 @@ Events.on(TapEvent, event => {
         Sounds.shootPulsar.at(frontBuild.x, frontBuild.y);
         Lightning.create(frontBuild.team, frontBuild.team.color, 35, frontBuild.x, frontBuild.y, Mathf.random(360), 25);
           
-        // Circuit Splitter Function
-        } else if (index == 1){
-        try {
-          
-        Time.run((1/circuitRate) * 60, () => {
-        if (!frontBuild || !frontBuild.isValid() || !frontBuild.tile || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
-          
-        const front = frontBuild.front();
-        const left = frontBuild.left();
-        const right = frontBuild.right();
-          
-        if (front && front.isValid()) nearby(front.tile);
-        if (left && left.isValid()) nearby(left.tile);
-        if (right && right.isValid()) nearby(right.tile);
-        });
-
-        } catch(e){Vars.ui.showInfoToast(e + " - Circuit Splitter Function/CircuitLogic", 5)}
-        }
         return;
+        }
+        
         }
 
           
@@ -116,7 +100,14 @@ Events.on(TapEvent, event => {
         if (!frontBuild.tile || !heating) return;
 
         nearby(frontBuild.tile);
+
+        const left = frontBuild.left();
+        const right = frontBuild.right();
+          
+        if (left && left.isValid()) nearby(left.tile);
+        if (right && right.isValid()) nearby(right.tile);
         
+          
         } catch(e){
         Vars.ui.showInfoToast(e + "[red] - inner2", 5); 
         }});
