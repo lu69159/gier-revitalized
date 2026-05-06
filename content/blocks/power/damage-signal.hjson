@@ -3,7 +3,7 @@ type: PowerNode
 
 name: Damage Signal
 category: logic
-hasPower: false
+hasPower: true
 
 autolink: false
 laserRange: 10
