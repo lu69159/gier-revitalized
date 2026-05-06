@@ -1,0 +1,9 @@
+type: StaticWall
+name: Embankment Formation
+
+underBullets: true
+solid: true
+armor: 1000000
+health: 1000000
+
+buildVisiblity: editorOnly
