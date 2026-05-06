@@ -165,3 +165,32 @@ runCircuit(event.tile);
 } catch(e){
 Vars.ui.showInfoToast(String(e) + "[red] - TapEvent", 5);
 }});
+
+Events.on(BuildDamageEvent, e => {
+try{
+const build = e.build;
+const source = e.source;
+const blockSignal = Vars.content.block("gr-damage-signal");
+
+if(!build || !build.team) return;
+
+let found = false;
+
+Vars.indexer.eachBlock(
+build.team,
+build.x,
+build.y,
+10 * Vars.tilesize,
+b => b.block == blockSignal,
+b => {
+found = true;
+runCircuit(b.tile);
+}
+);
+
+}catch(err){
+Vars.ui.showInfoToast(
+String(err) + "[red] - CircuitLogic - DamageSignal",
+5
+);
+}});
