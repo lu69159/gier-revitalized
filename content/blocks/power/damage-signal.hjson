@@ -8,11 +8,16 @@ hasPower: false
 autolink: false
 laserRange: 10
 
+rotateDraw: false
 rotate: true
 customShadow: true
 
 databaseTag: "circuit-logic"
 shownPlanets: [kela, gier]
+
+attributes:{
+circuitRange: 45
+}
 
 requirements:[lead/25, titanium/15, silicon/15, metaglass/10]
 research: signal
