@@ -166,6 +166,7 @@ runCircuit(event.tile);
 Vars.ui.showInfoToast(String(e) + "[red] - TapEvent", 5);
 }});
 
+/*
 Events.on(BuildDamageEvent, e => {
 try{
 const build = e.build;
@@ -196,3 +197,4 @@ String(err) + "[red] - CircuitLogic - DamageSignal",
 5
 );
 }});
+*/
