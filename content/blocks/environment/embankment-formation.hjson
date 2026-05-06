@@ -1,5 +1,10 @@
 type: StaticWall
 name: Embankment Formation
+description: "
+Nearly indestructable barrier
+could be broken by destroying it's
+Embankment Seal
+"
 
 underBullets: true
 solid: true
