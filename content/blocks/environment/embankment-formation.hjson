@@ -7,6 +7,8 @@ Embankment Seal
 "
 
 underBullets: true
+destructible: true
+update: true
 solid: true
 armor: 1000000
 health: 1000000
