@@ -181,11 +181,13 @@ build.team,
 build.x,
 build.y,
 10 * Vars.tilesize,
-b => b.block == blockSignal,
-b => {
+
+boolf(b => b.block == blockSignal),
+
+cons(b => {
 found = true;
 runCircuit(b.tile);
-}
+})
 );
 
 }catch(err){
