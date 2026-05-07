@@ -167,7 +167,7 @@ toTile.build[k] = movingBuild[k];
 }
 
 fromTile.setAir();
-Events.fire(new EventType.TileChangeEvent(toTile));
+//Events.fire(new EventType.TileChangeEvent(toTile));
   
 Fx.placeBlock.at(
 toTile.worldx(),
