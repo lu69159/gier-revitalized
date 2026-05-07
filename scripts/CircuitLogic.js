@@ -54,7 +54,8 @@ break;
 
 if(frontBuild.block != wireBlock && !found) return;
 if (circuitActivations >= 7){
-Time.runTask(0.1 * 60, () => nearby(build));
+Time.runTask(0.1 * 60, () => {nearby(build)});
+return;
 }
   
 distance++;
