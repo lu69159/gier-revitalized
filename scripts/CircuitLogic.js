@@ -36,11 +36,6 @@ try{
 if(!build || !build.build || !build.block().rotate || build.block().size > 1 || Vars.state.isPaused() || !Vars.state.isPlaying())
 return;
 
-let now = Time.millis();
-let delta = now - last;
-
-if(delta > 40) return;
-
 const frontBuild = build.nearbyBuild(build.build.rotation);
 
 if(!frontBuild || !frontBuild.block) return;
@@ -171,6 +166,7 @@ toTile.build[k] = movingBuild[k];
 }
 
 fromTile.setAir();
+toTile.build.damage(1); // Prevent game freeze
 //Events.fire(new EventType.TileChangeEvent(toTile));
   
 Fx.placeBlock.at(
