@@ -8,7 +8,8 @@ databaseTag: "circuit-logic"
 shownPlanets: [kela,gier]
 
 requirements:[lead/50,copper/35,silicon/20, surge-alloy/15]
-  
+rotate: true
+
 drawer:{
 type: DrawMulti
 drawers:[
