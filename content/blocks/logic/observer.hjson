@@ -4,6 +4,7 @@ name: Observer
 hasPower: false
 rotate: true
 update: true
+fullOverride: "gr-circuit-wire"
 
 attributes:{
 circuitRange: 45
