@@ -30,12 +30,12 @@ type: DrawRegion
 type: DrawRegion
 name: "gr-circuit-wire-top1"
 buildingRotate: true
-rotation: 90
 }
 {
 type: DrawRegion
 suffix: "-top"
 buildingRotate: true
+rotation: -90
 }
 ]
 }
