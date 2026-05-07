@@ -1,6 +1,7 @@
 const statUnit = require("StatUnits");
 const stat = require("Stats");
 let observerActivations = 0;
+let circuitActivations = 0;
 
 const blocks = [
 "gr-circuit-wire",
@@ -52,7 +53,10 @@ break;
 }}
 
 if(frontBuild.block != wireBlock && !found) return;
-
+if (circuitActivations >= 7){
+Time.runTask(0.1 * 60, () => nearby(build));
+}
+  
 distance++;
 
 const block = frontBuild.block;
@@ -75,6 +79,7 @@ if(distance > range) return;
 
 Fx.absorb.at(frontBuild.x, frontBuild.y, block.size);
 Sounds.shootSegment.at(frontBuild.x, frontBuild.y);
+circuitActivations++;
 
 if(found){
 
@@ -305,6 +310,7 @@ Events.run(Trigger.update, () => {
 try {
   
 observerActivations = 0;
+circuitActivations = 0;
   
 } catch(e){
 Vars.ui.showInfoToast(e, 5);  
