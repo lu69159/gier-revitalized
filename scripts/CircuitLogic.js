@@ -260,6 +260,10 @@ const block = Vars.content.block(other[5]);
 const {build} = tile;
 
 if (!build || !block || !tile) return;
+  
+Groups.build.each(b => {
+try {
+if (b.block == block){
 
 let ro = 0;
 if (build.rotation == 0) ro = 2;
@@ -267,11 +271,10 @@ else if (build.rotation == 1) ro = 3;
 else if (build.rotation == 2) ro = 0;
 else ro = 1;
   
-Groups.build.each(b => {
-try {
-if (b.block == block){
-
-if (b.tile.nearby(ro) == tile) runCircuit(tile.nearby(build.rotation));
+if (b.tile.nearby(ro) == tile) {
+runCircuit(tile.nearby(b.rotation));
+Fx.generate.at(b.tile.nearby(ro).worldx(), b.tile.nearby(ro).worldy());
+}
 Fx.mineSmall.at(b.tile.nearby(ro).worldx(), b.tile.nearby(ro).worldy());
   
 }
