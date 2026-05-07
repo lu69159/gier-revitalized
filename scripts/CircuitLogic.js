@@ -33,10 +33,10 @@ const range = startTile.block().attributes.get(Attribute.get("circuitRange"));
   
 function nearby(build){
 try{
-if(!build || !build.build || !build.block().rotate || build.block().size > 1 || Vars.state.isPaused() || !Vars.state.isPlaying()) {
-Time.clear();
+if(!build || !build.build || !build.block().rotate || build.block().size > 1 || Vars.state.isPaused() || !Vars.state.isPlaying())
 return;
-}
+
+if (Time.delta <= 0.1) return;
 
 const frontBuild = build.nearbyBuild(build.build.rotation);
 
