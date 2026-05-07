@@ -9,7 +9,8 @@ const blocks = [
 "gr-power-cell",
 "gr-circuit-timer",
 "gr-signal",
-"gr-signal-detector"
+"gr-signal-detector",
+"gr-observer"
 ];
 
 const other = [
