@@ -22,6 +22,7 @@ drawers:[
 type: DrawRegion
 name: "gr-circuit-wire-shadow"
 layer: 10
+drawPlan: false
 }
 {
 type: DrawRegion
