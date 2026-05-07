@@ -1,0 +1,22 @@
+type: Battery
+hasPower: false
+name: Piston
+
+category: logic
+envEnabled: -1
+databaseTag: "circuit-logic"
+shownPlanets: [kela,gier]
+
+requirements:[lead/50,copper/35,silicon/20, surge-alloy/15]
+  
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+}
+{
+type: DrawSideRegion
+}
+]
+}
