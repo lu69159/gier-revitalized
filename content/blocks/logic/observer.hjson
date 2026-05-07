@@ -4,6 +4,10 @@ name: Observer
 hasPower: false
 rotate: true
 
+attributes:{
+circuitRange: 45
+}
+
 requirements:[lead/45, silicon/20, titanium/30]
 category: logic
 envEnabled: -1
