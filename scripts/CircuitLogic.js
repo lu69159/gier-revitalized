@@ -110,8 +110,8 @@ if(!targetTile) return;
 if(targetTile.build) return;
 if(targetTile.solid()) return;
 
+targetTile.setBlock(movingBuild.block, movingBuild.team, movingBuild.rotation);
 pushTile.setAir();
-targetTile.setBlock(pushTile.build.block, pushTile.build.team, pushTile.build.rotation);
   
 Fx.placeBlock.at(
 targetTile.worldx(),
