@@ -85,6 +85,7 @@ if (!Core.settings.getBool("unitWreckEnabled")) return;
   
 const unit = e.unit;
 const type = unit.type;
+if (type instanceof MissileUnitType) return;
   
 const particle = new ParticleEffect();
 Object.assign(particle, {
