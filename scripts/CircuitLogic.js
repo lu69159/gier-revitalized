@@ -79,7 +79,7 @@ heating.push(frontBuild);
 
 if(distance > range) return;
 
-Fx.shootSmallColor.at(frontBuild.x, frontBuild.y, Color.valueOf("ffd37fff"));
+Fx.shootSmallColor.at(frontBuild.x, frontBuild.y, Color.valueOf("ffd37fff"), 90 * frontBuild.rotation);
 circuitActivations++;
 
 if(found){
