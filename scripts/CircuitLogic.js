@@ -15,7 +15,8 @@ const other = [
 "gr-circuit-splitter",
 "gr-circuit-timer",
 "gr-signal-detector",
-"gr-piston"
+"gr-piston",
+"gr-observer"
 ];
 
 function runCircuit(startTile){
@@ -241,12 +242,40 @@ Vars.ui.showText("CircuitLogic", String(e));
 Events.on(TapEvent, event => {
 try{
   
-if(!event.tile) return;
+if(!event.tile || !tile.build || !event.player || event.player.team() != tile.build.team) return;
 runCircuit(event.tile);
   
 } catch(e){
 Vars.ui.showInfoToast(String(e) + "[red] - TapEvent", 5);
-}});
+}
+});
+
+
+// Observer
+Events.on(TileChangeEvent, event => {
+try {
+const {tile} = event;
+const block = Vars.content.block(other[5]);
+const {build} = tile;
+
+if (!build || !block || !tile) return;
+
+let ro = 0;
+if (build.rotation = 0) ro = 2;
+else if (build.rotation = 1) ro = 3;
+else if (build.rotation = 2) ro = 0;
+else (build.rotation = 3) ro = 1;
+  
+Groups.build.each(b => {
+if (b.block == block){
+if (b.tile.nearby(ro) == tile) runCircuit(tile.nearby(build.rotation));
+}
+});
+
+} catch(e){
+Vars.ui.showInfoToast(e + "[red] - CircuitLogic - Observer", 5);
+}
+});
 
 /*
 Events.on(BuildDamageEvent, e => {
