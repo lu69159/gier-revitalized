@@ -24,16 +24,12 @@ try{
   
 if(!startTile || !startTile.build) return;
 
-const targetBlock = Vars.content.block("gr-signal");
 const wireBlock = Vars.content.block("gr-circuit-wire");
-
-if(startTile.block() != targetBlock) return;
 
 let heating = [];
 let distance = 0;
 
 const range = startTile.block().attributes.get(Attribute.get("circuitRange"));
-Vars.ui.showInfoToast(range, 5);
   
 function nearby(build){
 try{
