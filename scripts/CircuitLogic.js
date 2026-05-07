@@ -113,9 +113,11 @@ if(targetTile.solid()) return;
 targetTile.setBlock(movingBuild.block, movingBuild.team, movingBuild.rotation);
 
 for (let k in movingBuild){
+try {
 if (typeof movingBuild[k] != "function"){
 targetTile.build[k] = movingBuild[k];
 }
+} catch(e){}
 }
   
 pushTile.setAir();
