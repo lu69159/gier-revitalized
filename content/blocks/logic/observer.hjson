@@ -1,0 +1,33 @@
+type: Battery
+name: Observer
+  
+hasPower: false
+rotate: true
+
+requirements:[lead/45, silicon/20, titanium/30]
+category: logic
+envEnabled: -1
+shownPlanets: [kela, gier]
+
+hasShadow: false
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+name: "gr-circuit-wire"
+layer: 10
+}
+{
+type: DrawRegion
+}
+{
+type: DrawRegion
+name: "gr-circuit-wire-top1"
+}
+{
+type: DrawRegion
+suffix: "-top"
+}
+]
+}
