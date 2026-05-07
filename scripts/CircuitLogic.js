@@ -272,6 +272,7 @@ try {
 if (b.block == block){
 
 if (b.tile.nearby(ro) == tile) runCircuit(tile.nearby(build.rotation));
+Fx.mineSmall.at(b.tile.nearby(ro).worldx(), b.tile.nearby(ro).worldy());
   
 }
 } catch(e){
