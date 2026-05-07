@@ -242,7 +242,7 @@ Vars.ui.showText("CircuitLogic", String(e));
 Events.on(TapEvent, event => {
 try{
   
-if(!event.tile || !tile.build || !event.player || event.player.team() != tile.build.team) return;
+if(!event.tile || !event.tile.build || !event.player || event.player.team() != event.tile.build.team) return;
 runCircuit(event.tile);
   
 } catch(e){
