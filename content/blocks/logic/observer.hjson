@@ -3,6 +3,7 @@ name: Observer
   
 hasPower: false
 rotate: true
+update: true
 
 attributes:{
 circuitRange: 45
