@@ -92,19 +92,53 @@ const number = Number(frontBuild.message.toString());
 if(number){
 baseTimer = Mathf.clamp(number, 1/circuitRate, 15) * circuitRate;
 }} else if(index == 3){
+  
 const msg = frontBuild.message;
 msg.setLength(0);
 msg.append(String(distance));
-} else if (index == 4) { 
   
-const pushBuild = frontBuild.tile.nearby(frontBuild.rotation);
-if (pushBuild.tile.nearby(frontBuild.rotation).build != null) return;
+} else if(index == 4){
 
-const fowardBuild = pushBuild.tile.nearby(frontBuild.rotation);
-pushBuild.x = fowardBuild.x;
-pushBuild.y = fowardBuild.y;
+const pushTile = frontBuild.tile.nearby(frontBuild.rotation);
+if(!pushTile) return;
   
+const movingBuild = pushTile.build;
+if(!movingBuild) return;
+  
+const targetTile = pushTile.nearby(frontBuild.rotation);
+if(!targetTile) return;
+if(targetTile.build) return;
+if(targetTile.solid()) return;
+
+// remove references from old tile
+
+pushTile.build = null;
+
+// assign new tile
+
+targetTile.build = movingBuild;
+
+// update building tile reference
+
+movingBuild.tile = targetTile;
+
+// update world coordinates
+
+movingBuild.x = targetTile.worldx();
+movingBuild.y = targetTile.worldy();
+
+// update proximity
+
+movingBuild.updateProximity();
+
+Fx.placeBlock.at(
+targetTile.worldx(),
+targetTile.worldy(),
+movingBuild.block.size
+);
+
 }
+  
 }
 
 Time.run((baseTimer/circuitRate) * 60, () => {
