@@ -292,7 +292,6 @@ observerActivations++;
 
 Fx.generate.at(b.tile.nearby(b.rotation).worldx(), b.tile.nearby(b.rotation).worldy());
 }
-Fx.mineSmall.at(b.tile.nearby(ro).worldx(), b.tile.nearby(ro).worldy());
   
 }
 } catch(e){
