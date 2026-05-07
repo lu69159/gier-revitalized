@@ -99,35 +99,68 @@ msg.append(String(distance));
   
 } else if(index == 4){
 
-const pushTile = frontBuild.tile.nearby(frontBuild.rotation);
-if(!pushTile) return;
-  
-const movingBuild = pushTile.build;
-if(!movingBuild) return;
-  
-const targetTile = pushTile.nearby(frontBuild.rotation);
-if(!targetTile) return;
-if(targetTile.build) return;
-if(targetTile.solid()) return;
+const maxPush = 6;
 
-targetTile.setBlock(movingBuild.block, movingBuild.team, movingBuild.rotation);
+let chain = [];
+let currentTile = frontBuild.tile.nearby(frontBuild.rotation);
 
-for (let k in movingBuild){
-try {
-if (typeof movingBuild[k] != "function" && k != "tile" && k != "x" && k != "y" && k != "proximity" && k != "team"){
-targetTile.build[k] = movingBuild[k];
+for(let i = 0; i < maxPush; i++){
+
+if(!currentTile) return;
+
+if(!currentTile.build) break;
+
+if(currentTile.solid() && !currentTile.build) return;
+
+chain.push(currentTile);
+
+currentTile = currentTile.nearby(frontBuild.rotation);
 }
-} catch(e){}
-}
-  
-pushTile.setAir();
-  
-Fx.placeBlock.at(
-targetTile.worldx(),
-targetTile.worldy(),
-movingBuild.block.size
+
+if(!currentTile) return;
+if(currentTile.build) return;
+if(currentTile.solid()) return;
+
+for(let i = chain.length - 1; i >= 0; i--){
+
+const fromTile = chain[i];
+const toTile = fromTile.nearby(frontBuild.rotation);
+
+if(!fromTile || !fromTile.build || !toTile) continue;
+
+const movingBuild = fromTile.build;
+
+toTile.setBlock(
+movingBuild.block,
+movingBuild.team,
+movingBuild.rotation
 );
 
+for(let k in movingBuild){
+try{
+if(
+typeof movingBuild[k] != "function" &&
+k != "tile" &&
+k != "x" &&
+k != "y" &&
+k != "proximity" &&
+k != "team"
+){
+toTile.build[k] = movingBuild[k];
+}
+}catch(e){}
+}
+
+fromTile.setAir();
+
+Fx.placeBlock.at(
+toTile.worldx(),
+toTile.worldy(),
+movingBuild.block.size
+);
+}
+
+return;
 }
   
 }
