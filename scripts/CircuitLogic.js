@@ -113,7 +113,7 @@ if(targetTile.solid()) return;
 targetTile.setBlock(movingBuild.block, movingBuild.team, movingBuild.rotation);
 
 for (let k in movingBuild){
-if ((typeof k) != "function"){
+if (typeof movingBuild[k] != "function"){
 targetTile.build[k] = movingBuild[k];
 }
 }
