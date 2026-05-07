@@ -1,8 +1,22 @@
 const statUnit = require("StatUnits");
 const stat = require("Stats");
 
-const blocks = ["gr-circuit-wire","gr-circuit-splitter","gr-power-cell","gr-circuit-timer","gr-signal","gr-signal-detector"];
-const other = ["gr-power-cell","gr-circuit-splitter","gr-circuit-timer","gr-signal-detector", "gr-piston"];
+const blocks = [
+"gr-circuit-wire",
+"gr-circuit-splitter",
+"gr-power-cell",
+"gr-circuit-timer",
+"gr-signal",
+"gr-signal-detector"
+];
+
+const other = [
+"gr-power-cell",
+"gr-circuit-splitter",
+"gr-circuit-timer",
+"gr-signal-detector",
+"gr-piston"
+];
 
 function runCircuit(startTile){
 try{
@@ -206,7 +220,8 @@ Vars.ui.content.hide();
 const rate = block.attributes.get(Attribute.get("circuitRate"));
 const heatDamage = block.attributes.get(Attribute.get("circuitHeatDamage"));
 const circuitRange = block.attributes.get(Attribute.get("circuitRange"));
-
+const pistonPushLength = block.attributes.get(Attribute.get("pistonPushLength"));
+  
 block.databaseTag = "circuit-logic";
 
 block.stats.remove(stat.CircuitRate);
@@ -214,7 +229,7 @@ block.stats.remove(stat.CircuitRate);
 if(rate) block.stats.add(stat.CircuitRate, rate, statUnit.circuitUnit);
 if(heatDamage) block.stats.add(stat.CircuitHeatDamage, heatDamage);
 if(circuitRange) block.stats.add(stat.CircuitRange, circuitRange, statUnit.circuitRange);
-  
+if (pistonPushLength) {}
 }
 }catch(e){
 Vars.ui.showText("CircuitLogic", String(e));
