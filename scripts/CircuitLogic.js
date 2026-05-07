@@ -36,7 +36,10 @@ try{
 if(!build || !build.build || !build.block().rotate || build.block().size > 1 || Vars.state.isPaused() || !Vars.state.isPlaying())
 return;
 
-if (Time.delta <= 0.1) return;
+let now = Time.millis();
+let delta = now - last;
+
+if(delta > 40) return;
 
 const frontBuild = build.nearbyBuild(build.build.rotation);
 
