@@ -266,9 +266,9 @@ try {
 if (b.block == block){
 
 let ro = 0;
-if (build.rotation == 0) ro = 2;
-else if (build.rotation == 1) ro = 3;
-else if (build.rotation == 2) ro = 0;
+if (b.rotation == 0) ro = 2;
+else if (b.rotation == 1) ro = 3;
+else if (b.rotation == 2) ro = 0;
 else ro = 1;
   
 if (b.tile.nearby(ro) == tile) {
