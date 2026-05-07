@@ -114,7 +114,7 @@ targetTile.setBlock(movingBuild.block, movingBuild.team, movingBuild.rotation);
 
 for (let k in movingBuild){
 try {
-if (typeof movingBuild[k] != "function"){
+if (typeof movingBuild[k] != "function" && k != "tile" && k != "x" && k != "y" && k != "proximity" && k != "team"){
 targetTile.build[k] = movingBuild[k];
 }
 } catch(e){}
