@@ -79,7 +79,7 @@ heating.push(frontBuild);
 
 if(distance > range) return;
 
-Fx.missileTrail.at(frontBuild.x, frontBuild.y, Color.valueOf("ffd37fff"));
+Fx.missileTrail.at(frontBuild.x, frontBuild.y, 2, Color.valueOf("ffd37fff"));
 circuitActivations++;
 
 if(found){
