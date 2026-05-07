@@ -1,0 +1,5 @@
+type: Floor
+name: Metal Blend
+variants: 0
+drawEdgeIn: true
+drawEdgeOut: false
