@@ -110,27 +110,9 @@ if(!targetTile) return;
 if(targetTile.build) return;
 if(targetTile.solid()) return;
 
-// remove references from old tile
-
-pushTile.build = null;
-
-// assign new tile
-
-targetTile.build = movingBuild;
-
-// update building tile reference
-
-movingBuild.tile = targetTile;
-
-// update world coordinates
-
-movingBuild.x = targetTile.worldx();
-movingBuild.y = targetTile.worldy();
-
-// update proximity
-
-movingBuild.updateProximity();
-
+targetTile.setAir();
+targetTile.setBlock(pushTile.build.block, pushTile.build.team, pushTile.build.rotation);
+  
 Fx.placeBlock.at(
 targetTile.worldx(),
 targetTile.worldy(),
