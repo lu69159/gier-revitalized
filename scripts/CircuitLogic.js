@@ -264,7 +264,7 @@ let ro = 0;
 if (build.rotation = 0) ro = 2;
 else if (build.rotation = 1) ro = 3;
 else if (build.rotation = 2) ro = 0;
-else (build.rotation = 3) ro = 1;
+else ro = 1;
   
 Groups.build.each(b => {
 if (b.block == block){
