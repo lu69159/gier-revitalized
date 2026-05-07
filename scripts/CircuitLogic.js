@@ -21,6 +21,7 @@ const other = [
 
 function runCircuit(startTile){
 try{
+  
 if(!startTile || !startTile.build) return;
 
 const targetBlock = Vars.content.block("gr-signal");
@@ -32,7 +33,8 @@ let heating = [];
 let distance = 0;
 
 const range = startTile.block().attributes.get(Attribute.get("circuitRange"));
-
+Vars.ui.showInfoToast(range, 5);
+  
 function nearby(build){
 try{
 if(!build || !build.build || !build.block().rotate || build.block().size > 1 || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
