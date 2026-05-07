@@ -278,7 +278,7 @@ else ro = 1;
   
 if (b.tile.nearby(ro) == tile) {
   
-if (observerActivations >= 10) {
+if (observerActivations >= 4) {
 Time.runTask(0.1 * 60, () => {runCircuit(b.tile)});
 } else {
 runCircuit(b.tile);
@@ -303,8 +303,7 @@ Vars.ui.showInfoToast(e + "[red] - CircuitLogic - Observer", 5);
 
 Events.run(Trigger.update, () => {
 try {
-if (observerActivations <= 5) return;
-
+  
 observerActivations = 0;
   
 } catch(e){
