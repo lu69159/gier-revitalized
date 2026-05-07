@@ -19,7 +19,7 @@ type: DrawMulti
 drawers:[
 {
 type: DrawRegion
-name: "gr-circuit-wire"
+name: "gr-circuit-wire-shadow"
 layer: 10
 }
 {
@@ -28,10 +28,13 @@ type: DrawRegion
 {
 type: DrawRegion
 name: "gr-circuit-wire-top1"
+buildingRotate: true
+rotation: 90
 }
 {
 type: DrawRegion
 suffix: "-top"
+buildingRotate: true
 }
 ]
 }
