@@ -172,7 +172,6 @@ toTile.build[k] = movingBuild[k];
 }
 
 fromTile.setAir();
-toTile.build.damage(1); // Prevent game freeze
 //Events.fire(new EventType.TileChangeEvent(toTile));
   
 Fx.placeBlock.at(
