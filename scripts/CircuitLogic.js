@@ -273,7 +273,7 @@ else ro = 1;
   
 if (b.tile.nearby(ro) == tile) {
 runCircuit(b.tile.nearby(b.rotation));
-Fx.generate.at(b.tile.nearby(ro).worldx(), b.tile.nearby(ro).worldy());
+Fx.generate.at(b.tile.nearby(b.rotation).worldx(), b.tile.nearby(b.rotation).worldy());
 }
 Fx.mineSmall.at(b.tile.nearby(ro).worldx(), b.tile.nearby(ro).worldy());
   
