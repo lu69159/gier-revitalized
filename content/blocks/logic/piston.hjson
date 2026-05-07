@@ -1,13 +1,22 @@
 type: Battery
 hasPower: false
 name: Piston
+description: "
+Pushes blocks away from it's face.
+cant push multiple blocks.
+
+[green]- Doesn't need power
+[red]- Explosive
+"
 
 category: logic
 envEnabled: -1
 databaseTag: "circuit-logic"
 shownPlanets: [kela,gier]
 
-requirements:[lead/50,copper/35,silicon/20, surge-alloy/15]
+baseExplosiveness: 25
+
+requirements:[lead/50,copper/35,silicon/20, titanium/15]
 rotate: true
 
 drawer:{
@@ -17,7 +26,9 @@ drawers:[
 type: DrawRegion
 }
 {
-type: DrawSideRegion
+type: DrawRegion
+suffix: "-top1"
+buildingRotate: true
 }
 ]
 }
