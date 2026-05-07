@@ -167,7 +167,8 @@ toTile.build[k] = movingBuild[k];
 }
 
 fromTile.setAir();
-
+Events.fire(new EventType.TileChangeEvent(toTile));
+  
 Fx.placeBlock.at(
 toTile.worldx(),
 toTile.worldy(),
@@ -267,8 +268,14 @@ else if (build.rotation == 2) ro = 0;
 else ro = 1;
   
 Groups.build.each(b => {
+try {
 if (b.block == block){
+
 if (b.tile.nearby(ro) == tile) runCircuit(tile.nearby(build.rotation));
+  
+}
+} catch(e){
+Vars.ui.showInfoToast(e + "[red] - CircuitLogic - Observer - Repeat Loop", 5);
 }
 });
 
