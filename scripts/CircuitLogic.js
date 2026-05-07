@@ -1,5 +1,6 @@
 const statUnit = require("StatUnits");
 const stat = require("Stats");
+let observerActivations = 0;
 
 const blocks = [
 "gr-circuit-wire",
@@ -258,6 +259,8 @@ Vars.ui.showInfoToast(String(e) + "[red] - TapEvent", 5);
 // Observer
 Events.on(TileChangeEvent, event => {
 try {
+if (observerActivations >= 10) return;
+
 const {tile} = event;
 const block = Vars.content.block(other[5]);
 const {build} = tile;
@@ -276,6 +279,8 @@ else ro = 1;
   
 if (b.tile.nearby(ro) == tile) {
 runCircuit(b.tile);
+observerActivations++;
+
 Fx.generate.at(b.tile.nearby(b.rotation).worldx(), b.tile.nearby(b.rotation).worldy());
 }
 Fx.mineSmall.at(b.tile.nearby(ro).worldx(), b.tile.nearby(ro).worldy());
@@ -290,6 +295,16 @@ Vars.ui.showInfoToast(e + "[red] - CircuitLogic - Observer - Repeat Loop", 5);
 Vars.ui.showInfoToast(e + "[red] - CircuitLogic - Observer", 5);
 }
 });
+
+Events.run(Trigger.update, () => {
+try {
+if (observerActivations <= 5) return;
+
+observerActivations = 0;
+  
+} catch(e){
+Vars.ui.showInfoToast(e, 5);  
+}});
 
 /*
 Events.on(BuildDamageEvent, e => {
