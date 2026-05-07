@@ -111,6 +111,11 @@ if(targetTile.build) return;
 if(targetTile.solid()) return;
 
 targetTile.setBlock(movingBuild.block, movingBuild.team, movingBuild.rotation);
+
+for (let k in movingBuild){
+targetTile.build[k] = movingBuild[k];
+}
+  
 pushTile.setAir();
   
 Fx.placeBlock.at(
