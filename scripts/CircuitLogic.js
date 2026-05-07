@@ -229,7 +229,7 @@ block.stats.remove(stat.CircuitRate);
 if(rate) block.stats.add(stat.CircuitRate, rate, statUnit.circuitUnit);
 if(heatDamage) block.stats.add(stat.CircuitHeatDamage, heatDamage);
 if(circuitRange) block.stats.add(stat.CircuitRange, circuitRange, statUnit.circuitRange);
-if (pistonPushLength) {}
+if (pistonPushLength) block.stats.add(stat.PistonPushLength, pistonPushLength, StatUnit.blocks);
 }
 }catch(e){
 Vars.ui.showText("CircuitLogic", String(e));
