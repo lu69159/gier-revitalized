@@ -2,7 +2,7 @@ const statUnit = require("StatUnits");
 const stat = require("Stats");
 
 const blocks = ["gr-circuit-wire","gr-circuit-splitter","gr-power-cell","gr-circuit-timer","gr-signal","gr-signal-detector"];
-const other = ["gr-power-cell","gr-circuit-splitter","gr-circuit-timer","gr-signal-detector"];
+const other = ["gr-power-cell","gr-circuit-splitter","gr-circuit-timer","gr-signal-detector", "gr-piston"];
 
 function runCircuit(startTile){
 try{
@@ -91,13 +91,21 @@ const number = Number(frontBuild.message.toString());
 
 if(number){
 baseTimer = Mathf.clamp(number, 1/circuitRate, 15) * circuitRate;
-}}
-
-else if(index == 3){
+}} else if(index == 3){
 const msg = frontBuild.message;
 msg.setLength(0);
 msg.append(String(distance));
-}}
+} else if (index == 4) { 
+  
+const pushBuild = frontBuild.tile.nearby(frontBuild.rotation);
+if (pushBuild.tile.nearby(frontBuild.rotation).build != null) return;
+
+const fowardBuild = pushBuild.tile.nearby(frontBuild.rotation);
+pushBuild.x = fowardBuild.x;
+pushBuild.y = fowardBuild.y;
+  
+}
+}
 
 Time.run((baseTimer/circuitRate) * 60, () => {
 try{
