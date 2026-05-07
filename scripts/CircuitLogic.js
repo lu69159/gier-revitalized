@@ -245,7 +245,10 @@ Events.on(TapEvent, event => {
 try{
   
 if(!event.tile || !event.tile.build || !event.player || event.player.team() != event.tile.build.team) return;
-runCircuit(event.tile);
+
+if (event.tile.block() != Vars.content.block("gr-signal")) return;
+  
+  runCircuit(event.tile);
   
 } catch(e){
 Vars.ui.showInfoToast(String(e) + "[red] - TapEvent", 5);
