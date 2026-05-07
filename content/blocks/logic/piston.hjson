@@ -3,7 +3,7 @@ hasPower: false
 name: Piston
 description: "
 Pushes blocks away from it's face.
-cant push multiple blocks.
+can push multiple blocks.
 
 [green]- Doesn't need power
 [red]- Explosive
@@ -12,6 +12,12 @@ cant push multiple blocks.
 category: logic
 envEnabled: -1
 databaseTag: "circuit-logic"
+
+attributes: {
+# Max number of multiple blocks it can push
+pistonPushLength: 3
+}
+
 shownPlanets: [kela,gier]
 
 baseExplosiveness: 25
