@@ -79,8 +79,7 @@ heating.push(frontBuild);
 
 if(distance > range) return;
 
-Fx.absorb.at(frontBuild.x, frontBuild.y, block.size);
-Sounds.shootSegment.at(frontBuild.x, frontBuild.y);
+Fx.shootSmallColor.at(frontBuild.x, frontBuild.y, Color.valueOf("ffd37fff"));
 circuitActivations++;
 
 if(found){
@@ -152,6 +151,7 @@ if(!fromTile || !fromTile.build || !toTile) continue;
 
 const movingBuild = fromTile.build;
 
+Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
 toTile.setBlock(
 movingBuild.block,
 movingBuild.team,
