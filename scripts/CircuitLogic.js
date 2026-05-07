@@ -259,7 +259,6 @@ Vars.ui.showInfoToast(String(e) + "[red] - TapEvent", 5);
 // Observer
 Events.on(TileChangeEvent, event => {
 try {
-if (observerActivations >= 10) return;
 
 const {tile} = event;
 const block = Vars.content.block(other[5]);
@@ -278,7 +277,13 @@ else if (b.rotation == 2) ro = 0;
 else ro = 1;
   
 if (b.tile.nearby(ro) == tile) {
+  
+if (observerActivations >= 10) {
+Time.runTask(0.1 * 60, () => {runCircuit(b.tile)});
+} else {
 runCircuit(b.tile);
+}
+
 observerActivations++;
 
 Fx.generate.at(b.tile.nearby(b.rotation).worldx(), b.tile.nearby(b.rotation).worldy());
