@@ -154,14 +154,15 @@ const fx = new ParticleEffect();
 Object.assign(fx, {
 length: 8,
 cone: 0,
-sizeFrom: movingBuild.block.size * 8,
-sizeTo: movingBuild.block.size * 8,
+sizeFrom: movingBuild.block.size * 4,
+sizeTo: movingBuild.block.size * 4,
 colorFrom: Color.valueOf("ffffff"),
 colorTo: Color.valueOf("ffffff00"),
-region: movingBuild.block.region,
-offset: frontBuild.rotation * 90,
+region: movingBuild.block.uiIcon,
+offset: movingBuild.rotation * 90,
 layer: 30,
-randLength: false
+randLength: false,
+lifetime: 25
 });
 
 if (movingBuild){
