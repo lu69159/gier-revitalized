@@ -10,7 +10,7 @@ shownPlanets:[kela, gier]
 requirements: [lead/475, copper/350, silicon/175, oxide/65]
 outlineColor: 2f1f1f
 
-minRange: 40
+minRange: 100
 drawMinRange: true
 
 consumes:{
@@ -47,7 +47,7 @@ trailLength: 14
 collidesAir: true
 collides: true
 splashDamage: 125
-splashDamageRadius: 12
+splashDamageRadius: 16
 
 status: corroded
 statusDuration: 140
@@ -57,6 +57,33 @@ backColor: bad9ab
 trailColor: e4ffd6
   
 hitColor: e4ffd6
+hitEffect: titanSmokeSmall
+despawnEffect: bigShockwave
+}
+
+tinted-slag-capsule:{
+type: ArtilleryBulletType
+speed: 3
+lifetime: 80
+
+width: 10
+height: 14
+trailWidth: 2
+trailLength: 14
+
+collidesAir: true
+collides: true
+splashDamage: 125
+splashDamageRadius: 20
+
+status: melting
+statusDuration: 360
+
+frontColor: ffa166ff
+backColor: e37a54
+trailColor: ffa166ff
+  
+hitColor: ffa166ff
 hitEffect: titanSmokeSmall
 despawnEffect: bigShockwave
 }
