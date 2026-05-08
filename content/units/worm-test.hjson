@@ -1,4 +1,4 @@
-type: crawler
+type: crawl
 flying: true
 #aiController: EffectDroneAI
 speed: 1
