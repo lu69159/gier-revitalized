@@ -11,7 +11,7 @@ requirements: [lead/475, copper/350, silicon/175, oxide/65]
   
 consumes:{
 power: 2
-liquids: [steam/0.16667]
+liquids: [liquid-steam/0.16667]
 }
 
 drawer:{
