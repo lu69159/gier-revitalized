@@ -1,0 +1,59 @@
+type: ItemTurret
+size: 4
+name: Disarray
+range: 240
+
+envEnabled: -1
+category: turret
+shownPlanets:[kela, gier]
+
+requirements: [lead/475, copper/350, silicon/175, oxide/65]
+  
+consumes:{
+power: 2
+liquids: [steam/0.16667]
+}
+
+drawer:{
+type: DrawTurret
+basePrefix: "-reinforced"
+parts:[
+{
+suffix: "-barrel"
+moveY: -5
+progress: recoil
+}
+]
+}
+
+reload: 240
+cooldownTime: 120
+
+bulletTypes:{
+oxide:{
+type: ArtilleryBulletType
+speed: 3
+lifetime: 80
+
+width: 10
+height: 14
+trailWidth: 2
+trailLength: 14
+
+collidesAir: true
+collides: true
+splashDamage: 125
+splashDamageRadius: 12
+
+status: corroded
+statusDuration: 140
+
+frontColor: e4ffd6
+backColor: bad9ab
+trailColor: e4ffd6
+  
+hitColor: e4ffd6
+hitEffect: titanSmokeSmall
+
+}
+}
