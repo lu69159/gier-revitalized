@@ -8,7 +8,8 @@ category: turret
 shownPlanets:[kela, gier]
 
 requirements: [lead/475, copper/350, silicon/175, oxide/65]
-  
+outlineColor: 2f1f1f
+
 consumes:{
 power: 2
 liquids: [liquid-steam/0.16667]
@@ -54,6 +55,6 @@ trailColor: e4ffd6
   
 hitColor: e4ffd6
 hitEffect: titanSmokeSmall
-
+despawnEffect: bigShockwave
 }
 }
