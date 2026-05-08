@@ -10,6 +10,7 @@ const blocks = [
 "gr-circuit-timer",
 "gr-signal",
 "gr-signal-detector",
+"gr-piston',
 "gr-observer"
 ];
 
