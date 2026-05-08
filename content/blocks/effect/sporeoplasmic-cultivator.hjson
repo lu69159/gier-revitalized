@@ -1,7 +1,7 @@
 type: ConsumeGenerator
 size: 3
 name: "Sporeoplasmic Cultivator"
-customShadow: true
+customShadow: false
 
 envEnabled: -1
 category: effect
