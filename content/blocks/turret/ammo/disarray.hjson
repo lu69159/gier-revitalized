@@ -16,7 +16,7 @@ liquids: [liquid-steam/0.16667]
 
 drawer:{
 type: DrawTurret
-basePrefix: "-reinforced"
+basePrefix: "reinforced-"
 parts:[
 {
 suffix: "-barrel"
