@@ -156,8 +156,8 @@ length: 8,
 cone: 0,
 sizeFrom: movingBuild.block.size * 8,
 sizeTo: movingBuild.block.size * 8,
-colorFrom: "ffffff",
-colorTo: "ffffff00",
+colorFrom: Color.valueOf("ffffff"),
+colorTo: Color.valueOf("ffffff00"),
 region: movingBuild.block.region,
 offset: movingBuild.rotation * 90
 });
