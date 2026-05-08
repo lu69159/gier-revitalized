@@ -29,7 +29,7 @@ progress: recoil
 reload: 240
 cooldownTime: 120
 
-bulletTypes:{
+ammoTypes:{
 oxide:{
 type: ArtilleryBulletType
 speed: 3
