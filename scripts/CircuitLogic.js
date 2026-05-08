@@ -153,7 +153,7 @@ const movingBuild = fromTile.build;
 const fx = new ParticleEffect();
 Object.assign(fx, {
 length: 8,
-cone: 0.1,
+cone: 0,
 sizeFrom: movingBuild.block.size * 4,
 sizeTo: movingBuild.block.size * 4,
 colorFrom: Color.valueOf("ffffff"),
@@ -162,11 +162,11 @@ region: movingBuild.block.uiIcon,
 offset: (movingBuild.rotation * 90),
 layer: 30,
 randLength: false,
-lifetime: 25
+lifetime: 15
 });
 
 if (movingBuild){
-fx.at(movingBuild.x, movingBuild.y);
+fx.at(movingBuild.x, movingBuild.y, (movingBuild.rotation * 90));
 }
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
 toTile.setBlock(
