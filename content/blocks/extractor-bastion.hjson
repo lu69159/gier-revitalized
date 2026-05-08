@@ -20,7 +20,7 @@ power: 1
 }
 //buildVisibility: sandboxOnly
 
-requirements:[lead/450,copper/375, graphite/350, metaglass/250, silicon/125, titanium/75]
+requirements:[lead/100,copper/75, graphite/50, metaglass/50, silicon/35, titanium/50]
 
 research: mend-pylon
 researchCostMultiplier: 0.15
