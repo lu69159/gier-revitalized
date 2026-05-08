@@ -150,7 +150,19 @@ const toTile = fromTile.nearby(frontBuild.rotation);
 if(!fromTile || !fromTile.build || !toTile) continue;
 
 const movingBuild = fromTile.build;
+const Fx = new ParticleEffect();
+Object.assign(Fx, {
+length: 8,
+cone: 0,
+sizeFrom: movingBuild.block.size * 8,
+sizeTo: movingBuild.block.size * 8,
+colorFrom: "ffffff",
+colorTo: "ffffff00",
+region: movingBuild.block.region,
+offset: movingBuild.rotation * 90
+});
 
+Fx.at(movingBuild.x, movingBuild.y);
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
 toTile.setBlock(
 movingBuild.block,
