@@ -153,13 +153,13 @@ const movingBuild = fromTile.build;
 const fx = new ParticleEffect();
 Object.assign(fx, {
 length: 8,
-cone: 0,
+cone: 0.1,
 sizeFrom: movingBuild.block.size * 4,
 sizeTo: movingBuild.block.size * 4,
 colorFrom: Color.valueOf("ffffff"),
 colorTo: Color.valueOf("ffffff00"),
 region: movingBuild.block.uiIcon,
-offset: movingBuild.rotation * 90,
+offset: (movingBuild.rotation * 90),
 layer: 30,
 randLength: false,
 lifetime: 25
