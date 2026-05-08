@@ -150,8 +150,8 @@ const toTile = fromTile.nearby(frontBuild.rotation);
 if(!fromTile || !fromTile.build || !toTile) continue;
 
 const movingBuild = fromTile.build;
-const Fx = new ParticleEffect();
-Object.assign(Fx, {
+const fx = new ParticleEffect();
+Object.assign(fx, {
 length: 8,
 cone: 0,
 sizeFrom: movingBuild.block.size * 8,
@@ -159,10 +159,14 @@ sizeTo: movingBuild.block.size * 8,
 colorFrom: Color.valueOf("ffffff"),
 colorTo: Color.valueOf("ffffff00"),
 region: movingBuild.block.region,
-offset: movingBuild.rotation * 90
+offset: frontBuild.rotation * 90,
+layer: 30,
+randLength: false
 });
 
-Fx.at(movingBuild.x, movingBuild.y);
+if (movingBuild){
+fx.at(movingBuild.x, movingBuild.y);
+}
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
 toTile.setBlock(
 movingBuild.block,
