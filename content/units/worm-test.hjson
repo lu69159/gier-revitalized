@@ -1,0 +1,10 @@
+type: crawler
+flying: true
+#aiController: EffectDroneAI
+speed: 1
+hidden: true
+name: "Test Crawler"
+
+segmentUnits: 5
+segmentUnit: nova
+segmentSpacing: 6
