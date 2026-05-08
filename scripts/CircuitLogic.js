@@ -132,7 +132,8 @@ if(!currentTile) return;
 
 if(!currentTile.build) break;
 
-if(currentTile.solid() && !currentTile.build || currentTile.block.size > frontBuild.size) return;
+if(currentTile.solid() && !currentTile.build) return;
+if (currentTile.block().size > frontBuild.block.size) return;
 
 chain.push(currentTile);
 
