@@ -121,7 +121,7 @@ msg.append(String(distance));
   
 } else if(index == 4){
 
-const maxPush = 6;
+const maxPush = block.attributes.get(Attribute.get("pistonPushLength")) || 1;
 
 let chain = [];
 let currentTile = frontBuild.tile.nearby(frontBuild.rotation);
